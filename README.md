@@ -1,78 +1,260 @@
-# Swarm Inference Lab — Research Evidence
+# Swarm Inference
 
-**Experiments 016–022: Kimi K3 inference, wavefront scheduling, fine-grained capacity decomposition, and model falsification.**
+### One enormous model. Thousands of mismatched machines. One inference system.
 
-This repository is the public evidence package for a sequence of systems experiments asking one question:
+Large AI models increasingly assume access to large, tightly connected GPU servers. That works when you can buy or rent the right cluster.
 
-> **Under what hardware, topology, and workload conditions should large-model inference use coarse stages, expert-level placement, or sub-layer decomposition?**
+The rest of the world's compute looks very different.
 
-The target model is **Kimi K3**: a 93-layer MoE checkpoint with 896 routed experts and roughly 1.56 TB of declared checkpoint payload. The experiments were deliberately designed to distinguish physical measurement, validated modeling, shaped-network assumptions, and invalid diagnostic output.
+It is fragmented across gaming GPUs, workstations, older datacenter cards, laptops, mixed GPU generations, machines with different amounts of memory, and networks ranging from NVLink to ordinary Ethernet and the public internet. Much of that hardware is difficult to combine efficiently for one large model.
 
-The most important rule in this repository is simple: **a large number is not a result if its validation gate failed.**
+**Swarm Inference is an attempt to change that.**
+
+The overall goal is to build an inference system that can take an arbitrary pool of heterogeneous machines, understand what each machine is good at, split a model only as finely as necessary, and make the pool behave like a useful shared inference fabric.
+
+If this works, the size of a model no longer has to be dictated by the memory of one GPU or one server. A machine with only a few gigabytes available could still contribute useful work to a model measured in terabytes, while larger and faster machines take larger pieces of the graph.
+
+The system should choose the right execution strategy automatically. Sometimes that means whole layers. Sometimes experts. Sometimes tensor or pipeline parallelism. Sometimes a layer itself has to be split into smaller pieces. Slow network links should carry fewer boundaries. Fast local links can support finer decomposition. **Useful model throughput is the objective. Worker count is simply one variable the planner can use.**
+
+## The north-star experiment
+
+The current stress test is **Kimi K3**, a 93-layer mixture-of-experts model with 896 routed experts and roughly **1.56 TB of declared checkpoint payload**.
+
+Kimi K3 is deliberately difficult. It is far larger than a consumer GPU, and even a single routed layer is large enough to make ordinary layer-per-worker designs awkward on small devices.
+
+The long-term north star for Swarm is:
+
+> **Serve a frontier-scale open model such as Kimi K3 at interactive speed by pooling heterogeneous commodity hardware, including workers too small to hold a whole model layer.**
+
+The current performance target is **at least 20 output tokens per second per user** on the Kimi K3 benchmark, while preserving numerical correctness and keeping the architecture capable of scaling to large heterogeneous pools.
+
+That target has **not** been reached. This repository shows the strongest evidence so far, including the experiments that failed and the performance models that were invalidated.
+
+## What Swarm is trying to build
+
+```mermaid
+flowchart LR
+    A[Mixed hardware pool<br/>gaming GPUs, workstations,<br/>datacenter GPUs, CPUs] --> B[Profile every node<br/>memory, compute, bandwidth,<br/>latency, stability]
+    B --> C[Swarm planner<br/>choose granularity and placement]
+    C --> D1[Whole layers]
+    C --> D2[Experts]
+    C --> D3[Tensor / pipeline partitions]
+    C --> D4[Sub-layer microcells]
+    D1 --> E[Distributed execution graph]
+    D2 --> E
+    D3 --> E
+    D4 --> E
+    E --> F[One inference endpoint]
+```
+
+A **microcell** is a logical piece of model computation. Physical placement is decided separately. Many microcells can be fused onto one worker, while a difficult component can be split across several workers when the hardware requires it. The planner decides where physical boundaries should exist based on memory, compute and network topology.
+
+That separation between logical decomposition and physical placement is central to the project. It allows Swarm to minimize expensive network boundaries while still using hardware that conventional model partitions cannot easily accommodate.
+
+---
+
+# What Experiments 016 to 022 found
+
+This repository contains the public evidence for seven consecutive experiments. Together they changed the direction of the project.
+
+The short version is:
+
+1. **Local kernel optimisation hit a wall.**
+2. **Changing the execution schedule produced a much larger gain.**
+3. **Kimi K3 could be decomposed into pieces small enough for consumer-scale workers.**
+4. **The first performance model for that fine-grained design was badly wrong, and was rejected.**
+5. **The rebuilt model reduced median prediction error from 95.5% to 2.7%.**
+6. **Fine-grained splitting currently looks more valuable for unlocking otherwise unusable hardware than for making already-feasible placements faster.**
 
 ![Research arc](figures/01-research-arc.png)
 
-## Four results worth looking at
+## 1. Scheduling mattered more than another round of kernel tuning
 
-### 1. Scheduling changed the system-level result
+Experiments 016 and 017 kept pushing the existing execution path harder.
 
-Experiments 016 and 017 pushed exact local execution from the E015 2.18 tok/s/user oracle to 2.67 and then 3.10 tok/s/user, but still failed the 5 tok/s/user target. Experiment 018 changed the architecture instead of continuing to squeeze the same critical path. A coarse wavefront with immutable AttnRes caching reached **6.702 tok/s/user**, **2.16×** over its corresponding serial schedule, with **83.8% pipeline efficiency**.
+They improved the retained exact path from **2.18 tok/s/user** to **2.67**, then **3.10 tok/s/user**. Useful progress, but still short of the experiment target.
 
-That E018 headline is a **validated independent-resource model grounded in physical real-K3 service and shaped network assumptions**. It is not presented as a physical multi-GPU measurement.
+Experiment 018 changed the architecture instead.
 
-### 2. A 1.56 TB checkpoint was decomposed below 4.5 GiB per worker
+A coarse **wavefront schedule** allowed independent parts of the model to make progress concurrently, while an immutable AttnRes cache avoided repeatedly moving the same state across boundaries.
 
-Experiment 019 constructed a complete K3 placement in which no worker owned a whole ordinary layer, routed expert, or shared expert. The 8 GiB-cap candidate used **376 independent worker placement units** with a maximum accounted peak of **4.495 GiB**. A complete 93-layer shard traversal executed sequentially on one RTX 5090 with **1.27e-6 maximum relative L2 error**, exact routes, and a matching greedy token.
+The result was:
+
+- **6.702 tok/s/user**
+- **2.16x** the corresponding serial schedule
+- **83.8% pipeline efficiency**
+
+This is the strongest validated performance result in this experiment series.
+
+It is a **validated independent-resource model grounded in physical Kimi K3 measurements and shaped network assumptions**. It is not presented as a physical 12-GPU or multi-machine run.
+
+The important lesson was larger than the number itself: **the structure of the distributed execution graph mattered more than squeezing another few percent from one local operation.**
+
+## 2. A 1.56 TB checkpoint was decomposed below 4.5 GiB per worker
+
+Experiment 019 asked a harder question.
+
+Could the full Kimi K3 execution graph be represented without forcing any worker to own a complete ordinary layer, routed expert or shared expert?
+
+The answer was yes.
+
+The 8 GiB-cap candidate produced:
+
+- **376 independent worker placement units**
+- **4.495 GiB maximum accounted peak ownership**
+- no worker owning a whole ordinary layer or expert
+- a complete **93-layer shard traversal** on the reference machine
+- **1.27e-6 maximum relative L2 error**
+- exact expert routes
+- matching greedy output token
 
 ![E019 capacity and correctness](figures/04-e019-capacity-correctness.png)
 
-The scheduler also produced 20.8836 tok/s/user. That number is **not a result**. The timing model failed its serial reconstruction gate by 103.9%, so the experiment was classified `MODEL_INVALID`.
+This matters because it attacks one of the core constraints behind Swarm directly.
 
-### 3. The bad performance model was caught and repaired
+A model with roughly **1.56 TB of checkpoint payload** was expressed as execution units with a maximum accounted footprint below **4.5 GiB**.
 
-Experiment 021 replayed ordered shard execution and exposed a catastrophic mismatch: **95.54% median timing-model error**. The throughput model was invalidated instead of calibrated into agreement.
+The result establishes something narrow and useful: **whole-layer memory is not a fundamental requirement of the execution representation.** Efficient execution across hundreds of physical internet-connected machines remains an open experiment.
 
-Experiment 022 rebuilt the resident service model and deterministic event accounting. On held-out ordered-DAG cases, error fell to **2.71% median, 3.74% p90, and 4.00% maximum**, with `normalization_applied=false` and no global correction multiplier.
+The experiment also produced a 20.8836 tok/s/user timing projection. Its validation failed badly, so it remains diagnostic only. That failure led directly to Experiments 021 and 022.
+
+## 3. The project caught its own performance model being wrong
+
+This is one of the most important results in the repository.
+
+The fine-grained architecture looked extremely promising on paper. Experiment 021 replayed the ordered shard execution against physical service measurements to test whether the model actually predicted reality.
+
+It did not.
+
+The median timing-model error was:
+
+**95.54%**
+
+At that point the large throughput projections from the invalid model were rejected.
+
+Experiment 022 rebuilt the resident-service model and deterministic event accounting from the physical execution path. On held-out ordered-DAG cases, error fell to:
+
+- **2.71% median**
+- **3.74% p90**
+- **4.00% maximum**
+- **no global correction multiplier**
+- `normalization_applied=false`
 
 ![Model validation repair](figures/02-model-validation-repair.png)
 
-### 4. Fine granularity currently looks like a capacity tool, not a speed tool
+For a project trying to predict the behaviour of hardware it has not physically assembled yet, this matters enormously. Swarm needs a planner that can make trustworthy decisions before allocating a fleet. A fast simulator with the wrong physics is worse than a slow one.
 
-Experiment 022 froze **27 heterogeneous inventories** before whole-layer versus adaptive evaluation. The diagnostic planner results produced **6 whole-infeasible / adaptive-feasible capacity unlocks**. On the **21 inventories where whole-layer placement was already feasible, adaptive sub-layer placement produced 0% throughput uplift**.
+## 4. Fine-grained splitting may be a capacity weapon before it is a speed weapon
+
+Experiment 022 froze **27 heterogeneous hardware inventories** and compared two planning strategies against exactly the same resources:
+
+- a strong whole-layer planner
+- an adaptive planner allowed to use sub-layer placement
+
+The diagnostic result was revealing.
+
+In **6 of the 27 inventories**, the whole-layer planner could not find a feasible placement while the adaptive planner could.
+
+In the **21 inventories where whole-layer placement already fit**, the measured diagnostic throughput uplift from sub-layer placement was **0%**.
 
 ![Capacity unlocks](figures/03-capacity-unlocks.png)
 
-The final E022 verdict remains `MODEL_INVALID` because two required gates failed: individual production-native primitive bindings and representative full-93 placement replay. The capacity results are therefore diagnostic, not a product-performance claim.
+That changes the working hypothesis.
 
-## Experiment index
+The strongest observed value of sub-layer execution so far is **capacity unlock**: using hardware that would otherwise be stranded because the natural model component is too large for the available memory. A speed advantage on already-feasible coarse placements has not appeared yet.
 
-| Experiment | Question | Verdict | Headline |
+This result remains diagnostic because two Experiment 022 gates are still open: production-native primitive bindings and representative full-93-layer placement replay. The final E022 verdict is therefore `MODEL_INVALID`, not a declared planner win.
+
+---
+
+# Why this could matter
+
+Modern inference stacks are very good when the hardware pool looks the way they expect it to look: large accelerators, known interconnects, regular clusters and model partitions that fit cleanly onto those devices.
+
+Swarm is exploring the uglier case.
+
+A future pool might contain:
+
+- one fast 80 GB accelerator
+- several 24 GB gaming GPUs
+- older 16 GB cards
+- machines separated by different network links
+- devices that can store a few experts but not a whole layer
+- capacity appearing and disappearing over time
+
+A useful Swarm planner should be able to look at that pool and answer:
+
+**What is the best inference system I can build from exactly these resources?**
+
+That requires more than model sharding. It requires a continuously calibrated understanding of compute, memory, communication, state placement, concurrency and the model's execution graph.
+
+The ambition is eventually to make adding another imperfect machine to the pool useful in the same way that adding another homogeneous GPU to a conventional cluster is useful today.
+
+That is the research programme.
+
+---
+
+# The research arc
+
+| Experiment | Plain-English question | Verdict | What changed |
 |---|---|---|---|
-| [016](experiments/016/) | Can exact verification-major batching break the verifier ceiling? | `FAIL` | 2.669 tok/s/user; local gains did not translate into enough whole-system speedup. |
-| [017](experiments/017/) | Can the KDA-heavy critical path close the remaining gap? | `FAIL` | Best exact result 3.099 tok/s/user; KDA optimization path falsified. |
-| [018](experiments/018/) | Does wavefront concurrency change the critical path? | `PASS_STRONG` | 6.702 tok/s/user validated independent-resource model; 83.8% pipeline efficiency. |
-| [019](experiments/019/) | Can K3 be decomposed into genuinely sub-layer worker footprints? | `MODEL_INVALID` | 376-worker placement, 4.495 GiB max peak, 93-layer correctness PASS; timing model invalid. |
-| [020](experiments/020/) | Is the architecture ready to justify a physical fleet spend? | `NOT_READY` | 96-worker deployment candidate; no GPU rented; projection gate failed. |
-| [021](experiments/021/) | Does the scheduler predict ordered physical shard execution? | `MODEL_INVALID` | 95.54% median model error invalidated the performance model. |
-| [022](experiments/022/) | Does adaptive sub-layer placement beat a strong whole-layer planner? | `MODEL_INVALID` | Model repaired to 2.71% median error; 6 diagnostic capacity unlocks, 0 throughput uplift where coarse placement fit; two correctness/native gates remain open. |
+| [016](experiments/016/) | Can better exact batching break the existing bottleneck? | `FAIL` | 2.669 tok/s/user. Helpful, but the architecture still hit a ceiling. |
+| [017](experiments/017/) | Can optimising the heaviest local critical path close the gap? | `FAIL` | Best exact result 3.099 tok/s/user. Local optimisation alone was not enough. |
+| [018](experiments/018/) | What happens if independent work moves concurrently instead of serially? | `PASS_STRONG` | Wavefront execution reached 6.702 tok/s/user in the validated independent-resource model. |
+| [019](experiments/019/) | Can Kimi K3 be split into genuinely small worker footprints? | `MODEL_INVALID` | 376 placement units, 4.495 GiB max peak, full 93-layer correctness passed. Performance model failed validation. |
+| [020](experiments/020/) | Is the architecture ready to justify renting a physical fleet? | `NOT_READY` | A 96-worker deployment was designed, then correctly stopped before spend because the projection gate failed. |
+| [021](experiments/021/) | Does the simulator actually predict ordered physical shard execution? | `MODEL_INVALID` | No. Median error was 95.54%. The throughput model was invalidated. |
+| [022](experiments/022/) | After repairing the model, when does sub-layer placement actually help? | `MODEL_INVALID` | Timing error fell to 2.71% median. Six diagnostic capacity unlocks appeared, with zero throughput uplift where whole-layer placement already fit. Two production gates remain open. |
 
-## Evidence classes
+The failures are part of the evidence. Each one removed an attractive explanation that did not survive measurement.
 
-This repo uses evidence labels aggressively because these experiments mix physical execution with models and shaped networks.
+---
+
+# What has been proved, and what has not
+
+## Supported by the evidence in this repository
+
+- Real Kimi K3 CUDA execution has been measured on an RTX 5090.
+- The E018 wavefront architecture reached **6.702 tok/s/user** in a validated independent-resource performance model grounded in physical service measurements.
+- The full Kimi K3 graph can be decomposed into sub-layer placement units with a maximum accounted footprint below **4.5 GiB** in the E019 8 GiB-cap candidate.
+- A sequential full-93-layer sharded traversal passed numerical correctness checks.
+- The original fine-grained timing model failed validation at **95.54% median error** and was rejected.
+- The rebuilt E022 ordered-DAG model reached **2.71% median held-out error** without a global normalization multiplier.
+
+## Still to be proved
+
+- Physical Kimi K3 execution across a real heterogeneous multi-machine swarm.
+- The 20 tok/s/user north-star target.
+- Production-native execution for every required sub-layer primitive.
+- A repeatable performance advantage from sub-layer placement when coarse placement already fits.
+- Real LAN and WAN behaviour at scale.
+- Multi-user goodput, failure recovery and economics under sustained load.
+
+These are the next gates. The public claims stop where the evidence stops.
+
+For exact wording and evidence status, see the [claim ledger](docs/CLAIMS.md).
+
+---
+
+# Evidence methodology
+
+The experiments mix real execution with performance modeling, so every public result is classified by evidence type.
 
 | Evidence class | Meaning |
 |---|---|
-| **Physical local** | Real Kimi K3 weights and CUDA execution were measured on the local RTX 5090. |
-| **Validated independent-resource model** | Service inputs are physically measured, resources are modeled as independently resident/executable, and the model passed its declared validation gate. |
-| **Shaped network** | RTT/bandwidth behavior is imposed by an explicit model. It is not a physical WAN/LAN measurement. |
-| **Diagnostic / model invalid** | The number is preserved for debugging or comparison but is not admitted as a performance result. |
-| **Physical heterogeneous swarm** | Multiple independent physical machines execute the distributed graph. **Experiments 016–022 do not reach this evidence class.** |
+| **Physical local** | Real Kimi K3 weights and CUDA execution measured on the local RTX 5090. |
+| **Validated independent-resource model** | Service inputs are physically measured, independently resident resources are modeled, and the declared model-validation gate passed. |
+| **Shaped network** | RTT and bandwidth behaviour comes from an explicit network model rather than a physical WAN or LAN. |
+| **Diagnostic / model invalid** | Preserved because it explains the research path, but not admitted as a performance result. |
+| **Physical heterogeneous swarm** | Multiple independent physical machines execute the distributed graph. Experiments 016 to 022 do not yet reach this evidence class. |
 
-See [Evidence methodology](docs/METHODOLOGY.md) and the [claim ledger](docs/CLAIMS.md).
+See [METHODOLOGY.md](docs/METHODOLOGY.md) for the complete methodology.
 
-## Audit the claims
+# Audit the claims yourself
 
-The public bundle includes the aggregate receipts, calibration tables, validation outputs, correctness receipts, failure logs, charts, and representative raw service evidence needed to inspect the headlines. Very large duplicate traces, generated placement payloads, temporary directories, and repeated inventory copies were intentionally excluded from the Git-friendly package. Every member of the original 3.2 GB expanded experiment archive is still indexed by path, uncompressed size, and ZIP CRC32 in [`provenance/source-archive-members.csv`](provenance/source-archive-members.csv).
+This is intended to be an evidence repository, not a gallery of benchmark screenshots.
+
+The bundle includes aggregate receipts, calibration tables, validation outputs, correctness receipts, failure logs, charts and representative raw service evidence behind the public numbers.
 
 Run:
 
@@ -81,36 +263,49 @@ python scripts/verify_headlines.py
 python scripts/verify_checksums.py
 ```
 
-To regenerate the four root figures:
+To regenerate the synthesis figures:
 
 ```bash
 python -m pip install -r requirements.txt
 python scripts/regenerate_figures.py
 ```
 
-The Kimi K3 checkpoint is not redistributed. Re-running the physical benchmarks from scratch requires the model, compatible hardware, and the companion runtime source tree from the corresponding experiment revision. This repository is primarily an **audit and research-evidence package**, not a 1.56 TB turnkey reproduction image.
+Very large duplicate traces, generated placement payloads, temporary directories and repeated inventory copies were intentionally removed from the Git-friendly package. Every member of the original 3.2 GB expanded experiment archive is still indexed by path, uncompressed size and ZIP CRC32 in [`provenance/source-archive-members.csv`](provenance/source-archive-members.csv).
 
-## Repository layout
+The Kimi K3 checkpoint is not redistributed. Re-running physical benchmarks from scratch requires the model, compatible hardware and the companion runtime source tree from the corresponding experiment revision.
+
+# Repository layout
 
 ```text
 experiments/016..022/
-  README.md             short public summary
+  README.md             accessible experiment summary
   REPORT.md             full technical report
-  evidence/             curated raw/aggregate evidence + original charts
+  evidence/             curated measurements, receipts, validation and charts
 
 data/                   cross-experiment tables
-figures/                publication-facing synthesis figures
-scripts/                headline/checksum verification and figure regeneration
-docs/                   claims, methodology, limitations, sanitization notes
+figures/                synthesis figures used in this README
+scripts/                headline verification, checksums and figure regeneration
+docs/                   claims, methodology, limitations and sanitization notes
 provenance/              source archive hashes and complete member inventory
 ```
 
-## What is not proved
+# Where the project goes next
 
-No experiment in this package physically executes Kimi K3 across a heterogeneous multi-machine swarm. The E018 wavefront result assumes independent resident resources and shaped network links. E019 proves fine-grained capacity decomposition and single-device sequential shard correctness, not distributed throughput. E022 repairs the event model but fails two preregistered gates, so its planner outputs remain diagnostic.
+The immediate research priority is to close the gap between a physically calibrated model and an actual distributed system.
 
-Those limitations are the research frontier, not footnotes. See [LIMITATIONS.md](docs/LIMITATIONS.md).
+That means:
 
-## License
+1. bind every sub-layer operation to the canonical production-native execution path
+2. replay representative full 93-layer placements through that path
+3. move from shaped links to physical heterogeneous LAN and WAN measurements
+4. measure multi-request goodput and utilization, not only isolated user latency
+5. compare adaptive placement against strong whole-layer, tensor, pipeline and expert-parallel baselines
+6. keep increasing physical scale only when the previous scale is correctly predicted
+
+The end goal remains simple to state, even if it is difficult to achieve:
+
+> **Make enormous open models run usefully on compute pools that were never designed to behave like one machine.**
+
+# License
 
 Apache-2.0. Research artifacts retain the same license as the source project unless a third-party artifact states otherwise.
