@@ -1,0 +1,196 @@
+{
+  "accounting_reconciliation": "PASS",
+  "admissible_exact_throughput_available": false,
+  "best_exact_tok_s_by_regime": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "D": null,
+    "E": null
+  },
+  "canonical_swarm_definition": "A Swarm result is only a Swarm result if the model cannot be executed by assigning whole layers to the participating workers, and the reported performance emerges from sub-layer fragments distributed across independent machines.",
+  "consumer_wan_swarm": "NOT SUPPORTED \u2014 MODEL_INVALID",
+  "core_swarm_prephysical_verdict": "MODEL INVALID",
+  "decisive_bottleneck": "the executable shard path is non-resident and production EXECUTE_SHARD native dispatch is absent, so the event model does not predict the physical runtime",
+  "evidence_classes": [
+    "PHYSICAL_SINGLE_MACHINE",
+    "PHYSICAL_SHARD_EXECUTION",
+    "SHAPED_NETWORK",
+    "UNVALIDATED_INDEPENDENT_MACHINE_MODEL_DIAGNOSTIC_ONLY"
+  ],
+  "experiment": 21,
+  "fast_lan_swarm": "NOT SUPPORTED \u2014 MODEL_INVALID",
+  "full_93_layer_worker_process_correctness": "FAIL",
+  "gates": [
+    {
+      "gate": 1,
+      "name": "Root AGENTS.md read and acknowledged",
+      "status": "PASS"
+    },
+    {
+      "gate": 2,
+      "name": "Zero GPU rentals / zero Vast mutations",
+      "status": "PASS"
+    },
+    {
+      "gate": 3,
+      "name": "Whole-layer feasibility proves impossible",
+      "status": "PASS"
+    },
+    {
+      "gate": 4,
+      "name": "Headline cap <=8 GiB",
+      "status": "PASS"
+    },
+    {
+      "gate": 5,
+      "name": "One worker equals one independent machine",
+      "status": "PASS"
+    },
+    {
+      "gate": 6,
+      "name": "No whole layer/expert on headline worker",
+      "status": "PASS"
+    },
+    {
+      "gate": 7,
+      "name": "Full checkpoint byte coverage",
+      "status": "PASS"
+    },
+    {
+      "gate": 8,
+      "name": "Direct shard loading",
+      "status": "PASS"
+    },
+    {
+      "gate": 9,
+      "name": "Production EXECUTE_SHARD invokes native code",
+      "status": "FAIL"
+    },
+    {
+      "gate": 10,
+      "name": "Complete 93-layer worker-process correctness",
+      "status": "FAIL"
+    },
+    {
+      "gate": 11,
+      "name": "Corrected ordered-shard model validation",
+      "status": "FAIL"
+    },
+    {
+      "gate": 12,
+      "name": "Event accounting reconciliation",
+      "status": "PASS"
+    },
+    {
+      "gate": 13,
+      "name": "Every compute event has worker_id",
+      "status": "PASS"
+    },
+    {
+      "gate": 14,
+      "name": "Every worker dependency has explicit network cost",
+      "status": "PASS"
+    },
+    {
+      "gate": 15,
+      "name": "No same-host/NCCL/PCIe assumption",
+      "status": "PASS"
+    },
+    {
+      "gate": 16,
+      "name": "Memory-fragmentation chart produced",
+      "status": "PASS_DIAGNOSTIC"
+    },
+    {
+      "gate": 17,
+      "name": "Network envelope produced",
+      "status": "PASS_DIAGNOSTIC"
+    },
+    {
+      "gate": 18,
+      "name": "Whole-layer control separate",
+      "status": "PASS_DIAGNOSTIC"
+    },
+    {
+      "gate": 19,
+      "name": "Control-plane scale test",
+      "status": "PASS"
+    },
+    {
+      "gate": 20,
+      "name": "Evidence-class labels correct",
+      "status": "PASS"
+    }
+  ],
+  "gates_3_through_15_all_pass": false,
+  "global_multiplier": null,
+  "headline_structural_candidate": {
+    "complete_model_whole_layer_placement_possible": false,
+    "full_checkpoint_covered": true,
+    "machine_count": 376,
+    "max_peak_memory_gib": 4.494645617902279,
+    "memory_cap_gib": 8,
+    "one_worker_per_machine": true,
+    "whole_layer_on_any_worker": false,
+    "whole_routed_expert_on_any_worker": false,
+    "whole_shared_expert_on_any_worker": false,
+    "worker_count": 376
+  },
+  "inadmissible_diagnostic_projection": {
+    "A": {
+      "block": 16,
+      "chunk": 2,
+      "target_pass_ms": 663.5742203999978,
+      "tok_s_per_user": 25.618837316724754
+    },
+    "B": {
+      "block": 16,
+      "chunk": 2,
+      "target_pass_ms": 1671.4669260000076,
+      "tok_s_per_user": 10.17070678190609
+    },
+    "C": {
+      "block": 16,
+      "chunk": 2,
+      "target_pass_ms": 7556.982510000024,
+      "tok_s_per_user": 2.2495751415997316
+    },
+    "D": {
+      "block": 16,
+      "chunk": 1,
+      "target_pass_ms": 34574.03015000041,
+      "tok_s_per_user": 0.49169853575776434
+    },
+    "E": {
+      "block": 16,
+      "chunk": 2,
+      "target_pass_ms": 72779.63835000028,
+      "tok_s_per_user": 0.2335818147137019
+    }
+  },
+  "maximum_hidden_relative_l2_error_in_ordered_replay": 3.147214957069751e-07,
+  "model_validation": {
+    "maximum_error": 0.9996503007977391,
+    "median_error": 0.955390936021116,
+    "normalization_applied": false,
+    "p90_error": 0.9996468717316541,
+    "post_hoc_multiplier": null,
+    "status": "FAIL",
+    "targets": {
+      "maximum": 0.15,
+      "median": 0.05,
+      "p90": 0.1
+    }
+  },
+  "normalization_applied": false,
+  "outcome": "MODEL_INVALID",
+  "physical_independent_machine_swarm_measured": false,
+  "physical_swarm_verdict": "NOT YET PHYSICALLY PROVEN",
+  "regional_swarm": "NOT SUPPORTED \u2014 MODEL_INVALID",
+  "root_agents_md_read": true,
+  "same_residency_policy_as_headline_model": false,
+  "schema_version": "experiment-021-summary-v1",
+  "zero_gpu_rentals": true,
+  "zero_vast_mutations": true
+}

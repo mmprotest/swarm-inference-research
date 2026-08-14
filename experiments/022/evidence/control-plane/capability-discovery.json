@@ -1,0 +1,161 @@
+{
+  "cases": [
+    {
+      "authenticated_advertisements": 128,
+      "canonical_fields": [
+        "accelerator_memory_bytes",
+        "available",
+        "cached_shards",
+        "compute_profile",
+        "cost",
+        "locality_group",
+        "memory_bandwidth_profile",
+        "network_peers",
+        "node_id",
+        "reliability",
+        "runtime_capabilities",
+        "supported_precisions",
+        "system_memory_bytes"
+      ],
+      "capability_update": {
+        "new_compute_multiplier": 0.4,
+        "node_id": "logical-0064",
+        "old_compute_multiplier": 0.8,
+        "replanned_assignment_count": 1
+      },
+      "controller_consumed_advertised_record": true,
+      "gpu_product_name_branch": false,
+      "logical_nodes": 128,
+      "schema_version": "experiment-022-capability-discovery-v1",
+      "status": "PASS",
+      "tampered_advertisement_rejected": true
+    },
+    {
+      "authenticated_advertisements": 256,
+      "canonical_fields": [
+        "accelerator_memory_bytes",
+        "available",
+        "cached_shards",
+        "compute_profile",
+        "cost",
+        "locality_group",
+        "memory_bandwidth_profile",
+        "network_peers",
+        "node_id",
+        "reliability",
+        "runtime_capabilities",
+        "supported_precisions",
+        "system_memory_bytes"
+      ],
+      "capability_update": {
+        "new_compute_multiplier": 0.4,
+        "node_id": "logical-0128",
+        "old_compute_multiplier": 0.8,
+        "replanned_assignment_count": 1
+      },
+      "controller_consumed_advertised_record": true,
+      "gpu_product_name_branch": false,
+      "logical_nodes": 256,
+      "schema_version": "experiment-022-capability-discovery-v1",
+      "status": "PASS",
+      "tampered_advertisement_rejected": true
+    },
+    {
+      "authenticated_advertisements": 512,
+      "canonical_fields": [
+        "accelerator_memory_bytes",
+        "available",
+        "cached_shards",
+        "compute_profile",
+        "cost",
+        "locality_group",
+        "memory_bandwidth_profile",
+        "network_peers",
+        "node_id",
+        "reliability",
+        "runtime_capabilities",
+        "supported_precisions",
+        "system_memory_bytes"
+      ],
+      "capability_update": {
+        "new_compute_multiplier": 0.4,
+        "node_id": "logical-0256",
+        "old_compute_multiplier": 0.8,
+        "replanned_assignment_count": 1
+      },
+      "controller_consumed_advertised_record": true,
+      "gpu_product_name_branch": false,
+      "logical_nodes": 512,
+      "schema_version": "experiment-022-capability-discovery-v1",
+      "status": "PASS",
+      "tampered_advertisement_rejected": true
+    },
+    {
+      "authenticated_advertisements": 1000,
+      "canonical_fields": [
+        "accelerator_memory_bytes",
+        "available",
+        "cached_shards",
+        "compute_profile",
+        "cost",
+        "locality_group",
+        "memory_bandwidth_profile",
+        "network_peers",
+        "node_id",
+        "reliability",
+        "runtime_capabilities",
+        "supported_precisions",
+        "system_memory_bytes"
+      ],
+      "capability_update": {
+        "new_compute_multiplier": 0.4,
+        "node_id": "logical-0500",
+        "old_compute_multiplier": 0.8,
+        "replanned_assignment_count": 1
+      },
+      "controller_consumed_advertised_record": true,
+      "gpu_product_name_branch": false,
+      "logical_nodes": 1000,
+      "schema_version": "experiment-022-capability-discovery-v1",
+      "status": "PASS",
+      "tampered_advertisement_rejected": true
+    },
+    {
+      "authenticated_advertisements": 2000,
+      "canonical_fields": [
+        "accelerator_memory_bytes",
+        "available",
+        "cached_shards",
+        "compute_profile",
+        "cost",
+        "locality_group",
+        "memory_bandwidth_profile",
+        "network_peers",
+        "node_id",
+        "reliability",
+        "runtime_capabilities",
+        "supported_precisions",
+        "system_memory_bytes"
+      ],
+      "capability_update": {
+        "new_compute_multiplier": 0.4,
+        "node_id": "logical-1000",
+        "old_compute_multiplier": 0.8,
+        "replanned_assignment_count": 1
+      },
+      "controller_consumed_advertised_record": true,
+      "gpu_product_name_branch": false,
+      "logical_nodes": 2000,
+      "schema_version": "experiment-022-capability-discovery-v1",
+      "status": "PASS",
+      "tampered_advertisement_rejected": true
+    }
+  ],
+  "schema_version": "experiment-022-capability-discovery-suite-v1",
+  "summary": {
+    "cases": 5,
+    "largest_logical_node_count": 2000,
+    "median_central_rpcs_per_internal_task": 0.00019654088050314466,
+    "status": "PASS"
+  }
+}

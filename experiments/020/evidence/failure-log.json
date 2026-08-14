@@ -1,0 +1,85 @@
+{
+  "entries": [
+    {
+      "arm": "vast_offer_query_initial_syntax",
+      "cause": "installed CLI requires one query string and GPU RAM in GiB",
+      "final_status": "PASS",
+      "redesign": "discover syntax from local help and rerun guarded read-only searches",
+      "result": "zero rows"
+    },
+    {
+      "arm": "single_resource_replay_initial",
+      "cause": "short, temporally separated primitive samples moved coherently by about 7%",
+      "final_status": "REDESIGNED",
+      "receipt": "validation/single-resource-replay-initial-failed.json",
+      "redesign": "longer back-to-back independent calibration/held-out samples; no multiplier",
+      "result": "FAIL median error 7.07%"
+    },
+    {
+      "arm": "single_resource_replay_second",
+      "cause": "reversing two short service captures reversed the span error sign",
+      "final_status": "REDESIGNED",
+      "receipt": "validation/single-resource-replay-second-failed.json",
+      "redesign": "31 expert iterations and 15 repeated non-expert captures",
+      "result": "FAIL median error 8.35%"
+    },
+    {
+      "arm": "single_resource_replay_methodology_audit",
+      "cause": "the implementation validated held-out primitive service consistency but labeled the derived sum as physical replay",
+      "final_status": "OPEN_PRE_RENTAL_BLOCKER",
+      "redesign": "execute the exact worker DAG sequentially on the RTX 5090 with resident weights and measure one end-to-end wall for each required span",
+      "result": "FAIL: layer/span actual wall is an arithmetic sum, not one physically executed ordered workload"
+    },
+    {
+      "arm": "network_shaped_rehearsal_counter",
+      "cause": "late-bound request counter in local harness",
+      "final_status": "PASS",
+      "redesign": "bind request identity explicitly and rerun the actual framed protocol",
+      "result": "integration count closure corrected"
+    },
+    {
+      "arm": "E019_serial_reconstruction_gate",
+      "cause": "compared serial sharded work with a different optimized monolithic algorithm",
+      "final_status": "CORRECTED_IN_E020",
+      "redesign": "validate the exact sharded task graph and reconcile every cost",
+      "result": "MODEL_INVALID under E019 preregistration"
+    },
+    {
+      "arm": "production_controller_host_agent",
+      "cause": "the control-plane stress harness is real, but the production image exposes only worker and host-agent lifecycle roles",
+      "final_status": "OPEN_PRE_RENTAL_BLOCKER",
+      "redesign": "implement controller-host-agent enrollment, registration, scheduling, and shutdown over the frozen protocol",
+      "result": "FAIL: rendered controller-host-agent role has no implementation"
+    },
+    {
+      "arm": "production_worker_native_dispatch",
+      "cause": "the 93-layer correctness run is exact but serial/in-process; worker_main currently proves lifecycle and GPU binding only",
+      "final_status": "OPEN_PRE_RENTAL_BLOCKER",
+      "redesign": "wire authenticated EXECUTE_SHARD frames to native KDA/MLA/expert/projection/endpoint primitives and rerun the exact graph through worker processes",
+      "result": "FAIL: bounded worker processes do not dispatch real shard operations"
+    },
+    {
+      "arm": "real_vast_backend_adapter",
+      "cause": "the state transitions and rollback logic are tested, but no production adapter translates them to guarded Vast CLI calls",
+      "final_status": "OPEN_PRE_RENTAL_BLOCKER",
+      "redesign": "implement the real adapter behind the E020 lock and mock-test every subprocess call before E021",
+      "result": "FAIL: provisioning state machine has only the fake backend"
+    },
+    {
+      "arm": "host_agent_model_acquisition_integration",
+      "cause": "model acquisition and lifecycle were validated as separate components",
+      "final_status": "OPEN_PRE_RENTAL_BLOCKER",
+      "redesign": "acquire and hash-verify the pod bundle before worker registration, with concurrent workers sharing one cache",
+      "result": "FAIL: proven ShardCache/pod-bundle code is not invoked by the production host agent"
+    },
+    {
+      "arm": "registry_digest_preflight",
+      "cause": "local image inspection was implemented without the future immutable registry reference input",
+      "final_status": "OPEN_PRE_RENTAL_BLOCKER",
+      "redesign": "accept a pinned image reference, verify its manifest/digest, and feed that exact reference into the fleet plan",
+      "result": "FAIL: canonical preflight hardcodes published=false and cannot validate a supplied image digest"
+    }
+  ],
+  "schema_version": "experiment-020-failure-log-v1",
+  "unresolved_implementation_failures": 6
+}

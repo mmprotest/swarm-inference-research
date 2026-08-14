@@ -1,0 +1,31 @@
+{
+  "machine_gates": {
+    "control_plane": true,
+    "dominance": true,
+    "dynamic": true,
+    "model_validation": true,
+    "native_primitives": false,
+    "optimizer_oracle": true,
+    "representative_full_93": false
+  },
+  "schema_version": "experiment-022-truth-table-v1",
+  "table": {
+    "<5 -> >=5 target crossings": 0,
+    "Adaptive regressions >1%": 0,
+    "Adaptive search space contains whole-layer solutions?": "YES",
+    "Dynamic useful-node admission works?": "YES",
+    "Final sub-layer value verdict": "MODEL_INVALID",
+    "Full 93-layer representative correctness": "FAIL",
+    "GPUs rented?": "NO",
+    "Harmful nodes can be ignored?": "YES",
+    "Inventories with >=20% uplift": "0/18",
+    "Median adaptive throughput uplift": "0.00%",
+    "Model validation passed?": "YES",
+    "Number of preregistered inventories": 27,
+    "Optimizer validated against small exact oracle?": "YES",
+    "Physical heterogeneous swarm tested?": "NO",
+    "Same optimizer used for whole and adaptive?": "YES",
+    "Whole-infeasible / adaptive-feasible inventories": 6,
+    "Whole-layer baseline uses wavefront/topology awareness?": "YES"
+  }
+}

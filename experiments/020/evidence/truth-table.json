@@ -1,0 +1,89 @@
+{
+  "rows": [
+    {
+      "answer": "NO",
+      "question": "Any GPU rented in E020?"
+    },
+    {
+      "answer": "NO",
+      "question": "Any Vast resource mutated?"
+    },
+    {
+      "answer": "YES",
+      "question": "Vast CLI authenticated?"
+    },
+    {
+      "answer": "YES",
+      "question": "Live offers queried?"
+    },
+    {
+      "answer": 96,
+      "question": "Final worker count"
+    },
+    {
+      "answer": 12,
+      "question": "Final pod count"
+    },
+    {
+      "answer": 8,
+      "question": "Workers per pod"
+    },
+    {
+      "answer": 16.979,
+      "question": "Max worker peak GiB"
+    },
+    {
+      "answer": "NO",
+      "question": "Whole layer on any worker?"
+    },
+    {
+      "answer": "NO",
+      "question": "Whole expert on any worker?"
+    },
+    {
+      "answer": "YES",
+      "question": "Full checkpoint covered?"
+    },
+    {
+      "answer": "PASS",
+      "question": "Full 93-layer sharded correctness?"
+    },
+    {
+      "answer": "FAIL",
+      "question": "Corrected simulator validation?"
+    },
+    {
+      "answer": "YES",
+      "question": "sm86 build ready?"
+    },
+    {
+      "answer": "NO",
+      "question": "Linux deployment ready?"
+    },
+    {
+      "answer": "NO",
+      "question": "Model distribution ready?"
+    },
+    {
+      "answer": "YES",
+      "question": "96-worker dry run passed?"
+    },
+    {
+      "answer": "NO",
+      "question": "Vast fleet currently feasible?"
+    },
+    {
+      "answer": "$158.95 expected; $632.06 conservative",
+      "question": "E021 projected cost"
+    },
+    {
+      "answer": 6,
+      "question": "Remaining pre-rental-testable critical risks"
+    },
+    {
+      "answer": "NOT READY",
+      "question": "E021 readiness"
+    }
+  ],
+  "schema_version": "experiment-020-truth-table-v1"
+}

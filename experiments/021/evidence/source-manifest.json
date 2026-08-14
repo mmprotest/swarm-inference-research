@@ -1,0 +1,218 @@
+{
+  "generated_at": "2026-08-13T12:41:59.912625+00:00",
+  "schema_version": "experiment-021-source-manifest-v1",
+  "source_count": 35,
+  "sources": [
+    {
+      "bytes": 15709,
+      "exists": true,
+      "path": "AGENTS.md",
+      "sha256": "0430d879b79de8ffcadb8b0e1502bfa7e4d1da2d0eb3c19341e68d77cc6e11b4"
+    },
+    {
+      "bytes": 4494,
+      "exists": true,
+      "path": "pyproject.toml",
+      "sha256": "eee66fb317f9c2172fa9101610f932bb23b410e2ece5e8d6cc24fcfb9c12d460"
+    },
+    {
+      "bytes": 430,
+      "exists": true,
+      "path": "scripts/run_experiment_021.py",
+      "sha256": "081e994380c8996e52416be9689f94c2824801b62df31e08df6861b59e1ef1a6"
+    },
+    {
+      "bytes": 669,
+      "exists": true,
+      "path": "scripts/validate_experiment_021.py",
+      "sha256": "7a79c34f928698a05ca21ec59ae17d6e53ab8964e8112b39071b3e2965c38198"
+    },
+    {
+      "bytes": 2582,
+      "exists": true,
+      "path": "deployment/Dockerfile.e021",
+      "sha256": "de9483d1d886baf9e124e97b4ad73883fd24ba3359cbe9381ce5d64a075ed964"
+    },
+    {
+      "bytes": 947,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_021/__init__.py",
+      "sha256": "221fc7f620437a3addc92bef5a3a5653b35e4c66264b0f4e395de8c7eb9cf637"
+    },
+    {
+      "bytes": 17016,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_021/charts.py",
+      "sha256": "2512ad16cb5630decf3635aa39fadb85fa7225ab0b4293f1fd5a2c12c96cbc6d"
+    },
+    {
+      "bytes": 10579,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_021/control_plane.py",
+      "sha256": "4dbebfa4424922d2b6b2673320ee33a096fa602a259501abb7bb572fd6c4077e"
+    },
+    {
+      "bytes": 49492,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_021/finalize.py",
+      "sha256": "8d169ffc3ddc9de46c804e022d1eb29a19aeb5aeee8215230133085d696fb891"
+    },
+    {
+      "bytes": 2397,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_021/io.py",
+      "sha256": "35efacc0b3c1da82c0856af9c039f9fc390b1d23f36b5c1c95130d0b32e1eccd"
+    },
+    {
+      "bytes": 14336,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_021/market.py",
+      "sha256": "b8f729018c8d01fa7b650a00863e839cf1c1d57a83e95532697153ee62141462"
+    },
+    {
+      "bytes": 19852,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_021/placement.py",
+      "sha256": "c287dbf8a908ec994cc8127cc9d65a3a11c9d2cbb5f8d07f78193b57c08bfb65"
+    },
+    {
+      "bytes": 14827,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_021/qa.py",
+      "sha256": "024b6b61b96851cc2594266ea7c889e6f35e832e21201f01d4ce3d657d379371"
+    },
+    {
+      "bytes": 7994,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_021/runner.py",
+      "sha256": "ced558cb61948076abe4de680ae418d6b4282804c1f441e553ad1d087843e9c9"
+    },
+    {
+      "bytes": 9792,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_021/runtime.py",
+      "sha256": "1c52ec81cbcc113a60bcf7b100092820e834e3c09bede68dc89ec4ee77c2d3d4"
+    },
+    {
+      "bytes": 31947,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_021/simulation.py",
+      "sha256": "21ac316fcd6385398ea8e993bdd5d1851f4872fc6568ba95242a5964e34b1806"
+    },
+    {
+      "bytes": 18309,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_021/validation.py",
+      "sha256": "15ecba30797c267bc1fc7e483efc0c96f45dc72ee72e017f5a2e4c56eddd37bf"
+    },
+    {
+      "bytes": 16463,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_019/events.py",
+      "sha256": "84f9cc6f2e7a5abb4d128e4114c236599330fd4421b1d7c40e8c0f660fd2adac"
+    },
+    {
+      "bytes": 24433,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_019/placement.py",
+      "sha256": "bf37cbf91938a4feb01900e02a4a4ec9b815ce75e3f138805a8a9c779aee4bd4"
+    },
+    {
+      "bytes": 40281,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_019/sharded_graph.py",
+      "sha256": "0a775a7b16d8558a2695f0997f3acb8e04e33fec105455b72448e0b7ac7b3bc7"
+    },
+    {
+      "bytes": 10265,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_020/transport.py",
+      "sha256": "d9c49dd94e5751dc19c02ece0f6ae7112edb7b72b0a7992b846b30ab08044652"
+    },
+    {
+      "bytes": 6586,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_020/sharded_graph.py",
+      "sha256": "43a90c741f60d58ee7175976d793901134a4b6742cd9beb4565689dcfc173e16"
+    },
+    {
+      "bytes": 14075,
+      "exists": true,
+      "path": "src/swarm_inference/experiments/experiment_020/model_distribution.py",
+      "sha256": "840f4906debf8bc4ecfa715b87441af859322f80cad4662381fc8253e65de24e"
+    },
+    {
+      "bytes": 6576949,
+      "exists": true,
+      "path": "artifacts/experiment-020/physical/attention-raw.json",
+      "sha256": "99dfea9cb74f7bd51c6195dd509bcfeda261ec420bbfb3a4d81a947cd98a43dd"
+    },
+    {
+      "bytes": 79712,
+      "exists": true,
+      "path": "artifacts/experiment-020/physical/expert-grouped-robust-calibration.json",
+      "sha256": "a08a80b8f8a68fb28b5ec6ca5de8dd0180a45d98ec88e34c0b4f67f17ef92312"
+    },
+    {
+      "bytes": 55469457,
+      "exists": true,
+      "path": "artifacts/experiment-019/physical/expert-stripe-raw.json",
+      "sha256": "9a1b76d29236abbeabeef97eaccfd6a1937eaf3868c6b5443554d101f5565f5e"
+    },
+    {
+      "bytes": 7136958,
+      "exists": true,
+      "path": "artifacts/experiment-019/physical/other-shards-raw.json",
+      "sha256": "ea485be853b669d11fb6294adf1e0c33b5d245a9c0cf1e05467627a48ae0ac1b"
+    },
+    {
+      "bytes": 16621,
+      "exists": true,
+      "path": "artifacts/experiment-020/runtime/protocol-heldout-raw.json",
+      "sha256": "0004d3cccd380fc6522d870af493dbe0470d2dff03f30836015522cd4c42f1a4"
+    },
+    {
+      "bytes": 1303040,
+      "exists": true,
+      "path": "artifacts/experiment-016/cuda/coli_cuda-sm120-h016-final.dll",
+      "sha256": "113d9857735649b5c9773a474b73517fc1615547a99992ce401a294bc39f7eb1"
+    },
+    {
+      "bytes": 223744,
+      "exists": true,
+      "path": "artifacts/experiment-019/physical/exp019-kda-shard-sm120-v2.dll",
+      "sha256": "d88fe1da01793155993f2e8aec4a7e08c389bb433f79d24e9a32d5f49bfb384c"
+    },
+    {
+      "bytes": 175104,
+      "exists": true,
+      "path": "artifacts/experiment-020/physical/e020-grouped-top16-sm120.dll",
+      "sha256": "9a03cd29d929f086494f9004ad0780c53f1a25f85585e4997f9a8e3e0716a043"
+    },
+    {
+      "bytes": 59764096,
+      "exists": true,
+      "path": "<local-kimi-k3-checkpoint>/model.safetensors.index.json",
+      "sha256": "a1c5210650ce71d2d3ae9ec5a101ac4afd3cf4b10091be589853437eb967febd"
+    },
+    {
+      "bytes": 8085504,
+      "exists": true,
+      "path": "artifacts/experiment-014/oracle-full-93-idot0/hidden-trace.f32",
+      "sha256": "0a432e25af5897e1d0ba62eb5560f5da8c8fbadb3eb93db63571b6db562b1a8d"
+    },
+    {
+      "bytes": 50703,
+      "exists": true,
+      "path": "artifacts/experiment-014/oracle-full-93-idot0/routes.txt",
+      "sha256": "c734d864e8ac40ada5fd1fbd6c64da5959b9610561313ec63e7b79a499a91288"
+    },
+    {
+      "bytes": 1310720,
+      "exists": true,
+      "path": "artifacts/experiment-014/oracle-full-93-idot0/prefill-logits.f32",
+      "sha256": "8cd947eb8f2fddda751b0527d81f5f68c306a57c2526fefbcea937d81f590248"
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,61 @@
+{
+  "baseline_environment": {
+    "git_commit": "edc62cc3ef26ff2497479629e20b71b2daa04211",
+    "git_status": "m third_party/colibri",
+    "host_ram_total_bytes": 102496780288,
+    "nvidia_smi": "Thu Aug 13 08:34:08 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 591.86                 Driver Version: 591.86         CUDA Version: 13.1     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 5090      WDDM  |   00000000:02:00.0 Off |                  N/A |\n|  0%   49C    P8             24W /  431W |    1806MiB /  32607MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            2064    C+G   ...indows\\System32\\ShellHost.exe      N/A      |\n|    0   N/A  N/A            2332    C+G   ....0.4129.78\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A            7132    C+G   C:\\Windows\\explorer.exe               N/A      |\n|    0   N/A  N/A            9700    C+G   ...xyewy\\ShellExperienceHost.exe      N/A      |\n|    0   N/A  N/A           10388    C+G   ...2txyewy\\CrossDeviceResume.exe      N/A      |\n|    0   N/A  N/A           11780    C+G   ...IA App\\CEF\\NVIDIA Overlay.exe      N/A      |\n|    0   N/A  N/A           12096    C+G   ...IA App\\CEF\\NVIDIA Overlay.exe      N/A      |\n|    0   N/A  N/A           13800    C+G   ...y\\StartMenuExperienceHost.exe      N/A      |\n|    0   N/A  N/A           13892    C+G   ..._cw5n1h2txyewy\\SearchHost.exe      N/A      |\n|    0   N/A  N/A           14060    C+G   ...cw5n1h2txyewy\\WidgetBoard.exe      N/A      |\n|    0   N/A  N/A           16400    C+G   ....0.4129.78\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           18408    C+G   ...ms\\Microsoft VS Code\\Code.exe      N/A      |\n|    0   N/A  N/A           20100    C+G   ...lot\\Application\\mscopilot.exe      N/A      |\n|    0   N/A  N/A           20648    C+G   ...yApp\\MicrosoftSecurityApp.exe      N/A      |\n|    0   N/A  N/A           20684    C+G   ...5n1h2txyewy\\TextInputHost.exe      N/A      |\n|    0   N/A  N/A           23400    C+G   ...Chrome\\Application\\chrome.exe      N/A      |\n|    0   N/A  N/A           24352    C+G   ...ffice\\root\\Office16\\EXCEL.EXE      N/A      |\n|    0   N/A  N/A           26128    C+G   ...Chrome\\Application\\chrome.exe      N/A      |\n+-----------------------------------------------------------------------------------------+",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "process_id": 12224,
+    "python": "3.11.9",
+    "torch": "2.13.0+cpu",
+    "torch_cuda_available": false
+  },
+  "control_plane_environment": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python_process_id": 15016
+  },
+  "development_claim": "single RTX 5090; no physical multi-GPU overlap claimed",
+  "driver": "591.86",
+  "generated_unix_ns": 1786582353716288700,
+  "git_commit": "edc62cc3ef26ff2497479629e20b71b2daa04211",
+  "git_status_final": "m third_party/colibri\n?? docs/experiments/EXPERIMENT_018_REPORT.md\n?? src/swarm_inference/experiments/experiment_018/\n?? tests/unit/test_experiment_018_wavefront.py",
+  "git_status_initial": "m third_party/colibri",
+  "gpu_sampling": {
+    "gpu_utilization_percent": {
+      "maximum": 81.0,
+      "mean": 42.57142857142857,
+      "minimum": 1.0
+    },
+    "memory_controller_utilization_percent": {
+      "maximum": 47.0,
+      "mean": 10.428571428571429,
+      "minimum": 1.0
+    },
+    "power_w": {
+      "maximum": 259.76,
+      "mean": 143.11214285714286,
+      "minimum": 33.48
+    },
+    "sample_count": 14,
+    "status": "MEASURED",
+    "vram_used_mib": {
+      "maximum": 19610.0,
+      "mean": 19592.285714285714,
+      "minimum": 19565.0
+    }
+  },
+  "physical_gpu": "NVIDIA GeForce RTX 5090 32 GB",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.9",
+  "schema_version": "experiment-018-environment-v1",
+  "service_environment": {
+    "git_commit": "edc62cc3ef26ff2497479629e20b71b2daa04211",
+    "git_status": "m third_party/colibri\n?? src/swarm_inference/experiments/experiment_018/\n?? tests/unit/test_experiment_018_wavefront.py",
+    "host_ram_total_bytes": 102496780288,
+    "nvidia_smi": "Thu Aug 13 08:58:21 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 591.86                 Driver Version: 591.86         CUDA Version: 13.1     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 5090      WDDM  |   00000000:02:00.0  On |                  N/A |\n|  0%   57C    P3             41W /  431W |    1983MiB /  32607MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            2064    C+G   ...indows\\System32\\ShellHost.exe      N/A      |\n|    0   N/A  N/A            2332    C+G   ....0.4129.78\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A            7132    C+G   C:\\Windows\\explorer.exe               N/A      |\n|    0   N/A  N/A            9700    C+G   ...xyewy\\ShellExperienceHost.exe      N/A      |\n|    0   N/A  N/A           10388    C+G   ...2txyewy\\CrossDeviceResume.exe      N/A      |\n|    0   N/A  N/A           11780    C+G   ...IA App\\CEF\\NVIDIA Overlay.exe      N/A      |\n|    0   N/A  N/A           12096    C+G   ...IA App\\CEF\\NVIDIA Overlay.exe      N/A      |\n|    0   N/A  N/A           13800    C+G   ...y\\StartMenuExperienceHost.exe      N/A      |\n|    0   N/A  N/A           13892    C+G   ..._cw5n1h2txyewy\\SearchHost.exe      N/A      |\n|    0   N/A  N/A           14060    C+G   ...cw5n1h2txyewy\\WidgetBoard.exe      N/A      |\n|    0   N/A  N/A           16400    C+G   ....0.4129.78\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           18408    C+G   ...ms\\Microsoft VS Code\\Code.exe      N/A      |\n|    0   N/A  N/A           20648    C+G   ...yApp\\MicrosoftSecurityApp.exe      N/A      |\n|    0   N/A  N/A           20684    C+G   ...5n1h2txyewy\\TextInputHost.exe      N/A      |\n|    0   N/A  N/A           23400    C+G   ...Chrome\\Application\\chrome.exe      N/A      |\n|    0   N/A  N/A           24352    C+G   ...ffice\\root\\Office16\\EXCEL.EXE      N/A      |\n|    0   N/A  N/A           26128    C+G   ...Chrome\\Application\\chrome.exe      N/A      |\n|    0   N/A  N/A           28668    C+G   ...lot\\Application\\mscopilot.exe      N/A      |\n+-----------------------------------------------------------------------------------------+",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "torch": "2.13.0+cpu",
+    "torch_cuda_available": false
+  }
+}

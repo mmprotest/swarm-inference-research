@@ -1,0 +1,67 @@
+# Experiment 020 command ledger (secrets redacted)
+# Every Vast invocation below was guarded READ_ONLY.
+vastai --help
+vastai show user --raw
+vastai show ssh-keys --raw
+vastai show instances --raw
+vastai search offers gpu_name=RTX_3090 gpu_ram>=20480 rentable=true rented=false --limit 250 --raw
+vastai search offers gpu_name=RTX_3090_Ti gpu_ram>=20480 rentable=true rented=false --limit 250 --raw
+vastai search offers gpu_name=RTX_A5000 gpu_ram>=20480 rentable=true rented=false --limit 250 --raw
+vastai search offers gpu_name=RTX_A6000 gpu_ram>=20480 rentable=true rented=false --limit 250 --raw
+vastai search offers gpu_name=RTX_4090 gpu_ram>=20480 rentable=true rented=false --limit 250 --raw
+vastai create instance --help
+vastai search offers --help
+vastai --help
+vastai --version
+vastai show user --raw
+vastai show ssh-keys --raw
+vastai show instances --raw
+vastai search offers gpu_name=RTX_3090 gpu_ram>=20 rentable=True --limit 250 --raw
+vastai search offers gpu_name=RTX_3090_Ti gpu_ram>=20 rentable=True --limit 250 --raw
+vastai search offers gpu_name=RTX_A5000 gpu_ram>=20 rentable=True --limit 250 --raw
+vastai search offers gpu_name=RTX_A6000 gpu_ram>=20 rentable=True --limit 250 --raw
+vastai search offers gpu_name=RTX_4090 gpu_ram>=20 rentable=True --limit 250 --raw
+vastai create instance --help
+vastai create instance --help
+vastai --help
+vastai --version
+vastai show user --raw
+vastai show ssh-keys --raw
+vastai show instances --raw
+vastai search offers gpu_name=RTX_3090 gpu_ram>=20 rentable=True --limit 250 --raw
+vastai search offers gpu_name=RTX_3090_Ti gpu_ram>=20 rentable=True --limit 250 --raw
+vastai search offers gpu_name=RTX_A5000 gpu_ram>=20 rentable=True --limit 250 --raw
+vastai search offers gpu_name=RTX_A6000 gpu_ram>=20 rentable=True --limit 250 --raw
+vastai search offers gpu_name=RTX_4090 gpu_ram>=20 rentable=True --limit 250 --raw
+vastai create instance --help
+vastai --help
+vastai --version
+vastai show user --raw
+vastai show ssh-keys --raw
+vastai show instances --raw
+vastai search offers gpu_name=RTX_3090 gpu_ram>=20 rentable=True --limit 250 --raw
+vastai search offers gpu_name=RTX_3090_Ti gpu_ram>=20 rentable=True --limit 250 --raw
+vastai search offers gpu_name=RTX_A5000 gpu_ram>=20 rentable=True --limit 250 --raw
+vastai search offers gpu_name=RTX_A6000 gpu_ram>=20 rentable=True --limit 250 --raw
+vastai search offers gpu_name=RTX_4090 gpu_ram>=20 rentable=True --limit 250 --raw
+vastai create instance --help
+vastai --help
+vastai --version
+vastai show user --raw
+vastai show ssh-keys --raw
+vastai show instances --raw
+vastai search offers gpu_name=RTX_3090 gpu_ram>=20 rentable=True --limit 250 --raw
+vastai search offers gpu_name=RTX_3090_Ti gpu_ram>=20 rentable=True --limit 250 --raw
+vastai search offers gpu_name=RTX_A5000 gpu_ram>=20 rentable=True --limit 250 --raw
+vastai search offers gpu_name=RTX_A6000 gpu_ram>=20 rentable=True --limit 250 --raw
+vastai search offers gpu_name=RTX_4090 gpu_ram>=20 rentable=True --limit 250 --raw
+vastai create instance --help
+python scripts/experiment_020_validate.py
+python scripts/experiment_020_full_sharded.py
+python scripts/experiment_020_physical.py expert-grouped --degree 8
+python scripts/experiment_020_physical.py expert-grouped --degree 16
+python scripts/run_experiment_021.py --preflight
+docker build -f deployment/Dockerfile.e021 -t swarm-inference-lab:e021-sm86-e020 .
+python -m pytest tests/unit/test_experiment_020_*.py
+# Vast mutating commands executed: 0
+# GPU rentals: 0

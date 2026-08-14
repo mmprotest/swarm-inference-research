@@ -1,0 +1,183 @@
+{
+  "attnres_future_score": {
+    "outputs_bit_exact": true,
+    "retained": false,
+    "scores_bit_exact": true
+  },
+  "baseline": {
+    "gate_percent": 3.0,
+    "historical_curve_retained_as_denominator": true,
+    "maximum_absolute_deviation_percent": 1.5490422973713613,
+    "rows": [
+      {
+        "accepted_rows": 2,
+        "deviation_percent": 0.5753005254200971,
+        "historical_oracle_tok_s_per_user": 1.4950272876916082,
+        "historical_target_pass_ms": 1337.7682243433117,
+        "representative_compute_scale": 1.0062770792751314,
+        "reproduced_oracle_tok_s_per_user": 1.486475585836052,
+        "reproduced_target_pass_ms": 1345.4644119668617,
+        "routes_and_state_exact": true,
+        "verification_block": 1
+      },
+      {
+        "accepted_rows": 3,
+        "deviation_percent": 1.0699277626947667,
+        "historical_oracle_tok_s_per_user": 1.7317701763396423,
+        "historical_target_pass_ms": 1732.3314842740583,
+        "representative_compute_scale": 1.0115002212410371,
+        "reproduced_oracle_tok_s_per_user": 1.7134376314245712,
+        "reproduced_target_pass_ms": 1750.8661797662087,
+        "routes_and_state_exact": true,
+        "verification_block": 2
+      },
+      {
+        "accepted_rows": 5,
+        "deviation_percent": 0.8416442535617685,
+        "historical_oracle_tok_s_per_user": 2.250819011675643,
+        "historical_target_pass_ms": 2221.4136161386446,
+        "representative_compute_scale": 1.0089763764125654,
+        "reproduced_oracle_tok_s_per_user": 2.2320332322389147,
+        "reproduced_target_pass_ms": 2240.1100161867143,
+        "routes_and_state_exact": true,
+        "verification_block": 4
+      },
+      {
+        "accepted_rows": 8,
+        "deviation_percent": 1.5490422973713613,
+        "historical_oracle_tok_s_per_user": 2.6691235692169797,
+        "historical_target_pass_ms": 2997.238528880436,
+        "representative_compute_scale": 1.0163954484740994,
+        "reproduced_oracle_tok_s_per_user": 2.628408411180133,
+        "reproduced_target_pass_ms": 3043.6670214459054,
+        "routes_and_state_exact": true,
+        "verification_block": 7
+      },
+      {
+        "accepted_rows": 13,
+        "deviation_percent": 1.4728109848644921,
+        "historical_oracle_tok_s_per_user": 3.028915331658712,
+        "historical_target_pass_ms": 4291.965465036907,
+        "representative_compute_scale": 1.0154867354363037,
+        "reproduced_oracle_tok_s_per_user": 2.9849526215554425,
+        "reproduced_target_pass_ms": 4355.178003872561,
+        "routes_and_state_exact": true,
+        "verification_block": 12
+      },
+      {
+        "accepted_rows": 17,
+        "deviation_percent": 0.20831448101945593,
+        "historical_oracle_tok_s_per_user": 3.099405677205971,
+        "historical_target_pass_ms": 5484.922520799224,
+        "representative_compute_scale": 1.0021809954751133,
+        "reproduced_oracle_tok_s_per_user": 3.0929625882421483,
+        "reproduced_target_pass_ms": 5496.348408682747,
+        "routes_and_state_exact": true,
+        "verification_block": 16
+      }
+    ],
+    "sources": {
+      "fresh": {
+        "checkpoint_config": {
+          "bytes": 7006,
+          "path": "<local-kimi-k3-checkpoint>\\config.json",
+          "sha256": "9710e121a58d03ac92c8d6da287a19541994319afbbe6d6202af001ffd379213"
+        },
+        "checkpoint_index": {
+          "bytes": 59764096,
+          "path": "<local-kimi-k3-checkpoint>\\model.safetensors.index.json",
+          "sha256": "a1c5210650ce71d2d3ae9ec5a101ac4afd3cf4b10091be589853437eb967febd"
+        },
+        "cuda_library": {
+          "bytes": 1303040,
+          "path": "artifacts/experiment-016\\cuda\\coli_cuda-sm120-h016-final.dll",
+          "sha256": "113d9857735649b5c9773a474b73517fc1615547a99992ce401a294bc39f7eb1"
+        },
+        "oracle_trace": {
+          "bytes": 8085504,
+          "path": "artifacts/experiment-014\\oracle-full-93\\hidden-trace.f32",
+          "sha256": "95012ceb968aaa31f51ccbea38beff44e47dec72572b8c22ca4fe01bbadd56ae"
+        }
+      },
+      "historical": {
+        "checkpoint_config": {
+          "bytes": 7006,
+          "path": "<local-kimi-k3-checkpoint>\\config.json",
+          "sha256": "9710e121a58d03ac92c8d6da287a19541994319afbbe6d6202af001ffd379213"
+        },
+        "checkpoint_index": {
+          "bytes": 59764096,
+          "path": "<local-kimi-k3-checkpoint>\\model.safetensors.index.json",
+          "sha256": "a1c5210650ce71d2d3ae9ec5a101ac4afd3cf4b10091be589853437eb967febd"
+        },
+        "cuda_library": {
+          "bytes": 1190400,
+          "path": "artifacts/experiment-016\\cuda\\coli_cuda-sm120-h016-triangular.dll",
+          "sha256": "6c72df915689dcdb248a748aa1a6cdf9667278ffa1995757cd6ea99b020f9236"
+        },
+        "oracle_trace": {
+          "bytes": 8085504,
+          "path": "artifacts/experiment-014\\oracle-full-93\\hidden-trace.f32",
+          "sha256": "95012ceb968aaa31f51ccbea38beff44e47dec72572b8c22ca4fe01bbadd56ae"
+        }
+      }
+    },
+    "status": "PASS"
+  },
+  "chunk_correctness": {
+    "bit_exact_case_count": 42,
+    "physical_case_count": 42,
+    "route_weights_exact": true,
+    "routes_exact": true,
+    "state_exact": true,
+    "status": "PASS"
+  },
+  "data_quality": {
+    "checked_layer_row_services": 96,
+    "expected_layer_row_services": 96,
+    "issues": [],
+    "p99_interpretation": "20-repeat empirical p99 is an exploratory tail diagnostic, not a stable population estimate; p50 drives the event model and p90/p99 are retained",
+    "status": "PASS"
+  },
+  "event_engine": {
+    "coarse_trace_quality": {
+      "dependency_and_resource_order_exact": true,
+      "event_count": 568,
+      "issues": [],
+      "resource_count": 24,
+      "status": "PASS"
+    },
+    "communication_events_explicit": true,
+    "deterministic_dependency_DAG": true,
+    "fine_trace_quality": {
+      "dependency_and_resource_order_exact": true,
+      "event_count": 198242,
+      "issues": [],
+      "resource_count": 31252,
+      "status": "PASS"
+    },
+    "multiple_cells_concurrently_occupied": true,
+    "no_overlap_double_counting": true,
+    "resource_contention_explicit": true
+  },
+  "fixed_thresholds": {
+    "chunk_and_stage_relative_l2": 2e-06,
+    "microshard_relative_l2": 2e-06
+  },
+  "gates": {
+    "gate_1_chunk_correctness": true,
+    "gate_2_measured_all_12_cells": true,
+    "gate_3_wavefront_shape_and_1_25x": true,
+    "gate_4_primary_5_tok_s": true,
+    "gate_5_attnres_dedup_80_percent": true,
+    "gate_6_exact_32_way_microshard": true,
+    "gate_7_control_sublinear_no_1000_waits": true
+  },
+  "microshard": {
+    "degree_32_pass": true,
+    "highest_exact_degree": 32,
+    "threshold": 2e-06
+  },
+  "schema_version": "experiment-018-validation-v1",
+  "status": "PASS"
+}

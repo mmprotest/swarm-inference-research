@@ -1,0 +1,33 @@
+{
+  "schema_version": "experiment-016-chart-index-v1",
+  "charts": [
+    {
+      "chart": "Verifier throughput by arm",
+      "path": "artifacts\\experiment-016\\charts\\chart-01-verifier-throughput-by-arm.png"
+    },
+    {
+      "chart": "Verifier latency decomposition",
+      "path": "artifacts\\experiment-016\\charts\\chart-02-verifier-latency-decomposition.png"
+    },
+    {
+      "chart": "Block size vs total latency",
+      "path": "artifacts\\experiment-016\\charts\\chart-03-block-size-vs-total-latency.png"
+    },
+    {
+      "chart": "Block size vs latency per candidate",
+      "path": "artifacts\\experiment-016\\charts\\chart-04-block-size-vs-latency-per-candidate.png"
+    },
+    {
+      "chart": "Expert reuse",
+      "path": "artifacts\\experiment-016\\charts\\chart-05-expert-reuse.png"
+    },
+    {
+      "chart": "Oracle tok/s/user",
+      "path": "artifacts\\experiment-016\\charts\\chart-06-oracle-throughput.png"
+    },
+    {
+      "chart": "DCP scaling by context",
+      "path": "artifacts\\experiment-016\\charts\\chart-07-dcp-scaling.png"
+    }
+  ]
+}

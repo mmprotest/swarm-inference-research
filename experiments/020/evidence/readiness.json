@@ -1,0 +1,118 @@
+{
+  "current_market_launch_permission": "NO_GO",
+  "gates": [
+    {
+      "gate": "1",
+      "requirement": "Final bounded-worker placement frozen",
+      "status": "PASS"
+    },
+    {
+      "gate": "2",
+      "requirement": "Entire checkpoint byte-exactly assigned",
+      "status": "PASS"
+    },
+    {
+      "gate": "3",
+      "requirement": "Peak worker memory <=20 GiB",
+      "status": "PASS"
+    },
+    {
+      "gate": "4",
+      "requirement": "No whole layer/expert",
+      "status": "PASS"
+    },
+    {
+      "gate": "5",
+      "requirement": "Complete 93-layer shard correctness",
+      "status": "PASS"
+    },
+    {
+      "gate": "6",
+      "requirement": "Corrected single-resource simulator validation",
+      "status": "FAIL"
+    },
+    {
+      "gate": "7",
+      "requirement": "Event accounting reconciliation",
+      "status": "PASS"
+    },
+    {
+      "gate": "8",
+      "requirement": "Grouped expert execution",
+      "status": "PASS"
+    },
+    {
+      "gate": "9",
+      "requirement": "All required SM86 binaries",
+      "status": "PASS"
+    },
+    {
+      "gate": "10",
+      "requirement": "Deployable Linux worker/controller environment",
+      "status": "FAIL"
+    },
+    {
+      "gate": "11",
+      "requirement": "Model acquisition mechanism",
+      "status": "PASS"
+    },
+    {
+      "gate": "12",
+      "requirement": "96-worker controller dry-run",
+      "status": "PASS"
+    },
+    {
+      "gate": "13",
+      "requirement": "Vast CLI auth/read-only integration",
+      "status": "PASS"
+    },
+    {
+      "gate": "14",
+      "requirement": "Vast rental safety guard",
+      "status": "PASS"
+    },
+    {
+      "gate": "15",
+      "requirement": "Fleet plan or explicit availability condition",
+      "status": "PASS"
+    },
+    {
+      "gate": "16",
+      "requirement": "Full cost estimate",
+      "status": "PASS"
+    },
+    {
+      "gate": "17",
+      "requirement": "Mock provisioning and rollback",
+      "status": "PASS"
+    },
+    {
+      "gate": "18",
+      "requirement": "Network/topology gates preregistered",
+      "status": "FAIL"
+    },
+    {
+      "gate": "19",
+      "requirement": "E021 runbook complete",
+      "status": "PASS"
+    },
+    {
+      "gate": "20",
+      "requirement": "No high-impact pre-rental-testable risk untested",
+      "status": "PASS"
+    }
+  ],
+  "market_readiness_distinction": "E020 is not deployment-ready and does not authorize rental. After the open pre-rental implementation blockers close, E021 preflight still requires 12 live P8 hosts, a pinned image, and an approved budget.",
+  "outcome": "E021_NOT_READY",
+  "passed_gate_count": 17,
+  "pre_rental_blockers": [
+    "physically execute the exact ordered single-resource shard workload on RTX 5090 for every required primitive/layer/span and rerun the replay error gates",
+    "implement and loopback-test the controller-host-agent entrypoint rendered for pod 0",
+    "wire authenticated EXECUTE_SHARD frames to the real KDA/MLA/expert/projection/endpoint worker primitives and rerun the 93-layer graph through worker processes",
+    "implement the real Vast backend adapter for the already-tested provisioning state machine, keep it E020-disabled, and test every call at the mocked subprocess boundary",
+    "integrate the proven pod-bundle/ShardCache acquisition and hash verification into SwarmHostAgent before worker registration",
+    "make preflight accept and verify a user-supplied immutable registry image digest instead of hardcoding published=false"
+  ],
+  "required_gate_count": 20,
+  "schema_version": "experiment-020-readiness-v1"
+}

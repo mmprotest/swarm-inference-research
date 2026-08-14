@@ -1,0 +1,13 @@
+{
+  "command": "python -m pytest -q --junitxml artifacts/experiment-018/pytest.xml",
+  "errors": 0,
+  "failures": 0,
+  "focused_experiment_status": "PASS",
+  "focused_experiment_tests": 18,
+  "junit_path": "artifacts/experiment-018\\pytest.xml",
+  "passed": 1201,
+  "skipped": 13,
+  "status": "PASS",
+  "tests": 1214,
+  "time_seconds": 179.348
+}

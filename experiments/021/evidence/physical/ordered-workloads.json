@@ -1,0 +1,217 @@
+{
+  "all_compute_operations_have_worker_id": true,
+  "authenticated_protocol_roundtrip_bytes": 233384,
+  "compute_overlap": false,
+  "cumulative_span_walls_ms": {
+    "1": 22953.2847,
+    "2": 46762.4973,
+    "3": 67923.2249,
+    "4": 90887.4165,
+    "5": 114524.3688,
+    "6": 137102.989,
+    "7": 156751.8176,
+    "8": 179680.6249
+  },
+  "decisive_failure": "ordered physical path and headline event model do not represent the same resident-worker runtime",
+  "direct_read_audit_sha256": "d4af8569cbf442f4ebfae95365fb337f8861b6bc3538a0f577d8f7a419c9c867",
+  "direct_read_bytes": 14234774144,
+  "direct_read_request_count": 7404,
+  "global_multiplier": null,
+  "hidden_correctness": [
+    {
+      "layer": 0,
+      "relative_l2_error": 3.147214957069751e-07
+    },
+    {
+      "layer": 1,
+      "relative_l2_error": 3.087190989134594e-07
+    },
+    {
+      "layer": 2,
+      "relative_l2_error": 3.1380670765294694e-07
+    },
+    {
+      "layer": 3,
+      "relative_l2_error": 2.86366742804023e-07
+    },
+    {
+      "layer": 4,
+      "relative_l2_error": 2.7334017856606057e-07
+    },
+    {
+      "layer": 5,
+      "relative_l2_error": 2.639989609107093e-07
+    },
+    {
+      "layer": 6,
+      "relative_l2_error": 2.26153542725215e-07
+    },
+    {
+      "layer": 7,
+      "relative_l2_error": 2.2529496339993188e-07
+    },
+    {
+      "layer": 8,
+      "relative_l2_error": 2.0117567945598942e-07
+    }
+  ],
+  "hidden_correctness_status": "PASS",
+  "layer_walls_ms": {
+    "1": 22953.2814,
+    "2": 23809.1227,
+    "3": 21160.6384,
+    "4": 22964.1053,
+    "5": 23636.8681,
+    "6": 22578.5374,
+    "7": 19648.7389,
+    "8": 22928.7204
+  },
+  "maximum_hidden_relative_l2_error": 3.147214957069751e-07,
+  "model_validation": {
+    "maximum_error": 0.9996503007977391,
+    "median_error": 0.955390936021116,
+    "normalization_applied": false,
+    "p90_error": 0.9996468717316541,
+    "post_hoc_multiplier": null,
+    "status": "FAIL",
+    "targets": {
+      "maximum": 0.15,
+      "median": 0.05,
+      "p90": 0.1
+    }
+  },
+  "model_validation_error_gate_status": "FAIL",
+  "normalization_applied": false,
+  "operation_order_preserved": true,
+  "physical_compute_resources": 1,
+  "physical_equivalent_workload_executed": true,
+  "post_hoc_multiplier": null,
+  "residency_mismatch": "The current native graph loads and uploads active shard material during the timed path; the headline event model assumes complete per-worker expert banks and other weights are already resident.",
+  "rows": [
+    {
+      "absolute_percentage_error": 0.9111394087033551,
+      "actual_sharded_wall_ms": 1.8062,
+      "compute_task_count": 1,
+      "evidence_class": "PHYSICAL_SHARD_EXECUTION",
+      "network_task_count": 0,
+      "normalization_applied": false,
+      "physical_actual_source": "native grouped top-16 call inside the contiguous layer-1 replay",
+      "post_hoc_multiplier": "",
+      "predicted_sharded_wall_ms": 0.1605,
+      "workload": "grouped_expert_stripe"
+    },
+    {
+      "absolute_percentage_error": 0.5645335389360062,
+      "actual_sharded_wall_ms": 0.6485,
+      "compute_task_count": 1,
+      "evidence_class": "PHYSICAL_SHARD_EXECUTION",
+      "network_task_count": 0,
+      "normalization_applied": false,
+      "physical_actual_source": "native KDA stripe call inside the contiguous layer-1 replay",
+      "post_hoc_multiplier": "",
+      "predicted_sharded_wall_ms": 0.2824,
+      "workload": "KDA_stripe"
+    },
+    {
+      "absolute_percentage_error": 0.4607768469154607,
+      "actual_sharded_wall_ms": 0.3939,
+      "compute_task_count": 1,
+      "evidence_class": "PHYSICAL_SHARD_EXECUTION",
+      "network_task_count": 0,
+      "normalization_applied": false,
+      "physical_actual_source": "native MLA stripe call inside the contiguous layer-3 replay",
+      "post_hoc_multiplier": "",
+      "predicted_sharded_wall_ms": 0.2124,
+      "workload": "MLA_stripe"
+    },
+    {
+      "absolute_percentage_error": 0.5145228215767634,
+      "actual_sharded_wall_ms": 0.0964,
+      "compute_task_count": 1,
+      "evidence_class": "PHYSICAL_SHARD_EXECUTION",
+      "network_task_count": 0,
+      "normalization_applied": false,
+      "physical_actual_source": "native latent-down projection call inside the contiguous layer-1 replay",
+      "post_hoc_multiplier": "",
+      "predicted_sharded_wall_ms": 0.0468,
+      "workload": "projection_stripe"
+    },
+    {
+      "absolute_percentage_error": 0.7541886619233418,
+      "actual_sharded_wall_ms": 0.4357,
+      "compute_task_count": 1,
+      "evidence_class": "PHYSICAL_SHARD_EXECUTION",
+      "network_task_count": 0,
+      "normalization_applied": false,
+      "physical_actual_source": "native shared-expert stripe call inside the contiguous layer-1 replay",
+      "post_hoc_multiplier": "",
+      "predicted_sharded_wall_ms": 0.1071,
+      "workload": "shared_expert_stripe"
+    },
+    {
+      "absolute_percentage_error": 0.9996437806055578,
+      "actual_sharded_wall_ms": 22953.2814,
+      "compute_task_count": 67,
+      "evidence_class": "PHYSICAL_SHARD_EXECUTION",
+      "network_task_count": 8,
+      "normalization_applied": false,
+      "physical_actual_source": "one contiguous wall-clock interval around ordered real K3 shard execution plus authenticated local batch frames; no compute overlap",
+      "post_hoc_multiplier": "",
+      "predicted_sharded_wall_ms": 8.176404000767997,
+      "workload": "complete_sharded_KDA_layer"
+    },
+    {
+      "absolute_percentage_error": 0.999642463338877,
+      "actual_sharded_wall_ms": 21160.6384,
+      "compute_task_count": 67,
+      "evidence_class": "PHYSICAL_SHARD_EXECUTION",
+      "network_task_count": 8,
+      "normalization_applied": false,
+      "physical_actual_source": "one contiguous wall-clock interval around ordered real K3 shard execution plus authenticated local batch frames; no compute overlap",
+      "post_hoc_multiplier": "",
+      "predicted_sharded_wall_ms": 7.565704000768,
+      "workload": "complete_sharded_MLA_layer"
+    },
+    {
+      "absolute_percentage_error": 0.9996503007977391,
+      "actual_sharded_wall_ms": 46762.4973,
+      "compute_task_count": 134,
+      "evidence_class": "PHYSICAL_SHARD_EXECUTION",
+      "network_task_count": 16,
+      "normalization_applied": false,
+      "physical_actual_source": "one contiguous wall-clock interval around ordered real K3 shard execution plus authenticated local batch frames; no compute overlap",
+      "post_hoc_multiplier": "",
+      "predicted_sharded_wall_ms": 16.352808001536005,
+      "workload": "mixed_2_layer_span"
+    },
+    {
+      "absolute_percentage_error": 0.9996468717316541,
+      "actual_sharded_wall_ms": 90887.4165,
+      "compute_task_count": 268,
+      "evidence_class": "PHYSICAL_SHARD_EXECUTION",
+      "network_task_count": 32,
+      "normalization_applied": false,
+      "physical_actual_source": "one contiguous wall-clock interval around ordered real K3 shard execution plus authenticated local batch frames; no compute overlap",
+      "post_hoc_multiplier": "",
+      "predicted_sharded_wall_ms": 32.09491600307201,
+      "workload": "mixed_4_layer_span"
+    },
+    {
+      "absolute_percentage_error": 0.9996424843676313,
+      "actual_sharded_wall_ms": 179680.6249,
+      "compute_task_count": 536,
+      "evidence_class": "PHYSICAL_SHARD_EXECUTION",
+      "network_task_count": 65,
+      "normalization_applied": false,
+      "physical_actual_source": "one contiguous wall-clock interval around ordered real K3 shard execution plus authenticated local batch frames; no compute overlap",
+      "post_hoc_multiplier": "",
+      "predicted_sharded_wall_ms": 64.23863223552019,
+      "workload": "mixed_8_layer_span"
+    }
+  ],
+  "same_compute_resource": true,
+  "same_residency_policy_as_headline_model": false,
+  "schema_version": "experiment-021-ordered-physical-replay-v1",
+  "status": "FAIL",
+  "worker_operation_count": 408
+}

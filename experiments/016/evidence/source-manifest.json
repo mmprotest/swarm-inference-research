@@ -1,0 +1,80 @@
+{
+  "files": [
+    {
+      "bytes": 15319,
+      "path": "artifacts/experiment-015/architecture-pareto/results.json",
+      "sha256": "a726acd703778df9d1904bcbaaa82207487db2cb28e7a0a6477896b94b71b626"
+    },
+    {
+      "bytes": 1347,
+      "path": "artifacts/experiment-015/final-recommended-architecture.json",
+      "sha256": "de44e4db87edfe85da055959b9ef2808ca13115d1a4accc0479f677fa5f3c634"
+    },
+    {
+      "bytes": 6602,
+      "path": "artifacts/experiment-015/microwork/results.json",
+      "sha256": "00a72dc61e256686ff4fc3fca4539d4ed045fbb95806586591837e05c1e28c35"
+    },
+    {
+      "bytes": 2164,
+      "path": "artifacts/experiment-015/expert-routing/results.json",
+      "sha256": "77a21ded965b7232978f64e2001344d71d9816f17978034d41059625a1327438"
+    },
+    {
+      "bytes": 16207,
+      "path": "artifacts/experiment-015/dcp/results.json",
+      "sha256": "564cfefff3859e1e7579532bde94c707d8a4bc6e0e6633f9ffa8d4dd375335db"
+    },
+    {
+      "bytes": 2075,
+      "path": "artifacts/experiment-015/model-validation/results.json",
+      "sha256": "cf934f1cb3ae3fa908e6b2a3f9b27998ec375a6d9b7e15a5f0ac4c5856740dae"
+    },
+    {
+      "bytes": 142407,
+      "path": "artifacts/experiment-014/performance/h014-034d-contextual-batch-layer91-8k.json",
+      "sha256": "bd0dc855de8fc482363a26aa3c5b769d67db117a667ca17aa56325de3960ebc3"
+    },
+    {
+      "bytes": 221781,
+      "path": "artifacts/experiment-014/sub-layer/h014-sub-008-parent-shared-overlap.json",
+      "sha256": "cbd919adbe576226680ce11b62650e261fb7cf7ed7ec665d0601fa66ff4d6299"
+    },
+    {
+      "bytes": 8085504,
+      "path": "artifacts/experiment-014/oracle-full-93/hidden-trace.f32",
+      "sha256": "95012ceb968aaa31f51ccbea38beff44e47dec72572b8c22ca4fe01bbadd56ae"
+    },
+    {
+      "bytes": 658384,
+      "path": "artifacts/experiment-016/physical/verification-major-final.json",
+      "sha256": "814f58ae5e32b47447f487a05b771bfeca2ab09874da07d76078f91063a1974c"
+    },
+    {
+      "bytes": 284846,
+      "path": "artifacts/experiment-016/physical/mla-8k-block-sweep-final.json",
+      "sha256": "e524378c84628e8bd547d4073fcadd33c1cba82be254dce760c0defe0b57198c"
+    },
+    {
+      "bytes": 145100,
+      "path": "artifacts/experiment-016/dcp/gpu-results.json",
+      "sha256": "1ac7b1840020ceb05797e42ffd9729688a3d0acf4874057103295c23db93d2c2"
+    },
+    {
+      "bytes": 11280,
+      "path": "artifacts/experiment-016/dcp/component-results.json",
+      "sha256": "2668dfd0aed53eddb6b9905510ba0dc865c43da2a3fb7ea724744218104ddb41"
+    },
+    {
+      "bytes": 1303040,
+      "path": "artifacts/experiment-016/cuda/coli_cuda-sm120-h016-final.dll",
+      "sha256": "113d9857735649b5c9773a474b73517fc1615547a99992ce401a294bc39f7eb1"
+    },
+    {
+      "bytes": 637,
+      "path": "artifacts/experiment-016/test-results.json",
+      "sha256": "c09ef7d5274169a92976d546777713ab604579eed6418ba384a9c9788b0b0a68"
+    }
+  ],
+  "schema_version": "experiment-016-source-manifest-v1"
+}

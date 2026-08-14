@@ -1,0 +1,4 @@
+baseline,status,block_size,accepted_tokens,target_pass_ms,ms_per_accepted_token,oracle_tok_s_per_user,headline_denominator,deviation_vs_historical_exp016_percent
+Experiment 015 canonical,HISTORICAL_IMMUTABLE,7,8,3663.3050435299524,457.91313044124405,2.1838203220693897,False,
+Experiment 016 retained,HISTORICAL_IMMUTABLE,7,8,2997.238528880436,374.6548161100545,2.6691235692169797,True,
+Experiment 017 current reproduction,PASS_WITHIN_3_PERCENT,7,8,3031.6686570515376,378.9585821314422,2.6388108018969443,False,1.148728332408111

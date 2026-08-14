@@ -1,0 +1,7 @@
+block_size,full_recurrent_state_bytes,logical_state_read_bytes,logical_state_write_bytes,accepted_state_copy_bytes,accepted_state_copy_launches,accepted_state_copy_wall_ms,compact_factor_bytes,hypothetical_full_snapshot_bytes,full_kda_layer_device_ms,traffic_measurement
+1,6291456,12582912,12582912,0,0,0.0,147840,6291456,5.318063974380493,logical bytes from exact kernel/state geometry; no HBM counter
+2,6291456,25165824,25165824,0,0,0.0,295680,12582912,7.341024160385132,logical bytes from exact kernel/state geometry; no HBM counter
+4,6291456,50331648,50331648,0,0,0.0,591360,25165824,9.13599967956543,logical bytes from exact kernel/state geometry; no HBM counter
+7,6291456,88080384,88080384,0,0,0.0,1034880,44040192,12.201568126678467,logical bytes from exact kernel/state geometry; no HBM counter
+12,6291456,150994944,150994944,0,0,0.0,1774080,75497472,16.724624633789062,logical bytes from exact kernel/state geometry; no HBM counter
+16,6291456,201326592,201326592,0,0,0.0,2365440,100663296,21.674015998840332,logical bytes from exact kernel/state geometry; no HBM counter

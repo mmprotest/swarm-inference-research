@@ -1,0 +1,29 @@
+{
+  "records": [
+    {
+      "evidence": "reconstructed_from_observed_console; original smoke receipt overwritten",
+      "failure": "supported batch-size generator was consumed before planning",
+      "resolution": "materialize once as an immutable tuple; regression test added",
+      "stage": "verification planner smoke"
+    },
+    {
+      "evidence": "reconstructed_from_observed_console; final sampler CSV retained",
+      "failure": "sampler thread violated persistent executor READY quiescence",
+      "resolution": "start sampling only after prepare_for_ready",
+      "stage": "GPU telemetry smoke"
+    },
+    {
+      "evidence": "reconstructed_from_observed_console; final DLL/hash retained",
+      "failure": "VS 2022 toolset unavailable to nvcc",
+      "resolution": "pin installed MSVC 14.44 and use allow-unsupported-compiler",
+      "stage": "CUDA build"
+    },
+    {
+      "evidence": "artifacts/experiment-014/sub-layer/h014-sub-008-parent-shared-overlap.json",
+      "failure": "candidate added 0.0404 ms at batch 8",
+      "resolution": "reject overlap and retain deterministic serial schedule",
+      "stage": "asynchronous overlap"
+    }
+  ],
+  "schema_version": "experiment-016-failure-log-v1"
+}

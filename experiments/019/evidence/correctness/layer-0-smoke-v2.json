@@ -1,0 +1,2308 @@
+{
+  "all_compute_resources_are_microworkers": true,
+  "checkpoint_read_audit": [
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 14336,
+        "offset": 4693951048
+      },
+      "bytes_read": 14336,
+      "dtype": "BF16",
+      "file": "model-00094-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "embedding_vocabulary_row_owned_read",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 163584,
+        "stop": 163585
+      },
+      "source_fraction_read": 6.103515625e-06,
+      "source_shape": [
+        163840,
+        7168
+      ],
+      "source_tensor_bytes": 2348810240,
+      "tensor": "language_model.model.embed_tokens.weight",
+      "worker_id": "endpoint.embedding.worker-03"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 14336,
+        "offset": 1454026608
+      },
+      "bytes_read": 14336,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": true,
+      "purpose": "replicated_small_attention_residual_norm",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": null,
+        "start": 0,
+        "stop": 7168
+      },
+      "source_fraction_read": 1.0,
+      "source_shape": [
+        7168
+      ],
+      "source_tensor_bytes": 14336,
+      "tensor": "language_model.model.layers.0.self_attention_res_norm.weight",
+      "worker_id": "layer-00.attnres-worker"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 14336,
+        "offset": 1454040944
+      },
+      "bytes_read": 14336,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": true,
+      "purpose": "replicated_small_attention_residual_projection",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": null,
+        "start": 0,
+        "stop": 1
+      },
+      "source_fraction_read": 1.0,
+      "source_shape": [
+        1,
+        7168
+      ],
+      "source_tensor_bytes": 14336,
+      "tensor": "language_model.model.layers.0.self_attention_res_proj.weight",
+      "worker_id": "layer-00.attnres-worker"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 14336,
+        "offset": 642928
+      },
+      "bytes_read": 14336,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": true,
+      "purpose": "replicated_small_input_norm",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": null,
+        "start": 0,
+        "stop": 7168
+      },
+      "source_fraction_read": 1.0,
+      "source_shape": [
+        7168
+      ],
+      "source_tensor_bytes": 14336,
+      "tensor": "language_model.model.layers.0.input_layernorm.weight",
+      "worker_id": "layer-00.norm-worker"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 1835008,
+        "offset": 1455431536
+      },
+      "bytes_read": 1835008,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": true,
+      "purpose": "reviewed_small_kda_decay_low_projection",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": null,
+        "start": 0,
+        "stop": 128
+      },
+      "source_fraction_read": 1.0,
+      "source_shape": [
+        128,
+        7168
+      ],
+      "source_tensor_bytes": 1835008,
+      "tensor": "language_model.model.layers.0.self_attn.f_a_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 44040192,
+        "offset": 1988894576
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_q_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 0,
+        "stop": 3072
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        7168
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.q_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 44040192,
+        "offset": 1636573040
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_k_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 0,
+        "stop": 3072
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        7168
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.k_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 44040192,
+        "offset": 2165055344
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_v_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 0,
+        "stop": 3072
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        7168
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.v_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 44040192,
+        "offset": 1460412272
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_g_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 0,
+        "stop": 3072
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        7168
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.g_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 786432,
+        "offset": 1457266544
+      },
+      "bytes_read": 786432,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_decay_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 0,
+        "stop": 3072
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        128
+      ],
+      "source_tensor_bytes": 3145728,
+      "tensor": "language_model.model.layers.0.self_attn.f_b_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 344064,
+        "offset": 1454055280
+      },
+      "bytes_read": 344064,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_beta_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 0,
+        "stop": 24
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        96,
+        7168
+      ],
+      "source_tensor_bytes": 1376256,
+      "tensor": "language_model.model.layers.0.self_attn.b_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "base_offset": 1812733808,
+        "kind": "strided",
+        "last_range_stop": 1988876144,
+        "range_count": 7168,
+        "range_length": 6144,
+        "stride": 24576
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_output_projection_columns",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 1,
+        "start": 0,
+        "stop": 3072
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        7168,
+        12288
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.o_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 49152,
+        "offset": 249712
+      },
+      "bytes_read": 49152,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_q_conv_channels",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 0,
+        "stop": 3072
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        1,
+        4
+      ],
+      "source_tensor_bytes": 196608,
+      "tensor": "language_model.model.layers.0.self_attn.q_conv1d.weight",
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 49152,
+        "offset": 52592
+      },
+      "bytes_read": 49152,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_k_conv_channels",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 0,
+        "stop": 3072
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        1,
+        4
+      ],
+      "source_tensor_bytes": 196608,
+      "tensor": "language_model.model.layers.0.self_attn.k_conv1d.weight",
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 49152,
+        "offset": 446320
+      },
+      "bytes_read": 49152,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_v_conv_channels",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 0,
+        "stop": 3072
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        1,
+        4
+      ],
+      "source_tensor_bytes": 196608,
+      "tensor": "language_model.model.layers.0.self_attn.v_conv1d.weight",
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 12288,
+        "offset": 3440
+      },
+      "bytes_read": 12288,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_dt_head_channels",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 0,
+        "stop": 3072
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288
+      ],
+      "source_tensor_bytes": 49152,
+      "tensor": "language_model.model.layers.0.self_attn.dt_bias",
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 96,
+        "offset": 2928
+      },
+      "bytes_read": 96,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_state_decay_heads",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 0,
+        "stop": 24
+      },
+      "source_fraction_read": 0.1875,
+      "source_shape": [
+        128
+      ],
+      "source_tensor_bytes": 512,
+      "tensor": "language_model.model.layers.0.self_attn.A_log",
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 512,
+        "offset": 249200
+      },
+      "bytes_read": 512,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": true,
+      "purpose": "replicated_small_kda_output_norm",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": null,
+        "start": 0,
+        "stop": 128
+      },
+      "source_fraction_read": 1.0,
+      "source_shape": [
+        128
+      ],
+      "source_tensor_bytes": 512,
+      "tensor": "language_model.model.layers.0.self_attn.o_norm.weight",
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 44040192,
+        "offset": 2032934768
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_q_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 3072,
+        "stop": 6144
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        7168
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.q_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 44040192,
+        "offset": 1680613232
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_k_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 3072,
+        "stop": 6144
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        7168
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.k_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 44040192,
+        "offset": 2209095536
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_v_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 3072,
+        "stop": 6144
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        7168
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.v_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 44040192,
+        "offset": 1504452464
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_g_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 3072,
+        "stop": 6144
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        7168
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.g_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 786432,
+        "offset": 1458052976
+      },
+      "bytes_read": 786432,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_decay_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 3072,
+        "stop": 6144
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        128
+      ],
+      "source_tensor_bytes": 3145728,
+      "tensor": "language_model.model.layers.0.self_attn.f_b_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 344064,
+        "offset": 1454399344
+      },
+      "bytes_read": 344064,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_beta_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 24,
+        "stop": 48
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        96,
+        7168
+      ],
+      "source_tensor_bytes": 1376256,
+      "tensor": "language_model.model.layers.0.self_attn.b_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "byte_ranges": {
+        "base_offset": 1812739952,
+        "kind": "strided",
+        "last_range_stop": 1988882288,
+        "range_count": 7168,
+        "range_length": 6144,
+        "stride": 24576
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_output_projection_columns",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 1,
+        "start": 3072,
+        "stop": 6144
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        7168,
+        12288
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.o_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 49152,
+        "offset": 298864
+      },
+      "bytes_read": 49152,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_q_conv_channels",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 3072,
+        "stop": 6144
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        1,
+        4
+      ],
+      "source_tensor_bytes": 196608,
+      "tensor": "language_model.model.layers.0.self_attn.q_conv1d.weight",
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 49152,
+        "offset": 101744
+      },
+      "bytes_read": 49152,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_k_conv_channels",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 3072,
+        "stop": 6144
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        1,
+        4
+      ],
+      "source_tensor_bytes": 196608,
+      "tensor": "language_model.model.layers.0.self_attn.k_conv1d.weight",
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 49152,
+        "offset": 495472
+      },
+      "bytes_read": 49152,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_v_conv_channels",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 3072,
+        "stop": 6144
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        1,
+        4
+      ],
+      "source_tensor_bytes": 196608,
+      "tensor": "language_model.model.layers.0.self_attn.v_conv1d.weight",
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 12288,
+        "offset": 15728
+      },
+      "bytes_read": 12288,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_dt_head_channels",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 3072,
+        "stop": 6144
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288
+      ],
+      "source_tensor_bytes": 49152,
+      "tensor": "language_model.model.layers.0.self_attn.dt_bias",
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 96,
+        "offset": 3024
+      },
+      "bytes_read": 96,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_state_decay_heads",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 24,
+        "stop": 48
+      },
+      "source_fraction_read": 0.1875,
+      "source_shape": [
+        128
+      ],
+      "source_tensor_bytes": 512,
+      "tensor": "language_model.model.layers.0.self_attn.A_log",
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 512,
+        "offset": 249200
+      },
+      "bytes_read": 512,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": true,
+      "purpose": "replicated_small_kda_output_norm",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": null,
+        "start": 0,
+        "stop": 128
+      },
+      "source_fraction_read": 1.0,
+      "source_shape": [
+        128
+      ],
+      "source_tensor_bytes": 512,
+      "tensor": "language_model.model.layers.0.self_attn.o_norm.weight",
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 44040192,
+        "offset": 2076974960
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_q_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 6144,
+        "stop": 9216
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        7168
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.q_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 44040192,
+        "offset": 1724653424
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_k_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 6144,
+        "stop": 9216
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        7168
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.k_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 44040192,
+        "offset": 2253135728
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_v_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 6144,
+        "stop": 9216
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        7168
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.v_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 44040192,
+        "offset": 1548492656
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_g_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 6144,
+        "stop": 9216
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        7168
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.g_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 786432,
+        "offset": 1458839408
+      },
+      "bytes_read": 786432,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_decay_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 6144,
+        "stop": 9216
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        128
+      ],
+      "source_tensor_bytes": 3145728,
+      "tensor": "language_model.model.layers.0.self_attn.f_b_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 344064,
+        "offset": 1454743408
+      },
+      "bytes_read": 344064,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_beta_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 48,
+        "stop": 72
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        96,
+        7168
+      ],
+      "source_tensor_bytes": 1376256,
+      "tensor": "language_model.model.layers.0.self_attn.b_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "byte_ranges": {
+        "base_offset": 1812746096,
+        "kind": "strided",
+        "last_range_stop": 1988888432,
+        "range_count": 7168,
+        "range_length": 6144,
+        "stride": 24576
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_output_projection_columns",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 1,
+        "start": 6144,
+        "stop": 9216
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        7168,
+        12288
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.o_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 49152,
+        "offset": 348016
+      },
+      "bytes_read": 49152,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_q_conv_channels",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 6144,
+        "stop": 9216
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        1,
+        4
+      ],
+      "source_tensor_bytes": 196608,
+      "tensor": "language_model.model.layers.0.self_attn.q_conv1d.weight",
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 49152,
+        "offset": 150896
+      },
+      "bytes_read": 49152,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_k_conv_channels",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 6144,
+        "stop": 9216
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        1,
+        4
+      ],
+      "source_tensor_bytes": 196608,
+      "tensor": "language_model.model.layers.0.self_attn.k_conv1d.weight",
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 49152,
+        "offset": 544624
+      },
+      "bytes_read": 49152,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_v_conv_channels",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 6144,
+        "stop": 9216
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        1,
+        4
+      ],
+      "source_tensor_bytes": 196608,
+      "tensor": "language_model.model.layers.0.self_attn.v_conv1d.weight",
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 12288,
+        "offset": 28016
+      },
+      "bytes_read": 12288,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_dt_head_channels",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 6144,
+        "stop": 9216
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288
+      ],
+      "source_tensor_bytes": 49152,
+      "tensor": "language_model.model.layers.0.self_attn.dt_bias",
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 96,
+        "offset": 3120
+      },
+      "bytes_read": 96,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_state_decay_heads",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 48,
+        "stop": 72
+      },
+      "source_fraction_read": 0.1875,
+      "source_shape": [
+        128
+      ],
+      "source_tensor_bytes": 512,
+      "tensor": "language_model.model.layers.0.self_attn.A_log",
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 512,
+        "offset": 249200
+      },
+      "bytes_read": 512,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": true,
+      "purpose": "replicated_small_kda_output_norm",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": null,
+        "start": 0,
+        "stop": 128
+      },
+      "source_fraction_read": 1.0,
+      "source_shape": [
+        128
+      ],
+      "source_tensor_bytes": 512,
+      "tensor": "language_model.model.layers.0.self_attn.o_norm.weight",
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 44040192,
+        "offset": 2121015152
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_q_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 9216,
+        "stop": 12288
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        7168
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.q_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 44040192,
+        "offset": 1768693616
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_k_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 9216,
+        "stop": 12288
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        7168
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.k_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 44040192,
+        "offset": 2297175920
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_v_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 9216,
+        "stop": 12288
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        7168
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.v_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 44040192,
+        "offset": 1592532848
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_g_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 9216,
+        "stop": 12288
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        7168
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.g_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 786432,
+        "offset": 1459625840
+      },
+      "bytes_read": 786432,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_decay_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 9216,
+        "stop": 12288
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        128
+      ],
+      "source_tensor_bytes": 3145728,
+      "tensor": "language_model.model.layers.0.self_attn.f_b_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 344064,
+        "offset": 1455087472
+      },
+      "bytes_read": 344064,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_beta_head_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 72,
+        "stop": 96
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        96,
+        7168
+      ],
+      "source_tensor_bytes": 1376256,
+      "tensor": "language_model.model.layers.0.self_attn.b_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "byte_ranges": {
+        "base_offset": 1812752240,
+        "kind": "strided",
+        "last_range_stop": 1988894576,
+        "range_count": 7168,
+        "range_length": 6144,
+        "stride": 24576
+      },
+      "bytes_read": 44040192,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_output_projection_columns",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 1,
+        "start": 9216,
+        "stop": 12288
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        7168,
+        12288
+      ],
+      "source_tensor_bytes": 176160768,
+      "tensor": "language_model.model.layers.0.self_attn.o_proj.weight",
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 49152,
+        "offset": 397168
+      },
+      "bytes_read": 49152,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_q_conv_channels",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 9216,
+        "stop": 12288
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        1,
+        4
+      ],
+      "source_tensor_bytes": 196608,
+      "tensor": "language_model.model.layers.0.self_attn.q_conv1d.weight",
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 49152,
+        "offset": 200048
+      },
+      "bytes_read": 49152,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_k_conv_channels",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 9216,
+        "stop": 12288
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        1,
+        4
+      ],
+      "source_tensor_bytes": 196608,
+      "tensor": "language_model.model.layers.0.self_attn.k_conv1d.weight",
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 49152,
+        "offset": 593776
+      },
+      "bytes_read": 49152,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_v_conv_channels",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 9216,
+        "stop": 12288
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288,
+        1,
+        4
+      ],
+      "source_tensor_bytes": 196608,
+      "tensor": "language_model.model.layers.0.self_attn.v_conv1d.weight",
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 12288,
+        "offset": 40304
+      },
+      "bytes_read": 12288,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_dt_head_channels",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 9216,
+        "stop": 12288
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        12288
+      ],
+      "source_tensor_bytes": 49152,
+      "tensor": "language_model.model.layers.0.self_attn.dt_bias",
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 96,
+        "offset": 3216
+      },
+      "bytes_read": 96,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "kda_state_decay_heads",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 72,
+        "stop": 96
+      },
+      "source_fraction_read": 0.1875,
+      "source_shape": [
+        128
+      ],
+      "source_tensor_bytes": 512,
+      "tensor": "language_model.model.layers.0.self_attn.A_log",
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 512,
+        "offset": 249200
+      },
+      "bytes_read": 512,
+      "dtype": "F32",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": true,
+      "purpose": "replicated_small_kda_output_norm",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": null,
+        "start": 0,
+        "stop": 128
+      },
+      "source_fraction_read": 1.0,
+      "source_shape": [
+        128
+      ],
+      "source_tensor_bytes": 512,
+      "tensor": "language_model.model.layers.0.self_attn.o_norm.weight",
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 14336,
+        "offset": 1453983600
+      },
+      "bytes_read": 14336,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": true,
+      "purpose": "replicated_small_mlp_residual_norm",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": null,
+        "start": 0,
+        "stop": 7168
+      },
+      "source_fraction_read": 1.0,
+      "source_shape": [
+        7168
+      ],
+      "source_tensor_bytes": 14336,
+      "tensor": "language_model.model.layers.0.mlp_res_norm.weight",
+      "worker_id": "layer-00.attnres-worker"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 14336,
+        "offset": 1453997936
+      },
+      "bytes_read": 14336,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": true,
+      "purpose": "replicated_small_mlp_residual_projection",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": null,
+        "start": 0,
+        "stop": 1
+      },
+      "source_fraction_read": 1.0,
+      "source_shape": [
+        1,
+        7168
+      ],
+      "source_tensor_bytes": 14336,
+      "tensor": "language_model.model.layers.0.mlp_res_proj.weight",
+      "worker_id": "layer-00.attnres-worker"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 14336,
+        "offset": 1454012272
+      },
+      "bytes_read": 14336,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": true,
+      "purpose": "replicated_small_post_attention_norm",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": null,
+        "start": 0,
+        "stop": 7168
+      },
+      "source_fraction_read": 1.0,
+      "source_shape": [
+        7168
+      ],
+      "source_tensor_bytes": 14336,
+      "tensor": "language_model.model.layers.0.post_attention_layernorm.weight",
+      "worker_id": "layer-00.norm-worker"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 121110528,
+        "offset": 485099376
+      },
+      "bytes_read": 121110528,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "dense_mlp_stripe_gate_intermediate_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 0,
+        "stop": 8448
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        33792,
+        7168
+      ],
+      "source_tensor_bytes": 484442112,
+      "tensor": "language_model.model.layers.0.mlp.gate_proj.weight",
+      "worker_id": "layer-00.dense_mlp_stripe.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 121110528,
+        "offset": 969541488
+      },
+      "bytes_read": 121110528,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "dense_mlp_stripe_up_intermediate_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 0,
+        "stop": 8448
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        33792,
+        7168
+      ],
+      "source_tensor_bytes": 484442112,
+      "tensor": "language_model.model.layers.0.mlp.up_proj.weight",
+      "worker_id": "layer-00.dense_mlp_stripe.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "base_offset": 657264,
+        "kind": "strided",
+        "last_range_stop": 485048688,
+        "range_count": 7168,
+        "range_length": 16896,
+        "stride": 67584
+      },
+      "bytes_read": 121110528,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "dense_mlp_stripe_down_intermediate_columns",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 1,
+        "start": 0,
+        "stop": 8448
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        7168,
+        33792
+      ],
+      "source_tensor_bytes": 484442112,
+      "tensor": "language_model.model.layers.0.mlp.down_proj.weight",
+      "worker_id": "layer-00.dense_mlp_stripe.worker-00"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 121110528,
+        "offset": 606209904
+      },
+      "bytes_read": 121110528,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "dense_mlp_stripe_gate_intermediate_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 8448,
+        "stop": 16896
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        33792,
+        7168
+      ],
+      "source_tensor_bytes": 484442112,
+      "tensor": "language_model.model.layers.0.mlp.gate_proj.weight",
+      "worker_id": "layer-00.dense_mlp_stripe.worker-01"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 121110528,
+        "offset": 1090652016
+      },
+      "bytes_read": 121110528,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "dense_mlp_stripe_up_intermediate_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 8448,
+        "stop": 16896
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        33792,
+        7168
+      ],
+      "source_tensor_bytes": 484442112,
+      "tensor": "language_model.model.layers.0.mlp.up_proj.weight",
+      "worker_id": "layer-00.dense_mlp_stripe.worker-01"
+    },
+    {
+      "byte_ranges": {
+        "base_offset": 674160,
+        "kind": "strided",
+        "last_range_stop": 485065584,
+        "range_count": 7168,
+        "range_length": 16896,
+        "stride": 67584
+      },
+      "bytes_read": 121110528,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "dense_mlp_stripe_down_intermediate_columns",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 1,
+        "start": 8448,
+        "stop": 16896
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        7168,
+        33792
+      ],
+      "source_tensor_bytes": 484442112,
+      "tensor": "language_model.model.layers.0.mlp.down_proj.weight",
+      "worker_id": "layer-00.dense_mlp_stripe.worker-01"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 121110528,
+        "offset": 727320432
+      },
+      "bytes_read": 121110528,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "dense_mlp_stripe_gate_intermediate_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 16896,
+        "stop": 25344
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        33792,
+        7168
+      ],
+      "source_tensor_bytes": 484442112,
+      "tensor": "language_model.model.layers.0.mlp.gate_proj.weight",
+      "worker_id": "layer-00.dense_mlp_stripe.worker-02"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 121110528,
+        "offset": 1211762544
+      },
+      "bytes_read": 121110528,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "dense_mlp_stripe_up_intermediate_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 16896,
+        "stop": 25344
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        33792,
+        7168
+      ],
+      "source_tensor_bytes": 484442112,
+      "tensor": "language_model.model.layers.0.mlp.up_proj.weight",
+      "worker_id": "layer-00.dense_mlp_stripe.worker-02"
+    },
+    {
+      "byte_ranges": {
+        "base_offset": 691056,
+        "kind": "strided",
+        "last_range_stop": 485082480,
+        "range_count": 7168,
+        "range_length": 16896,
+        "stride": 67584
+      },
+      "bytes_read": 121110528,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "dense_mlp_stripe_down_intermediate_columns",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 1,
+        "start": 16896,
+        "stop": 25344
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        7168,
+        33792
+      ],
+      "source_tensor_bytes": 484442112,
+      "tensor": "language_model.model.layers.0.mlp.down_proj.weight",
+      "worker_id": "layer-00.dense_mlp_stripe.worker-02"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 121110528,
+        "offset": 848430960
+      },
+      "bytes_read": 121110528,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "dense_mlp_stripe_gate_intermediate_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 25344,
+        "stop": 33792
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        33792,
+        7168
+      ],
+      "source_tensor_bytes": 484442112,
+      "tensor": "language_model.model.layers.0.mlp.gate_proj.weight",
+      "worker_id": "layer-00.dense_mlp_stripe.worker-03"
+    },
+    {
+      "byte_ranges": {
+        "kind": "contiguous",
+        "length": 121110528,
+        "offset": 1332873072
+      },
+      "bytes_read": 121110528,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "dense_mlp_stripe_up_intermediate_rows",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 0,
+        "start": 25344,
+        "stop": 33792
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        33792,
+        7168
+      ],
+      "source_tensor_bytes": 484442112,
+      "tensor": "language_model.model.layers.0.mlp.up_proj.weight",
+      "worker_id": "layer-00.dense_mlp_stripe.worker-03"
+    },
+    {
+      "byte_ranges": {
+        "base_offset": 707952,
+        "kind": "strided",
+        "last_range_stop": 485099376,
+        "range_count": 7168,
+        "range_length": 16896,
+        "stride": 67584
+      },
+      "bytes_read": 121110528,
+      "dtype": "BF16",
+      "file": "model-00001-of-000096.safetensors",
+      "full_source_tensor_materialized": false,
+      "purpose": "dense_mlp_stripe_down_intermediate_columns",
+      "read_mechanism": "read_only_memmap_then_assigned_slice_copy",
+      "requested_shard": {
+        "axis": 1,
+        "start": 25344,
+        "stop": 33792
+      },
+      "source_fraction_read": 0.25,
+      "source_shape": [
+        7168,
+        33792
+      ],
+      "source_tensor_bytes": 484442112,
+      "tensor": "language_model.model.layers.0.mlp.down_proj.weight",
+      "worker_id": "layer-00.dense_mlp_stripe.worker-03"
+    }
+  ],
+  "complete_93_layer_graph": false,
+  "direct_loader_gate": {
+    "bytes_read": 2341228928,
+    "full_material_tensors_over_review_threshold": 0,
+    "request_count": 72,
+    "violations": []
+  },
+  "embedding": {
+    "checkpoint_bytes": 14336,
+    "operator": "embedding_vocabulary_shard",
+    "resource_type": "microworker",
+    "token_id": 163584,
+    "vocabulary_range": [
+      122880,
+      163840
+    ],
+    "worker_id": "endpoint.embedding.worker-03"
+  },
+  "evidence_class": "PHYSICAL sequential sub-layer workers on one RTX 5090",
+  "executed_layers": 1,
+  "head": null,
+  "layers": [
+    {
+      "attention": {
+        "attention_type": "KDA",
+        "common_owner": "kda.layer-0.p4.worker-00",
+        "common_projection": {
+          "wall": {
+            "maximum_ms": 0.0241,
+            "mean_ms": 0.0241,
+            "minimum_ms": 0.0241,
+            "p50_ms": 0.0241,
+            "p90_ms": 0.0241,
+            "p95_ms": 0.0241,
+            "p99_ms": 0.0241,
+            "standard_deviation_ms": 0.0
+          }
+        },
+        "independent_worker_compute_ceiling_ms": 0.4128,
+        "kda_shard_library": "artifacts/experiment-019\\physical\\exp019-kda-shard-sm120-v2.dll",
+        "kda_shard_library_sha256": "d88fe1da01793155993f2e8aec4a7e08c389bb433f79d24e9a32d5f49bfb384c",
+        "layer": 0,
+        "one_layer_reduction": true,
+        "output_fingerprint": "sha256:d05328d2aec50d694cc8ee58a4a9e9a2c1db1ddf2e9042ac1db5931c28b69fe6",
+        "rows": 1,
+        "sequential_worker_compute_ms": 1.561,
+        "stripe_degree": 4,
+        "workers": [
+          {
+            "head_start": 0,
+            "head_stop": 24,
+            "network_visible_partial_outputs": 1,
+            "persistent_state_bytes": 1720320,
+            "physical_launches": 8,
+            "runtime_weight_bytes": 64204896,
+            "state_fingerprint": "sha256:bde38b3ff0ddca7b5b0fc88602f1772e0a2051c1831c55a7330739e04bd10c56",
+            "stripe_index": 0,
+            "wall": {
+              "maximum_ms": 0.3937,
+              "mean_ms": 0.3937,
+              "minimum_ms": 0.3937,
+              "p50_ms": 0.3937,
+              "p90_ms": 0.3937,
+              "p95_ms": 0.3937,
+              "p99_ms": 0.3937,
+              "standard_deviation_ms": 0.0
+            },
+            "worker_id": "kda.layer-0.p4.worker-00"
+          },
+          {
+            "head_start": 24,
+            "head_stop": 48,
+            "network_visible_partial_outputs": 1,
+            "persistent_state_bytes": 1720320,
+            "physical_launches": 8,
+            "runtime_weight_bytes": 64204896,
+            "state_fingerprint": "sha256:f4c735624074a4c7d4365c59a91438545c94aa2c04fb59a8c6704667aad0b99e",
+            "stripe_index": 1,
+            "wall": {
+              "maximum_ms": 0.4128,
+              "mean_ms": 0.4128,
+              "minimum_ms": 0.4128,
+              "p50_ms": 0.4128,
+              "p90_ms": 0.4128,
+              "p95_ms": 0.4128,
+              "p99_ms": 0.4128,
+              "standard_deviation_ms": 0.0
+            },
+            "worker_id": "kda.layer-0.p4.worker-01"
+          },
+          {
+            "head_start": 48,
+            "head_stop": 72,
+            "network_visible_partial_outputs": 1,
+            "persistent_state_bytes": 1720320,
+            "physical_launches": 8,
+            "runtime_weight_bytes": 64204896,
+            "state_fingerprint": "sha256:13a46689e82f519666138876d301f7e7eba5a95d6beccf24a3d6a4846c864a24",
+            "stripe_index": 2,
+            "wall": {
+              "maximum_ms": 0.3902,
+              "mean_ms": 0.3902,
+              "minimum_ms": 0.3902,
+              "p50_ms": 0.3902,
+              "p90_ms": 0.3902,
+              "p95_ms": 0.3902,
+              "p99_ms": 0.3902,
+              "standard_deviation_ms": 0.0
+            },
+            "worker_id": "kda.layer-0.p4.worker-02"
+          },
+          {
+            "head_start": 72,
+            "head_stop": 96,
+            "network_visible_partial_outputs": 1,
+            "persistent_state_bytes": 1720320,
+            "physical_launches": 8,
+            "runtime_weight_bytes": 64204896,
+            "state_fingerprint": "sha256:ca5e0818a08b344714b2d10974710f2ea65fa8a8ec3222455050e5e4aa61a62b",
+            "stripe_index": 3,
+            "wall": {
+              "maximum_ms": 0.3643,
+              "mean_ms": 0.3643,
+              "minimum_ms": 0.3643,
+              "p50_ms": 0.3643,
+              "p90_ms": 0.3643,
+              "p95_ms": 0.3643,
+              "p99_ms": 0.3643,
+              "standard_deviation_ms": 0.0
+            },
+            "worker_id": "kda.layer-0.p4.worker-03"
+          }
+        ]
+      },
+      "attention_type": "KDA",
+      "input_fingerprint": "sha256:b392d6b1bdbc9a0e001e3b13d6a5fb96e24781cd1ffa4ed467ecf1ba7812bd3d",
+      "layer": 0,
+      "mlp_worker_count": 4,
+      "oracle_correctness": {
+        "actual_finite": true,
+        "actual_l2": 3.1461683262718547,
+        "cosine_similarity": 0.9999999999999548,
+        "maximum_absolute_error": 8.940696716308594e-08,
+        "mean_absolute_error": 7.997596997353997e-09,
+        "reference_finite": true,
+        "reference_l2": 3.1461682607342674,
+        "relative_l2_error": 3.069883268132654e-07
+      },
+      "output_fingerprint": "sha256:079bbc7d3483dc960890d325b41e603a114d53476e1cb7cffc93f074cb9b4b4e",
+      "routes": null,
+      "wall_ms": 16145.5213
+    }
+  ],
+  "maximum_relative_l2_error": 3.069883268132654e-07,
+  "routes_exact": true,
+  "schema_version": "experiment-019-full-sharded-oracle-v1",
+  "startup_quantization_audit": [
+    {
+      "output_bytes": 28672,
+      "quantization": "none_rmsnorm_compute",
+      "source_bytes": 57344,
+      "wall_ms": 1.325,
+      "worker_id": "layer-00.norm-worker"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 20.5547,
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 21.0894,
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 20.6032,
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 20.4644,
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 8.9239,
+      "worker_id": "kda.layer-0.p4.worker-00"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 20.7444,
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 20.4253,
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 21.4411,
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 20.7928,
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 10.4034,
+      "worker_id": "kda.layer-0.p4.worker-01"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 21.2049,
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 21.0609,
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 21.3796,
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 20.4712,
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 8.718,
+      "worker_id": "kda.layer-0.p4.worker-02"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 20.6112,
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 20.1183,
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 20.1673,
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 20.5165,
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "output_bytes": 12386304,
+      "quantization": "grouped_int4",
+      "source_bytes": 44040192,
+      "wall_ms": 9.6517,
+      "worker_id": "kda.layer-0.p4.worker-03"
+    },
+    {
+      "output_bytes": 28672,
+      "quantization": "none_rmsnorm_compute",
+      "source_bytes": 57344,
+      "wall_ms": 0.343,
+      "worker_id": "layer-00.norm-worker"
+    },
+    {
+      "output_bytes": 34062336,
+      "quantization": "grouped_int4",
+      "source_bytes": 121110528,
+      "wall_ms": 55.2075,
+      "worker_id": "layer-00.dense_mlp_stripe.worker-00"
+    },
+    {
+      "output_bytes": 34062336,
+      "quantization": "grouped_int4",
+      "source_bytes": 121110528,
+      "wall_ms": 54.5879,
+      "worker_id": "layer-00.dense_mlp_stripe.worker-00"
+    },
+    {
+      "output_bytes": 34062336,
+      "quantization": "grouped_int4",
+      "source_bytes": 121110528,
+      "wall_ms": 23.0087,
+      "worker_id": "layer-00.dense_mlp_stripe.worker-00"
+    },
+    {
+      "output_bytes": 34062336,
+      "quantization": "grouped_int4",
+      "source_bytes": 121110528,
+      "wall_ms": 56.0646,
+      "worker_id": "layer-00.dense_mlp_stripe.worker-01"
+    },
+    {
+      "output_bytes": 34062336,
+      "quantization": "grouped_int4",
+      "source_bytes": 121110528,
+      "wall_ms": 55.4355,
+      "worker_id": "layer-00.dense_mlp_stripe.worker-01"
+    },
+    {
+      "output_bytes": 34062336,
+      "quantization": "grouped_int4",
+      "source_bytes": 121110528,
+      "wall_ms": 22.693,
+      "worker_id": "layer-00.dense_mlp_stripe.worker-01"
+    },
+    {
+      "output_bytes": 34062336,
+      "quantization": "grouped_int4",
+      "source_bytes": 121110528,
+      "wall_ms": 1013.9668,
+      "worker_id": "layer-00.dense_mlp_stripe.worker-02"
+    },
+    {
+      "output_bytes": 34062336,
+      "quantization": "grouped_int4",
+      "source_bytes": 121110528,
+      "wall_ms": 1010.6493,
+      "worker_id": "layer-00.dense_mlp_stripe.worker-02"
+    },
+    {
+      "output_bytes": 34062336,
+      "quantization": "grouped_int4",
+      "source_bytes": 121110528,
+      "wall_ms": 59.2111,
+      "worker_id": "layer-00.dense_mlp_stripe.worker-02"
+    },
+    {
+      "output_bytes": 34062336,
+      "quantization": "grouped_int4",
+      "source_bytes": 121110528,
+      "wall_ms": 1600.2722,
+      "worker_id": "layer-00.dense_mlp_stripe.worker-03"
+    },
+    {
+      "output_bytes": 34062336,
+      "quantization": "grouped_int4",
+      "source_bytes": 121110528,
+      "wall_ms": 1140.1843,
+      "worker_id": "layer-00.dense_mlp_stripe.worker-03"
+    },
+    {
+      "output_bytes": 34062336,
+      "quantization": "grouped_int4",
+      "source_bytes": 121110528,
+      "wall_ms": 59.1809,
+      "worker_id": "layer-00.dense_mlp_stripe.worker-03"
+    }
+  ],
+  "state_fingerprints": [
+    {
+      "layer": 0,
+      "workers": [
+        "sha256:bde38b3ff0ddca7b5b0fc88602f1772e0a2051c1831c55a7330739e04bd10c56",
+        "sha256:f4c735624074a4c7d4365c59a91438545c94aa2c04fb59a8c6704667aad0b99e",
+        "sha256:13a46689e82f519666138876d301f7e7eba5a95d6beccf24a3d6a4846c864a24",
+        "sha256:ca5e0818a08b344714b2d10974710f2ea65fa8a8ec3222455050e5e4aa61a62b"
+      ]
+    }
+  ],
+  "status": "FAIL",
+  "stripe_degree": 4,
+  "wall_seconds": 16.1456016,
+  "worker_operation_count": 10
+}

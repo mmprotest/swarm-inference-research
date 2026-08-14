@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "findings": [],
+  "patterns_checked": [
+    "windows_user_path",
+    "model_drive_path",
+    "hf_token_shape",
+    "openai_key_shape"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "complete_93_layer_worker_process_traversal": false,
+  "decisive_blocker": "production EXECUTE_SHARD native dispatch is unimplemented",
+  "evidence_class": "NO_E021_WORKER_PROCESS_CORRECTNESS_EVIDENCE",
+  "exact_greedy_token": null,
+  "execute_shard_invokes_real_native_shard_code": false,
+  "gate": "complete 93-layer correctness through production worker-process dispatch",
+  "hidden_relative_l2": null,
+  "in_process_monolithic_fallback_used": false,
+  "logit_relative_l2": null,
+  "not_run_reason": "The corrected ordered replay invalidated the resident-worker model, and the current production daemon still returns a mock partial vector rather than dispatching native shard primitives. Running the prior 44-minute in-process graph again would not satisfy this gate.",
+  "prior_control_admissible_for_this_gate": false,
+  "prior_physical_shard_math_control": {
+    "artifact": "artifacts/experiment-020\\correctness\\full-93-sharded.json",
+    "artifact_sha256": "602661c493ea41a92c6d133e11a4eeb29200964c895a54c8571e08ed63f1f627",
+    "candidate": {
+      "depth_span": 8,
+      "pod_count": 12,
+      "stripe_degree": 8,
+      "worker_count": 96,
+      "workers_per_pod": 8
+    },
+    "complete_93_layer_graph": true,
+    "evidence_class": "PHYSICAL sequential sub-layer workers on one RTX 5090",
+    "executed_layers": 93,
+    "maximum_relative_l2_error": 1.1942476971199588e-06,
+    "routes_exact": true,
+    "status": "PASS",
+    "wall_seconds": 2649.6815955,
+    "worker_operation_count": 3983
+  },
+  "routes_exact": null,
+  "schema_version": "experiment-021-worker-process-93-layer-v1",
+  "state_fingerprints": null,
+  "status": "FAIL",
+  "test_run_after_model_invalid": false,
+  "worker_process_transport": "authenticated EXECUTE_SHARD frame"
+}

@@ -1,0 +1,9 @@
+component,modeled_wall_ms,percent,measurement_method
+attention / pre-MoE,1082.9831719139595,36.132698865261425,normalized representative KDA/MLA CUDA phase profiles
+expert compute,1177.5841990224867,39.288971754355224,normalized representative KDA/MLA CUDA phase profiles
+routing,111.3986030268367,3.716707961459698,normalized representative KDA/MLA CUDA phase profiles
+dispatch / scatter / reduction,77.34895335437879,2.580673930655465,normalized representative KDA/MLA CUDA phase profiles
+device transfers,148.75434943521543,4.9630467512634,normalized representative KDA/MLA CUDA phase profiles
+latent / residual / other,156.60717835177226,5.225048885591032,normalized representative KDA/MLA CUDA phase profiles
+endpoint,58.244246095787275,1.9432636253192486,Experiment 015 fixed-topology model + shaped DCP transport
+communication,184.31782767999994,6.149588226094521,Experiment 015 fixed-topology model + shaped DCP transport

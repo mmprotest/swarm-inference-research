@@ -1,0 +1,29 @@
+{
+  "accepted_rows": 17,
+  "best_exact_tok_s_per_user": 6.702244850841379,
+  "breakthrough": false,
+  "breakthrough_latency_budget_ms": 2266.6666666666665,
+  "breakthrough_target": 7.5,
+  "claim_boundary": "VALIDATED INDEPENDENT-RESOURCE MODEL using PHYSICAL real-K3 service and canonical SHAPED NETWORK; not a physical 12-GPU result",
+  "gates": {
+    "gate_1_chunk_correctness": true,
+    "gate_2_measured_all_12_cells": true,
+    "gate_3_wavefront_shape_and_1_25x": true,
+    "gate_4_primary_5_tok_s": true,
+    "gate_5_attnres_dedup_80_percent": true,
+    "gate_6_exact_32_way_microshard": true,
+    "gate_7_control_sublinear_no_1000_waits": true
+  },
+  "latency_budget_ms": 3400.0,
+  "outcome": "PASS_STRONG",
+  "pass_strong_latency_budget_ms": 2833.3333333333335,
+  "pass_strong_target": 6.0,
+  "pipeline_efficiency_target_pass": true,
+  "primary_target_tok_s_per_user": 5.0,
+  "speedup_vs_corresponding_serial": 2.1624290424876773,
+  "target_crossed": true,
+  "target_pass_ms": 2536.463584714586,
+  "utilization_target_pass": false,
+  "winning_block_candidates": 16,
+  "winning_chunk_rows": 2
+}

@@ -1,0 +1,7 @@
+block_size,checkpoint_frequency_tokens,replay_cpu_p50_ms_one_head,state_hbm_traffic_saved_vs_hypothetical_snapshots_bytes,extra_compact_buffer_bytes,vram_reduction_vs_hypothetical_snapshots_bytes,vram_change_vs_retained_in_place_path_bytes,total_kda_layer_latency_ms,decision
+1,1,0.014,0,147840,6143616,147840,,CAPACITY_ONLY_REJECT_LATENCY
+2,2,0.0248,6291456,295680,12287232,295680,,CAPACITY_ONLY_REJECT_LATENCY
+4,4,0.047,18874368,591360,24574464,591360,,CAPACITY_ONLY_REJECT_LATENCY
+7,7,0.0829,37748736,1034880,43005312,1034880,,CAPACITY_ONLY_REJECT_LATENCY
+12,12,0.144,69206016,1774080,73723392,1774080,,CAPACITY_ONLY_REJECT_LATENCY
+16,16,0.1909,94371840,2365440,98297856,2365440,,CAPACITY_ONLY_REJECT_LATENCY

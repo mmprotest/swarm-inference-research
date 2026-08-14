@@ -1,0 +1,22 @@
+{
+  "api_key_in_artifacts": false,
+  "arbitrary_execution_message_supported": false,
+  "backpressure": "asyncio StreamWriter.drain",
+  "bounded_buffers": true,
+  "bounded_payload_bytes": 16777216,
+  "certificate_sha256": "9583f6f278aafe30027d9f9ac824d30befca4d88cd0007a56137e60c38bb6b14",
+  "credential_persisted": false,
+  "credential_value_persisted": false,
+  "error_propagation": true,
+  "hf_token_in_artifacts": false,
+  "hmac_sha256_frame_authentication": true,
+  "minimum_tls_version": "TLSv1.2",
+  "per_run_credential_present": true,
+  "persistent_connections": true,
+  "schema_version": "experiment-020-security-validation-v1",
+  "sha256_payload_checksums": true,
+  "status": "PASS",
+  "timeouts": true,
+  "tls_enabled": true,
+  "unauthenticated_arbitrary_execution_port": false
+}

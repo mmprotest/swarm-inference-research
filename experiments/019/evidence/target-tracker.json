@@ -1,0 +1,9 @@
+{
+  "admissible_throughput_target_met": false,
+  "best_exact_tok_s_per_user": 20.883585849929016,
+  "best_target_pass_ms": 814.0364457599978,
+  "block_16_max_target_pass_ms": 3400.0,
+  "classification": "MODEL_INVALID",
+  "target_tok_s_per_user": 5.0,
+  "throughput_target_met": false
+}

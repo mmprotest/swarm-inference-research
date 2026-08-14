@@ -1,0 +1,510 @@
+{
+  "gpu_samples": [
+    {
+      "gpu_utilization_percent": 0.0,
+      "memory_controller_utilization_percent": 0.0,
+      "power_w": 25.12,
+      "temperature_c": 51.0,
+      "timestamp": "2026/08/13 17:54:11.657",
+      "vram_used_mib": 1427.0
+    }
+  ],
+  "protocol": {
+    "process_model": "one persistent coordinator process and one persistent worker process",
+    "rows": [
+      {
+        "deserialization": {
+          "maximum_ms": 0.0024,
+          "mean_ms": 0.000258,
+          "minimum_ms": 0.0001,
+          "p50_ms": 0.0002,
+          "p90_ms": 0.0005,
+          "p95_ms": 0.0009,
+          "p99_ms": 0.0016080000000000042,
+          "standard_deviation_ms": 0.0003191175332068108
+        },
+        "dispatch": {
+          "maximum_ms": 0.0042,
+          "mean_ms": 0.00107,
+          "minimum_ms": 0.0007,
+          "p50_ms": 0.0009,
+          "p90_ms": 0.0013200000000000017,
+          "p95_ms": 0.0024,
+          "p99_ms": 0.003408000000000004,
+          "standard_deviation_ms": 0.0005729746940310714
+        },
+        "framing": {
+          "maximum_ms": 0.0011,
+          "mean_ms": 0.00021799999999999999,
+          "minimum_ms": 0.0001,
+          "p50_ms": 0.0002,
+          "p90_ms": 0.0003,
+          "p95_ms": 0.0005,
+          "p99_ms": 0.0011,
+          "standard_deviation_ms": 0.00018296447742663054
+        },
+        "iterations": 100,
+        "payload_bytes": 128,
+        "queue_send": {
+          "maximum_ms": 0.015,
+          "mean_ms": 0.003985,
+          "minimum_ms": 0.0021,
+          "p50_ms": 0.00355,
+          "p90_ms": 0.004410000000000001,
+          "p95_ms": 0.006105,
+          "p99_ms": 0.014703,
+          "standard_deviation_ms": 0.0019486084778631138
+        },
+        "receive": {
+          "maximum_ms": 0.059,
+          "mean_ms": 0.016307000000000002,
+          "minimum_ms": 0.0131,
+          "p50_ms": 0.014,
+          "p90_ms": 0.02141000000000002,
+          "p95_ms": 0.030184999999999993,
+          "p99_ms": 0.04830800000000005,
+          "standard_deviation_ms": 0.006995959619666196
+        },
+        "round_trip": {
+          "maximum_ms": 0.0632,
+          "mean_ms": 0.020566,
+          "minimum_ms": 0.0163,
+          "p50_ms": 0.0177,
+          "p90_ms": 0.02971000000000001,
+          "p95_ms": 0.037305,
+          "p99_ms": 0.05330000000000005,
+          "standard_deviation_ms": 0.007616077993298125
+        },
+        "serialization": {
+          "maximum_ms": 0.0058,
+          "mean_ms": 0.0009320000000000001,
+          "minimum_ms": 0.0006,
+          "p50_ms": 0.0007,
+          "p90_ms": 0.001010000000000001,
+          "p95_ms": 0.0024049999999999996,
+          "p99_ms": 0.004711000000000006,
+          "standard_deviation_ms": 0.0008536837822050972
+        },
+        "software_overhead_p50_ms": 0.019549999999999998
+      },
+      {
+        "deserialization": {
+          "maximum_ms": 0.0008,
+          "mean_ms": 0.000177,
+          "minimum_ms": 0.0001,
+          "p50_ms": 0.0002,
+          "p90_ms": 0.0002,
+          "p95_ms": 0.0003049999999999997,
+          "p99_ms": 0.0005030000000000015,
+          "standard_deviation_ms": 9.783148777362019e-05
+        },
+        "dispatch": {
+          "maximum_ms": 0.0016,
+          "mean_ms": 0.0009220000000000001,
+          "minimum_ms": 0.0008,
+          "p50_ms": 0.0009,
+          "p90_ms": 0.001,
+          "p95_ms": 0.001,
+          "p99_ms": 0.0011050000000000027,
+          "standard_deviation_ms": 9.00888450364417e-05
+        },
+        "framing": {
+          "maximum_ms": 0.0014,
+          "mean_ms": 0.000431,
+          "minimum_ms": 0.0003,
+          "p50_ms": 0.0004,
+          "p90_ms": 0.0005,
+          "p95_ms": 0.0006049999999999996,
+          "p99_ms": 0.001004000000000002,
+          "standard_deviation_ms": 0.00014191194452899307
+        },
+        "iterations": 100,
+        "payload_bytes": 14336,
+        "queue_send": {
+          "maximum_ms": 0.0304,
+          "mean_ms": 0.016457,
+          "minimum_ms": 0.0153,
+          "p50_ms": 0.0159,
+          "p90_ms": 0.0166,
+          "p95_ms": 0.018594999999999993,
+          "p99_ms": 0.025252000000000028,
+          "standard_deviation_ms": 0.0020511096996504107
+        },
+        "receive": {
+          "maximum_ms": 0.0125,
+          "mean_ms": 0.002432,
+          "minimum_ms": 0.002,
+          "p50_ms": 0.0021,
+          "p90_ms": 0.002510000000000001,
+          "p95_ms": 0.003429999999999998,
+          "p99_ms": 0.008243000000000023,
+          "standard_deviation_ms": 0.0013591821070040617
+        },
+        "round_trip": {
+          "maximum_ms": 0.0342,
+          "mean_ms": 0.019132,
+          "minimum_ms": 0.0179,
+          "p50_ms": 0.0183,
+          "p90_ms": 0.01934000000000001,
+          "p95_ms": 0.0257,
+          "p99_ms": 0.032616000000000006,
+          "standard_deviation_ms": 0.0028304727520327764
+        },
+        "serialization": {
+          "maximum_ms": 0.0089,
+          "mean_ms": 0.003986,
+          "minimum_ms": 0.0035,
+          "p50_ms": 0.0039,
+          "p90_ms": 0.00391,
+          "p95_ms": 0.0048,
+          "p99_ms": 0.007712000000000006,
+          "standard_deviation_ms": 0.0006758727690919349
+        },
+        "software_overhead_p50_ms": 0.023400000000000004
+      },
+      {
+        "deserialization": {
+          "maximum_ms": 0.0003,
+          "mean_ms": 0.00016900000000000002,
+          "minimum_ms": 0.0001,
+          "p50_ms": 0.0002,
+          "p90_ms": 0.0002,
+          "p95_ms": 0.0003,
+          "p99_ms": 0.0003,
+          "standard_deviation_ms": 6.276145313805281e-05
+        },
+        "dispatch": {
+          "maximum_ms": 0.0016,
+          "mean_ms": 0.001042,
+          "minimum_ms": 0.0009,
+          "p50_ms": 0.001,
+          "p90_ms": 0.0012,
+          "p95_ms": 0.0014049999999999998,
+          "p99_ms": 0.0016,
+          "standard_deviation_ms": 0.00015045265035884214
+        },
+        "framing": {
+          "maximum_ms": 0.0008,
+          "mean_ms": 0.000687,
+          "minimum_ms": 0.0006,
+          "p50_ms": 0.0007,
+          "p90_ms": 0.0007,
+          "p95_ms": 0.0007,
+          "p99_ms": 0.0008,
+          "standard_deviation_ms": 4.3943145085439684e-05
+        },
+        "iterations": 100,
+        "payload_bytes": 28672,
+        "queue_send": {
+          "maximum_ms": 0.0246,
+          "mean_ms": 0.018063,
+          "minimum_ms": 0.0174,
+          "p50_ms": 0.0178,
+          "p90_ms": 0.018609999999999998,
+          "p95_ms": 0.01881,
+          "p99_ms": 0.020937000000000018,
+          "standard_deviation_ms": 0.0008173928064278519
+        },
+        "receive": {
+          "maximum_ms": 0.0189,
+          "mean_ms": 0.002546,
+          "minimum_ms": 0.002,
+          "p50_ms": 0.0022,
+          "p90_ms": 0.0028,
+          "p95_ms": 0.0028049999999999998,
+          "p99_ms": 0.010188000000000044,
+          "standard_deviation_ms": 0.0018337077193489699
+        },
+        "round_trip": {
+          "maximum_ms": 0.0377,
+          "mean_ms": 0.020845,
+          "minimum_ms": 0.0198,
+          "p50_ms": 0.0203,
+          "p90_ms": 0.0217,
+          "p95_ms": 0.021944999999999996,
+          "p99_ms": 0.029285000000000044,
+          "standard_deviation_ms": 0.0021028730346837393
+        },
+        "serialization": {
+          "maximum_ms": 0.0081,
+          "mean_ms": 0.006913,
+          "minimum_ms": 0.0067,
+          "p50_ms": 0.0068,
+          "p90_ms": 0.0074,
+          "p95_ms": 0.007509999999999999,
+          "p99_ms": 0.007902000000000001,
+          "standard_deviation_ms": 0.0003100499959683922
+        },
+        "software_overhead_p50_ms": 0.0287
+      },
+      {
+        "deserialization": {
+          "maximum_ms": 0.0009,
+          "mean_ms": 0.00029600000000000004,
+          "minimum_ms": 0.0001,
+          "p50_ms": 0.0002,
+          "p90_ms": 0.0006,
+          "p95_ms": 0.0006,
+          "p99_ms": 0.0008010000000000005,
+          "standard_deviation_ms": 0.000176022725805505
+        },
+        "dispatch": {
+          "maximum_ms": 0.0043,
+          "mean_ms": 0.001471,
+          "minimum_ms": 0.0009,
+          "p50_ms": 0.0011,
+          "p90_ms": 0.0025,
+          "p95_ms": 0.0028049999999999998,
+          "p99_ms": 0.0039040000000000017,
+          "standard_deviation_ms": 0.0007196242074861017
+        },
+        "framing": {
+          "maximum_ms": 0.0243,
+          "mean_ms": 0.001466,
+          "minimum_ms": 0.0009,
+          "p50_ms": 0.001,
+          "p90_ms": 0.0021,
+          "p95_ms": 0.0022,
+          "p99_ms": 0.0031140000000001093,
+          "standard_deviation_ms": 0.0023337617701899224
+        },
+        "iterations": 100,
+        "payload_bytes": 57344,
+        "queue_send": {
+          "maximum_ms": 0.0901,
+          "mean_ms": 0.025526,
+          "minimum_ms": 0.0192,
+          "p50_ms": 0.0221,
+          "p90_ms": 0.030860000000000005,
+          "p95_ms": 0.041095,
+          "p99_ms": 0.07356700000000009,
+          "standard_deviation_ms": 0.0102219432594786
+        },
+        "receive": {
+          "maximum_ms": 0.0218,
+          "mean_ms": 0.004716000000000001,
+          "minimum_ms": 0.002,
+          "p50_ms": 0.0024,
+          "p90_ms": 0.0113,
+          "p95_ms": 0.01194,
+          "p99_ms": 0.017345000000000024,
+          "standard_deviation_ms": 0.00403734368118445
+        },
+        "round_trip": {
+          "maximum_ms": 0.0955,
+          "mean_ms": 0.030639,
+          "minimum_ms": 0.023,
+          "p50_ms": 0.0248,
+          "p90_ms": 0.042030000000000005,
+          "p95_ms": 0.05600499999999999,
+          "p99_ms": 0.08104600000000008,
+          "standard_deviation_ms": 0.012230976207972937
+        },
+        "serialization": {
+          "maximum_ms": 0.0657,
+          "mean_ms": 0.015047,
+          "minimum_ms": 0.0114,
+          "p50_ms": 0.0131,
+          "p90_ms": 0.015920000000000004,
+          "p95_ms": 0.017429999999999998,
+          "p99_ms": 0.05550300000000005,
+          "standard_deviation_ms": 0.007453139673989747
+        },
+        "software_overhead_p50_ms": 0.0399
+      },
+      {
+        "deserialization": {
+          "maximum_ms": 0.0005,
+          "mean_ms": 0.000192,
+          "minimum_ms": 0.0001,
+          "p50_ms": 0.0002,
+          "p90_ms": 0.0003,
+          "p95_ms": 0.0003049999999999997,
+          "p99_ms": 0.00040100000000000053,
+          "standard_deviation_ms": 7.573638491504596e-05
+        },
+        "dispatch": {
+          "maximum_ms": 0.0022,
+          "mean_ms": 0.00107,
+          "minimum_ms": 0.0009,
+          "p50_ms": 0.001,
+          "p90_ms": 0.0011,
+          "p95_ms": 0.0013049999999999997,
+          "p99_ms": 0.0021010000000000004,
+          "standard_deviation_ms": 0.00019
+        },
+        "framing": {
+          "maximum_ms": 0.0022,
+          "mean_ms": 0.0017929999999999999,
+          "minimum_ms": 0.0017,
+          "p50_ms": 0.0018,
+          "p90_ms": 0.0019,
+          "p95_ms": 0.002,
+          "p99_ms": 0.002002000000000001,
+          "standard_deviation_ms": 9.192932067626741e-05
+        },
+        "iterations": 100,
+        "payload_bytes": 114688,
+        "queue_send": {
+          "maximum_ms": 0.0386,
+          "mean_ms": 0.026983,
+          "minimum_ms": 0.021,
+          "p50_ms": 0.02695,
+          "p90_ms": 0.028020000000000003,
+          "p95_ms": 0.02873,
+          "p99_ms": 0.033155000000000025,
+          "standard_deviation_ms": 0.001924996363632929
+        },
+        "receive": {
+          "maximum_ms": 0.0136,
+          "mean_ms": 0.004739999999999999,
+          "minimum_ms": 0.0022,
+          "p50_ms": 0.0032,
+          "p90_ms": 0.007840000000000003,
+          "p95_ms": 0.00971,
+          "p99_ms": 0.010630000000000016,
+          "standard_deviation_ms": 0.0025490782647851363
+        },
+        "round_trip": {
+          "maximum_ms": 0.0436,
+          "mean_ms": 0.032014,
+          "minimum_ms": 0.024,
+          "p50_ms": 0.03065,
+          "p90_ms": 0.036210000000000006,
+          "p95_ms": 0.037445,
+          "p99_ms": 0.043006,
+          "standard_deviation_ms": 0.0034360739223712865
+        },
+        "serialization": {
+          "maximum_ms": 0.027,
+          "mean_ms": 0.024744000000000002,
+          "minimum_ms": 0.0218,
+          "p50_ms": 0.0246,
+          "p90_ms": 0.02561,
+          "p95_ms": 0.026705,
+          "p99_ms": 0.026901,
+          "standard_deviation_ms": 0.0007587252467131958
+        },
+        "software_overhead_p50_ms": 0.05775
+      }
+    ],
+    "schema_version": "experiment-019-persistent-protocol-v1",
+    "status": "PASS"
+  },
+  "scaling": [
+    {
+      "coarse_descriptors": 13,
+      "coordinator_issue": {
+        "maximum_ms": 0.1298,
+        "mean_ms": 0.010069999999999999,
+        "minimum_ms": 0.0027,
+        "p50_ms": 0.0028,
+        "p90_ms": 0.006020000000000019,
+        "p95_ms": 0.02349500000000008,
+        "p99_ms": 0.10853899999999986,
+        "standard_deviation_ms": 0.02766282885028211
+      },
+      "logical_expert_rpcs": 0,
+      "p50_ms_per_worker": 2.8e-05,
+      "worker_count": 100
+    },
+    {
+      "coarse_descriptors": 32,
+      "coordinator_issue": {
+        "maximum_ms": 0.0114,
+        "mean_ms": 0.006045,
+        "minimum_ms": 0.0055,
+        "p50_ms": 0.0057,
+        "p90_ms": 0.006080000000000001,
+        "p95_ms": 0.007030000000000003,
+        "p99_ms": 0.010525999999999994,
+        "standard_deviation_ms": 0.0012579646258937492
+      },
+      "logical_expert_rpcs": 0,
+      "p50_ms_per_worker": 2.2800000000000002e-05,
+      "worker_count": 250
+    },
+    {
+      "coarse_descriptors": 47,
+      "coordinator_issue": {
+        "maximum_ms": 0.0118,
+        "mean_ms": 0.00858,
+        "minimum_ms": 0.0078,
+        "p50_ms": 0.0082,
+        "p90_ms": 0.009580000000000002,
+        "p95_ms": 0.010375,
+        "p99_ms": 0.011514999999999997,
+        "standard_deviation_ms": 0.0009521554494934112
+      },
+      "logical_expert_rpcs": 0,
+      "p50_ms_per_worker": 2.1808510638297873e-05,
+      "worker_count": 376
+    },
+    {
+      "coarse_descriptors": 63,
+      "coordinator_issue": {
+        "maximum_ms": 0.0139,
+        "mean_ms": 0.0108,
+        "minimum_ms": 0.0103,
+        "p50_ms": 0.0105,
+        "p90_ms": 0.011090000000000003,
+        "p95_ms": 0.012855000000000002,
+        "p99_ms": 0.013690999999999998,
+        "standard_deviation_ms": 0.0008809086218218093
+      },
+      "logical_expert_rpcs": 0,
+      "p50_ms_per_worker": 2.1000000000000002e-05,
+      "worker_count": 500
+    },
+    {
+      "coarse_descriptors": 125,
+      "coordinator_issue": {
+        "maximum_ms": 0.033,
+        "mean_ms": 0.022850000000000002,
+        "minimum_ms": 0.0211,
+        "p50_ms": 0.0219,
+        "p90_ms": 0.024120000000000006,
+        "p95_ms": 0.027300000000000005,
+        "p99_ms": 0.03185999999999999,
+        "standard_deviation_ms": 0.0026403598239633933
+      },
+      "logical_expert_rpcs": 0,
+      "p50_ms_per_worker": 2.19e-05,
+      "worker_count": 1000
+    },
+    {
+      "coarse_descriptors": 250,
+      "coordinator_issue": {
+        "maximum_ms": 0.0692,
+        "mean_ms": 0.045115,
+        "minimum_ms": 0.042,
+        "p50_ms": 0.042550000000000004,
+        "p90_ms": 0.04937000000000002,
+        "p95_ms": 0.062075000000000005,
+        "p99_ms": 0.06777499999999999,
+        "standard_deviation_ms": 0.006989297174966879
+      },
+      "logical_expert_rpcs": 0,
+      "p50_ms_per_worker": 2.1275000000000002e-05,
+      "worker_count": 2000
+    },
+    {
+      "coarse_descriptors": 372,
+      "coordinator_issue": {
+        "maximum_ms": 0.0984,
+        "mean_ms": 0.06679,
+        "minimum_ms": 0.0628,
+        "p50_ms": 0.0642,
+        "p90_ms": 0.06916000000000003,
+        "p95_ms": 0.08054000000000001,
+        "p99_ms": 0.09482799999999998,
+        "standard_deviation_ms": 0.008061507303228101
+      },
+      "logical_expert_rpcs": 0,
+      "p50_ms_per_worker": 2.157258064516129e-05,
+      "worker_count": 2976
+    }
+  ],
+  "schema_version": "experiment-019-control-plane-evidence-v1",
+  "status": "PASS"
+}

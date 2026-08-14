@@ -1,0 +1,19 @@
+# Experiment 017 command transcript (PowerShell)
+git status --short
+nvidia-smi --query-gpu=name,driver_version,memory.total,compute_cap --format=csv,noheader
+$env:PYTHONPATH=(Resolve-Path src).Path; .\.venv\Scripts\python.exe -m swarm_inference.experiments.experiment_016.benchmark --checkpoint <local-kimi-k3-checkpoint> --cuda-library artifacts\experiment-016\cuda\coli_cuda-sm120-h016-final.dll --oracle-trace artifacts\experiment-014\oracle-full-93\hidden-trace.f32 --output artifacts\experiment-017\physical\baseline-reproduction.json --gpu-samples artifacts\experiment-017\physical\gpu-samples-baseline.csv --layers 89,91 --warmup 5 --iterations 30 --profile-iterations 5
+$env:PYTHONPATH=(Resolve-Path src).Path; .\.venv\Scripts\python.exe -m swarm_inference.experiments.experiment_016.context_benchmark --checkpoint <local-kimi-k3-checkpoint> --cuda-library artifacts\experiment-016\cuda\coli_cuda-sm120-h016-final.dll --oracle-trace artifacts\experiment-014\oracle-full-93\hidden-trace.f32 --output artifacts\experiment-017\physical\baseline-mla8k-reproduction.json --gpu-samples artifacts\experiment-017\physical\gpu-samples-mla8k-baseline.csv --context 8192 --layer 91 --warmup 3 --iterations 20 --profile-iterations 3 --block-sizes 1,2,4,7,12,16
+$env:PYTHONPATH=(Resolve-Path src).Path; .\.venv\Scripts\python.exe -m swarm_inference.experiments.experiment_016.dcp_cuda_benchmark --checkpoint <local-kimi-k3-checkpoint> --cuda-library artifacts\experiment-016\cuda\coli_cuda-sm120-h016-final.dll --oracle-trace artifacts\experiment-014\oracle-full-93\hidden-trace.f32 --output artifacts\experiment-017\physical\baseline-dcp-reproduction.json --contexts 2,8,32 --degrees 1,2,4,8 --warmup 2 --iterations 12 --profile-iterations 2
+$env:CUDA_OUTPUT=<artifact-root>\cuda\coli_cuda-sm120-h017-window.dll; $env:ALLOW_UNSUPPORTED='1'; third_party\colibri\c\build_cuda.bat
+# Paired real layer-89 runs used experiment_016.benchmark with the rebuilt DLL, --warmup 5 --iterations 30 --profile-iterations 5 and respectively:
+# --fast-path-mode verification-major
+# --fast-path-mode verification-major-kda-window
+# --fast-path-mode verification-major --fused-gate-up false
+$env:PYTHONPATH=(Resolve-Path src).Path; .\.venv\Scripts\python.exe -m swarm_inference.experiments.experiment_017.reference_benchmark --output artifacts\experiment-017\physical\factor-reference.json --warmup 2 --iterations 7
+# Nsight attempt: ncu --kernel-name regex:kimi_kda_short_window --section LaunchStats --section Occupancy --section SpeedOfLight --section MemoryWorkloadAnalysis (failed ERR_NVGPUCTRPERM; timing excluded)
+$env:PYTHONPATH=(Resolve-Path src).Path; .\.venv\Scripts\python.exe -m pytest -q tests\test_kda_verification.py tests\unit\test_kimi_indexed_copy_runtime.py tests\unit\test_kimi_k3_adapter.py --junitxml artifacts\experiment-017\targeted-pytest.xml
+$env:PYTHONPATH=(Resolve-Path src).Path; .\.venv\Scripts\python.exe -m pytest -q --junitxml artifacts\experiment-017\full-pytest.xml
+$env:PYTHONPATH=(Resolve-Path src).Path; .\.venv\Scripts\python.exe -m swarm_inference.experiments.experiment_017.test_receipt --targeted-xml artifacts\experiment-017\targeted-pytest.xml --full-xml artifacts\experiment-017\full-pytest.xml --output artifacts\experiment-017\test-results.json
+$env:PYTHONPATH=(Resolve-Path src).Path; .\.venv\Scripts\python.exe -m swarm_inference.experiments.experiment_017.finalize --root .
+$env:PYTHONPATH=(Resolve-Path src).Path; .\.venv\Scripts\python.exe -m swarm_inference.experiments.experiment_017.figures --root .
+$env:PYTHONPATH=(Resolve-Path src).Path; .\.venv\Scripts\python.exe -m swarm_inference.experiments.experiment_017.audit --root .

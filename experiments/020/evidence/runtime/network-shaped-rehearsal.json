@@ -1,0 +1,25 @@
+{
+  "binary_authenticated_production_framing": true,
+  "block": 16,
+  "chunk": 1,
+  "grouped_top16_messages": true,
+  "layers": 93,
+  "local_message_p50_ms": 15.2721,
+  "local_message_p95_ms": 15.8992,
+  "messages": 12835,
+  "per_expert_rpc": false,
+  "pods": 12,
+  "predicted_or_physical_swarm_result": "NEITHER_SOFTWARE_INTEGRATION_ONLY",
+  "schema_version": "experiment-020-network-shaped-rehearsal-v1",
+  "shaping": {
+    "inter_pod_bandwidth_gbps": 10.0,
+    "inter_pod_rtt_ms": 5.0,
+    "local_bandwidth_gbps": 25.0,
+    "local_rtt_ms": 0.25
+  },
+  "status": "PASS",
+  "wall_seconds": 27.5314288,
+  "wire_bytes": 370362856,
+  "worker_count": 96,
+  "workers_per_pod": 8
+}

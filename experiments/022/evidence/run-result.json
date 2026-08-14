@@ -1,0 +1,104 @@
+{
+  "adaptive_seeded_with_whole_fallback": true,
+  "control_plane_status": "PASS",
+  "dynamic_harmful_join_ignored": true,
+  "dynamic_status": "PASS",
+  "dynamic_useful_join_non_regression": true,
+  "headline_statistics": {
+    "a_feasible_inventory_count": 21,
+    "capacity_unlocks": 6,
+    "largest_uplift_percent": 0.0,
+    "median_uplift_percent": 0.0,
+    "p25_uplift_percent": 0.0,
+    "p75_uplift_percent": 0.0,
+    "regressions_gt_1_percent": 0,
+    "target_crossings": 0,
+    "wins_ge_10_percent": 0,
+    "wins_ge_20_percent": 0
+  },
+  "inventory_count": 27,
+  "inventory_suite_sha256": "3e949a8eee0a71e128493f64e0be903bd373d3baad4be86a8869d87279d4bb49",
+  "model_validation": {
+    "calibration_layers": {
+      "GATED_MLA": 47,
+      "KDA": 45
+    },
+    "component_diagnostics_admission_rule": "component variability is reported in heldout-validation.csv; the exact ordered implementation prediction is the preregistered model gate",
+    "gate": {
+      "correctness_pass": true,
+      "maximum_absolute_error_lte_15_percent": 4.001747430443057,
+      "median_absolute_error_lte_5_percent": 2.713617684164345,
+      "ordered_dag_pass": true,
+      "p90_absolute_error_lte_10_percent": 3.7441214811873147,
+      "resident_timed_region_pass": true,
+      "whole_layer_feature_validation_pass": true
+    },
+    "global_multiplier": null,
+    "heldout_layers": {
+      "GATED_MLA": 91,
+      "KDA": 89
+    },
+    "normalization_applied": false,
+    "one_compute_resource_replay": true,
+    "ordered_cases": 2,
+    "ordered_runtime_decomposition": {
+      "central_rpc_per_logical_operator": false,
+      "explicit_phase_reduction_barriers": 5,
+      "global_normalization": false,
+      "native_operator_tasks": 43,
+      "residual_definition": "resident synchronized outer wall minus calibrated native operator service; divided across the five concrete algorithm barriers"
+    },
+    "ordered_validation": {
+      "maximum_percent": 4.001747430443057,
+      "median_percent": 2.713617684164345,
+      "p90_percent": 3.7441214811873147
+    },
+    "post_hoc_correction": null,
+    "same_deterministic_event_engine_as_planners": true,
+    "schema_version": "experiment-022-model-validation-v1",
+    "service_model": {
+      "condition_count": 173,
+      "feature_keys": [
+        "layer_type",
+        "operation",
+        "degree",
+        "rows"
+      ],
+      "global_multiplier": null,
+      "normalization_applied": false,
+      "schema_version": "experiment-022-resident-service-model-v1",
+      "sources": [
+        "artifacts/experiment-018\\physical\\layer-service.csv",
+        "artifacts/experiment-020\\physical\\other-shards-heldout-raw.json",
+        "artifacts/experiment-020\\physical\\other-shards-raw.json",
+        "artifacts/experiment-022\\validation\\resident-attention-robust-raw.json",
+        "artifacts/experiment-022\\validation\\resident-expert-bank-raw.json",
+        "artifacts/experiment-022\\validation\\resident-ordered-raw.json",
+        "artifacts/experiment-022\\validation\\whole-layer-resident-raw.json"
+      ]
+    },
+    "status": "PASS",
+    "whole_layer_cases": 6,
+    "whole_layer_validation": {
+      "maximum_percent": 8.741720679901748,
+      "median_percent": 2.8883955659764,
+      "p90_percent": 6.2164397351233625
+    }
+  },
+  "only_action_space_differs_between_static_arms": true,
+  "optimizer_configuration": {
+    "candidate_groups_per_action": 4,
+    "exact_evaluation_budget": 6,
+    "proposal_budget": 24,
+    "randomization": 0.08,
+    "restarts": 3,
+    "seed": 22022
+  },
+  "optimizer_oracle_pass": true,
+  "primitive_pass": false,
+  "representative_correctness_pass": false,
+  "same_optimizer_all_arms": true,
+  "schema_version": "experiment-022-run-v1",
+  "sensitivity_inventory": "memory-fragmented-02",
+  "status": "PASS"
+}

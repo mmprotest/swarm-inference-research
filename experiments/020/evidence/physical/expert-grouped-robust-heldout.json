@@ -1,0 +1,2088 @@
+{
+  "checkpoint_read_request_count": 5048,
+  "configuration": {
+    "degree": 8,
+    "iterations": 31,
+    "layer": 89,
+    "rows_sweep": [
+      1,
+      2,
+      4
+    ],
+    "warmup": 5
+  },
+  "evidence_class": "PHYSICAL RTX 5090 exact grouped worker stripe",
+  "latent_projection": [
+    {
+      "checkpoint_bytes": 6422528,
+      "cuda": {
+        "maximum_ms": 0.05244800075888634,
+        "mean_ms": 0.03490477403806102,
+        "minimum_ms": 0.03215999901294708,
+        "p50_ms": 0.03385600075125694,
+        "p90_ms": 0.03468799963593483,
+        "p95_ms": 0.04198399931192398,
+        "p99_ms": 0.05120960026979446,
+        "standard_deviation_ms": 0.004154523148841464
+      },
+      "evidence_class": "PHYSICAL",
+      "input_bytes": 114688,
+      "layer": 89,
+      "output_bytes": 7168,
+      "output_range": [
+        0,
+        448
+      ],
+      "rows": 4,
+      "runtime_weight_bytes": 1806336,
+      "stripe_degree": 8,
+      "stripe_index": 0,
+      "wall": {
+        "maximum_ms": 0.0614,
+        "mean_ms": 0.04097741935483871,
+        "minimum_ms": 0.038,
+        "p50_ms": 0.0397,
+        "p90_ms": 0.0409,
+        "p95_ms": 0.05,
+        "p99_ms": 0.05975,
+        "standard_deviation_ms": 0.0048021305538687295
+      },
+      "worker_id": "latent-down.layer-89.worker-00"
+    },
+    {
+      "checkpoint_bytes": 6422528,
+      "cuda": {
+        "maximum_ms": 0.035999998450279236,
+        "mean_ms": 0.033425548143925204,
+        "minimum_ms": 0.03222399950027466,
+        "p50_ms": 0.033215999603271484,
+        "p90_ms": 0.03404799848794937,
+        "p95_ms": 0.03417599946260452,
+        "p99_ms": 0.03547199890017509,
+        "standard_deviation_ms": 0.00070539848128082
+      },
+      "evidence_class": "PHYSICAL",
+      "input_bytes": 114688,
+      "layer": 89,
+      "output_bytes": 7168,
+      "output_range": [
+        448,
+        896
+      ],
+      "rows": 4,
+      "runtime_weight_bytes": 1806336,
+      "stripe_degree": 8,
+      "stripe_index": 1,
+      "wall": {
+        "maximum_ms": 0.0418,
+        "mean_ms": 0.039203225806451615,
+        "minimum_ms": 0.038,
+        "p50_ms": 0.039,
+        "p90_ms": 0.0398,
+        "p95_ms": 0.040150000000000005,
+        "p99_ms": 0.04135,
+        "standard_deviation_ms": 0.0007145871223742134
+      },
+      "worker_id": "latent-down.layer-89.worker-01"
+    },
+    {
+      "checkpoint_bytes": 6422528,
+      "cuda": {
+        "maximum_ms": 0.03411199897527695,
+        "mean_ms": 0.03322529035710519,
+        "minimum_ms": 0.03190400078892708,
+        "p50_ms": 0.03324799984693527,
+        "p90_ms": 0.03392000123858452,
+        "p95_ms": 0.03404800035059452,
+        "p99_ms": 0.03411199897527695,
+        "standard_deviation_ms": 0.0006328475147969605
+      },
+      "evidence_class": "PHYSICAL",
+      "input_bytes": 114688,
+      "layer": 89,
+      "output_bytes": 7168,
+      "output_range": [
+        896,
+        1344
+      ],
+      "rows": 4,
+      "runtime_weight_bytes": 1806336,
+      "stripe_degree": 8,
+      "stripe_index": 2,
+      "wall": {
+        "maximum_ms": 0.0399,
+        "mean_ms": 0.03893548387096774,
+        "minimum_ms": 0.0377,
+        "p50_ms": 0.0389,
+        "p90_ms": 0.0397,
+        "p95_ms": 0.03975,
+        "p99_ms": 0.039869999999999996,
+        "standard_deviation_ms": 0.0006271020841405354
+      },
+      "worker_id": "latent-down.layer-89.worker-02"
+    },
+    {
+      "checkpoint_bytes": 6422528,
+      "cuda": {
+        "maximum_ms": 0.03657599911093712,
+        "mean_ms": 0.03342038717481398,
+        "minimum_ms": 0.03206399828195572,
+        "p50_ms": 0.03315199911594391,
+        "p90_ms": 0.03411199897527695,
+        "p95_ms": 0.03463999927043915,
+        "p99_ms": 0.03610559888184071,
+        "standard_deviation_ms": 0.0008701781352333869
+      },
+      "evidence_class": "PHYSICAL",
+      "input_bytes": 114688,
+      "layer": 89,
+      "output_bytes": 7168,
+      "output_range": [
+        1344,
+        1792
+      ],
+      "rows": 4,
+      "runtime_weight_bytes": 1806336,
+      "stripe_degree": 8,
+      "stripe_index": 3,
+      "wall": {
+        "maximum_ms": 0.0423,
+        "mean_ms": 0.039164516129032254,
+        "minimum_ms": 0.0378,
+        "p50_ms": 0.0389,
+        "p90_ms": 0.04,
+        "p95_ms": 0.04035,
+        "p99_ms": 0.041819999999999996,
+        "standard_deviation_ms": 0.0008738304209505205
+      },
+      "worker_id": "latent-down.layer-89.worker-03"
+    },
+    {
+      "checkpoint_bytes": 6422528,
+      "cuda": {
+        "maximum_ms": 0.04899200052022934,
+        "mean_ms": 0.03533316139251955,
+        "minimum_ms": 0.031968001276254654,
+        "p50_ms": 0.03379200026392937,
+        "p90_ms": 0.04428799822926521,
+        "p95_ms": 0.046480000019073486,
+        "p99_ms": 0.048291200771927834,
+        "standard_deviation_ms": 0.004398387195297527
+      },
+      "evidence_class": "PHYSICAL",
+      "input_bytes": 114688,
+      "layer": 89,
+      "output_bytes": 7168,
+      "output_range": [
+        1792,
+        2240
+      ],
+      "rows": 4,
+      "runtime_weight_bytes": 1806336,
+      "stripe_degree": 8,
+      "stripe_index": 4,
+      "wall": {
+        "maximum_ms": 0.0572,
+        "mean_ms": 0.04129677419354839,
+        "minimum_ms": 0.0378,
+        "p50_ms": 0.0396,
+        "p90_ms": 0.05,
+        "p95_ms": 0.05265,
+        "p99_ms": 0.05597,
+        "standard_deviation_ms": 0.004691067962248128
+      },
+      "worker_id": "latent-down.layer-89.worker-04"
+    },
+    {
+      "checkpoint_bytes": 6422528,
+      "cuda": {
+        "maximum_ms": 0.03436800092458725,
+        "mean_ms": 0.03326038691786028,
+        "minimum_ms": 0.031968001276254654,
+        "p50_ms": 0.03359999880194664,
+        "p90_ms": 0.033984001725912094,
+        "p95_ms": 0.034015998244285583,
+        "p99_ms": 0.03426240012049675,
+        "standard_deviation_ms": 0.000702199613287365
+      },
+      "evidence_class": "PHYSICAL",
+      "input_bytes": 114688,
+      "layer": 89,
+      "output_bytes": 7168,
+      "output_range": [
+        2240,
+        2688
+      ],
+      "rows": 4,
+      "runtime_weight_bytes": 1806336,
+      "stripe_degree": 8,
+      "stripe_index": 5,
+      "wall": {
+        "maximum_ms": 0.0401,
+        "mean_ms": 0.039038709677419355,
+        "minimum_ms": 0.0379,
+        "p50_ms": 0.0394,
+        "p90_ms": 0.0397,
+        "p95_ms": 0.0398,
+        "p99_ms": 0.04004,
+        "standard_deviation_ms": 0.0006963857937790769
+      },
+      "worker_id": "latent-down.layer-89.worker-05"
+    },
+    {
+      "checkpoint_bytes": 6422528,
+      "cuda": {
+        "maximum_ms": 0.07027199864387512,
+        "mean_ms": 0.03435045144250316,
+        "minimum_ms": 0.03187200054526329,
+        "p50_ms": 0.03328000009059906,
+        "p90_ms": 0.033952001482248306,
+        "p95_ms": 0.03401600010693073,
+        "p99_ms": 0.05940479859709737,
+        "standard_deviation_ms": 0.006587953889048365
+      },
+      "evidence_class": "PHYSICAL",
+      "input_bytes": 114688,
+      "layer": 89,
+      "output_bytes": 7168,
+      "output_range": [
+        2688,
+        3136
+      ],
+      "rows": 4,
+      "runtime_weight_bytes": 1806336,
+      "stripe_degree": 8,
+      "stripe_index": 6,
+      "wall": {
+        "maximum_ms": 0.0761,
+        "mean_ms": 0.04007741935483871,
+        "minimum_ms": 0.0376,
+        "p50_ms": 0.0389,
+        "p90_ms": 0.0397,
+        "p95_ms": 0.03975,
+        "p99_ms": 0.06520999999999998,
+        "standard_deviation_ms": 0.00660785015438843
+      },
+      "worker_id": "latent-down.layer-89.worker-06"
+    },
+    {
+      "checkpoint_bytes": 6422528,
+      "cuda": {
+        "maximum_ms": 0.05907199904322624,
+        "mean_ms": 0.03428851596770748,
+        "minimum_ms": 0.03190400078892708,
+        "p50_ms": 0.03347200155258179,
+        "p90_ms": 0.03420799970626831,
+        "p95_ms": 0.0359680000692606,
+        "p99_ms": 0.052620799094438536,
+        "standard_deviation_ms": 0.004635629315396629
+      },
+      "evidence_class": "PHYSICAL",
+      "input_bytes": 114688,
+      "layer": 89,
+      "output_bytes": 7168,
+      "output_range": [
+        3136,
+        3584
+      ],
+      "rows": 4,
+      "runtime_weight_bytes": 1806336,
+      "stripe_degree": 8,
+      "stripe_index": 7,
+      "wall": {
+        "maximum_ms": 0.0648,
+        "mean_ms": 0.04006451612903226,
+        "minimum_ms": 0.038,
+        "p50_ms": 0.0392,
+        "p90_ms": 0.0401,
+        "p95_ms": 0.041749999999999995,
+        "p99_ms": 0.05837999999999998,
+        "standard_deviation_ms": 0.004625354276725592
+      },
+      "worker_id": "latent-down.layer-89.worker-07"
+    }
+  ],
+  "results": [
+    {
+      "grouped_physical_launches_per_worker": 2,
+      "grouped_worker_ceiling_ms": 0.164,
+      "logical_fragments_per_worker": 16,
+      "minimum_launch_coalescing": 8.0,
+      "old_worker_ceiling_ms": 0.4064,
+      "pass": true,
+      "peak_memory_delta_bytes": 4194304,
+      "relative_l2_error": 4.2097354815391525e-08,
+      "rows": 1,
+      "stripe_degree": 8,
+      "workers": [
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 0.5521280169487,
+              "mean_ms": 0.4022203876126197,
+              "minimum_ms": 0.3721280097961426,
+              "p50_ms": 0.3818880021572113,
+              "p90_ms": 0.44016000628471375,
+              "p95_ms": 0.4800640046596527,
+              "p99_ms": 0.5347232162952422,
+              "standard_deviation_ms": 0.039465698726761395
+            },
+            "logical_expert_operations": 16,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 16,
+            "physical_reduction_launches": 1,
+            "total_physical_launches": 17,
+            "wall": {
+              "maximum_ms": 0.5588,
+              "mean_ms": 0.41017096774193545,
+              "minimum_ms": 0.3797,
+              "p50_ms": 0.389,
+              "p90_ms": 0.4469,
+              "p95_ms": 0.4869,
+              "p99_ms": 0.5413699999999999,
+              "standard_deviation_ms": 0.03978318005379294
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.16249600052833557,
+              "mean_ms": 0.14378425719276552,
+              "minimum_ms": 0.14204800128936768,
+              "p50_ms": 0.14316800236701965,
+              "p90_ms": 0.14374400675296783,
+              "p95_ms": 0.14396800100803375,
+              "p99_ms": 0.15699520111083984,
+              "standard_deviation_ms": 0.003444137298182691
+            },
+            "logical_expert_operations": 16,
+            "logical_to_physical_expert_coalescing_factor": 8.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.1823,
+              "mean_ms": 0.16153548387096775,
+              "minimum_ms": 0.1594,
+              "p50_ms": 0.1606,
+              "p90_ms": 0.1628,
+              "p95_ms": 0.1653,
+              "p99_ms": 0.17761999999999997,
+              "standard_deviation_ms": 0.004022400854817507
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 1.1752867799880764,
+            "cosine_similarity": 0.9999999999999913,
+            "maximum_absolute_error": 1.862645149230957e-08,
+            "mean_absolute_error": 1.9403247262874045e-09,
+            "reference_finite": true,
+            "reference_l2": 1.1752868058666488,
+            "relative_l2_error": 1.3694568495251844e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 0,
+          "worker_id": "e020.expert.layer-89.p8.worker-00"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 0.5270079970359802,
+              "mean_ms": 0.3975597389282719,
+              "minimum_ms": 0.37411201000213623,
+              "p50_ms": 0.38310399651527405,
+              "p90_ms": 0.42713600397109985,
+              "p95_ms": 0.43615999817848206,
+              "p99_ms": 0.5000607997179031,
+              "standard_deviation_ms": 0.030730320340847307
+            },
+            "logical_expert_operations": 16,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 16,
+            "physical_reduction_launches": 1,
+            "total_physical_launches": 17,
+            "wall": {
+              "maximum_ms": 0.5335,
+              "mean_ms": 0.40698709677419354,
+              "minimum_ms": 0.3809,
+              "p50_ms": 0.3906,
+              "p90_ms": 0.4418,
+              "p95_ms": 0.4435,
+              "p99_ms": 0.5065299999999999,
+              "standard_deviation_ms": 0.03152224756535105
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.16278399527072906,
+              "mean_ms": 0.14446967744058178,
+              "minimum_ms": 0.1420159935951233,
+              "p50_ms": 0.14339199662208557,
+              "p90_ms": 0.14431999623775482,
+              "p95_ms": 0.15212799608707428,
+              "p99_ms": 0.1618911951780319,
+              "standard_deviation_ms": 0.004491305193944844
+            },
+            "logical_expert_operations": 16,
+            "logical_to_physical_expert_coalescing_factor": 8.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.1836,
+              "mean_ms": 0.16314838709677418,
+              "minimum_ms": 0.1586,
+              "p50_ms": 0.162,
+              "p90_ms": 0.164,
+              "p95_ms": 0.1723,
+              "p99_ms": 0.18258000000000002,
+              "standard_deviation_ms": 0.005143544088042795
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 3.5602574222761603,
+            "cosine_similarity": 0.9999999999999979,
+            "maximum_absolute_error": 2.9802322387695312e-08,
+            "mean_absolute_error": 2.638752708402795e-09,
+            "reference_finite": true,
+            "reference_l2": 3.560257489295987,
+            "relative_l2_error": 7.121337774265073e-08
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 1,
+          "worker_id": "e020.expert.layer-89.p8.worker-01"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 0.4211199879646301,
+              "mean_ms": 0.39047225732957164,
+              "minimum_ms": 0.37350401282310486,
+              "p50_ms": 0.3832640051841736,
+              "p90_ms": 0.417248010635376,
+              "p95_ms": 0.42028799653053284,
+              "p99_ms": 0.42097598910331724,
+              "standard_deviation_ms": 0.01534291286682416
+            },
+            "logical_expert_operations": 16,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 16,
+            "physical_reduction_launches": 1,
+            "total_physical_launches": 17,
+            "wall": {
+              "maximum_ms": 0.4365,
+              "mean_ms": 0.39805483870967745,
+              "minimum_ms": 0.3809,
+              "p50_ms": 0.3905,
+              "p90_ms": 0.4259,
+              "p95_ms": 0.42935,
+              "p99_ms": 0.43497,
+              "standard_deviation_ms": 0.01655413092797194
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.16672000288963318,
+              "mean_ms": 0.14396077442553737,
+              "minimum_ms": 0.14176000654697418,
+              "p50_ms": 0.14339199662208557,
+              "p90_ms": 0.14406399428844452,
+              "p95_ms": 0.1443520039319992,
+              "p99_ms": 0.16008640378713607,
+              "standard_deviation_ms": 0.004208572154257011
+            },
+            "logical_expert_operations": 16,
+            "logical_to_physical_expert_coalescing_factor": 8.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.1897,
+              "mean_ms": 0.16252903225806453,
+              "minimum_ms": 0.1585,
+              "p50_ms": 0.1608,
+              "p90_ms": 0.1648,
+              "p95_ms": 0.16570000000000001,
+              "p99_ms": 0.18253,
+              "standard_deviation_ms": 0.0052672569557283885
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 4.556756225875241,
+            "cosine_similarity": 0.9999999999999988,
+            "maximum_absolute_error": 4.470348358154297e-08,
+            "mean_absolute_error": 2.861093711154743e-09,
+            "reference_finite": true,
+            "reference_l2": 4.556756188059206,
+            "relative_l2_error": 6.281282227812301e-08
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 2,
+          "worker_id": "e020.expert.layer-89.p8.worker-02"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 0.5036799907684326,
+              "mean_ms": 0.39117729087029735,
+              "minimum_ms": 0.3715519905090332,
+              "p50_ms": 0.37990400195121765,
+              "p90_ms": 0.4151360094547272,
+              "p95_ms": 0.41859200596809387,
+              "p99_ms": 0.4789791971445083,
+              "standard_deviation_ms": 0.024938760348962842
+            },
+            "logical_expert_operations": 16,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 16,
+            "physical_reduction_launches": 1,
+            "total_physical_launches": 17,
+            "wall": {
+              "maximum_ms": 0.5126,
+              "mean_ms": 0.39956774193548383,
+              "minimum_ms": 0.3782,
+              "p50_ms": 0.387,
+              "p90_ms": 0.4233,
+              "p95_ms": 0.4293,
+              "p99_ms": 0.4881499999999999,
+              "standard_deviation_ms": 0.025795966014923337
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.1611199975013733,
+              "mean_ms": 0.14509419375850308,
+              "minimum_ms": 0.1422400027513504,
+              "p50_ms": 0.14326399564743042,
+              "p90_ms": 0.1478399932384491,
+              "p95_ms": 0.1595200002193451,
+              "p99_ms": 0.16082239747047425,
+              "standard_deviation_ms": 0.0050170838617019705
+            },
+            "logical_expert_operations": 16,
+            "logical_to_physical_expert_coalescing_factor": 8.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.1821,
+              "mean_ms": 0.1637451612903226,
+              "minimum_ms": 0.1603,
+              "p50_ms": 0.1615,
+              "p90_ms": 0.1669,
+              "p95_ms": 0.18085,
+              "p99_ms": 0.18192,
+              "standard_deviation_ms": 0.005916725266328599
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 3.2589796651380927,
+            "cosine_similarity": 0.9999999999999974,
+            "maximum_absolute_error": 2.9802322387695312e-08,
+            "mean_absolute_error": 2.6598761288758918e-09,
+            "reference_finite": true,
+            "reference_l2": 3.258979602014404,
+            "relative_l2_error": 7.631338839889601e-08
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 3,
+          "worker_id": "e020.expert.layer-89.p8.worker-03"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 0.5567359924316406,
+              "mean_ms": 0.40218012948190013,
+              "minimum_ms": 0.37302398681640625,
+              "p50_ms": 0.3792319893836975,
+              "p90_ms": 0.4750080108642578,
+              "p95_ms": 0.49115198850631714,
+              "p99_ms": 0.5409535884857177,
+              "standard_deviation_ms": 0.0441708036439171
+            },
+            "logical_expert_operations": 16,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 16,
+            "physical_reduction_launches": 1,
+            "total_physical_launches": 17,
+            "wall": {
+              "maximum_ms": 0.5628,
+              "mean_ms": 0.4097677419354839,
+              "minimum_ms": 0.3799,
+              "p50_ms": 0.3861,
+              "p90_ms": 0.4814,
+              "p95_ms": 0.5019,
+              "p99_ms": 0.5475,
+              "standard_deviation_ms": 0.04498140395044109
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.1607999950647354,
+              "mean_ms": 0.1459014194626962,
+              "minimum_ms": 0.14195199310779572,
+              "p50_ms": 0.14399999380111694,
+              "p90_ms": 0.15964800119400024,
+              "p95_ms": 0.15988799929618835,
+              "p99_ms": 0.1605695977807045,
+              "standard_deviation_ms": 0.005535243328165125
+            },
+            "logical_expert_operations": 16,
+            "logical_to_physical_expert_coalescing_factor": 8.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.1852,
+              "mean_ms": 0.16746129032258064,
+              "minimum_ms": 0.16,
+              "p50_ms": 0.164,
+              "p90_ms": 0.1813,
+              "p95_ms": 0.18225,
+              "p99_ms": 0.18445,
+              "standard_deviation_ms": 0.007732531923501568
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 2.401160427987293,
+            "cosine_similarity": 0.9999999999999964,
+            "maximum_absolute_error": 2.2351741790771484e-08,
+            "mean_absolute_error": 2.42833153585309e-09,
+            "reference_finite": true,
+            "reference_l2": 2.401160423661704,
+            "relative_l2_error": 9.041170517028178e-08
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 4,
+          "worker_id": "e020.expert.layer-89.p8.worker-04"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 0.8067839741706848,
+              "mean_ms": 0.41460541563649334,
+              "minimum_ms": 0.3744640052318573,
+              "p50_ms": 0.40035200119018555,
+              "p90_ms": 0.4471679925918579,
+              "p95_ms": 0.4615200012922287,
+              "p99_ms": 0.7070399791002271,
+              "standard_deviation_ms": 0.07598568244992096
+            },
+            "logical_expert_operations": 16,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 16,
+            "physical_reduction_launches": 1,
+            "total_physical_launches": 17,
+            "wall": {
+              "maximum_ms": 0.8136,
+              "mean_ms": 0.4239483870967742,
+              "minimum_ms": 0.3811,
+              "p50_ms": 0.4064,
+              "p90_ms": 0.453,
+              "p95_ms": 0.47585,
+              "p99_ms": 0.7136099999999997,
+              "standard_deviation_ms": 0.07635673437553048
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.14470399916172028,
+              "mean_ms": 0.14318141869960294,
+              "minimum_ms": 0.14176000654697418,
+              "p50_ms": 0.14319999516010284,
+              "p90_ms": 0.14425599575042725,
+              "p95_ms": 0.14433600008487701,
+              "p99_ms": 0.14459840059280396,
+              "standard_deviation_ms": 0.0007535305060188794
+            },
+            "logical_expert_operations": 16,
+            "logical_to_physical_expert_coalescing_factor": 8.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.1839,
+              "mean_ms": 0.16238387096774193,
+              "minimum_ms": 0.1585,
+              "p50_ms": 0.1607,
+              "p90_ms": 0.165,
+              "p95_ms": 0.16925,
+              "p99_ms": 0.1806,
+              "standard_deviation_ms": 0.004761004012722225
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 4.18266260993848,
+            "cosine_similarity": 0.9999999999999968,
+            "maximum_absolute_error": 2.9802322387695312e-08,
+            "mean_absolute_error": 4.1852119230562886e-09,
+            "reference_finite": true,
+            "reference_l2": 4.182662757958615,
+            "relative_l2_error": 9.276596606031521e-08
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 5,
+          "worker_id": "e020.expert.layer-89.p8.worker-05"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 0.43356800079345703,
+              "mean_ms": 0.39638916138679753,
+              "minimum_ms": 0.373663991689682,
+              "p50_ms": 0.4000000059604645,
+              "p90_ms": 0.41811200976371765,
+              "p95_ms": 0.4243679940700531,
+              "p99_ms": 0.4314848005771637,
+              "standard_deviation_ms": 0.017985963629831875
+            },
+            "logical_expert_operations": 16,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 16,
+            "physical_reduction_launches": 1,
+            "total_physical_launches": 17,
+            "wall": {
+              "maximum_ms": 0.4398,
+              "mean_ms": 0.404541935483871,
+              "minimum_ms": 0.3803,
+              "p50_ms": 0.4059,
+              "p90_ms": 0.432,
+              "p95_ms": 0.4333,
+              "p99_ms": 0.43812,
+              "standard_deviation_ms": 0.019693617341561137
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.14444799721240997,
+              "mean_ms": 0.14294503436934564,
+              "minimum_ms": 0.14176000654697418,
+              "p50_ms": 0.1430719941854477,
+              "p90_ms": 0.14371199905872345,
+              "p95_ms": 0.143824003636837,
+              "p99_ms": 0.14428479820489884,
+              "standard_deviation_ms": 0.0006765064723549221
+            },
+            "logical_expert_operations": 16,
+            "logical_to_physical_expert_coalescing_factor": 8.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.2035,
+              "mean_ms": 0.1620548387096774,
+              "minimum_ms": 0.1585,
+              "p50_ms": 0.1606,
+              "p90_ms": 0.1628,
+              "p95_ms": 0.16475,
+              "p99_ms": 0.19242999999999996,
+              "standard_deviation_ms": 0.0077257774933796285
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 3.5731283260182973,
+            "cosine_similarity": 0.9999999999999977,
+            "maximum_absolute_error": 2.9802322387695312e-08,
+            "mean_absolute_error": 2.86486491672479e-09,
+            "reference_finite": true,
+            "reference_l2": 3.5731283930782882,
+            "relative_l2_error": 7.446989264334783e-08
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 6,
+          "worker_id": "e020.expert.layer-89.p8.worker-06"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 0.4116480052471161,
+              "mean_ms": 0.3821729037069505,
+              "minimum_ms": 0.3739199936389923,
+              "p50_ms": 0.37884798645973206,
+              "p90_ms": 0.39955198764801025,
+              "p95_ms": 0.4095519930124283,
+              "p99_ms": 0.411148801445961,
+              "standard_deviation_ms": 0.010362925565318171
+            },
+            "logical_expert_operations": 16,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 16,
+            "physical_reduction_launches": 1,
+            "total_physical_launches": 17,
+            "wall": {
+              "maximum_ms": 0.4187,
+              "mean_ms": 0.3898161290322581,
+              "minimum_ms": 0.3807,
+              "p50_ms": 0.3858,
+              "p90_ms": 0.4152,
+              "p95_ms": 0.41555,
+              "p99_ms": 0.4178,
+              "standard_deviation_ms": 0.010979103223681522
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.160288006067276,
+              "mean_ms": 0.14420645323491865,
+              "minimum_ms": 0.14179199934005737,
+              "p50_ms": 0.14323200285434723,
+              "p90_ms": 0.14428800344467163,
+              "p95_ms": 0.1518240049481392,
+              "p99_ms": 0.15987520515918732,
+              "standard_deviation_ms": 0.004109067313868268
+            },
+            "logical_expert_operations": 16,
+            "logical_to_physical_expert_coalescing_factor": 8.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.1853,
+              "mean_ms": 0.16350967741935482,
+              "minimum_ms": 0.1584,
+              "p50_ms": 0.1621,
+              "p90_ms": 0.1685,
+              "p95_ms": 0.17404999999999998,
+              "p99_ms": 0.18347,
+              "standard_deviation_ms": 0.005531747366628359
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 4.358172039220221,
+            "cosine_similarity": 0.9999999999999973,
+            "maximum_absolute_error": 4.470348358154297e-08,
+            "mean_absolute_error": 3.67463875201273e-09,
+            "reference_finite": true,
+            "reference_l2": 4.358171986902443,
+            "relative_l2_error": 7.962965009722828e-08
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 7,
+          "worker_id": "e020.expert.layer-89.p8.worker-07"
+        }
+      ]
+    },
+    {
+      "grouped_physical_launches_per_worker": 2,
+      "grouped_worker_ceiling_ms": 0.298,
+      "logical_fragments_per_worker": 32,
+      "minimum_launch_coalescing": 16.0,
+      "old_worker_ceiling_ms": 0.8172,
+      "pass": true,
+      "peak_memory_delta_bytes": 2097152,
+      "relative_l2_error": 8.787470005308114e-08,
+      "rows": 2,
+      "stripe_degree": 8,
+      "workers": [
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 1.129696011543274,
+              "mean_ms": 0.8299550952449921,
+              "minimum_ms": 0.73990398645401,
+              "p50_ms": 0.792352020740509,
+              "p90_ms": 0.9495999813079834,
+              "p95_ms": 1.0424639880657196,
+              "p99_ms": 1.1274111986160278,
+              "standard_deviation_ms": 0.0976975463824333
+            },
+            "logical_expert_operations": 32,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 32,
+            "physical_reduction_launches": 2,
+            "total_physical_launches": 34,
+            "wall": {
+              "maximum_ms": 1.1358,
+              "mean_ms": 0.8391225806451612,
+              "minimum_ms": 0.7469,
+              "p50_ms": 0.7986,
+              "p90_ms": 0.9593,
+              "p95_ms": 1.04935,
+              "p99_ms": 1.13367,
+              "standard_deviation_ms": 0.09840584073170894
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.28326401114463806,
+              "mean_ms": 0.2672423230063531,
+              "minimum_ms": 0.2593599855899811,
+              "p50_ms": 0.2618879973888397,
+              "p90_ms": 0.2797119915485382,
+              "p95_ms": 0.2812640070915222,
+              "p99_ms": 0.2828032076358795,
+              "standard_deviation_ms": 0.008225447403974389
+            },
+            "logical_expert_operations": 32,
+            "logical_to_physical_expert_coalescing_factor": 16.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.3043,
+              "mean_ms": 0.2902483870967742,
+              "minimum_ms": 0.2823,
+              "p50_ms": 0.2866,
+              "p90_ms": 0.3017,
+              "p95_ms": 0.30225,
+              "p99_ms": 0.30382000000000003,
+              "standard_deviation_ms": 0.007271325520006517
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 5.1918476438316326,
+            "cosine_similarity": 0.9999999999999829,
+            "maximum_absolute_error": 5.960464477539063e-08,
+            "mean_absolute_error": 7.260205436843137e-09,
+            "reference_finite": true,
+            "reference_l2": 5.191847644387906,
+            "relative_l2_error": 1.885430332010903e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 0,
+          "worker_id": "e020.expert.layer-89.p8.worker-00"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 1.1444799900054932,
+              "mean_ms": 0.8182719984362202,
+              "minimum_ms": 0.7354879975318909,
+              "p50_ms": 0.8027200102806091,
+              "p90_ms": 0.8713600039482117,
+              "p95_ms": 0.9500000178813934,
+              "p99_ms": 1.1018368005752563,
+              "standard_deviation_ms": 0.08012166785859197
+            },
+            "logical_expert_operations": 32,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 32,
+            "physical_reduction_launches": 2,
+            "total_physical_launches": 34,
+            "wall": {
+              "maximum_ms": 1.1508,
+              "mean_ms": 0.8253870967741935,
+              "minimum_ms": 0.7428,
+              "p50_ms": 0.8098,
+              "p90_ms": 0.8777,
+              "p95_ms": 0.957,
+              "p99_ms": 1.10808,
+              "standard_deviation_ms": 0.07995192402992819
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.2819199860095978,
+              "mean_ms": 0.26529445186738043,
+              "minimum_ms": 0.26025599241256714,
+              "p50_ms": 0.2630400061607361,
+              "p90_ms": 0.2791999876499176,
+              "p95_ms": 0.28009599447250366,
+              "p99_ms": 0.2814207911491394,
+              "standard_deviation_ms": 0.006122593117930384
+            },
+            "logical_expert_operations": 32,
+            "logical_to_physical_expert_coalescing_factor": 16.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.3469,
+              "mean_ms": 0.2990838709677419,
+              "minimum_ms": 0.2877,
+              "p50_ms": 0.2944,
+              "p90_ms": 0.3085,
+              "p95_ms": 0.3196,
+              "p99_ms": 0.34198,
+              "standard_deviation_ms": 0.012259140020730116
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 11.443610711001988,
+            "cosine_similarity": 0.9999999999999905,
+            "maximum_absolute_error": 1.1920928955078125e-07,
+            "mean_absolute_error": 1.1282221379360635e-08,
+            "reference_finite": true,
+            "reference_l2": 11.443610606643114,
+            "relative_l2_error": 1.4110412170121618e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 1,
+          "worker_id": "e020.expert.layer-89.p8.worker-01"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 1.0283839702606201,
+              "mean_ms": 0.8057589627081349,
+              "minimum_ms": 0.738207995891571,
+              "p50_ms": 0.8025599718093872,
+              "p90_ms": 0.850271999835968,
+              "p95_ms": 0.885343998670578,
+              "p99_ms": 0.9951199829578399,
+              "standard_deviation_ms": 0.05783706693473145
+            },
+            "logical_expert_operations": 32,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 32,
+            "physical_reduction_launches": 2,
+            "total_physical_launches": 34,
+            "wall": {
+              "maximum_ms": 1.0391,
+              "mean_ms": 0.8148096774193548,
+              "minimum_ms": 0.7469,
+              "p50_ms": 0.8084,
+              "p90_ms": 0.8599,
+              "p95_ms": 0.8958999999999999,
+              "p99_ms": 1.0057099999999999,
+              "standard_deviation_ms": 0.058393616281889806
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.5990080237388611,
+              "mean_ms": 0.2793496799084448,
+              "minimum_ms": 0.2605760097503662,
+              "p50_ms": 0.26262399554252625,
+              "p90_ms": 0.27987200021743774,
+              "p95_ms": 0.28537601232528687,
+              "p99_ms": 0.5061088204383848,
+              "standard_deviation_ms": 0.058997056793352196
+            },
+            "logical_expert_operations": 32,
+            "logical_to_physical_expert_coalescing_factor": 16.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.6324,
+              "mean_ms": 0.3066677419354839,
+              "minimum_ms": 0.2845,
+              "p50_ms": 0.2938,
+              "p90_ms": 0.3048,
+              "p95_ms": 0.3138,
+              "p99_ms": 0.5390999999999998,
+              "standard_deviation_ms": 0.05998752766656003
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 7.1082552719041106,
+            "cosine_similarity": 0.9999999999999896,
+            "maximum_absolute_error": 7.450580596923828e-08,
+            "mean_absolute_error": 8.10691780372963e-09,
+            "reference_finite": true,
+            "reference_l2": 7.108255227282366,
+            "relative_l2_error": 1.5167802171774908e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 2,
+          "worker_id": "e020.expert.layer-89.p8.worker-02"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 1.055616021156311,
+              "mean_ms": 0.8119793515051564,
+              "minimum_ms": 0.7366399765014648,
+              "p50_ms": 0.8013120293617249,
+              "p90_ms": 0.8703359961509705,
+              "p95_ms": 0.9099199771881104,
+              "p99_ms": 1.0221696078777311,
+              "standard_deviation_ms": 0.06502143068214496
+            },
+            "logical_expert_operations": 32,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 32,
+            "physical_reduction_launches": 2,
+            "total_physical_launches": 34,
+            "wall": {
+              "maximum_ms": 1.0617,
+              "mean_ms": 0.8194838709677419,
+              "minimum_ms": 0.7428,
+              "p50_ms": 0.8071,
+              "p90_ms": 0.8768,
+              "p95_ms": 0.9169,
+              "p99_ms": 1.02837,
+              "standard_deviation_ms": 0.06465210670306608
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.2813760042190552,
+              "mean_ms": 0.2667974175945405,
+              "minimum_ms": 0.25968000292778015,
+              "p50_ms": 0.2622399926185608,
+              "p90_ms": 0.27881601452827454,
+              "p95_ms": 0.2792479991912842,
+              "p99_ms": 0.28084800243377683,
+              "standard_deviation_ms": 0.00803989859903719
+            },
+            "logical_expert_operations": 32,
+            "logical_to_physical_expert_coalescing_factor": 16.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.3402,
+              "mean_ms": 0.29340967741935486,
+              "minimum_ms": 0.2821,
+              "p50_ms": 0.2873,
+              "p90_ms": 0.302,
+              "p95_ms": 0.31525000000000003,
+              "p99_ms": 0.33591,
+              "standard_deviation_ms": 0.012495298595580498
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 6.072696533359572,
+            "cosine_similarity": 0.9999999999999866,
+            "maximum_absolute_error": 8.940696716308594e-08,
+            "mean_absolute_error": 7.718933302060447e-09,
+            "reference_finite": true,
+            "reference_l2": 6.07269649881059,
+            "relative_l2_error": 1.6936441298880683e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 3,
+          "worker_id": "e020.expert.layer-89.p8.worker-03"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 1.105631947517395,
+              "mean_ms": 0.8035365170048129,
+              "minimum_ms": 0.7322880029678345,
+              "p50_ms": 0.8017920255661011,
+              "p90_ms": 0.8442879915237427,
+              "p95_ms": 0.9082080125808716,
+              "p99_ms": 1.0530527651309967,
+              "standard_deviation_ms": 0.06975427921040757
+            },
+            "logical_expert_operations": 32,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 32,
+            "physical_reduction_launches": 2,
+            "total_physical_launches": 34,
+            "wall": {
+              "maximum_ms": 1.1136,
+              "mean_ms": 0.8117129032258065,
+              "minimum_ms": 0.74,
+              "p50_ms": 0.8081,
+              "p90_ms": 0.8508,
+              "p95_ms": 0.91415,
+              "p99_ms": 1.0604399999999998,
+              "standard_deviation_ms": 0.06948170676834477
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.2799359858036041,
+              "mean_ms": 0.26977651638369404,
+              "minimum_ms": 0.2598719894886017,
+              "p50_ms": 0.26368001103401184,
+              "p90_ms": 0.27961599826812744,
+              "p95_ms": 0.27980799973011017,
+              "p99_ms": 0.2799071878194809,
+              "standard_deviation_ms": 0.008385919613357417
+            },
+            "logical_expert_operations": 32,
+            "logical_to_physical_expert_coalescing_factor": 16.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.3028,
+              "mean_ms": 0.2931741935483871,
+              "minimum_ms": 0.2833,
+              "p50_ms": 0.298,
+              "p90_ms": 0.3007,
+              "p95_ms": 0.30135,
+              "p99_ms": 0.30238,
+              "standard_deviation_ms": 0.007255697104942301
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 5.424173221653214,
+            "cosine_similarity": 0.999999999999987,
+            "maximum_absolute_error": 5.960464477539063e-08,
+            "mean_absolute_error": 6.902087774334526e-09,
+            "reference_finite": true,
+            "reference_l2": 5.42417314720013,
+            "relative_l2_error": 1.6606233405226086e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 4,
+          "worker_id": "e020.expert.layer-89.p8.worker-04"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 1.4461439847946167,
+              "mean_ms": 0.8409930333014457,
+              "minimum_ms": 0.7337920069694519,
+              "p50_ms": 0.8071359992027283,
+              "p90_ms": 0.8698239922523499,
+              "p95_ms": 1.1193119883537292,
+              "p99_ms": 1.4226623892784118,
+              "standard_deviation_ms": 0.1536106458607687
+            },
+            "logical_expert_operations": 32,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 32,
+            "physical_reduction_launches": 2,
+            "total_physical_launches": 34,
+            "wall": {
+              "maximum_ms": 1.4575,
+              "mean_ms": 0.8606709677419355,
+              "minimum_ms": 0.7398,
+              "p50_ms": 0.8172,
+              "p90_ms": 0.8931,
+              "p95_ms": 1.2627000000000002,
+              "p99_ms": 1.43941,
+              "standard_deviation_ms": 0.16368243682469397
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.642624020576477,
+              "mean_ms": 0.2806007756340888,
+              "minimum_ms": 0.26015999913215637,
+              "p50_ms": 0.2622720003128052,
+              "p90_ms": 0.27910399436950684,
+              "p95_ms": 0.28462401032447815,
+              "p99_ms": 0.5368608176708218,
+              "standard_deviation_ms": 0.06668305339305836
+            },
+            "logical_expert_operations": 32,
+            "logical_to_physical_expert_coalescing_factor": 16.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.6682,
+              "mean_ms": 0.30365806451612903,
+              "minimum_ms": 0.2825,
+              "p50_ms": 0.2869,
+              "p90_ms": 0.2999,
+              "p95_ms": 0.30889999999999995,
+              "p99_ms": 0.5630499999999997,
+              "standard_deviation_ms": 0.06705569555176742
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 11.35123166482869,
+            "cosine_similarity": 0.9999999999999925,
+            "maximum_absolute_error": 1.4901161193847656e-07,
+            "mean_absolute_error": 1.061411250954539e-08,
+            "reference_finite": true,
+            "reference_l2": 11.351231687787044,
+            "relative_l2_error": 1.274012356415609e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 5,
+          "worker_id": "e020.expert.layer-89.p8.worker-05"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 1.1429760456085205,
+              "mean_ms": 0.8155860670151249,
+              "minimum_ms": 0.7342720031738281,
+              "p50_ms": 0.7826880216598511,
+              "p90_ms": 0.9172800183296204,
+              "p95_ms": 1.0877119898796082,
+              "p99_ms": 1.1399040222167969,
+              "standard_deviation_ms": 0.10422299113801124
+            },
+            "logical_expert_operations": 32,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 32,
+            "physical_reduction_launches": 2,
+            "total_physical_launches": 34,
+            "wall": {
+              "maximum_ms": 1.1674,
+              "mean_ms": 0.823641935483871,
+              "minimum_ms": 0.7404,
+              "p50_ms": 0.7888,
+              "p90_ms": 0.9234,
+              "p95_ms": 1.1056499999999998,
+              "p99_ms": 1.15912,
+              "standard_deviation_ms": 0.10745021585169794
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.2784320116043091,
+              "mean_ms": 0.26216258156684136,
+              "minimum_ms": 0.2598719894886017,
+              "p50_ms": 0.2616319954395294,
+              "p90_ms": 0.26335999369621277,
+              "p95_ms": 0.26423999667167664,
+              "p99_ms": 0.27429440915584563,
+              "standard_deviation_ms": 0.0031851628423160165
+            },
+            "logical_expert_operations": 32,
+            "logical_to_physical_expert_coalescing_factor": 16.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.2996,
+              "mean_ms": 0.2858451612903226,
+              "minimum_ms": 0.2812,
+              "p50_ms": 0.2852,
+              "p90_ms": 0.288,
+              "p95_ms": 0.2956,
+              "p99_ms": 0.29957,
+              "standard_deviation_ms": 0.004249693629160501
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 6.350871567791772,
+            "cosine_similarity": 0.9999999999999898,
+            "maximum_absolute_error": 7.450580596923828e-08,
+            "mean_absolute_error": 7.2796378449067694e-09,
+            "reference_finite": true,
+            "reference_l2": 6.3508716242189855,
+            "relative_l2_error": 1.4901351772547653e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 6,
+          "worker_id": "e020.expert.layer-89.p8.worker-06"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 0.9964159727096558,
+              "mean_ms": 0.8038895495476261,
+              "minimum_ms": 0.7381759881973267,
+              "p50_ms": 0.7971199750900269,
+              "p90_ms": 0.8361600041389465,
+              "p95_ms": 0.8500480055809021,
+              "p99_ms": 0.954147183895111,
+              "standard_deviation_ms": 0.04725824222328804
+            },
+            "logical_expert_operations": 32,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 32,
+            "physical_reduction_launches": 2,
+            "total_physical_launches": 34,
+            "wall": {
+              "maximum_ms": 1.0029,
+              "mean_ms": 0.8103903225806451,
+              "minimum_ms": 0.7448,
+              "p50_ms": 0.8031,
+              "p90_ms": 0.8421,
+              "p95_ms": 0.856,
+              "p99_ms": 0.9603899999999999,
+              "standard_deviation_ms": 0.0470494616529395
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.2794240117073059,
+              "mean_ms": 0.2647969049792136,
+              "minimum_ms": 0.25996801257133484,
+              "p50_ms": 0.26211199164390564,
+              "p90_ms": 0.27801600098609924,
+              "p95_ms": 0.2788960039615631,
+              "p99_ms": 0.2793376088142395,
+              "standard_deviation_ms": 0.006627067024810675
+            },
+            "logical_expert_operations": 32,
+            "logical_to_physical_expert_coalescing_factor": 16.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.3039,
+              "mean_ms": 0.2902064516129032,
+              "minimum_ms": 0.2814,
+              "p50_ms": 0.2866,
+              "p90_ms": 0.3009,
+              "p95_ms": 0.3012,
+              "p99_ms": 0.30312,
+              "standard_deviation_ms": 0.006795393861398298
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 9.18249384482856,
+            "cosine_similarity": 0.9999999999999903,
+            "maximum_absolute_error": 8.940696716308594e-08,
+            "mean_absolute_error": 9.7930039950305e-09,
+            "reference_finite": true,
+            "reference_l2": 9.182493840271286,
+            "relative_l2_error": 1.4340947975624142e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 7,
+          "worker_id": "e020.expert.layer-89.p8.worker-07"
+        }
+      ]
+    },
+    {
+      "grouped_physical_launches_per_worker": 2,
+      "grouped_worker_ceiling_ms": 0.5393,
+      "logical_fragments_per_worker": 64,
+      "minimum_launch_coalescing": 32.0,
+      "old_worker_ceiling_ms": 1.6332,
+      "pass": true,
+      "peak_memory_delta_bytes": 0,
+      "relative_l2_error": 8.692959203724142e-08,
+      "rows": 4,
+      "stripe_degree": 8,
+      "workers": [
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 2.0691840648651123,
+              "mean_ms": 1.6389439951988958,
+              "minimum_ms": 1.5297280550003052,
+              "p50_ms": 1.6203839778900146,
+              "p90_ms": 1.7269760370254517,
+              "p95_ms": 1.777247965335846,
+              "p99_ms": 1.9958592295646667,
+              "standard_deviation_ms": 0.1026457109505468
+            },
+            "logical_expert_operations": 64,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 64,
+            "physical_reduction_launches": 4,
+            "total_physical_launches": 68,
+            "wall": {
+              "maximum_ms": 2.081,
+              "mean_ms": 1.648464516129032,
+              "minimum_ms": 1.5363,
+              "p50_ms": 1.6332,
+              "p90_ms": 1.7333,
+              "p95_ms": 1.78415,
+              "p99_ms": 2.0061799999999996,
+              "standard_deviation_ms": 0.10217703974265607
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.5173119902610779,
+              "mean_ms": 0.5015979332308615,
+              "minimum_ms": 0.49875199794769287,
+              "p50_ms": 0.5012800097465515,
+              "p90_ms": 0.5021439790725708,
+              "p95_ms": 0.5021919906139374,
+              "p99_ms": 0.5127807915210724,
+              "standard_deviation_ms": 0.002990541219153102
+            },
+            "logical_expert_operations": 64,
+            "logical_to_physical_expert_coalescing_factor": 32.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.5501,
+              "mean_ms": 0.5359064516129032,
+              "minimum_ms": 0.5303,
+              "p50_ms": 0.5368,
+              "p90_ms": 0.5385,
+              "p95_ms": 0.54325,
+              "p99_ms": 0.54947,
+              "standard_deviation_ms": 0.0043234495997070575
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 8.879908130425337,
+            "cosine_similarity": 0.9999999999999852,
+            "maximum_absolute_error": 7.450580596923828e-08,
+            "mean_absolute_error": 7.789102339307772e-09,
+            "reference_finite": true,
+            "reference_l2": 8.879908146706681,
+            "relative_l2_error": 1.7106907465560375e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 0,
+          "worker_id": "e020.expert.layer-89.p8.worker-00"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 2.0481600761413574,
+              "mean_ms": 1.5951824572778517,
+              "minimum_ms": 1.4794559478759766,
+              "p50_ms": 1.5790400505065918,
+              "p90_ms": 1.6695679426193237,
+              "p95_ms": 1.738976001739502,
+              "p99_ms": 1.968873655796051,
+              "standard_deviation_ms": 0.1047409172116608
+            },
+            "logical_expert_operations": 64,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 64,
+            "physical_reduction_launches": 4,
+            "total_physical_launches": 68,
+            "wall": {
+              "maximum_ms": 2.0543,
+              "mean_ms": 1.6038354838709676,
+              "minimum_ms": 1.4852,
+              "p50_ms": 1.5927,
+              "p90_ms": 1.6757,
+              "p95_ms": 1.7454999999999998,
+              "p99_ms": 1.9752499999999997,
+              "standard_deviation_ms": 0.10442776033216299
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.9020479917526245,
+              "mean_ms": 0.5148696726368319,
+              "minimum_ms": 0.4990079998970032,
+              "p50_ms": 0.5021439790725708,
+              "p90_ms": 0.5038080215454102,
+              "p95_ms": 0.5061120092868805,
+              "p99_ms": 0.783689600229263,
+              "standard_deviation_ms": 0.0707057674991706
+            },
+            "logical_expert_operations": 64,
+            "logical_to_physical_expert_coalescing_factor": 32.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.9508,
+              "mean_ms": 0.553858064516129,
+              "minimum_ms": 0.5315,
+              "p50_ms": 0.5384,
+              "p90_ms": 0.5535,
+              "p95_ms": 0.57075,
+              "p99_ms": 0.8406999999999998,
+              "standard_deviation_ms": 0.0731260545518382
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 13.38169621612479,
+            "cosine_similarity": 0.9999999999999885,
+            "maximum_absolute_error": 1.1920928955078125e-07,
+            "mean_absolute_error": 1.0207267158485983e-08,
+            "reference_finite": true,
+            "reference_l2": 13.381696267981155,
+            "relative_l2_error": 1.5233713650291773e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 1,
+          "worker_id": "e020.expert.layer-89.p8.worker-01"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 2.0934081077575684,
+              "mean_ms": 1.6347933046279415,
+              "minimum_ms": 1.4881279468536377,
+              "p50_ms": 1.612928032875061,
+              "p90_ms": 1.720352053642273,
+              "p95_ms": 1.8317760229110718,
+              "p99_ms": 2.041136074066162,
+              "standard_deviation_ms": 0.11727142002041538
+            },
+            "logical_expert_operations": 64,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 64,
+            "physical_reduction_launches": 4,
+            "total_physical_launches": 68,
+            "wall": {
+              "maximum_ms": 2.0999,
+              "mean_ms": 1.6438580645161291,
+              "minimum_ms": 1.495,
+              "p50_ms": 1.6225,
+              "p90_ms": 1.7347,
+              "p95_ms": 1.84275,
+              "p99_ms": 2.0501899999999997,
+              "standard_deviation_ms": 0.11862105773508083
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.5036799907684326,
+              "mean_ms": 0.5012129054915521,
+              "minimum_ms": 0.4995200037956238,
+              "p50_ms": 0.5011839866638184,
+              "p90_ms": 0.5022720098495483,
+              "p95_ms": 0.5024639964103699,
+              "p99_ms": 0.503363186120987,
+              "standard_deviation_ms": 0.0009094424484450192
+            },
+            "logical_expert_operations": 64,
+            "logical_to_physical_expert_coalescing_factor": 32.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.5436,
+              "mean_ms": 0.5354870967741936,
+              "minimum_ms": 0.5303,
+              "p50_ms": 0.5363,
+              "p90_ms": 0.5386,
+              "p95_ms": 0.53955,
+              "p99_ms": 0.54249,
+              "standard_deviation_ms": 0.0032224756997991503
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 11.305417119813006,
+            "cosine_similarity": 0.9999999999999887,
+            "maximum_absolute_error": 8.940696716308594e-08,
+            "mean_absolute_error": 8.813938404525094e-09,
+            "reference_finite": true,
+            "reference_l2": 11.305417081475928,
+            "relative_l2_error": 1.4909036822099966e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 2,
+          "worker_id": "e020.expert.layer-89.p8.worker-02"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 2.1620800495147705,
+              "mean_ms": 1.6193971557001914,
+              "minimum_ms": 1.4876480102539062,
+              "p50_ms": 1.5967999696731567,
+              "p90_ms": 1.679487943649292,
+              "p95_ms": 1.8194400072097778,
+              "p99_ms": 2.0950912356376645,
+              "standard_deviation_ms": 0.13099328899855772
+            },
+            "logical_expert_operations": 64,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 64,
+            "physical_reduction_launches": 4,
+            "total_physical_launches": 68,
+            "wall": {
+              "maximum_ms": 2.1708,
+              "mean_ms": 1.6294903225806452,
+              "minimum_ms": 1.4943,
+              "p50_ms": 1.6151,
+              "p90_ms": 1.6911,
+              "p95_ms": 1.8284,
+              "p99_ms": 2.10315,
+              "standard_deviation_ms": 0.1313560302404922
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.8683199882507324,
+              "mean_ms": 0.5136309689091098,
+              "minimum_ms": 0.4995200037956238,
+              "p50_ms": 0.502016007900238,
+              "p90_ms": 0.502623975276947,
+              "p95_ms": 0.50518399477005,
+              "p99_ms": 0.7595039844512936,
+              "standard_deviation_ms": 0.06476788406136937
+            },
+            "logical_expert_operations": 64,
+            "logical_to_physical_expert_coalescing_factor": 32.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.9046,
+              "mean_ms": 0.5524354838709677,
+              "minimum_ms": 0.532,
+              "p50_ms": 0.5393,
+              "p90_ms": 0.55,
+              "p95_ms": 0.5721499999999999,
+              "p99_ms": 0.8083299999999998,
+              "standard_deviation_ms": 0.06505028104071145
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 9.547420862056773,
+            "cosine_similarity": 0.999999999999987,
+            "maximum_absolute_error": 1.043081283569336e-07,
+            "mean_absolute_error": 8.155998289436996e-09,
+            "reference_finite": true,
+            "reference_l2": 9.547420879304104,
+            "relative_l2_error": 1.6294633854465787e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 3,
+          "worker_id": "e020.expert.layer-89.p8.worker-03"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 1.885632038116455,
+              "mean_ms": 1.6089713381182762,
+              "minimum_ms": 1.5064959526062012,
+              "p50_ms": 1.5956159830093384,
+              "p90_ms": 1.6785279512405396,
+              "p95_ms": 1.728496015071869,
+              "p99_ms": 1.8408384323120117,
+              "standard_deviation_ms": 0.07531612252309071
+            },
+            "logical_expert_operations": 64,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 64,
+            "physical_reduction_launches": 4,
+            "total_physical_launches": 68,
+            "wall": {
+              "maximum_ms": 1.8921,
+              "mean_ms": 1.6174225806451612,
+              "minimum_ms": 1.5132,
+              "p50_ms": 1.6037,
+              "p90_ms": 1.6849,
+              "p95_ms": 1.7422,
+              "p99_ms": 1.8515699999999997,
+              "standard_deviation_ms": 0.07597485029410216
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.5124160051345825,
+              "mean_ms": 0.501946835748611,
+              "minimum_ms": 0.4978559911251068,
+              "p50_ms": 0.5019199848175049,
+              "p90_ms": 0.5024639964103699,
+              "p95_ms": 0.5047680139541626,
+              "p99_ms": 0.5108032107353211,
+              "standard_deviation_ms": 0.0023740641293249877
+            },
+            "logical_expert_operations": 64,
+            "logical_to_physical_expert_coalescing_factor": 32.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.7118,
+              "mean_ms": 0.5481548387096774,
+              "minimum_ms": 0.5314,
+              "p50_ms": 0.5364,
+              "p90_ms": 0.5586,
+              "p95_ms": 0.6165,
+              "p99_ms": 0.6856699999999999,
+              "standard_deviation_ms": 0.03610783883001009
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 8.408700315040937,
+            "cosine_similarity": 0.9999999999999846,
+            "maximum_absolute_error": 8.940696716308594e-08,
+            "mean_absolute_error": 7.81847854712327e-09,
+            "reference_finite": true,
+            "reference_l2": 8.408700241660764,
+            "relative_l2_error": 1.767057177531974e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 4,
+          "worker_id": "e020.expert.layer-89.p8.worker-04"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 1.720960021018982,
+              "mean_ms": 1.5777021915681901,
+              "minimum_ms": 1.4629759788513184,
+              "p50_ms": 1.5659199953079224,
+              "p90_ms": 1.648095965385437,
+              "p95_ms": 1.6878719925880432,
+              "p99_ms": 1.7169568061828613,
+              "standard_deviation_ms": 0.059905676217465724
+            },
+            "logical_expert_operations": 64,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 64,
+            "physical_reduction_launches": 4,
+            "total_physical_launches": 68,
+            "wall": {
+              "maximum_ms": 1.7304,
+              "mean_ms": 1.587658064516129,
+              "minimum_ms": 1.4698,
+              "p50_ms": 1.5745,
+              "p90_ms": 1.6541,
+              "p95_ms": 1.6943000000000001,
+              "p99_ms": 1.72548,
+              "standard_deviation_ms": 0.058429741510878645
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.8945279717445374,
+              "mean_ms": 0.5150492883497669,
+              "minimum_ms": 0.49904000759124756,
+              "p50_ms": 0.5017600059509277,
+              "p90_ms": 0.5047360062599182,
+              "p95_ms": 0.5164480209350586,
+              "p99_ms": 0.7813919842243192,
+              "standard_deviation_ms": 0.06939147254443447
+            },
+            "logical_expert_operations": 64,
+            "logical_to_physical_expert_coalescing_factor": 32.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.936,
+              "mean_ms": 0.5517032258064516,
+              "minimum_ms": 0.5313,
+              "p50_ms": 0.5385,
+              "p90_ms": 0.5508,
+              "p95_ms": 0.5558000000000001,
+              "p99_ms": 0.8223299999999998,
+              "standard_deviation_ms": 0.07047794202567793
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 16.138541796393284,
+            "cosine_similarity": 0.9999999999999923,
+            "maximum_absolute_error": 1.4901161193847656e-07,
+            "mean_absolute_error": 1.0556380404734358e-08,
+            "reference_finite": true,
+            "reference_l2": 16.138541906144486,
+            "relative_l2_error": 1.2487133179626252e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 5,
+          "worker_id": "e020.expert.layer-89.p8.worker-05"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 2.0474560260772705,
+              "mean_ms": 1.6031225842814292,
+              "minimum_ms": 1.4697599411010742,
+              "p50_ms": 1.5735679864883423,
+              "p90_ms": 1.7087039947509766,
+              "p95_ms": 1.7514560222625732,
+              "p99_ms": 1.9664416193962095,
+              "standard_deviation_ms": 0.10856739225908557
+            },
+            "logical_expert_operations": 64,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 64,
+            "physical_reduction_launches": 4,
+            "total_physical_launches": 68,
+            "wall": {
+              "maximum_ms": 2.0537,
+              "mean_ms": 1.6124967741935483,
+              "minimum_ms": 1.4765,
+              "p50_ms": 1.5845,
+              "p90_ms": 1.7163,
+              "p95_ms": 1.76985,
+              "p99_ms": 1.97264,
+              "standard_deviation_ms": 0.10875152645238231
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.9182080030441284,
+              "mean_ms": 0.5280732887406503,
+              "minimum_ms": 0.4991680085659027,
+              "p50_ms": 0.5016000270843506,
+              "p90_ms": 0.5149760246276855,
+              "p95_ms": 0.6978879868984222,
+              "p99_ms": 0.9060543954372405,
+              "standard_deviation_ms": 0.0973480341802694
+            },
+            "logical_expert_operations": 64,
+            "logical_to_physical_expert_coalescing_factor": 32.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.9566,
+              "mean_ms": 0.5643193548387097,
+              "minimum_ms": 0.5303,
+              "p50_ms": 0.5385,
+              "p90_ms": 0.5521,
+              "p95_ms": 0.736,
+              "p99_ms": 0.94448,
+              "standard_deviation_ms": 0.09801474681461027
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 9.383055310889022,
+            "cosine_similarity": 0.999999999999988,
+            "maximum_absolute_error": 7.450580596923828e-08,
+            "mean_absolute_error": 7.88289750935129e-09,
+            "reference_finite": true,
+            "reference_l2": 9.383055392088885,
+            "relative_l2_error": 1.567968951074977e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 6,
+          "worker_id": "e020.expert.layer-89.p8.worker-06"
+        },
+        {
+          "e019_existing": {
+            "cuda": {
+              "maximum_ms": 1.8036799430847168,
+              "mean_ms": 1.5917790897430912,
+              "minimum_ms": 1.468127965927124,
+              "p50_ms": 1.5686719417572021,
+              "p90_ms": 1.674847960472107,
+              "p95_ms": 1.6978240013122559,
+              "p99_ms": 1.7781919479370116,
+              "standard_deviation_ms": 0.07067215825099284
+            },
+            "logical_expert_operations": 64,
+            "logical_to_physical_expert_coalescing_factor": 1.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 64,
+            "physical_reduction_launches": 4,
+            "total_physical_launches": 68,
+            "wall": {
+              "maximum_ms": 1.8146,
+              "mean_ms": 1.6019064516129033,
+              "minimum_ms": 1.4746,
+              "p50_ms": 1.5784,
+              "p90_ms": 1.6805,
+              "p95_ms": 1.71095,
+              "p99_ms": 1.78775,
+              "standard_deviation_ms": 0.07110633534445879
+            }
+          },
+          "e020_grouped": {
+            "cuda": {
+              "maximum_ms": 0.6622080206871033,
+              "mean_ms": 0.5070627081778741,
+              "minimum_ms": 0.498879998922348,
+              "p50_ms": 0.5013440251350403,
+              "p90_ms": 0.5049279928207397,
+              "p95_ms": 0.5080479979515076,
+              "p99_ms": 0.6161568164825438,
+              "standard_deviation_ms": 0.028396949821400414
+            },
+            "logical_expert_operations": 64,
+            "logical_to_physical_expert_coalescing_factor": 32.0,
+            "network_visible_partial_outputs": 1,
+            "physical_expert_launches": 2,
+            "physical_reduction_launches": 0,
+            "total_physical_launches": 2,
+            "wall": {
+              "maximum_ms": 0.6928,
+              "mean_ms": 0.550058064516129,
+              "minimum_ms": 0.5312,
+              "p50_ms": 0.5386,
+              "p90_ms": 0.6061,
+              "p95_ms": 0.6133500000000001,
+              "p99_ms": 0.66904,
+              "standard_deviation_ms": 0.03424255769571287
+            }
+          },
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 12.436918345812689,
+            "cosine_similarity": 0.9999999999999891,
+            "maximum_absolute_error": 8.940696716308594e-08,
+            "mean_absolute_error": 9.750723403304359e-09,
+            "reference_finite": true,
+            "reference_l2": 12.43691841085075,
+            "relative_l2_error": 1.4713942257669148e-07
+          },
+          "pass": true,
+          "runtime_weight_bytes": 76769280,
+          "stripe_index": 7,
+          "worker_id": "e020.expert.layer-89.p8.worker-07"
+        }
+      ]
+    }
+  ],
+  "schema_version": "experiment-020-grouped-expert-stripe-v1",
+  "startup_quantization_count": 8,
+  "status": "PASS",
+  "workload": {
+    "fixture_positions_available": 3,
+    "hidden_fingerprint": "sha256:b949d074b4f7eb1b3b5a9f67038dcd0bbdb05d434e58227675673718158e555c",
+    "route_positions_available": 3,
+    "routes_fingerprint": "sha256:87eae959b6202088922424ae6b57e8e37e718f4bab5ab8e5fff3f21a82374a9a",
+    "source": "real K3 oracle boundaries and exact oracle routes cycled over requested rows",
+    "weights_fingerprint": "sha256:48de0bb270d1a25a8b42c7bcf05570f2558d25c1dba4effd47e09a0968d7201e"
+  }
+}

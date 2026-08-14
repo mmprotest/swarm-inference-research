@@ -1,0 +1,730 @@
+{
+  "approximate_result": {
+    "active_state_relative_l2": 0.00445710279667057,
+    "final_hidden_relative_l2": 0.005381993245669759,
+    "full_93_layer_run": false,
+    "oracle_tok_s_per_user": null,
+    "outcome": "APPROX_FAIL",
+    "output_relative_l2": 0.0035231655227915513,
+    "qualified": false,
+    "reason": "failed layer screen and no >=1.5x whole-oracle GPU result"
+  },
+  "arms": [
+    {
+      "arm_id": "A",
+      "benchmark": "real Kimi K3 layer 89, paired DLL, blocks 1/2/4/7/12/16",
+      "full_layer_regression_percent": 0.07841399957786432,
+      "fused_attention_device_ms": 3.10646390914917,
+      "fused_layer_device_ms": 12.211135864257812,
+      "hypothesis": "one recurrent launch per window reduces real layer wall time",
+      "implementation": "SM120 one-block-per-head kernel loops contiguous rows",
+      "name": "exact short-window KDA verification",
+      "redesign": "reject; launch overhead is not the wall",
+      "result": "bit exact; block-7 full layer regressed",
+      "retained": false,
+      "split_attention_device_ms": 3.1049280166625977,
+      "split_layer_device_ms": 12.201568126678467
+    },
+    {
+      "arm_id": "B",
+      "benchmark": "block sweep logical traffic + real layer wall",
+      "hypothesis": "acceptance copies a full recurrent state",
+      "implementation": "inspect and instrument retained in-place state progression",
+      "name": "eliminate accepted-state copy/scatter",
+      "redesign": "no-op control retained; no new gain",
+      "result": "zero accepted-state bytes, launches, and wall time already",
+      "retained": false
+    },
+    {
+      "arm_id": "C",
+      "benchmark": "C1-C3 exact block sweep and CPU/GPU cost model",
+      "block7_compact_factor_bytes": 1034880,
+      "block7_cpu_factorized_speedup": 0.32810936978993,
+      "block7_factor_flop_ratio": 1.0195054945054944,
+      "block7_full_snapshots_bytes": 44040192,
+      "block7_output_relative_l2": 1.8774323143704214e-07,
+      "block7_snapshot_compression_ratio": 42.555844155844156,
+      "block7_state_relative_l2": 1.1655899588376167e-07,
+      "free_core_layer_speedup_ceiling": 1.0291021002521112,
+      "hypothesis": "DPLR prefixes avoid full speculative states and reduce wall time",
+      "implementation": "exact affine diagonal-plus-low-rank reference",
+      "name": "KDA-specific factorized verification",
+      "redesign": "skip C4 CUDA under cost gate; retain memory reference only",
+      "result": "correct and 42.56x snapshot compression; no plausible latency gain",
+      "retained": false
+    },
+    {
+      "arm_id": "D",
+      "benchmark": "exact block sweep and replay CPU/traffic model",
+      "hypothesis": "compact replay is cheaper than speculative state snapshots",
+      "implementation": "exact checkpoint plus compact token factors",
+      "name": "replay/checkpoint state",
+      "redesign": "reject latency path",
+      "result": "capacity win only versus a design the retained oracle does not use",
+      "retained": false
+    },
+    {
+      "arm_id": "E",
+      "benchmark": "real layer-89 routes and all 896 resident experts",
+      "fused_layer_device_ms": 12.201568126678467,
+      "fused_routed_expert_ms": 4.866528034210205,
+      "hypothesis": "native fused MXFP4 improves fragmented small-M service",
+      "implementation": "canonical Colibri fused gate/up versus exact unfused control",
+      "maximum_assignments_for_one_expert": 8,
+      "mean_assignments_per_touched_expert": 3.5555555555555554,
+      "name": "KDA-layer expert service",
+      "native_routed_expert_calls": 66,
+      "redesign": "retain existing control; no incremental E017 gain",
+      "result": "fused is faster but was already the E016 canonical control",
+      "retained": false,
+      "routed_expert_speedup": 1.1998829298767795,
+      "unfused_layer_device_ms": 13.064911842346191,
+      "unfused_routed_expert_ms": 5.839263916015625
+    }
+  ],
+  "baseline_reproduction": {
+    "current_ms_per_accepted": 378.9585821314422,
+    "current_oracle_tok_s_per_user": 2.6388108018969443,
+    "current_target_pass_ms": 3031.6686570515376,
+    "gate_percent": 3.0,
+    "historical_ms_per_accepted": 374.6548161100545,
+    "historical_oracle_tok_s_per_user": 2.6691235692169797,
+    "historical_target_pass_ms": 2997.238528880436,
+    "layer89_device_deviation_percent": 1.74557274217646,
+    "mla8k_device_deviation_percent": 0.6032092078138485,
+    "pass": true,
+    "target_pass_deviation_percent": 1.148728332408111
+  },
+  "correctness": {
+    "approximate_full_graph_relative_l2_gate": 0.003,
+    "exact_relative_l2_gate": 2e-05,
+    "expert_controls_pass": true,
+    "factor_reference_pass": true,
+    "full_93_layer_anchor": "artifacts/experiment-014\\oracle-full-93\\serial-oracle-receipt.json",
+    "short_window_bit_identity": true,
+    "short_window_pass": true
+  },
+  "economics": [
+    {
+      "aggregate_tok_s": 97.15028433444262,
+      "architecture": "Experiment 015 block 7",
+      "change_vs_exp015_cost_percent": 0.0,
+      "change_vs_exp016_cost_percent": 22.22267291146538,
+      "change_vs_reference_cost_percent": 0.0,
+      "evidence_class": "validated-model bridge / projection",
+      "gpu_equivalent_count": 93.0,
+      "gpu_hourly_price_usd_inherited": 0.15,
+      "gpu_hours_per_1m_output_tokens": 265.91104195229474,
+      "projected_infrastructure_usd_per_1m_output_tokens": 39.88665629284421,
+      "retained_user_slots": 44.48639082284157,
+      "scope": "projection using Experiment 015's retained user slots, 93 paid GPU equivalents, and $0.15/GPU-hour; target-only zero-draft capacity",
+      "tok_s_per_user": 2.1838203220693897
+    },
+    {
+      "aggregate_tok_s": 118.73967425464438,
+      "architecture": "Experiment 016 block 7",
+      "change_vs_exp015_cost_percent": -18.182119881769275,
+      "change_vs_exp016_cost_percent": 0.0,
+      "change_vs_reference_cost_percent": -18.182119881769275,
+      "evidence_class": "validated-model bridge / projection",
+      "gpu_equivalent_count": 93.0,
+      "gpu_hourly_price_usd_inherited": 0.15,
+      "gpu_hours_per_1m_output_tokens": 217.56277752566672,
+      "projected_infrastructure_usd_per_1m_output_tokens": 32.634416628850005,
+      "retained_user_slots": 44.48639082284157,
+      "scope": "projection using Experiment 015's retained user slots, 93 paid GPU equivalents, and $0.15/GPU-hour; target-only zero-draft capacity",
+      "tok_s_per_user": 2.6691235692169797
+    },
+    {
+      "aggregate_tok_s": 137.88137227471876,
+      "architecture": "Experiment 017 best exact (existing E016 block-16 curve)",
+      "change_vs_exp015_cost_percent": -29.54067490648582,
+      "change_vs_exp016_cost_percent": -13.882729555328122,
+      "change_vs_reference_cost_percent": -29.54067490648582,
+      "evidence_class": "validated-model bridge / projection; no new mechanism",
+      "gpu_equivalent_count": 93.0,
+      "gpu_hourly_price_usd_inherited": 0.15,
+      "gpu_hours_per_1m_output_tokens": 187.35912550871822,
+      "projected_infrastructure_usd_per_1m_output_tokens": 28.103868826307732,
+      "retained_user_slots": 44.48639082284157,
+      "scope": "projection using Experiment 015's retained user slots, 93 paid GPU equivalents, and $0.15/GPU-hour; target-only zero-draft capacity",
+      "tok_s_per_user": 3.099405677205971
+    }
+  ],
+  "environment": {
+    "colibri_commit": "b085b48888a88d9a1c00b151a9979774b72cdbfd",
+    "colibri_status": "M c/backend_cuda.cu\n M c/backend_cuda.h\n M c/build_cuda.bat\n M c/kimi_k3.c\n M c/openai_server.py\n M c/tests/test_openai_server.py\n M c/tools/k3_ref.py",
+    "cuda_compiler": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Aug_20_13:58:20_Pacific_Daylight_Time_2025\nCuda compilation tools, release 13.0, V13.0.88\nBuild cuda_13.0.r13.0/compiler.36424714_0",
+    "cuda_dll_hashes": [
+      {
+        "bytes": 1303040,
+        "path": "artifacts/experiment-016/cuda/coli_cuda-sm120-h016-final.dll",
+        "sha256": "113d9857735649b5c9773a474b73517fc1615547a99992ce401a294bc39f7eb1"
+      },
+      {
+        "bytes": 1345536,
+        "path": "artifacts/experiment-017/cuda/coli_cuda-sm120-h017-window.dll",
+        "sha256": "c240a7cf5af6f4fb12cb9ed900f67062edcb7bfb030a51fdb8eb3c47a1a5ccfd"
+      },
+      {
+        "bytes": 4288232,
+        "path": "C:/Windows/System32/nvcuda.dll",
+        "sha256": "3fc980f90af215f58941973b9bc5c70ca438c73df8fccfee19bf11a9a19c1e4a"
+      }
+    ],
+    "git_branch": "main",
+    "git_commit": "7064b3eabe0eee26db78798bd02dcf83ae140555",
+    "git_status": "M src/swarm_inference/execution/kimi_cuda_runtime.py\n M src/swarm_inference/execution/kimi_k3_stage.py\n M src/swarm_inference/experiments/experiment_016/benchmark.py\n M src/swarm_inference/protocol/stage_worker.py\n M tests/unit/test_kimi_indexed_copy_runtime.py\n M tests/unit/test_kimi_k3_adapter.py\n m third_party/colibri\n?? docs/experiments/\n?? src/swarm_inference/execution/kda_verification.py\n?? src/swarm_inference/experiments/experiment_017/\n?? tests/test_kda_verification.py",
+    "gpu": "Wed Aug 12 23:46:12 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 591.86                 Driver Version: 591.86         CUDA Version: 13.1     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 5090      WDDM  |   00000000:02:00.0 Off |                  N/A |\n|  0%   53C    P8             25W /  431W |    1418MiB /  32607MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            2064    C+G   ...indows\\System32\\ShellHost.exe      N/A      |\n|    0   N/A  N/A            2332    C+G   ....0.4129.78\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A            7132    C+G   C:\\Windows\\explorer.exe               N/A      |\n|    0   N/A  N/A            9700    C+G   ...xyewy\\ShellExperienceHost.exe      N/A      |\n|    0   N/A  N/A           10388    C+G   ...2txyewy\\CrossDeviceResume.exe      N/A      |\n|    0   N/A  N/A           11780    C+G   ...IA App\\CEF\\NVIDIA Overlay.exe      N/A      |\n|    0   N/A  N/A           12096    C+G   ...IA App\\CEF\\NVIDIA Overlay.exe      N/A      |\n|    0   N/A  N/A           13800    C+G   ...y\\StartMenuExperienceHost.exe      N/A      |\n|    0   N/A  N/A           13892    C+G   ..._cw5n1h2txyewy\\SearchHost.exe      N/A      |\n|    0   N/A  N/A           14060    C+G   ...cw5n1h2txyewy\\WidgetBoard.exe      N/A      |\n|    0   N/A  N/A           16400    C+G   ....0.4129.78\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           18408    C+G   ...ms\\Microsoft VS Code\\Code.exe      N/A      |\n|    0   N/A  N/A           20100    C+G   ...lot\\Application\\mscopilot.exe      N/A      |\n|    0   N/A  N/A           20648    C+G   ...yApp\\MicrosoftSecurityApp.exe      N/A      |\n|    0   N/A  N/A           20684    C+G   ...5n1h2txyewy\\TextInputHost.exe      N/A      |\n|    0   N/A  N/A           23400    C+G   ...Chrome\\Application\\chrome.exe      N/A      |\n|    0   N/A  N/A           24352    C+G   ...ffice\\root\\Office16\\EXCEL.EXE      N/A      |\n|    0   N/A  N/A           26128    C+G   ...Chrome\\Application\\chrome.exe      N/A      |\n+-----------------------------------------------------------------------------------------+",
+    "host_ram_total_bytes": 102496780288,
+    "nsight_compute": {
+      "decisive_profile_attempt": "ERR_NVGPUCTRPERM",
+      "path": "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.3.1\\ncu.bat",
+      "status": "AVAILABLE_COUNTER_PERMISSION_DENIED",
+      "version": "2025.3.1"
+    },
+    "nsight_systems": "UNAVAILABLE",
+    "numpy": "2.4.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "schema_version": "experiment-017-environment-v1",
+    "test_status": {
+      "full_repository": {
+        "command": "python -m pytest -q",
+        "errors": 0,
+        "failures": 0,
+        "passed": 1183,
+        "skipped": 13,
+        "status": "PASS",
+        "tests": 1196,
+        "time_seconds": 166.409
+      },
+      "receipt": "artifacts/experiment-017/test-results.json",
+      "status": "PASS",
+      "targeted": {
+        "command": "python -m pytest -q tests/test_kda_verification.py tests/unit/test_kimi_indexed_copy_runtime.py tests/unit/test_kimi_k3_adapter.py",
+        "coverage": [
+          "blocks 1/2/4/7/12/16",
+          "serial versus factorized KDA",
+          "initial/continuing/accepted state",
+          "prefix composition and reconstruction",
+          "padding, aliasing, repetition, cleanup",
+          "native backend capability and fail-closed fallback",
+          "precision-mode configuration round trip"
+        ],
+        "errors": 0,
+        "failures": 0,
+        "passed": 53,
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 53,
+        "time_seconds": 1.629
+      }
+    }
+  },
+  "exact_combined": [
+    {
+      "accepted_tokens": 2,
+      "block_size": 1,
+      "configuration": "retained Experiment 016 exact path",
+      "distance_to_5_tok_s": 3.504972712308392,
+      "evidence_class": "ANALYTICAL 8-layer bridge, anchored to primary block 7",
+      "kda_contribution_ms": 679.6524482799563,
+      "ms_per_accepted_token": 668.8841121716558,
+      "new_exp017_mechanism": false,
+      "non_kda_contribution_ms": 658.1157760633554,
+      "oracle_tok_s_per_user": 1.4950272876916082,
+      "required_additional_kda_speedup": null,
+      "required_kda_ms_if_non_kda_frozen": -258.1157760633554,
+      "speedup_vs_exp015": 0.6845926254019467,
+      "speedup_vs_exp016": 0.5601241196251951,
+      "target_pass_ms": 1337.7682243433117
+    },
+    {
+      "accepted_tokens": 3,
+      "block_size": 2,
+      "configuration": "retained Experiment 016 exact path",
+      "distance_to_5_tok_s": 3.2682298236603575,
+      "evidence_class": "ANALYTICAL 8-layer bridge, anchored to primary block 7",
+      "kda_contribution_ms": 938.1882330720324,
+      "ms_per_accepted_token": 577.4438280913528,
+      "new_exp017_mechanism": false,
+      "non_kda_contribution_ms": 794.1432512020259,
+      "oracle_tok_s_per_user": 1.7317701763396423,
+      "required_additional_kda_speedup": null,
+      "required_kda_ms_if_non_kda_frozen": -194.1432512020259,
+      "speedup_vs_exp015": 0.7930003026524708,
+      "speedup_vs_exp016": 0.6488217662656485,
+      "target_pass_ms": 1732.3314842740583
+    },
+    {
+      "accepted_tokens": 5,
+      "block_size": 4,
+      "configuration": "retained Experiment 016 exact path",
+      "distance_to_5_tok_s": 2.749180988324357,
+      "evidence_class": "ANALYTICAL 8-layer bridge, anchored to primary block 7",
+      "kda_contribution_ms": 1167.587411436672,
+      "ms_per_accepted_token": 444.2827232277289,
+      "new_exp017_mechanism": false,
+      "non_kda_contribution_ms": 1053.8262047019725,
+      "oracle_tok_s_per_user": 2.250819011675643,
+      "required_additional_kda_speedup": null,
+      "required_kda_ms_if_non_kda_frozen": -53.82620470197253,
+      "speedup_vs_exp015": 1.0306795796930608,
+      "speedup_vs_exp016": 0.8432876294165236,
+      "target_pass_ms": 2221.4136161386446
+    },
+    {
+      "accepted_tokens": 8,
+      "block_size": 7,
+      "configuration": "retained Experiment 016 exact path",
+      "distance_to_5_tok_s": 2.3308764307830203,
+      "evidence_class": "ANALYTICAL 8-layer bridge, anchored to primary block 7",
+      "kda_contribution_ms": 1559.369291174753,
+      "ms_per_accepted_token": 374.6548161100545,
+      "new_exp017_mechanism": false,
+      "non_kda_contribution_ms": 1437.8692377056832,
+      "oracle_tok_s_per_user": 2.6691235692169797,
+      "required_additional_kda_speedup": 9.617972981241042,
+      "required_kda_ms_if_non_kda_frozen": 162.1307622943168,
+      "speedup_vs_exp015": 1.2222267291146536,
+      "speedup_vs_exp016": 1.0000088303986288,
+      "target_pass_ms": 2997.238528880436
+    },
+    {
+      "accepted_tokens": 13,
+      "block_size": 12,
+      "configuration": "retained Experiment 016 exact path",
+      "distance_to_5_tok_s": 1.971084668341288,
+      "evidence_class": "ANALYTICAL 8-layer bridge, anchored to primary block 7",
+      "kda_contribution_ms": 2137.419206252055,
+      "ms_per_accepted_token": 330.1511896182236,
+      "new_exp017_mechanism": false,
+      "non_kda_contribution_ms": 2154.5462587848515,
+      "oracle_tok_s_per_user": 3.028915331658712,
+      "required_additional_kda_speedup": 4.798296677049814,
+      "required_kda_ms_if_non_kda_frozen": 445.4537412151485,
+      "speedup_vs_exp015": 1.3869801013613197,
+      "speedup_vs_exp016": 1.1348077373117202,
+      "target_pass_ms": 4291.965465036907
+    },
+    {
+      "accepted_tokens": 17,
+      "block_size": 16,
+      "configuration": "retained Experiment 016 exact path",
+      "distance_to_5_tok_s": 1.9005943227940292,
+      "evidence_class": "ANALYTICAL 8-layer bridge, anchored to primary block 7",
+      "kda_contribution_ms": 2769.9550266103706,
+      "ms_per_accepted_token": 322.64250122348375,
+      "new_exp017_mechanism": false,
+      "non_kda_contribution_ms": 2714.9674941888534,
+      "oracle_tok_s_per_user": 3.099405677205971,
+      "required_additional_kda_speedup": 4.043538084854044,
+      "required_kda_ms_if_non_kda_frozen": 685.0325058111466,
+      "speedup_vs_exp015": 1.4192585561567501,
+      "speedup_vs_exp016": 1.1612175179670943,
+      "target_pass_ms": 5484.922520799224
+    }
+  ],
+  "exactness": "EXACT",
+  "final_decision": "NO, KDA OPTIMIZATION PATH FALSIFIED",
+  "model_metadata": {
+    "architecture": [
+      "KimiK3ForConditionalGeneration"
+    ],
+    "attention_residual_block_size": 12,
+    "checkpoint": "<local-kimi-k3-checkpoint>",
+    "checkpoint_shard_count_present": 96,
+    "checkpoint_total_bytes_from_index": 1560860324864,
+    "config": {
+      "bytes": 7006,
+      "path": "<local-kimi-k3-checkpoint>\\config.json",
+      "sha256": "9710e121a58d03ac92c8d6da287a19541994319afbbe6d6202af001ffd379213"
+    },
+    "dtype": "bfloat16",
+    "full_attention_layer_count": 24,
+    "hidden_size": 7168,
+    "identity_reused_from": "Experiments 014-016",
+    "identity_reverified": true,
+    "max_position_embeddings": 1048576,
+    "model_type": "kimi_k3",
+    "moe_intermediate_size": 3072,
+    "num_attention_heads": 96,
+    "num_experts": 896,
+    "num_experts_per_token": 16,
+    "num_hidden_layers": 93,
+    "num_key_value_heads": 96,
+    "num_shared_experts": 2,
+    "schema_version": "experiment-017-kimi-k3-metadata-v1",
+    "weight_index": {
+      "bytes": 59764096,
+      "path": "<local-kimi-k3-checkpoint>\\model.safetensors.index.json",
+      "sha256": "a1c5210650ce71d2d3ae9ec5a101ac4afd3cf4b10091be589853437eb967febd"
+    }
+  },
+  "new_bottleneck": {
+    "attention_pre_moe_free_oracle_tok_s": 4.1791707521600525,
+    "block7_components_ms": {
+      "DCP_communication": 18.870856,
+      "KDA": 1559.369291174753,
+      "MLA": 1195.3071639298962,
+      "endpoint": 58.244246095787275,
+      "topology_communication": 165.44697167999993
+    },
+    "largest_phase": "expert compute",
+    "largest_phase_free_oracle_tok_s": 4.396439405403177,
+    "phase_components_ms": {
+      "attention / pre-MoE": 1082.9831719139595,
+      "communication": 184.31782767999994,
+      "device transfers": 148.75434943521543,
+      "dispatch / scatter / reduction": 77.34895335437879,
+      "endpoint": 58.244246095787275,
+      "expert compute": 1177.5841990224867,
+      "latent / residual / other": 156.60717835177226,
+      "routing": 111.3986030268367
+    },
+    "single_phase_crosses_5": false
+  },
+  "primary_result": {
+    "accepted_tokens": 17,
+    "block_size": 16,
+    "crossed_5_tok_s": false,
+    "decisive_mechanism": "none; all Experiment 017 latency arms rejected",
+    "exactness": "EXACT",
+    "ms_per_accepted_token": 322.64250122348375,
+    "note": "best block is the pre-existing Experiment 016 block-16 curve",
+    "oracle_tok_s_per_user": 3.099405677205971,
+    "outcome": "FAIL",
+    "speedup_vs_exp015": 1.4192585561567501,
+    "speedup_vs_exp016": 1.1612175179670943,
+    "target_pass_ms": 5484.922520799224
+  },
+  "profiling": {
+    "cpu_wall_timings": true,
+    "cuda_event_timings": true,
+    "failed_ncu_timings_excluded": true,
+    "gpu_memory_samples": true,
+    "hardware_counters_reported": false,
+    "nsight_compute_available": true,
+    "nsight_compute_counter_status": "BLOCKED_ERR_NVGPUCTRPERM",
+    "nsight_systems_available": false
+  },
+  "run_seeds": {
+    "physical_gpu_benchmarks": {
+      "oracle_trace_sha256": "95012ceb968aaa31f51ccbea38beff44e47dec72572b8c22ca4fe01bbadd56ae",
+      "reason": "deterministic replay of three immutable real Kimi boundaries",
+      "seed": null
+    },
+    "reference_math_seed": 17017
+  },
+  "schema_version": "experiment-017-final-analysis-v1",
+  "source_manifest": {
+    "files": [
+      {
+        "bytes": 34087,
+        "path": "artifacts/experiment-016/summary.json",
+        "sha256": "84fc5a0d4243fe90a0af91443e56f784aff8bbbbb9e88bcee9c91e6ad7b3fbbe"
+      },
+      {
+        "bytes": 658384,
+        "path": "artifacts/experiment-016/physical/verification-major-final.json",
+        "sha256": "814f58ae5e32b47447f487a05b771bfeca2ab09874da07d76078f91063a1974c"
+      },
+      {
+        "bytes": 284846,
+        "path": "artifacts/experiment-016/physical/mla-8k-block-sweep-final.json",
+        "sha256": "e524378c84628e8bd547d4073fcadd33c1cba82be254dce760c0defe0b57198c"
+      },
+      {
+        "bytes": 145100,
+        "path": "artifacts/experiment-016/dcp/gpu-results.json",
+        "sha256": "1ac7b1840020ceb05797e42ffd9729688a3d0acf4874057103295c23db93d2c2"
+      },
+      {
+        "bytes": 162559,
+        "path": "artifacts/experiment-014/oracle-full-93/serial-oracle-receipt.json",
+        "sha256": "97090c1e36d74b3e2a6598de5b371c1b2b70c13a1df6895a522fef49fe6f95e4"
+      },
+      {
+        "bytes": 8085504,
+        "path": "artifacts/experiment-014/oracle-full-93/hidden-trace.f32",
+        "sha256": "95012ceb968aaa31f51ccbea38beff44e47dec72572b8c22ca4fe01bbadd56ae"
+      },
+      {
+        "bytes": 16448,
+        "path": "artifacts/experiment-014/cuda/h014-025y-real-kda-core.json",
+        "sha256": "df84f1afc6171bf9e3d9f238041ffa5332a46940c153fe5495d5bec8bb5ca48e"
+      },
+      {
+        "bytes": 657619,
+        "path": "artifacts/experiment-017/physical/baseline-reproduction.json",
+        "sha256": "10e92742828188e2102c802ff469d3db6687fa8ae0f9aad30b9d7f3af947b5a3"
+      },
+      {
+        "bytes": 284861,
+        "path": "artifacts/experiment-017/physical/baseline-mla8k-reproduction.json",
+        "sha256": "759d85de50438492b4b980efe6549d3b194f9e307469d26701b70e3a33bade14"
+      },
+      {
+        "bytes": 146117,
+        "path": "artifacts/experiment-017/physical/baseline-dcp-reproduction.json",
+        "sha256": "a14c0549875af2840f19c4fb60aafc9bb3ac62dc5953fef7ad97b80f5ed48ddc"
+      },
+      {
+        "bytes": 333302,
+        "path": "artifacts/experiment-017/physical/kda-split-control-physical.json",
+        "sha256": "2051949422c4a7087e4af5d90d2a4ed1c1ad87714896360a74be80dd4120cd43"
+      },
+      {
+        "bytes": 332723,
+        "path": "artifacts/experiment-017/physical/kda-short-window-physical.json",
+        "sha256": "db806f32e8e4838690f35bb9b4ee94d4b21de513a070c80d2b0d0e4a82201895"
+      },
+      {
+        "bytes": 332847,
+        "path": "artifacts/experiment-017/physical/expert-unfused-control-physical.json",
+        "sha256": "98abf6a5e632398efc8199039cf1b15888c8c8475aac972ccf1dd84db32fd9e0"
+      },
+      {
+        "bytes": 20500,
+        "path": "artifacts/experiment-017/physical/factor-reference.json",
+        "sha256": "a7c55b8d1a8d34fe99ccee1bc464193434688cf458ef148ece34b83edeb638c2"
+      },
+      {
+        "bytes": 1012,
+        "path": "artifacts/experiment-017/test-results.json",
+        "sha256": "c63816d14ba7283d1e10a79fcd5e661be1aed28edb5b033826a7cc03a70bf4a8"
+      },
+      {
+        "bytes": 7514,
+        "path": "artifacts/experiment-017/targeted-pytest.xml",
+        "sha256": "2bcfb0aafa34ada93795a81f7edebf196215a248027c2229d89cd922ecffb0c2"
+      },
+      {
+        "bytes": 174922,
+        "path": "artifacts/experiment-017/full-pytest.xml",
+        "sha256": "58926378835d52d73ae8f586af349c268f99656379ac9da8844a54db77311349"
+      },
+      {
+        "bytes": 1345536,
+        "path": "artifacts/experiment-017/cuda/coli_cuda-sm120-h017-window.dll",
+        "sha256": "c240a7cf5af6f4fb12cb9ed900f67062edcb7bfb030a51fdb8eb3c47a1a5ccfd"
+      },
+      {
+        "bytes": 15874,
+        "path": "src/swarm_inference/execution/kda_verification.py",
+        "sha256": "d34f12e97c2dd3d0d2467f0d265a885f7c3fbe1b599189445e5f7b5fdbb8c4d8"
+      },
+      {
+        "bytes": 12020,
+        "path": "src/swarm_inference/experiments/experiment_017/reference_benchmark.py",
+        "sha256": "746bb06ac2213425701242d316462c34327e798d001fa1ed2203b0d20793c1ab"
+      },
+      {
+        "bytes": 72726,
+        "path": "src/swarm_inference/experiments/experiment_017/finalize.py",
+        "sha256": "0ed977e8de0a24e21c0dd03318dd00ed9065ea6e387a7ba8043493de2d20c6df"
+      },
+      {
+        "bytes": 16249,
+        "path": "src/swarm_inference/experiments/experiment_017/figures.py",
+        "sha256": "6b55a29761e5ebb7702dc95ab46c01c3671f35fa1b859d546e40c50b6e0cd9c8"
+      },
+      {
+        "bytes": 3180,
+        "path": "src/swarm_inference/experiments/experiment_017/test_receipt.py",
+        "sha256": "54c4203482b2b96fc802d0ac5afe743c5e45b7a1e9bede5125434c9928b70017"
+      },
+      {
+        "bytes": 12218,
+        "path": "src/swarm_inference/experiments/experiment_017/audit.py",
+        "sha256": "fc65a487b3fcdd510da4867b4ae75a74dd2ab7a0e58b7b6e4aabbccd83c1826c"
+      },
+      {
+        "bytes": 6436,
+        "path": "tests/test_kda_verification.py",
+        "sha256": "0dfa372eab8e027751a12a62748647e04858b6867858fe38710322f967bebdcf"
+      }
+    ],
+    "schema_version": "experiment-017-source-manifest-v1"
+  },
+  "target_tracker": {
+    "baseline_exp015_tok_s": 2.1838203221,
+    "baseline_exp016_block7_ms": 2997.24,
+    "baseline_exp016_kda_ms": 1559.4,
+    "baseline_exp016_ms_per_accepted": 374.65,
+    "baseline_exp016_non_kda_ms": 1437.84,
+    "baseline_exp016_tok_s": 2.6691,
+    "goal_block7_ms": 1600.0,
+    "goal_ms_per_accepted": 200.0,
+    "goal_tok_s": 5.0,
+    "initial_required_additional_kda_speedup": 9.616428219042922,
+    "initial_required_kda_ms_if_non_kda_frozen": 162.16,
+    "results": [
+      {
+        "accepted_tokens": 2,
+        "block_size": 1,
+        "exactness": "EXACT",
+        "free_kda_oracle": 3.0389789650133903,
+        "free_largest_remaining_component_oracle": 2.486750314443802,
+        "largest_remaining_component_ms": 533.5057343042466,
+        "measured_kda_ms": 679.6524482799563,
+        "measured_non_kda_ms": 658.1157760633554,
+        "ms_per_accepted_token": 668.8841121716558,
+        "name": "exact_combined_block_1",
+        "observed_speedup_vs_016": 0.5601241196251951,
+        "oracle_tok_s_per_user": 1.4950272876916082,
+        "remaining_gap_ms_per_accepted": 468.88411217165583,
+        "remaining_gap_tok_s": 3.504972712308392,
+        "required_additional_kda_speedup": null,
+        "required_kda_ms_if_non_kda_frozen": -258.1157760633554,
+        "required_speedup_vs_016": 1.8732906223071448,
+        "retained": true,
+        "target_pass_ms": 1337.7682243433117
+      },
+      {
+        "accepted_tokens": 3,
+        "block_size": 2,
+        "exactness": "EXACT",
+        "free_kda_oracle": 3.7776559776327,
+        "free_largest_remaining_component_oracle": 2.8805360718240864,
+        "largest_remaining_component_ms": 690.8586732426508,
+        "measured_kda_ms": 938.1882330720324,
+        "measured_non_kda_ms": 794.1432512020259,
+        "ms_per_accepted_token": 577.4438280913528,
+        "name": "exact_combined_block_2",
+        "observed_speedup_vs_016": 0.6488217662656485,
+        "oracle_tok_s_per_user": 1.7317701763396423,
+        "remaining_gap_ms_per_accepted": 377.44382809135277,
+        "remaining_gap_tok_s": 3.2682298236603575,
+        "required_additional_kda_speedup": null,
+        "required_kda_ms_if_non_kda_frozen": -194.1432512020259,
+        "required_speedup_vs_016": 1.8732906223071448,
+        "retained": true,
+        "target_pass_ms": 1732.3314842740583
+      },
+      {
+        "accepted_tokens": 5,
+        "block_size": 4,
+        "exactness": "EXACT",
+        "free_kda_oracle": 4.744615362277906,
+        "free_largest_remaining_component_oracle": 3.743894797855408,
+        "largest_remaining_component_ms": 885.9060044225998,
+        "measured_kda_ms": 1167.587411436672,
+        "measured_non_kda_ms": 1053.8262047019725,
+        "ms_per_accepted_token": 444.2827232277289,
+        "name": "exact_combined_block_4",
+        "observed_speedup_vs_016": 0.8432876294165236,
+        "oracle_tok_s_per_user": 2.250819011675643,
+        "remaining_gap_ms_per_accepted": 244.28272322772892,
+        "remaining_gap_tok_s": 2.749180988324357,
+        "required_additional_kda_speedup": null,
+        "required_kda_ms_if_non_kda_frozen": -53.82620470197253,
+        "required_speedup_vs_016": 1.8732906223071448,
+        "retained": true,
+        "target_pass_ms": 2221.4136161386446
+      },
+      {
+        "accepted_tokens": 8,
+        "block_size": 7,
+        "exactness": "EXACT",
+        "free_kda_oracle": 5.563788271014889,
+        "free_largest_remaining_component_oracle": 4.439680753445116,
+        "largest_remaining_component_ms": 1195.3071639298962,
+        "measured_kda_ms": 1559.369291174753,
+        "measured_non_kda_ms": 1437.8692377056832,
+        "ms_per_accepted_token": 374.6548161100545,
+        "name": "exact_combined_block_7",
+        "observed_speedup_vs_016": 1.0000088303986288,
+        "oracle_tok_s_per_user": 2.6691235692169797,
+        "remaining_gap_ms_per_accepted": 174.65481611005453,
+        "remaining_gap_tok_s": 2.3308764307830203,
+        "required_additional_kda_speedup": 9.617972981241042,
+        "required_kda_ms_if_non_kda_frozen": 162.1307622943168,
+        "required_speedup_vs_016": 1.8732906223071448,
+        "retained": true,
+        "target_pass_ms": 2997.238528880436
+      },
+      {
+        "accepted_tokens": 13,
+        "block_size": 12,
+        "exactness": "EXACT",
+        "free_kda_oracle": 6.033753022008405,
+        "free_largest_remaining_component_oracle": 5.038139581422594,
+        "largest_remaining_component_ms": 1711.6479113241023,
+        "measured_kda_ms": 2137.419206252055,
+        "measured_non_kda_ms": 2154.5462587848515,
+        "ms_per_accepted_token": 330.1511896182236,
+        "name": "exact_combined_block_12",
+        "observed_speedup_vs_016": 1.1348077373117202,
+        "oracle_tok_s_per_user": 3.028915331658712,
+        "remaining_gap_ms_per_accepted": 130.1511896182236,
+        "remaining_gap_tok_s": 1.971084668341288,
+        "required_additional_kda_speedup": 4.798296677049814,
+        "required_kda_ms_if_non_kda_frozen": 445.4537412151485,
+        "required_speedup_vs_016": 1.8732906223071448,
+        "retained": true,
+        "target_pass_ms": 4291.965465036907
+      },
+      {
+        "accepted_tokens": 17,
+        "block_size": 16,
+        "exactness": "EXACT",
+        "free_kda_oracle": 6.261585096833383,
+        "free_largest_remaining_component_oracle": 5.155389540937084,
+        "largest_remaining_component_ms": 2187.4025438878484,
+        "measured_kda_ms": 2769.9550266103706,
+        "measured_non_kda_ms": 2714.9674941888534,
+        "ms_per_accepted_token": 322.64250122348375,
+        "name": "exact_combined_block_16",
+        "observed_speedup_vs_016": 1.1612175179670943,
+        "oracle_tok_s_per_user": 3.099405677205971,
+        "remaining_gap_ms_per_accepted": 122.64250122348375,
+        "remaining_gap_tok_s": 1.9005943227940292,
+        "required_additional_kda_speedup": 4.043538084854044,
+        "required_kda_ms_if_non_kda_frozen": 685.0325058111466,
+        "required_speedup_vs_016": 1.8732906223071448,
+        "retained": true,
+        "target_pass_ms": 5484.922520799224
+      }
+    ],
+    "schema_version": "experiment-017-target-tracker-v1",
+    "strong_goal_tok_s": 5.3382
+  },
+  "test_results": {
+    "full_repository": {
+      "command": "python -m pytest -q",
+      "errors": 0,
+      "failures": 0,
+      "passed": 1183,
+      "skipped": 13,
+      "status": "PASS",
+      "tests": 1196,
+      "time_seconds": 166.409
+    },
+    "python": "3.11.9",
+    "runner": "pytest",
+    "schema_version": "experiment-017-test-results-v1",
+    "status": "PASS",
+    "targeted": {
+      "command": "python -m pytest -q tests/test_kda_verification.py tests/unit/test_kimi_indexed_copy_runtime.py tests/unit/test_kimi_k3_adapter.py",
+      "coverage": [
+        "blocks 1/2/4/7/12/16",
+        "serial versus factorized KDA",
+        "initial/continuing/accepted state",
+        "prefix composition and reconstruction",
+        "padding, aliasing, repetition, cleanup",
+        "native backend capability and fail-closed fallback",
+        "precision-mode configuration round trip"
+      ],
+      "errors": 0,
+      "failures": 0,
+      "passed": 53,
+      "skipped": 0,
+      "status": "PASS",
+      "tests": 53,
+      "time_seconds": 1.629
+    }
+  },
+  "verdict": "FAIL"
+}

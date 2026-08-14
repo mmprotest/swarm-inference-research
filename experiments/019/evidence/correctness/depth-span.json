@@ -1,0 +1,696 @@
+{
+  "gpu_samples": [
+    {
+      "gpu_utilization_percent": 3.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 39.94,
+      "temperature_c": 42.0,
+      "timestamp": "2026/08/13 15:20:53.877",
+      "vram_used_mib": 1557.0
+    },
+    {
+      "gpu_utilization_percent": 3.0,
+      "memory_controller_utilization_percent": 0.0,
+      "power_w": 43.79,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:20:54.729",
+      "vram_used_mib": 2060.0
+    },
+    {
+      "gpu_utilization_percent": 3.0,
+      "memory_controller_utilization_percent": 0.0,
+      "power_w": 58.98,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:20:55.300",
+      "vram_used_mib": 2060.0
+    },
+    {
+      "gpu_utilization_percent": 3.0,
+      "memory_controller_utilization_percent": 0.0,
+      "power_w": 69.15,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:20:55.872",
+      "vram_used_mib": 2060.0
+    },
+    {
+      "gpu_utilization_percent": 3.0,
+      "memory_controller_utilization_percent": 0.0,
+      "power_w": 69.21,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:20:56.440",
+      "vram_used_mib": 2056.0
+    },
+    {
+      "gpu_utilization_percent": 3.0,
+      "memory_controller_utilization_percent": 0.0,
+      "power_w": 69.09,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:20:57.012",
+      "vram_used_mib": 2050.0
+    },
+    {
+      "gpu_utilization_percent": 6.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 69.39,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:20:57.583",
+      "vram_used_mib": 2130.0
+    },
+    {
+      "gpu_utilization_percent": 9.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 72.42,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:20:58.137",
+      "vram_used_mib": 2068.0
+    },
+    {
+      "gpu_utilization_percent": 6.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 74.14,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:20:58.677",
+      "vram_used_mib": 2075.0
+    },
+    {
+      "gpu_utilization_percent": 6.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 73.42,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:20:59.218",
+      "vram_used_mib": 2163.0
+    },
+    {
+      "gpu_utilization_percent": 12.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 72.88,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:20:59.771",
+      "vram_used_mib": 2061.0
+    },
+    {
+      "gpu_utilization_percent": 2.0,
+      "memory_controller_utilization_percent": 0.0,
+      "power_w": 73.14,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:00.545",
+      "vram_used_mib": 2037.0
+    },
+    {
+      "gpu_utilization_percent": 2.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 58.11,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:01.134",
+      "vram_used_mib": 2037.0
+    },
+    {
+      "gpu_utilization_percent": 2.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 42.81,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:01.704",
+      "vram_used_mib": 2037.0
+    },
+    {
+      "gpu_utilization_percent": 2.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 41.56,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:02.292",
+      "vram_used_mib": 2037.0
+    },
+    {
+      "gpu_utilization_percent": 2.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 40.53,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:02.862",
+      "vram_used_mib": 2037.0
+    },
+    {
+      "gpu_utilization_percent": 2.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 39.83,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:03.433",
+      "vram_used_mib": 2037.0
+    },
+    {
+      "gpu_utilization_percent": 10.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 40.62,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:03.988",
+      "vram_used_mib": 2129.0
+    },
+    {
+      "gpu_utilization_percent": 12.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 45.07,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:04.539",
+      "vram_used_mib": 2039.0
+    },
+    {
+      "gpu_utilization_percent": 7.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 48.09,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:05.093",
+      "vram_used_mib": 2039.0
+    },
+    {
+      "gpu_utilization_percent": 10.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 47.95,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:05.647",
+      "vram_used_mib": 2201.0
+    },
+    {
+      "gpu_utilization_percent": 11.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 49.08,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:06.200",
+      "vram_used_mib": 2109.0
+    },
+    {
+      "gpu_utilization_percent": 7.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 47.63,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:06.749",
+      "vram_used_mib": 2097.0
+    },
+    {
+      "gpu_utilization_percent": 11.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 47.77,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:07.288",
+      "vram_used_mib": 2333.0
+    },
+    {
+      "gpu_utilization_percent": 10.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 48.95,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:07.827",
+      "vram_used_mib": 2121.0
+    },
+    {
+      "gpu_utilization_percent": 7.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 47.71,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:08.381",
+      "vram_used_mib": 2055.0
+    },
+    {
+      "gpu_utilization_percent": 6.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 46.57,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:08.933",
+      "vram_used_mib": 2079.0
+    },
+    {
+      "gpu_utilization_percent": 10.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 47.1,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:09.487",
+      "vram_used_mib": 2039.0
+    },
+    {
+      "gpu_utilization_percent": 2.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 43.99,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:10.044",
+      "vram_used_mib": 2037.0
+    },
+    {
+      "gpu_utilization_percent": 2.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 40.52,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:10.615",
+      "vram_used_mib": 2037.0
+    },
+    {
+      "gpu_utilization_percent": 2.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 39.18,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:11.249",
+      "vram_used_mib": 2037.0
+    },
+    {
+      "gpu_utilization_percent": 2.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 38.86,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:12.028",
+      "vram_used_mib": 2037.0
+    },
+    {
+      "gpu_utilization_percent": 2.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 38.63,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:12.617",
+      "vram_used_mib": 2037.0
+    },
+    {
+      "gpu_utilization_percent": 2.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 38.77,
+      "temperature_c": 43.0,
+      "timestamp": "2026/08/13 15:21:13.172",
+      "vram_used_mib": 2125.0
+    },
+    {
+      "gpu_utilization_percent": 9.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 42.15,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:13.726",
+      "vram_used_mib": 2361.0
+    },
+    {
+      "gpu_utilization_percent": 9.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 47.65,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:14.280",
+      "vram_used_mib": 2041.0
+    },
+    {
+      "gpu_utilization_percent": 8.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 47.47,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:14.833",
+      "vram_used_mib": 2213.0
+    },
+    {
+      "gpu_utilization_percent": 9.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 47.02,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:15.386",
+      "vram_used_mib": 2093.0
+    },
+    {
+      "gpu_utilization_percent": 8.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 49.25,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:15.938",
+      "vram_used_mib": 2073.0
+    },
+    {
+      "gpu_utilization_percent": 10.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 47.8,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:16.492",
+      "vram_used_mib": 2247.0
+    },
+    {
+      "gpu_utilization_percent": 7.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 49.28,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:17.045",
+      "vram_used_mib": 2123.0
+    },
+    {
+      "gpu_utilization_percent": 10.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 47.82,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:17.592",
+      "vram_used_mib": 2055.0
+    },
+    {
+      "gpu_utilization_percent": 10.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 45.7,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:18.133",
+      "vram_used_mib": 2039.0
+    },
+    {
+      "gpu_utilization_percent": 7.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 46.67,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:18.686",
+      "vram_used_mib": 2045.0
+    },
+    {
+      "gpu_utilization_percent": 10.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 47.81,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:19.241",
+      "vram_used_mib": 2245.0
+    },
+    {
+      "gpu_utilization_percent": 10.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 49.17,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:19.792",
+      "vram_used_mib": 2085.0
+    },
+    {
+      "gpu_utilization_percent": 7.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 48.47,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:20.343",
+      "vram_used_mib": 2073.0
+    },
+    {
+      "gpu_utilization_percent": 13.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 47.95,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:20.883",
+      "vram_used_mib": 2327.0
+    },
+    {
+      "gpu_utilization_percent": 10.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 48.21,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:21.438",
+      "vram_used_mib": 2093.0
+    },
+    {
+      "gpu_utilization_percent": 12.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 48.37,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:21.987",
+      "vram_used_mib": 2179.0
+    },
+    {
+      "gpu_utilization_percent": 13.0,
+      "memory_controller_utilization_percent": 3.0,
+      "power_w": 50.17,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:22.528",
+      "vram_used_mib": 2073.0
+    },
+    {
+      "gpu_utilization_percent": 7.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 48.61,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:23.066",
+      "vram_used_mib": 2047.0
+    },
+    {
+      "gpu_utilization_percent": 6.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 47.6,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:23.607",
+      "vram_used_mib": 2171.0
+    },
+    {
+      "gpu_utilization_percent": 12.0,
+      "memory_controller_utilization_percent": 2.0,
+      "power_w": 47.69,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:24.157",
+      "vram_used_mib": 2089.0
+    },
+    {
+      "gpu_utilization_percent": 7.0,
+      "memory_controller_utilization_percent": 1.0,
+      "power_w": 46.97,
+      "temperature_c": 44.0,
+      "timestamp": "2026/08/13 15:21:24.758",
+      "vram_used_mib": 2041.0
+    }
+  ],
+  "relative_l2_gate": 2e-05,
+  "results": [
+    {
+      "contains_kda": true,
+      "contains_mla": true,
+      "layer_end_exclusive": 92,
+      "layer_start": 90,
+      "layers": [
+        {
+          "attention_type": "KDA",
+          "layer": 90,
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 270.95374568338474,
+            "cosine_similarity": 0.9999999999999853,
+            "maximum_absolute_error": 5.7220458984375e-06,
+            "mean_absolute_error": 4.3641986329540874e-07,
+            "reference_finite": true,
+            "reference_l2": 270.9537342709302,
+            "relative_l2_error": 1.8397152713766888e-07
+          },
+          "ordered_routes_exact": true
+        },
+        {
+          "attention_type": "Gated_MLA",
+          "layer": 91,
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 274.4294604066597,
+            "cosine_similarity": 0.999999999999949,
+            "maximum_absolute_error": 1.5497207641601562e-05,
+            "mean_absolute_error": 7.957088590566335e-07,
+            "reference_finite": true,
+            "reference_l2": 274.42944604145447,
+            "relative_l2_error": 3.263750599325929e-07
+          },
+          "ordered_routes_exact": true
+        }
+      ],
+      "maximum_relative_l2_error": 3.263750599325929e-07,
+      "pass": true,
+      "routes_exact": true,
+      "span": 2
+    },
+    {
+      "contains_kda": true,
+      "contains_mla": true,
+      "layer_end_exclusive": 92,
+      "layer_start": 88,
+      "layers": [
+        {
+          "attention_type": "KDA",
+          "layer": 88,
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 11.741404677691461,
+            "cosine_similarity": 0.9999999999999009,
+            "maximum_absolute_error": 4.76837158203125e-07,
+            "mean_absolute_error": 4.9220813837434566e-08,
+            "reference_finite": true,
+            "reference_l2": 11.741404288763594,
+            "relative_l2_error": 4.488329262298231e-07
+          },
+          "ordered_routes_exact": true
+        },
+        {
+          "attention_type": "KDA",
+          "layer": 89,
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 150.1809415068611,
+            "cosine_similarity": 0.9999999999999665,
+            "maximum_absolute_error": 6.67572021484375e-06,
+            "mean_absolute_error": 4.536035963350774e-07,
+            "reference_finite": true,
+            "reference_l2": 150.18097680816956,
+            "relative_l2_error": 3.518569916306387e-07
+          },
+          "ordered_routes_exact": true
+        },
+        {
+          "attention_type": "KDA",
+          "layer": 90,
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 270.9537125319548,
+            "cosine_similarity": 0.9999999999999765,
+            "maximum_absolute_error": 4.76837158203125e-06,
+            "mean_absolute_error": 5.655335501484972e-07,
+            "reference_finite": true,
+            "reference_l2": 270.9537342709302,
+            "relative_l2_error": 2.3579233935580832e-07
+          },
+          "ordered_routes_exact": true
+        },
+        {
+          "attention_type": "Gated_MLA",
+          "layer": 91,
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 274.42942774326974,
+            "cosine_similarity": 0.9999999999999353,
+            "maximum_absolute_error": 1.621246337890625e-05,
+            "mean_absolute_error": 9.030354704009369e-07,
+            "reference_finite": true,
+            "reference_l2": 274.42944604145447,
+            "relative_l2_error": 3.684978591460167e-07
+          },
+          "ordered_routes_exact": true
+        }
+      ],
+      "maximum_relative_l2_error": 4.488329262298231e-07,
+      "pass": true,
+      "routes_exact": true,
+      "span": 4
+    },
+    {
+      "contains_kda": true,
+      "contains_mla": true,
+      "layer_end_exclusive": 92,
+      "layer_start": 84,
+      "layers": [
+        {
+          "attention_type": "KDA",
+          "layer": 84,
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 5.922920666712101,
+            "cosine_similarity": 0.9999999999999224,
+            "maximum_absolute_error": 4.76837158203125e-07,
+            "mean_absolute_error": 2.1239178035362523e-08,
+            "reference_finite": true,
+            "reference_l2": 5.922920777316532,
+            "relative_l2_error": 3.9764038020220175e-07
+          },
+          "ordered_routes_exact": true
+        },
+        {
+          "attention_type": "KDA",
+          "layer": 85,
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 6.621077577374881,
+            "cosine_similarity": 0.9999999999998054,
+            "maximum_absolute_error": 4.76837158203125e-07,
+            "mean_absolute_error": 3.854529495583847e-08,
+            "reference_finite": true,
+            "reference_l2": 6.621077695040411,
+            "relative_l2_error": 6.258865633906535e-07
+          },
+          "ordered_routes_exact": true
+        },
+        {
+          "attention_type": "KDA",
+          "layer": 86,
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 10.951957286671236,
+            "cosine_similarity": 0.9999999999998462,
+            "maximum_absolute_error": 2.86102294921875e-06,
+            "mean_absolute_error": 5.1514104727955005e-08,
+            "reference_finite": true,
+            "reference_l2": 10.951956026766203,
+            "relative_l2_error": 5.673336396565683e-07
+          },
+          "ordered_routes_exact": true
+        },
+        {
+          "attention_type": "Gated_MLA",
+          "layer": 87,
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 8.179357411162192,
+            "cosine_similarity": 0.9999999999993555,
+            "maximum_absolute_error": 2.86102294921875e-06,
+            "mean_absolute_error": 8.300168831608192e-08,
+            "reference_finite": true,
+            "reference_l2": 8.179358345343342,
+            "relative_l2_error": 1.1422255334009702e-06
+          },
+          "ordered_routes_exact": true
+        },
+        {
+          "attention_type": "KDA",
+          "layer": 88,
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 11.741403205671594,
+            "cosine_similarity": 0.9999999999994306,
+            "maximum_absolute_error": 2.86102294921875e-06,
+            "mean_absolute_error": 1.157343051870287e-07,
+            "reference_finite": true,
+            "reference_l2": 11.741404288763594,
+            "relative_l2_error": 1.0720788060098136e-06
+          },
+          "ordered_routes_exact": true
+        },
+        {
+          "attention_type": "KDA",
+          "layer": 89,
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 150.18096304335594,
+            "cosine_similarity": 0.9999999999999675,
+            "maximum_absolute_error": 4.76837158203125e-06,
+            "mean_absolute_error": 3.5339650951625246e-07,
+            "reference_finite": true,
+            "reference_l2": 150.18097680816956,
+            "relative_l2_error": 2.7441089250067375e-07
+          },
+          "ordered_routes_exact": true
+        },
+        {
+          "attention_type": "KDA",
+          "layer": 90,
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 270.953734308181,
+            "cosine_similarity": 0.9999999999999772,
+            "maximum_absolute_error": 3.814697265625e-06,
+            "mean_absolute_error": 5.311315232704925e-07,
+            "reference_finite": true,
+            "reference_l2": 270.9537342709302,
+            "relative_l2_error": 2.200901504253663e-07
+          },
+          "ordered_routes_exact": true
+        },
+        {
+          "attention_type": "Gated_MLA",
+          "layer": 91,
+          "metrics": {
+            "actual_finite": true,
+            "actual_l2": 274.4294494866829,
+            "cosine_similarity": 0.9999999999999394,
+            "maximum_absolute_error": 1.6450881958007812e-05,
+            "mean_absolute_error": 8.586892883093762e-07,
+            "reference_finite": true,
+            "reference_l2": 274.42944604145447,
+            "relative_l2_error": 3.5117159666616754e-07
+          },
+          "ordered_routes_exact": true
+        }
+      ],
+      "maximum_relative_l2_error": 1.1422255334009702e-06,
+      "pass": true,
+      "routes_exact": true,
+      "span": 8
+    }
+  ],
+  "schema_version": "experiment-019-depth-span-correctness-v1",
+  "status": "PASS",
+  "stripe_degree": 4
+}

@@ -1,0 +1,147 @@
+{
+  "files": [
+    {
+      "bytes": 7006,
+      "path": "<local-kimi-k3-checkpoint>\\config.json",
+      "role": "evidence_input",
+      "sha256": "9710e121a58d03ac92c8d6da287a19541994319afbbe6d6202af001ffd379213"
+    },
+    {
+      "bytes": 59764096,
+      "path": "<local-kimi-k3-checkpoint>\\model.safetensors.index.json",
+      "role": "evidence_input",
+      "sha256": "a1c5210650ce71d2d3ae9ec5a101ac4afd3cf4b10091be589853437eb967febd"
+    },
+    {
+      "bytes": 1303040,
+      "path": "artifacts/experiment-016\\cuda\\coli_cuda-sm120-h016-final.dll",
+      "role": "physical_cuda_library",
+      "sha256": "113d9857735649b5c9773a474b73517fc1615547a99992ce401a294bc39f7eb1"
+    },
+    {
+      "bytes": 223744,
+      "path": "artifacts/experiment-019\\physical\\exp019-kda-shard-sm120-v2.dll",
+      "role": "experiment_019_cuda_shard_library",
+      "sha256": "d88fe1da01793155993f2e8aec4a7e08c389bb433f79d24e9a32d5f49bfb384c"
+    },
+    {
+      "bytes": 8085504,
+      "path": "artifacts/experiment-014\\oracle-full-93-idot0\\hidden-trace.f32",
+      "role": "promoted_correctness_oracle",
+      "sha256": "0a432e25af5897e1d0ba62eb5560f5da8c8fbadb3eb93db63571b6db562b1a8d"
+    },
+    {
+      "bytes": 50703,
+      "path": "artifacts/experiment-014\\oracle-full-93-idot0\\routes.txt",
+      "role": "promoted_route_oracle",
+      "sha256": "c734d864e8ac40ada5fd1fbd6c64da5959b9610561313ec63e7b79a499a91288"
+    },
+    {
+      "bytes": 1310720,
+      "path": "artifacts/experiment-014\\oracle-full-93-idot0\\prefill-logits.f32",
+      "role": "promoted_logit_oracle",
+      "sha256": "8cd947eb8f2fddda751b0527d81f5f68c306a57c2526fefbcea937d81f590248"
+    },
+    {
+      "bytes": 59154,
+      "path": "artifacts/experiment-018\\summary.json",
+      "role": "historical_comparison_only",
+      "sha256": "33df6ebdf2b38768cfb5f4c7831c9f9d99ce3b76e636ce481ff450341392ac78"
+    },
+    {
+      "bytes": 1924053,
+      "path": "artifacts/experiment-018\\physical\\service-raw.json",
+      "role": "validation_reference_only",
+      "sha256": "136ecd45dc2890e37da3401c06e61288a09ff89baef8c5a16a66d61ae89a360f"
+    },
+    {
+      "bytes": 16092,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_019\\checkpoint.py",
+      "role": "experiment_source",
+      "sha256": "5d2c0f82d6e21f2a94b7b6c40a2888f394a69ce1180771dbffb3bdf2b02c7f2c"
+    },
+    {
+      "bytes": 24433,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_019\\placement.py",
+      "role": "experiment_source",
+      "sha256": "bf37cbf91938a4feb01900e02a4a4ec9b815ce75e3f138805a8a9c779aee4bd4"
+    },
+    {
+      "bytes": 35615,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_019\\attention.py",
+      "role": "experiment_source",
+      "sha256": "7922899adf7de06e486146b187d42e357966ca9b360f7dec8dbc640ae8e25462"
+    },
+    {
+      "bytes": 22537,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_019\\physical.py",
+      "role": "experiment_source",
+      "sha256": "f65514f99a21779faf28bc099cfd7ebd7762f561d493d74345d5f690d92716f0"
+    },
+    {
+      "bytes": 18293,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_019\\other_physical.py",
+      "role": "experiment_source",
+      "sha256": "1056e30d5626a6581fa15ad42b1ba9aa7ef6fb4a8023e55c7b95b0fcc1328957"
+    },
+    {
+      "bytes": 10642,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_019\\quantization.py",
+      "role": "experiment_source",
+      "sha256": "add68f37f1e9e388b8b699c75c138cffe9287d1f722a845bd723f08e8d73d177"
+    },
+    {
+      "bytes": 7297,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_019\\protocol.py",
+      "role": "experiment_source",
+      "sha256": "3abee144337b6e861b93229ef01f650c58635404a4ff9b5b01ef1614a67a30c9"
+    },
+    {
+      "bytes": 40281,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_019\\sharded_graph.py",
+      "role": "experiment_source",
+      "sha256": "0a775a7b16d8558a2695f0997f3acb8e04e33fec105455b72448e0b7ac7b3bc7"
+    },
+    {
+      "bytes": 16463,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_019\\events.py",
+      "role": "experiment_source",
+      "sha256": "84f9cc6f2e7a5abb4d128e4114c236599330fd4421b1d7c40e8c0f660fd2adac"
+    },
+    {
+      "bytes": 31307,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_019\\simulation.py",
+      "role": "experiment_source",
+      "sha256": "fe9f93597094522532472ceda46ab15143466efa0298a33b6f74d9e269bac0ed"
+    },
+    {
+      "bytes": 89403,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_019\\finalize.py",
+      "role": "experiment_source",
+      "sha256": "0c70375f6d442888cf7f1558d539cbd795ca3db1b34bbabbf13c414acf0c7412"
+    },
+    {
+      "bytes": 18033,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_019\\report.py",
+      "role": "experiment_source",
+      "sha256": "67cc4a40521cc7c2092be56d8b8b39b82bf7c416d36d4c7334a70497e071a122"
+    },
+    {
+      "bytes": 17512,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_019\\charts.py",
+      "role": "experiment_source",
+      "sha256": "c7960f1b71d3f438ffaea300b6d6b7bb32537c0613dfad838a7ffd59eb3d9649"
+    },
+    {
+      "bytes": 21633,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_019\\native\\kda_shard.cu",
+      "role": "experiment_source",
+      "sha256": "f5002799bf0ca421889a2052a68ccc90c1a0aa6e4e1ebe7656ab2326dcb6f983"
+    }
+  ],
+  "generated_unix_ns": 1786600574694258400,
+  "git_commit": "3c9cbd58decc408d39adb0afa786a1624883257b",
+  "git_status": "m third_party/colibri\n?? docs/experiments/EXPERIMENT_019_REPORT.md\n?? scripts/experiment_019_full_sharded.py\n?? scripts/experiment_019_physical.py\n?? src/swarm_inference/experiments/experiment_019/\n?? tests/unit/test_experiment_019_no_monolith.py",
+  "preexisting_dirty_path_preserved": "third_party/colibri",
+  "schema_version": "experiment-019-source-manifest-v1"
+}

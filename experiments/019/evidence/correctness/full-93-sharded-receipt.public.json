@@ -1,0 +1,35 @@
+{
+  "source_member": "experiment-019/correctness/full-93-sharded.json",
+  "source_member_sha256": "1a2bc4ca39b928ceb28bd73c36fb9db31888441b5a0fb3f52ff2e92628461500",
+  "source_member_size_bytes": 36448735,
+  "schema_version": "experiment-019-full-sharded-oracle-v1",
+  "status": "PASS",
+  "evidence_class": "PHYSICAL sequential sub-layer workers on one RTX 5090",
+  "complete_93_layer_graph": true,
+  "executed_layers": 93,
+  "worker_operation_count": 2131,
+  "maximum_relative_l2_error": 1.270798958977163e-06,
+  "routes_exact": true,
+  "greedy_token_match": true,
+  "oracle_greedy_token": 220,
+  "stripe_degree": 4,
+  "wall_seconds": 1943.5286742,
+  "direct_loader_gate": {
+    "bytes_read": 141218346880,
+    "full_material_tensors_over_review_threshold": 0,
+    "request_count": 42327,
+    "violations": []
+  },
+  "validator_recertification": {
+    "initial_validator_status": "FAIL",
+    "original_receipt_sha256": "c1a00d87c26f9ac66d1195c9ed89346effaec7168a43c21ca2c5e6025d005f9e",
+    "physical_compute_reexecuted": false,
+    "reason": "Corrected type-unstable JSON-list versus oracle-tuple route comparison.",
+    "relative_l2_gate_unchanged": 2e-05,
+    "route_mismatch_count": 0,
+    "route_mismatches": [],
+    "route_rows_checked": 92,
+    "stored_physical_execution_reused": true
+  },
+  "note": "Public compact receipt derived without changing numerical fields. The original 36 MB member is identified by SHA-256 in this receipt and by CRC32 in provenance/source-archive-members.csv."
+}

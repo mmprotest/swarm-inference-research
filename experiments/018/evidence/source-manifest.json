@@ -1,0 +1,211 @@
+{
+  "artifact_root": "artifacts/experiment-018",
+  "files": [
+    {
+      "bytes": 302,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_018\\__init__.py",
+      "role": "experiment_source",
+      "sha256": "4b807b336fb17204ce3e49fddd4dfb7200a2c0180103ac96d60f288f5e4e0332"
+    },
+    {
+      "bytes": 18668,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_018\\analysis.py",
+      "role": "experiment_source",
+      "sha256": "0bb4e3d76da7bd4991d2f6fb8ad38f39f77f24c294cef6d237683ff294831596"
+    },
+    {
+      "bytes": 15014,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_018\\attnres_benchmark.py",
+      "role": "experiment_source",
+      "sha256": "adbc0a8afbc144291d9624cda8e019b47dbd35ed891dab232e7b2bda0da507d1"
+    },
+    {
+      "bytes": 13506,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_018\\charts.py",
+      "role": "experiment_source",
+      "sha256": "173cb4a70d04428ea69bf5f1c8d08d6de2e222ffa7013b9a3d875b41932a6c09"
+    },
+    {
+      "bytes": 7396,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_018\\control_benchmark.py",
+      "role": "experiment_source",
+      "sha256": "e7cec69ad50644a859e06d19e7ac7e23f3734aead312342250f3ae6758716dd2"
+    },
+    {
+      "bytes": 8748,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_018\\dag.py",
+      "role": "experiment_source",
+      "sha256": "03ee047d459c1f34b8a6bc0327f53f69c20674df5da57c0c6dd27fc21cbedfc8"
+    },
+    {
+      "bytes": 72178,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_018\\finalize.py",
+      "role": "experiment_source",
+      "sha256": "8f1f85131c5137633b7bd0936667b50461852855537cdcb057b34f7468b34710"
+    },
+    {
+      "bytes": 22507,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_018\\fine_wavefront.py",
+      "role": "experiment_source",
+      "sha256": "e53a2cde89afaa4f9a27ba46cef4c8504abba1a828e0e480d129f273368f1edd"
+    },
+    {
+      "bytes": 16996,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_018\\microshard_benchmark.py",
+      "role": "experiment_source",
+      "sha256": "2e30186948699a293c67571040eb3c69fa16834c4a344c5ee16f2b1c594cd90d"
+    },
+    {
+      "bytes": 15566,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_018\\model_runs.py",
+      "role": "experiment_source",
+      "sha256": "aab7bbd7bef8810b11d1cac6e88774b082410f05f68531efc209b9f509eec6f6"
+    },
+    {
+      "bytes": 24652,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_018\\physical_benchmark.py",
+      "role": "experiment_source",
+      "sha256": "9ba5ee5333e1a3ac57f57d0829def1d6855d6855f62e563c2d5e3b8c94403318"
+    },
+    {
+      "bytes": 42234,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_018\\report.py",
+      "role": "experiment_source",
+      "sha256": "7b946cbe82be52568f8b036453961e15a324b4ee0cfbd0e4dc1c851b91aedaae"
+    },
+    {
+      "bytes": 56443,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_018\\wavefront.py",
+      "role": "experiment_source",
+      "sha256": "b9acd97b156cd1628ba7f770eaf90db11546a39442a136ef1e50986f2f97f06e"
+    },
+    {
+      "bytes": 14196,
+      "path": "<local-repo>\\tests\\unit\\test_experiment_018_wavefront.py",
+      "role": "evidence_input",
+      "sha256": "ebcb25f131826c5f8133580d55b2eb8ac43c8628a1994616071469c5f34284e3"
+    },
+    {
+      "bytes": 162604,
+      "path": "<local-repo>\\src\\swarm_inference\\execution\\kimi_k3_stage.py",
+      "role": "experiment_source",
+      "sha256": "93d16e45463f8e03c685e7ba0442bdf21a39850ddaeadf68f521a61e3285424a"
+    },
+    {
+      "bytes": 75192,
+      "path": "<local-repo>\\src\\swarm_inference\\execution\\kimi_cuda_runtime.py",
+      "role": "experiment_source",
+      "sha256": "3b73b63fd1e6360f9b7c8c7f973b1983f800951abf2fe46b1e4bcbc04295e80f"
+    },
+    {
+      "bytes": 1748,
+      "path": "<local-repo>\\src\\swarm_inference\\model\\mxfp4.py",
+      "role": "experiment_source",
+      "sha256": "de426b7b0ac9895628c7b90f86b88d2eda448e5ea371cd6b44df02b3e11c8545"
+    },
+    {
+      "bytes": 2726,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_015\\network.py",
+      "role": "experiment_source",
+      "sha256": "8f9027398a34fdf3d9fa025c318c798a04d08b3005c98c004e242c27d0a714cf"
+    },
+    {
+      "bytes": 27636,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_016\\benchmark.py",
+      "role": "experiment_source",
+      "sha256": "66654076b79f42a7a67a7656becb0ba983b7c2822a1aa1cd0b434ded0a209664"
+    },
+    {
+      "bytes": 7006,
+      "path": "<local-kimi-k3-checkpoint>\\config.json",
+      "role": "evidence_input",
+      "sha256": "9710e121a58d03ac92c8d6da287a19541994319afbbe6d6202af001ffd379213"
+    },
+    {
+      "bytes": 59764096,
+      "path": "<local-kimi-k3-checkpoint>\\model.safetensors.index.json",
+      "role": "evidence_input",
+      "sha256": "a1c5210650ce71d2d3ae9ec5a101ac4afd3cf4b10091be589853437eb967febd"
+    },
+    {
+      "bytes": 1303040,
+      "path": "artifacts/experiment-016\\cuda\\coli_cuda-sm120-h016-final.dll",
+      "role": "evidence_input",
+      "sha256": "113d9857735649b5c9773a474b73517fc1615547a99992ce401a294bc39f7eb1"
+    },
+    {
+      "bytes": 50705,
+      "path": "artifacts/experiment-014\\oracle-full-93\\routes.txt",
+      "role": "evidence_input",
+      "sha256": "4d0fbfbc1c2fedba69533d219af7c23daa19087b9064aba147c1c1de0aa0001d"
+    },
+    {
+      "bytes": 658384,
+      "path": "artifacts/experiment-016\\physical\\verification-major-final.json",
+      "role": "evidence_input",
+      "sha256": "814f58ae5e32b47447f487a05b771bfeca2ab09874da07d76078f91063a1974c"
+    },
+    {
+      "bytes": 7798,
+      "path": "artifacts/experiment-015\\economics\\results.json",
+      "role": "evidence_input",
+      "sha256": "4122bb6d9fea40c8a7b6fc0d77182a5e27127fa042c0ed61661f6b35193aedf9"
+    },
+    {
+      "bytes": 34087,
+      "path": "artifacts/experiment-016\\summary.json",
+      "role": "evidence_input",
+      "sha256": "84fc5a0d4243fe90a0af91443e56f784aff8bbbbb9e88bcee9c91e6ad7b3fbbe"
+    },
+    {
+      "bytes": 35056,
+      "path": "artifacts/experiment-017\\summary.json",
+      "role": "evidence_input",
+      "sha256": "46dd22274883b8d60e5848aedb86706d20f303b2572982b922b74360f265c27b"
+    },
+    {
+      "bytes": 1324,
+      "path": "artifacts/experiment-017\\results\\expert-backends.csv",
+      "role": "evidence_input",
+      "sha256": "88dde7e785e4952f8a583728fa3cef8406b7793842051a4718f6fc266fc34480"
+    },
+    {
+      "bytes": 162559,
+      "path": "artifacts/experiment-014\\oracle-full-93\\serial-oracle-receipt.json",
+      "role": "evidence_input",
+      "sha256": "97090c1e36d74b3e2a6598de5b371c1b2b70c13a1df6895a522fef49fe6f95e4"
+    },
+    {
+      "bytes": 8085504,
+      "path": "artifacts/experiment-014\\oracle-full-93\\hidden-trace.f32",
+      "role": "evidence_input",
+      "sha256": "95012ceb968aaa31f51ccbea38beff44e47dec72572b8c22ca4fe01bbadd56ae"
+    },
+    {
+      "bytes": 274712,
+      "path": "<local-repo>\\.venv\\Scripts\\python.exe",
+      "role": "binary",
+      "sha256": "21bb438c0d4a6f1f164b9a646f6ee000340185e5871180aec06db8d3f07c0082"
+    },
+    {
+      "bytes": 4288232,
+      "path": "C:\\Windows\\System32\\nvcuda.dll",
+      "role": "binary",
+      "sha256": "3fc980f90af215f58941973b9bc5c70ca438c73df8fccfee19bf11a9a19c1e4a"
+    },
+    {
+      "bytes": 19936368,
+      "path": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.0\\bin\\nvcc.EXE",
+      "role": "binary",
+      "sha256": "16dd552eb51b516d59fef29dee19f540749d24dd2f374aaaf0312b9f35084844"
+    }
+  ],
+  "generated_unix_ns": 1786582353876767900,
+  "git_branch": "main",
+  "git_commit": "edc62cc3ef26ff2497479629e20b71b2daa04211",
+  "git_describe": "v0.1.0-rc.11-14-gedc62cc-dirty",
+  "git_status_before_experiment": "m third_party/colibri",
+  "git_status_final": "m third_party/colibri\n?? docs/experiments/EXPERIMENT_018_REPORT.md\n?? src/swarm_inference/experiments/experiment_018/\n?? tests/unit/test_experiment_018_wavefront.py",
+  "preexisting_dirty_path_preserved": "third_party/colibri",
+  "schema_version": "experiment-018-source-manifest-v1"
+}

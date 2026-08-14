@@ -1,0 +1,7 @@
+candidate_block_size,accepted_tokens,target_pass_ms,oracle_tok_s_per_user,dcp_degree,evidence_class,normalization_to_primary_block7
+1,2,1337.7682243433117,1.4950272876916082,1,"ANALYTICAL 8-layer bridge, anchored to primary block 7",1.0018380036770342
+2,3,1732.3314842740583,1.7317701763396423,1,"ANALYTICAL 8-layer bridge, anchored to primary block 7",1.0018380036770342
+4,5,2221.4136161386446,2.250819011675643,1,"ANALYTICAL 8-layer bridge, anchored to primary block 7",1.0018380036770342
+7,8,2997.238528880436,2.6691235692169797,8,"ANALYTICAL 8-layer bridge, anchored to primary block 7",1.0018380036770342
+12,13,4291.965465036907,3.028915331658712,1,"ANALYTICAL 8-layer bridge, anchored to primary block 7",1.0018380036770342
+16,17,5484.922520799224,3.099405677205971,1,"ANALYTICAL 8-layer bridge, anchored to primary block 7",1.0018380036770342

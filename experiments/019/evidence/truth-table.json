@@ -1,0 +1,57 @@
+{
+  "rows": [
+    {
+      "answer": "NO",
+      "question": "Does any worker hold a complete 8-layer microcell?"
+    },
+    {
+      "answer": "NO",
+      "question": "Does any worker hold a complete transformer layer?"
+    },
+    {
+      "answer": "NO",
+      "question": "Does any headline worker hold a complete routed expert?"
+    },
+    {
+      "answer": "4.4946 GiB",
+      "question": "Maximum worker peak memory"
+    },
+    {
+      "answer": "12.678%",
+      "question": "Maximum fraction of one layer owned by one worker"
+    },
+    {
+      "answer": "12.500%",
+      "question": "Maximum fraction of one expert owned by one worker"
+    },
+    {
+      "answer": "YES",
+      "question": "Is the entire 1.5+ TB K3 checkpoint assigned?"
+    },
+    {
+      "answer": "YES",
+      "question": "Can arbitrary expert routes execute without weight movement?"
+    },
+    {
+      "answer": "YES",
+      "question": "Was the complete 93-layer graph executed through shard paths?"
+    },
+    {
+      "answer": "YES",
+      "question": "Is throughput generated from worker-level events?"
+    },
+    {
+      "answer": "NO",
+      "question": "Was a physical multi-GPU swarm measured?"
+    },
+    {
+      "answer": "NO",
+      "question": "Was a physical RTX 3090 measured?"
+    },
+    {
+      "answer": "NO",
+      "question": "Does the bounded-worker model exceed 5 tok/s/user?"
+    }
+  ],
+  "schema_version": "experiment-019-truth-table-v1"
+}

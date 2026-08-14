@@ -1,0 +1,8 @@
+mode,classification,support_status,exact_control_latency_ms,candidate_latency_ms,speedup,max_absolute_error,relative_l2_error,route_agreement,active_state_divergence_relative_l2,final_hidden_divergence_relative_l2,logit_divergence,top1_token_agreement,nan_count,inf_count,oracle_tok_s_per_user,qualification,note
+exact-fp32,EXACT_CONTROL,MEASURED_GPU,2997.238528880436,2997.238528880436,1.0,0.0,0.0,1.0,0.0,0.0,0.0,True,0,0,2.6691235692169797,PASS,
+bf16-state-fp32-update,APPROXIMATE,REFERENCE_ONLY_NO_GPU_KERNEL,,,,0.0005586743354797363,0.0035231655227915513,,0.00445710279667057,0.005381993245669759,,,0,0,,APPROX_FAIL_LAYER_SCREEN,
+fp8-projection-activation,APPROXIMATE,UNSUPPORTED_FAIL_CLOSED,,,,,,,,,,,,,,NOT_RUN,no compatible native projection kernel
+mxfp4-bf16-activation,APPROXIMATE,UNSUPPORTED_FAIL_CLOSED,,,,,,,,,,,,,,NOT_RUN,native expert ABI accepts FP32 activations only
+mxfp4-fp8-activation,APPROXIMATE,UNSUPPORTED_FAIL_CLOSED,,,,,,,,,,,,,,NOT_RUN,no compatible native expert activation path
+bf16-state-plus-faster-expert-activation,APPROXIMATE,UNSUPPORTED_FAIL_CLOSED,,,,,,,,,,,,,,NOT_RUN,both required GPU primitives unavailable
+lower-precision-recurrent-state,APPROXIMATE,UNSUPPORTED_FAIL_CLOSED,,,,,,,,,,,,,,NOT_RUN,not pursued after BF16 failed and no speed path

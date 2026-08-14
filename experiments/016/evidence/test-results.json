@@ -1,0 +1,18 @@
+{
+  "schema_version": "experiment-016-test-results-v1",
+  "completed_at": "2026-08-12T20:35:31.0976259+10:00",
+  "git_commit_at_run": "e75a17b2b0ae052eccdd1a43ebb171616cd475ca",
+  "command": "$env:PYTHONPATH=(Resolve-Path src).Path; & .venv\\Scripts\\python.exe -m pytest -q",
+  "exit_code": 0,
+  "passed": 1143,
+  "skipped": 13,
+  "failed": 0,
+  "duration_seconds": 188.90,
+  "result": "PASS",
+  "skip_scope": [
+    "opt-in historical real-model integration audits",
+    "unconfigured generic Colibri native component acceptance",
+    "unconfigured universal real-model acceptance evidence",
+    "manual multi-host physical test"
+  ]
+}

@@ -1,0 +1,17 @@
+# Experiment 016 retained benchmark commands
+
+# Exact verification-major KDA/MLA sweep
+python -m swarm_inference.experiments.experiment_016.benchmark --checkpoint <local-kimi-k3-checkpoint> --cuda-library artifacts\experiment-016\cuda\coli_cuda-sm120-h016-final.dll --oracle-trace artifacts\experiment-014\oracle-full-93\hidden-trace.f32 --output artifacts\experiment-016\physical\verification-major-final.json --gpu-samples artifacts\experiment-016\physical\gpu-samples-final.csv --layers 89,91 --warmup 5 --iterations 30 --profile-iterations 5
+
+# Exact 8K block sweep
+python -m swarm_inference.experiments.experiment_016.context_benchmark --checkpoint <local-kimi-k3-checkpoint> --cuda-library artifacts\experiment-016\cuda\coli_cuda-sm120-h016-final.dll --oracle-trace artifacts\experiment-014\oracle-full-93\hidden-trace.f32 --output artifacts\experiment-016\physical\mla-8k-block-sweep-final.json --context 8192 --layer 91 --warmup 3 --iterations 20 --profile-iterations 3 --block-sizes 1,2,4,7,12,16
+
+# Exact local GPU DCP plus shaped communication
+python -m swarm_inference.experiments.experiment_016.dcp_cuda_benchmark --checkpoint <local-kimi-k3-checkpoint> --cuda-library artifacts\experiment-016\cuda\coli_cuda-sm120-h016-final.dll --oracle-trace artifacts\experiment-014\oracle-full-93\hidden-trace.f32 --output artifacts\experiment-016\dcp\gpu-results.json --contexts 2,8,32 --degrees 1,2,4,8 --warmup 2 --iterations 12 --profile-iterations 2
+
+# Exact CPU sufficient-statistic reducer
+python -m swarm_inference.experiments.experiment_016.dcp_benchmark --output artifacts\experiment-016\dcp\component-results.json --csv artifacts\experiment-016\dcp\component-results.csv
+
+# Reconcile and chart
+python -m swarm_inference.experiments.experiment_016.finalize --root .
+python -m swarm_inference.experiments.experiment_016.figures --root .

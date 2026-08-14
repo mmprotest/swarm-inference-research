@@ -1,0 +1,24 @@
+# Experiment 021 reproducibility command ledger
+# Commands containing secrets are intentionally absent; no secret was persisted.
+# Vast commands marked READ_ONLY were executed; rendered create commands were NOT executed.
+
+python scripts/run_experiment_021.py --phase placement
+python scripts/run_experiment_021.py --phase validation
+python scripts/run_experiment_021.py --phase simulation
+python scripts/run_experiment_021.py --phase runtime
+python scripts/run_experiment_021.py --phase control-plane
+vastai --version  # READ_ONLY
+vastai show user --raw  # READ_ONLY; response redacted
+vastai search offers "rentable=True num_gpus=1 gpu_ram>=1 gpu_ram<=8" --limit 500 --raw  # READ_ONLY
+python scripts/run_experiment_021.py --phase charts
+python -m compileall -q src/swarm_inference/experiments/experiment_021 scripts/run_experiment_021.py scripts/validate_experiment_021.py tests/test_experiment_021.py
+.venv/Scripts/ruff.exe check src/swarm_inference/experiments/experiment_021 scripts/run_experiment_021.py scripts/validate_experiment_021.py tests/test_experiment_021.py
+# First expanded pytest attempt: 39 passed / 5 fixture errors because sandbox denied the default user Temp directory.
+python -m pytest -q tests/test_experiment_021.py tests/unit/test_experiment_019_no_monolith.py tests/unit/test_experiment_020_transport.py tests/unit/test_experiment_020_vast_safety.py tests/unit/test_experiment_020_model_distribution.py tests/unit/test_experiment_020_topology.py tests/unit/test_experiment_020_fleet.py tests/unit/test_experiment_020_worker_lifecycle.py --basetemp=artifacts/experiment-021/qa/pytest-temp --junitxml=artifacts/experiment-021/qa/pytest.xml
+python scripts/run_experiment_021.py --phase finalize
+python scripts/validate_experiment_021.py
+
+# Forbidden guard self-test (blocked before subprocess):
+# vastai create instance 0  # EXECUTED=false; guard classification=FORBIDDEN
+# GPU_RENTALS=0
+# VAST_RESOURCE_MUTATIONS=0

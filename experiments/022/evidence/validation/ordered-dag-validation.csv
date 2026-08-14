@@ -1,0 +1,3 @@
+workload,split,layer,layer_type,degree,rows,task_count,native_operation_count,ordered_reduction_barriers,forced_compute_resources,predicted_ordered_wall_ms,measured_ordered_wall_ms,absolute_error_percent,calibration_reduction_barrier_ms,normalization_applied,post_hoc_multiplier,timed_checkpoint_reads,timed_weight_uploads,timed_buffer_allocations,correctness_relative_l2,status,evidence_class
+heldout-layer-89-p8-r1,heldout,89,KDA,8,1,48,43,5,1,47.3755,45.5526,4.001747430443057,7.7473600000000005,False,,0,0,0,3.074891655187706e-07,PASS,PHYSICAL RTX 5090 resident ordered shard DAG
+heldout-layer-91-p8-r1,heldout,91,GATED_MLA,8,1,48,43,5,1,38.7732,39.3339,1.425487937885633,6.18108,False,,0,0,0,2.7588975670894924e-07,PASS,PHYSICAL RTX 5090 resident ordered shard DAG

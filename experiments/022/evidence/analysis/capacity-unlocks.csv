@@ -1,0 +1,7 @@
+inventory_id,family,whole_feasible,adaptive_feasible,adaptive_tok_s,result
+memory-fragmented-02,memory-fragmented,False,True,0.6726636742837973,SUB_LAYER_UNLOCKED_FEASIBILITY
+memory-fragmented-04,memory-fragmented,False,True,0.6670068394810151,SUB_LAYER_UNLOCKED_FEASIBILITY
+memory-fragmented-06,memory-fragmented,False,True,0.6814887799908036,SUB_LAYER_UNLOCKED_FEASIBILITY
+full-mixed-04,full-mixed,False,True,0.9528563987749096,SUB_LAYER_UNLOCKED_FEASIBILITY
+full-mixed-05,full-mixed,False,True,1.016429304381928,SUB_LAYER_UNLOCKED_FEASIBILITY
+full-mixed-06,full-mixed,False,True,0.9847470270540764,SUB_LAYER_UNLOCKED_FEASIBILITY

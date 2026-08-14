@@ -1,0 +1,32 @@
+{
+  "architecture": [
+    "KimiK3ForConditionalGeneration"
+  ],
+  "attention_residual_block_size": 12,
+  "checkpoint": "<local-kimi-k3-checkpoint>",
+  "checkpoint_shard_count_present": 96,
+  "checkpoint_total_bytes_from_index": 1560860324864,
+  "config": {
+    "bytes": 7006,
+    "path": "<local-kimi-k3-checkpoint>\\config.json",
+    "sha256": "9710e121a58d03ac92c8d6da287a19541994319afbbe6d6202af001ffd379213"
+  },
+  "dtype": "bfloat16",
+  "full_attention_layer_count": 24,
+  "hidden_size": 7168,
+  "max_position_embeddings": 1048576,
+  "model_type": "kimi_k3",
+  "moe_intermediate_size": 3072,
+  "num_attention_heads": 96,
+  "num_experts": 896,
+  "num_experts_per_token": 16,
+  "num_hidden_layers": 93,
+  "num_key_value_heads": 96,
+  "num_shared_experts": 2,
+  "schema_version": "experiment-016-kimi-k3-metadata-v1",
+  "weight_index": {
+    "bytes": 59764096,
+    "path": "<local-kimi-k3-checkpoint>\\model.safetensors.index.json",
+    "sha256": "a1c5210650ce71d2d3ae9ec5a101ac4afd3cf4b10091be589853437eb967febd"
+  }
+}

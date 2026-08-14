@@ -1,0 +1,71 @@
+{
+  "colibri_commit": "b085b48888a88d9a1c00b151a9979774b72cdbfd",
+  "colibri_status": "M c/backend_cuda.cu\n M c/backend_cuda.h\n M c/build_cuda.bat\n M c/kimi_k3.c\n M c/openai_server.py\n M c/tests/test_openai_server.py\n M c/tools/k3_ref.py",
+  "cuda_compiler": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Aug_20_13:58:20_Pacific_Daylight_Time_2025\nCuda compilation tools, release 13.0, V13.0.88\nBuild cuda_13.0.r13.0/compiler.36424714_0",
+  "cuda_dll_hashes": [
+    {
+      "bytes": 1303040,
+      "path": "artifacts/experiment-016/cuda/coli_cuda-sm120-h016-final.dll",
+      "sha256": "113d9857735649b5c9773a474b73517fc1615547a99992ce401a294bc39f7eb1"
+    },
+    {
+      "bytes": 1345536,
+      "path": "artifacts/experiment-017/cuda/coli_cuda-sm120-h017-window.dll",
+      "sha256": "c240a7cf5af6f4fb12cb9ed900f67062edcb7bfb030a51fdb8eb3c47a1a5ccfd"
+    },
+    {
+      "bytes": 4288232,
+      "path": "C:/Windows/System32/nvcuda.dll",
+      "sha256": "3fc980f90af215f58941973b9bc5c70ca438c73df8fccfee19bf11a9a19c1e4a"
+    }
+  ],
+  "git_branch": "main",
+  "git_commit": "7064b3eabe0eee26db78798bd02dcf83ae140555",
+  "git_status": "M src/swarm_inference/execution/kimi_cuda_runtime.py\n M src/swarm_inference/execution/kimi_k3_stage.py\n M src/swarm_inference/experiments/experiment_016/benchmark.py\n M src/swarm_inference/protocol/stage_worker.py\n M tests/unit/test_kimi_indexed_copy_runtime.py\n M tests/unit/test_kimi_k3_adapter.py\n m third_party/colibri\n?? docs/experiments/\n?? src/swarm_inference/execution/kda_verification.py\n?? src/swarm_inference/experiments/experiment_017/\n?? tests/test_kda_verification.py",
+  "gpu": "Wed Aug 12 23:46:12 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 591.86                 Driver Version: 591.86         CUDA Version: 13.1     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 5090      WDDM  |   00000000:02:00.0 Off |                  N/A |\n|  0%   53C    P8             25W /  431W |    1418MiB /  32607MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            2064    C+G   ...indows\\System32\\ShellHost.exe      N/A      |\n|    0   N/A  N/A            2332    C+G   ....0.4129.78\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A            7132    C+G   C:\\Windows\\explorer.exe               N/A      |\n|    0   N/A  N/A            9700    C+G   ...xyewy\\ShellExperienceHost.exe      N/A      |\n|    0   N/A  N/A           10388    C+G   ...2txyewy\\CrossDeviceResume.exe      N/A      |\n|    0   N/A  N/A           11780    C+G   ...IA App\\CEF\\NVIDIA Overlay.exe      N/A      |\n|    0   N/A  N/A           12096    C+G   ...IA App\\CEF\\NVIDIA Overlay.exe      N/A      |\n|    0   N/A  N/A           13800    C+G   ...y\\StartMenuExperienceHost.exe      N/A      |\n|    0   N/A  N/A           13892    C+G   ..._cw5n1h2txyewy\\SearchHost.exe      N/A      |\n|    0   N/A  N/A           14060    C+G   ...cw5n1h2txyewy\\WidgetBoard.exe      N/A      |\n|    0   N/A  N/A           16400    C+G   ....0.4129.78\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           18408    C+G   ...ms\\Microsoft VS Code\\Code.exe      N/A      |\n|    0   N/A  N/A           20100    C+G   ...lot\\Application\\mscopilot.exe      N/A      |\n|    0   N/A  N/A           20648    C+G   ...yApp\\MicrosoftSecurityApp.exe      N/A      |\n|    0   N/A  N/A           20684    C+G   ...5n1h2txyewy\\TextInputHost.exe      N/A      |\n|    0   N/A  N/A           23400    C+G   ...Chrome\\Application\\chrome.exe      N/A      |\n|    0   N/A  N/A           24352    C+G   ...ffice\\root\\Office16\\EXCEL.EXE      N/A      |\n|    0   N/A  N/A           26128    C+G   ...Chrome\\Application\\chrome.exe      N/A      |\n+-----------------------------------------------------------------------------------------+",
+  "host_ram_total_bytes": 102496780288,
+  "nsight_compute": {
+    "decisive_profile_attempt": "ERR_NVGPUCTRPERM",
+    "path": "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.3.1\\ncu.bat",
+    "status": "AVAILABLE_COUNTER_PERMISSION_DENIED",
+    "version": "2025.3.1"
+  },
+  "nsight_systems": "UNAVAILABLE",
+  "numpy": "2.4.6",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.9",
+  "schema_version": "experiment-017-environment-v1",
+  "test_status": {
+    "full_repository": {
+      "command": "python -m pytest -q",
+      "errors": 0,
+      "failures": 0,
+      "passed": 1183,
+      "skipped": 13,
+      "status": "PASS",
+      "tests": 1196,
+      "time_seconds": 166.409
+    },
+    "receipt": "artifacts/experiment-017/test-results.json",
+    "status": "PASS",
+    "targeted": {
+      "command": "python -m pytest -q tests/test_kda_verification.py tests/unit/test_kimi_indexed_copy_runtime.py tests/unit/test_kimi_k3_adapter.py",
+      "coverage": [
+        "blocks 1/2/4/7/12/16",
+        "serial versus factorized KDA",
+        "initial/continuing/accepted state",
+        "prefix composition and reconstruction",
+        "padding, aliasing, repetition, cleanup",
+        "native backend capability and fail-closed fallback",
+        "precision-mode configuration round trip"
+      ],
+      "errors": 0,
+      "failures": 0,
+      "passed": 53,
+      "skipped": 0,
+      "status": "PASS",
+      "tests": 53,
+      "time_seconds": 1.629
+    }
+  }
+}

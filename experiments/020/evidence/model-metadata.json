@@ -1,0 +1,20 @@
+{
+  "byte_exact_placement_payload_bytes": 1560860324864,
+  "checkpoint": "<local-kimi-k3-checkpoint>",
+  "checkpoint_payload_bytes": 1560860324864,
+  "full_checkpoint_downloaded_during_e020": false,
+  "gated_mla_layers": 24,
+  "hidden_dimension": 7168,
+  "immutable_checkpoint": "<local-kimi-k3-checkpoint>",
+  "kda_layers": 69,
+  "latent_dimension": 3584,
+  "layers": 93,
+  "model": "Kimi-K3",
+  "remote_range_proof": "PASS",
+  "remote_source": "moonshotai/Kimi-K3",
+  "routed_experts_per_moe_layer": 896,
+  "safetensors_files": 96,
+  "schema_version": "experiment-020-model-metadata-v1",
+  "tensor_count": 497220,
+  "topk": 16
+}

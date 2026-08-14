@@ -1,0 +1,6 @@
+payload_bytes,software_overhead_p50_ms,software_overhead_p90_ms,software_overhead_max_ms,iterations,binary_framing,hmac_verified,checksum_verified
+128,0.0084,0.0089,0.0288,200,True,True,True
+14336,0.023350000000000003,0.024,0.1048,200,True,True,True
+28672,0.0368,0.0391,0.0887,200,True,True,True
+57344,0.0633,0.0685,0.0911,200,True,True,True
+114688,0.1148,0.1234,0.508,200,True,True,True

@@ -1,0 +1,63 @@
+{
+  "failure_count": 6,
+  "failures": [
+    {
+      "cause": "The current native graph loads and uploads active shard material during the timed path; the headline event model assumes complete per-worker expert banks and other weights are already resident.",
+      "evidence": {
+        "maximum_error": 0.9996503007977391,
+        "median_error": 0.955390936021116,
+        "normalization_applied": false,
+        "p90_error": 0.9996468717316541,
+        "post_hoc_multiplier": null,
+        "status": "FAIL",
+        "targets": {
+          "maximum": 0.15,
+          "median": 0.05,
+          "p90": 0.1
+        }
+      },
+      "failure": "ordered physical shard model validation failed",
+      "gate": 11,
+      "id": "E021-F001",
+      "normalization_applied": false,
+      "status": "OPEN_DECISIVE"
+    },
+    {
+      "effect": "production-path correctness cannot be claimed",
+      "failure": "production EXECUTE_SHARD daemon returns a mock partial instead of native shard work",
+      "gate": 9,
+      "id": "E021-F002",
+      "status": "OPEN"
+    },
+    {
+      "control": "E020 in-process physical shard math passed but is inadmissible for this gate",
+      "failure": "complete 93-layer correctness was not executed through worker processes",
+      "gate": 10,
+      "id": "E021-F003",
+      "status": "OPEN"
+    },
+    {
+      "effect": "not ready for physical deployment",
+      "failure": "no published immutable one-worker E021 Linux image digest",
+      "id": "E021-F004",
+      "status": "OPEN"
+    },
+    {
+      "failure": "read-only independent-machine inventory is insufficient",
+      "id": "E021-F005",
+      "observed_compatible_8g": 6,
+      "required_8g": 376,
+      "status": "OPEN_MARKET"
+    },
+    {
+      "failure": "2,000 simultaneous connection setup storm failed on first harness",
+      "id": "E021-F006",
+      "redesign": "bounded-batch connection establishment while retaining all connections open before dispatch",
+      "rerun": "PASS at 2,000 open connections / 10,000 messages",
+      "status": "RESOLVED_IN_E021"
+    }
+  ],
+  "open_failure_count": 5,
+  "outcome": "MODEL_INVALID",
+  "schema_version": "experiment-021-failure-log-v1"
+}

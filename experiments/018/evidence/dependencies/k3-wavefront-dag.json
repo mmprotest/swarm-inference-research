@@ -1,0 +1,353 @@
+{
+  "claim": "Exact streaming is legal only with ordered per-layer recurrent/cache state; there is no all-block barrier between adjacent microcells.",
+  "fixed_topology": {
+    "cells": [
+      {
+        "attnres_dependencies": [],
+        "layer_end_exclusive": 8,
+        "layer_start": 0,
+        "microcell_id": 0,
+        "release": "handoff(cell=0, same_chunk)",
+        "same_chunk_dependency": null,
+        "state_dependency": "same_cell_previous_chunk"
+      },
+      {
+        "attnres_dependencies": [
+          0
+        ],
+        "layer_end_exclusive": 16,
+        "layer_start": 8,
+        "microcell_id": 1,
+        "release": "handoff(cell=1, same_chunk)",
+        "same_chunk_dependency": "handoff(cell=0, same_chunk)",
+        "state_dependency": "same_cell_previous_chunk"
+      },
+      {
+        "attnres_dependencies": [
+          0,
+          12
+        ],
+        "layer_end_exclusive": 24,
+        "layer_start": 16,
+        "microcell_id": 2,
+        "release": "handoff(cell=2, same_chunk)",
+        "same_chunk_dependency": "handoff(cell=1, same_chunk)",
+        "state_dependency": "same_cell_previous_chunk"
+      },
+      {
+        "attnres_dependencies": [
+          0,
+          12
+        ],
+        "layer_end_exclusive": 32,
+        "layer_start": 24,
+        "microcell_id": 3,
+        "release": "handoff(cell=3, same_chunk)",
+        "same_chunk_dependency": "handoff(cell=2, same_chunk)",
+        "state_dependency": "same_cell_previous_chunk"
+      },
+      {
+        "attnres_dependencies": [
+          0,
+          12,
+          24
+        ],
+        "layer_end_exclusive": 40,
+        "layer_start": 32,
+        "microcell_id": 4,
+        "release": "handoff(cell=4, same_chunk)",
+        "same_chunk_dependency": "handoff(cell=3, same_chunk)",
+        "state_dependency": "same_cell_previous_chunk"
+      },
+      {
+        "attnres_dependencies": [
+          0,
+          12,
+          24,
+          36
+        ],
+        "layer_end_exclusive": 48,
+        "layer_start": 40,
+        "microcell_id": 5,
+        "release": "handoff(cell=5, same_chunk)",
+        "same_chunk_dependency": "handoff(cell=4, same_chunk)",
+        "state_dependency": "same_cell_previous_chunk"
+      },
+      {
+        "attnres_dependencies": [
+          0,
+          12,
+          24,
+          36
+        ],
+        "layer_end_exclusive": 56,
+        "layer_start": 48,
+        "microcell_id": 6,
+        "release": "handoff(cell=6, same_chunk)",
+        "same_chunk_dependency": "handoff(cell=5, same_chunk)",
+        "state_dependency": "same_cell_previous_chunk"
+      },
+      {
+        "attnres_dependencies": [
+          0,
+          12,
+          24,
+          36,
+          48
+        ],
+        "layer_end_exclusive": 64,
+        "layer_start": 56,
+        "microcell_id": 7,
+        "release": "handoff(cell=7, same_chunk)",
+        "same_chunk_dependency": "handoff(cell=6, same_chunk)",
+        "state_dependency": "same_cell_previous_chunk"
+      },
+      {
+        "attnres_dependencies": [
+          0,
+          12,
+          24,
+          36,
+          48,
+          60
+        ],
+        "layer_end_exclusive": 72,
+        "layer_start": 64,
+        "microcell_id": 8,
+        "release": "handoff(cell=8, same_chunk)",
+        "same_chunk_dependency": "handoff(cell=7, same_chunk)",
+        "state_dependency": "same_cell_previous_chunk"
+      },
+      {
+        "attnres_dependencies": [
+          0,
+          12,
+          24,
+          36,
+          48,
+          60
+        ],
+        "layer_end_exclusive": 80,
+        "layer_start": 72,
+        "microcell_id": 9,
+        "release": "handoff(cell=9, same_chunk)",
+        "same_chunk_dependency": "handoff(cell=8, same_chunk)",
+        "state_dependency": "same_cell_previous_chunk"
+      },
+      {
+        "attnres_dependencies": [
+          0,
+          12,
+          24,
+          36,
+          48,
+          60,
+          72
+        ],
+        "layer_end_exclusive": 88,
+        "layer_start": 80,
+        "microcell_id": 10,
+        "release": "handoff(cell=10, same_chunk)",
+        "same_chunk_dependency": "handoff(cell=9, same_chunk)",
+        "state_dependency": "same_cell_previous_chunk"
+      },
+      {
+        "attnres_dependencies": [
+          0,
+          12,
+          24,
+          36,
+          48,
+          60,
+          72,
+          84
+        ],
+        "layer_end_exclusive": 93,
+        "layer_start": 88,
+        "microcell_id": 11,
+        "release": "endpoint",
+        "same_chunk_dependency": "handoff(cell=10, same_chunk)",
+        "state_dependency": "same_cell_previous_chunk"
+      }
+    ],
+    "coarse_boundaries": 11,
+    "internal_boundaries": 81,
+    "layers": 93,
+    "microcell_count": 12,
+    "microcell_depth": 8
+  },
+  "layer_types": [
+    {
+      "chunk_rule": "chunks must be ordered at every KDA layer",
+      "exact_streaming_legal": true,
+      "operator": "KDA recurrent state",
+      "previous_position_dependencies": [
+        "per-layer 96x128x128 recurrent state"
+      ],
+      "release_rule": "position t may leave the KDA layer after its recurrent update; position t+1 must observe that update",
+      "same_position_dependencies": [
+        "input RMSNorm",
+        "KDA projections"
+      ]
+    },
+    {
+      "chunk_rule": "preserve contiguous position order and carry windows",
+      "exact_streaming_legal": true,
+      "operator": "causal convolution",
+      "previous_position_dependencies": [
+        "three per-layer width-4 convolution windows"
+      ],
+      "release_rule": "release after the width-4 windows advance for position t",
+      "same_position_dependencies": [
+        "q/k/v projections"
+      ]
+    },
+    {
+      "chunk_rule": "chunks must be ordered at every MLA layer",
+      "exact_streaming_legal": true,
+      "operator": "Gated MLA",
+      "previous_position_dependencies": [
+        "per-layer compressed-KV and RoPE cache through t-1"
+      ],
+      "release_rule": "position t may leave after its KV row is appended and causal context is computed; t+1 observes that row",
+      "same_position_dependencies": [
+        "query/kv/gate projections",
+        "causal attention reduction"
+      ]
+    },
+    {
+      "chunk_rule": "no cross-position route dependency",
+      "exact_streaming_legal": true,
+      "operator": "MoE routing",
+      "previous_position_dependencies": [],
+      "release_rule": "routes are row-local and may fan out once that row is ready",
+      "same_position_dependencies": [
+        "post-attention normalized hidden row"
+      ]
+    },
+    {
+      "chunk_rule": "rows may batch by expert without changing row identity",
+      "exact_streaming_legal": true,
+      "operator": "routed experts",
+      "previous_position_dependencies": [],
+      "release_rule": "all selected expert contributions for the row must complete",
+      "same_position_dependencies": [
+        "route IDs/weights",
+        "LatentMoE down projection"
+      ]
+    },
+    {
+      "chunk_rule": "no cross-position dependency",
+      "exact_streaming_legal": true,
+      "operator": "shared experts",
+      "previous_position_dependencies": [],
+      "release_rule": "shared-expert output is row-local",
+      "same_position_dependencies": [
+        "post-attention normalized hidden row"
+      ]
+    },
+    {
+      "chunk_rule": "expert batching may cross rows; scatter restores row/slot order",
+      "exact_streaming_legal": true,
+      "operator": "LatentMoE reductions/projections",
+      "previous_position_dependencies": [],
+      "release_rule": "stable FP32 reduction, routed norm, latent up projection and shared addition must finish for the row",
+      "same_position_dependencies": [
+        "all 16 routed expert outputs in router-slot order",
+        "route weights",
+        "shared expert output"
+      ]
+    },
+    {
+      "chunk_rule": "snapshots are request/block/chunk scoped; stale versions reject",
+      "exact_streaming_legal": true,
+      "operator": "Attention Residuals (AttnRes)",
+      "previous_position_dependencies": [],
+      "release_rule": "a snapshot becomes immutable immediately after its producer layer for that position and may be cached downstream by version/hash",
+      "same_position_dependencies": [
+        "current prefix",
+        "immutable snapshots already produced at layers 0,12,...,84",
+        "current layer static depth-query weights"
+      ]
+    },
+    {
+      "chunk_rule": "current hidden changes; completed snapshots remain immutable",
+      "exact_streaming_legal": true,
+      "operator": "layer/block residual state",
+      "previous_position_dependencies": [],
+      "release_rule": "the complete nine-row boundary may leave after residual update",
+      "same_position_dependencies": [
+        "incoming prefix",
+        "attention output",
+        "MoE output"
+      ]
+    },
+    {
+      "chunk_rule": "endpoint rows are independent after their layer-92 boundary",
+      "exact_streaming_legal": true,
+      "operator": "endpoint/logits",
+      "previous_position_dependencies": [],
+      "release_rule": "logits for a position release after the final exact mix/head",
+      "same_position_dependencies": [
+        "layer-92 output",
+        "eight completed AttnRes snapshots",
+        "final RMSNorm and LM head"
+      ]
+    }
+  ],
+  "microcell_task_start_equation": "max(previous_chunk_finish_same_cell, previous_cell_chunk_arrival, required_state_ready, required_AttnRes_object_ready)",
+  "physical_proof_location": "dependencies/chunk-equivalence.json",
+  "position_order": "strictly increasing within each KDA/MLA layer",
+  "prohibited_schedule": "position/chunk t+1 may not overtake t inside a stateful KDA or MLA layer",
+  "schema_version": "experiment-018-k3-wavefront-dag-v1",
+  "task_schemas": {
+    "AttnResObject": [
+      "request_id",
+      "block_id",
+      "chunk_id",
+      "snapshot_layer",
+      "content_hash",
+      "version",
+      "producer_microcell",
+      "cached_locations",
+      "size_bytes"
+    ],
+    "ExpertTask": [
+      "request_id",
+      "block_id",
+      "chunk_id",
+      "microcell_id",
+      "layer",
+      "expert",
+      "shard",
+      "route_weight",
+      "dependencies"
+    ],
+    "MicrocellTask": [
+      "request_id",
+      "block_id",
+      "chunk_id",
+      "microcell_id",
+      "dependencies",
+      "input_refs",
+      "state_refs",
+      "output_ref"
+    ],
+    "ReductionTask": [
+      "task_id",
+      "dependency_task_ids",
+      "stable_order"
+    ],
+    "VerificationBlock": [
+      "block_id",
+      "request_id",
+      "positions"
+    ],
+    "WavefrontChunk": [
+      "block_id",
+      "chunk_id",
+      "start_position",
+      "end_position"
+    ]
+  }
+}

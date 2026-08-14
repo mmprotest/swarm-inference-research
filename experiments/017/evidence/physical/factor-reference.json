@@ -1,0 +1,562 @@
+{
+  "configuration": {
+    "block_sizes": [
+      1,
+      2,
+      4,
+      7,
+      12,
+      16
+    ],
+    "dtype": "float32",
+    "exact_relative_l2_gate": 2e-05,
+    "heads": 96,
+    "iterations": 7,
+    "key_dimension": 128,
+    "value_dimension": 128,
+    "warmup": 2
+  },
+  "cuda_prototype_gate": {
+    "decision": "SKIP_FACTOR_CUDA_PROTOTYPE",
+    "free_core_layer_speedup_ceiling": 1.0291021002521112,
+    "measured_core_ms_per_token": 0.04313119888305664,
+    "measured_real_layer89_block7_device_ms": 12.201568126678467,
+    "reason": "the existing measured KDA recurrent core is only 0.0431312 ms/token; at block 7 its complete elimination is a 2.83% real-layer ceiling, while exact factors add rank-growing arithmetic and accepted-state reconstruction"
+  },
+  "derivation": {
+    "accepted_state": "materialize Apply(H0, prefix_1:k) once",
+    "affine_transition": "A_t = D_t - beta_t k_t (D_t k_t)^T; C_t = beta_t k_t v_t^T",
+    "candidate_output": "q_i^T(A_1:i H0 + C_1:i), evaluated without writing H_i",
+    "composition": "(A2,C2) o (A1,C1) = (A2 A1, A2 C1 + C2)",
+    "factor_rank_growth": "one transition and additive rank per token",
+    "serial_update": "H_t = D_t H_(t-1) + beta_t k_t (v_t - k_t^T D_t H_(t-1))^T"
+  },
+  "environment": {
+    "numpy": "2.4.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9"
+  },
+  "precision_reference": {
+    "active_state_metrics": {
+      "actual_l2": 4.476954965935783,
+      "inf_count": 0,
+      "maximum_absolute_error": 0.0015546083450317383,
+      "nan_count": 0,
+      "reference_l2": 4.476965952706283,
+      "relative_l2_error": 0.00445710279667057
+    },
+    "classification": "APPROXIMATE",
+    "exact_control": "float32-state-float32-update",
+    "final_hidden_metrics": {
+      "actual_l2": 0.31230123929336984,
+      "inf_count": 0,
+      "maximum_absolute_error": 0.000509999692440033,
+      "nan_count": 0,
+      "reference_l2": 0.31243901735955093,
+      "relative_l2_error": 0.005381993245669759
+    },
+    "full_93_layer_qualification_reason": "no GPU implementation and no >=1.5x whole-oracle result",
+    "full_93_layer_qualification_run": false,
+    "gpu_latency_ms": null,
+    "logit_divergence": null,
+    "mode": "bf16-state-fp32-update",
+    "oracle_tok_s_per_user": null,
+    "output_metrics": {
+      "actual_l2": 1.5990637480109016,
+      "inf_count": 0,
+      "maximum_absolute_error": 0.0005586743354797363,
+      "nan_count": 0,
+      "reference_l2": 1.5987798474238706,
+      "relative_l2_error": 0.0035231655227915513
+    },
+    "qualification_status": "LAYER_REFERENCE_ONLY",
+    "route_agreement": null,
+    "route_agreement_reason": "reference KDA recurrence has no router",
+    "top1_token_agreement": null
+  },
+  "rows": [
+    {
+      "additive_rank": 1,
+      "block_tokens": 1,
+      "cpu_factorized_speedup": 0.23289315726290516,
+      "factorized_cpu_timing": {
+        "maximum_ms": 0.1486,
+        "mean_ms": 0.09162857142857142,
+        "minimum_ms": 0.0796,
+        "p50_ms": 0.0833,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "operation_model": {
+        "accepted_reconstruction_estimated_flops_all_heads": 11034624,
+        "factor_flop_ratio_vs_serial": 1.1134615384615385,
+        "factor_output_estimated_flops_all_heads": 3194880,
+        "factor_total_estimated_flops_all_heads": 14229504,
+        "note": "analytical scalar-operation estimate; not a GPU counter",
+        "serial_estimated_flops_all_heads": 12779520
+      },
+      "output_metrics": {
+        "actual_l2": 0.45324748421697064,
+        "inf_count": 0,
+        "maximum_absolute_error": 1.30385160446167e-08,
+        "nan_count": 0,
+        "reference_l2": 0.45324747756616296,
+        "relative_l2_error": 1.1503225762671417e-07
+      },
+      "replay_cpu_timing": {
+        "maximum_ms": 0.0151,
+        "mean_ms": 0.014257142857142857,
+        "minimum_ms": 0.0137,
+        "p50_ms": 0.014,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "replay_metrics": {
+        "actual_l2": 4.972160257942718,
+        "inf_count": 0,
+        "maximum_absolute_error": 0.0,
+        "nan_count": 0,
+        "reference_l2": 4.972160257942718,
+        "relative_l2_error": 0.0
+      },
+      "serial_cpu_timing": {
+        "maximum_ms": 0.0219,
+        "mean_ms": 0.020042857142857144,
+        "minimum_ms": 0.0181,
+        "p50_ms": 0.0194,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "serial_retained_full_state_bytes": 65536,
+      "state_metrics": {
+        "actual_l2": 4.972160250627036,
+        "inf_count": 0,
+        "maximum_absolute_error": 1.4901161193847656e-08,
+        "nan_count": 0,
+        "reference_l2": 4.972160257942718,
+        "relative_l2_error": 4.5341829842199934e-08
+      },
+      "status": "PASS",
+      "traffic": {
+        "accepted_state_copy_bytes": 0,
+        "accepted_state_copy_launches": 0,
+        "accepted_state_materializations_factorized": 1,
+        "block_tokens": 1,
+        "compact_token_factor_bytes": 147840,
+        "factor_bytes_vs_full_snapshots": 0.02349853515625,
+        "full_state_bytes": 6291456,
+        "generic_composed_factor_peak_bytes": 245760,
+        "ideal_factorized_committed_state_read_bytes": 12582912,
+        "ideal_factorized_committed_state_write_bytes": 6291456,
+        "serial_logical_state_read_bytes": 12582912,
+        "serial_logical_state_write_bytes": 12582912,
+        "snapshot_compression_ratio": 42.555844155844156,
+        "speculative_full_snapshot_bytes": 6291456
+      },
+      "transition_rank": 1
+    },
+    {
+      "additive_rank": 2,
+      "block_tokens": 2,
+      "cpu_factorized_speedup": 0.30984555984555984,
+      "factorized_cpu_timing": {
+        "maximum_ms": 0.1085,
+        "mean_ms": 0.10464285714285715,
+        "minimum_ms": 0.1016,
+        "p50_ms": 0.1036,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "operation_model": {
+        "accepted_reconstruction_estimated_flops_all_heads": 20496384,
+        "factor_flop_ratio_vs_serial": 1.0538461538461539,
+        "factor_output_estimated_flops_all_heads": 6438912,
+        "factor_total_estimated_flops_all_heads": 26935296,
+        "note": "analytical scalar-operation estimate; not a GPU counter",
+        "serial_estimated_flops_all_heads": 25559040
+      },
+      "output_metrics": {
+        "actual_l2": 0.6083025293362199,
+        "inf_count": 0,
+        "maximum_absolute_error": 1.4901161193847656e-08,
+        "nan_count": 0,
+        "reference_l2": 0.6083025289238154,
+        "relative_l2_error": 1.3271646199156389e-07
+      },
+      "replay_cpu_timing": {
+        "maximum_ms": 0.0254,
+        "mean_ms": 0.024885714285714285,
+        "minimum_ms": 0.0245,
+        "p50_ms": 0.0248,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "replay_metrics": {
+        "actual_l2": 4.408489231196529,
+        "inf_count": 0,
+        "maximum_absolute_error": 0.0,
+        "nan_count": 0,
+        "reference_l2": 4.408489231196529,
+        "relative_l2_error": 0.0
+      },
+      "serial_cpu_timing": {
+        "maximum_ms": 0.0342,
+        "mean_ms": 0.03237142857142857,
+        "minimum_ms": 0.0315,
+        "p50_ms": 0.0321,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "serial_retained_full_state_bytes": 131072,
+      "state_metrics": {
+        "actual_l2": 4.408489236378372,
+        "inf_count": 0,
+        "maximum_absolute_error": 1.4901161193847656e-08,
+        "nan_count": 0,
+        "reference_l2": 4.408489231196529,
+        "relative_l2_error": 7.048407192813629e-08
+      },
+      "status": "PASS",
+      "traffic": {
+        "accepted_state_copy_bytes": 0,
+        "accepted_state_copy_launches": 0,
+        "accepted_state_materializations_factorized": 1,
+        "block_tokens": 2,
+        "compact_token_factor_bytes": 295680,
+        "factor_bytes_vs_full_snapshots": 0.02349853515625,
+        "full_state_bytes": 6291456,
+        "generic_composed_factor_peak_bytes": 442368,
+        "ideal_factorized_committed_state_read_bytes": 12582912,
+        "ideal_factorized_committed_state_write_bytes": 6291456,
+        "serial_logical_state_read_bytes": 25165824,
+        "serial_logical_state_write_bytes": 25165824,
+        "snapshot_compression_ratio": 42.555844155844156,
+        "speculative_full_snapshot_bytes": 12582912
+      },
+      "transition_rank": 2
+    },
+    {
+      "additive_rank": 4,
+      "block_tokens": 4,
+      "cpu_factorized_speedup": 0.3083109919571046,
+      "factorized_cpu_timing": {
+        "maximum_ms": 0.2763,
+        "mean_ms": 0.21135714285714285,
+        "minimum_ms": 0.179,
+        "p50_ms": 0.1865,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "operation_model": {
+        "accepted_reconstruction_estimated_flops_all_heads": 39419904,
+        "factor_flop_ratio_vs_serial": 1.0269230769230768,
+        "factor_output_estimated_flops_all_heads": 13074432,
+        "factor_total_estimated_flops_all_heads": 52494336,
+        "note": "analytical scalar-operation estimate; not a GPU counter",
+        "serial_estimated_flops_all_heads": 51118080
+      },
+      "output_metrics": {
+        "actual_l2": 0.878969692130608,
+        "inf_count": 0,
+        "maximum_absolute_error": 1.862645149230957e-08,
+        "nan_count": 0,
+        "reference_l2": 0.8789697164217283,
+        "relative_l2_error": 1.5071322724881266e-07
+      },
+      "replay_cpu_timing": {
+        "maximum_ms": 0.0472,
+        "mean_ms": 0.04694285714285714,
+        "minimum_ms": 0.0465,
+        "p50_ms": 0.047,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "replay_metrics": {
+        "actual_l2": 4.643381014872786,
+        "inf_count": 0,
+        "maximum_absolute_error": 0.0,
+        "nan_count": 0,
+        "reference_l2": 4.643381014872786,
+        "relative_l2_error": 0.0
+      },
+      "serial_cpu_timing": {
+        "maximum_ms": 0.0587,
+        "mean_ms": 0.057242857142857144,
+        "minimum_ms": 0.0558,
+        "p50_ms": 0.0575,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "serial_retained_full_state_bytes": 262144,
+      "state_metrics": {
+        "actual_l2": 4.643381015909419,
+        "inf_count": 0,
+        "maximum_absolute_error": 2.9802322387695312e-08,
+        "nan_count": 0,
+        "reference_l2": 4.643381014872786,
+        "relative_l2_error": 9.839536682860739e-08
+      },
+      "status": "PASS",
+      "traffic": {
+        "accepted_state_copy_bytes": 0,
+        "accepted_state_copy_launches": 0,
+        "accepted_state_materializations_factorized": 1,
+        "block_tokens": 4,
+        "compact_token_factor_bytes": 591360,
+        "factor_bytes_vs_full_snapshots": 0.02349853515625,
+        "full_state_bytes": 6291456,
+        "generic_composed_factor_peak_bytes": 835584,
+        "ideal_factorized_committed_state_read_bytes": 12582912,
+        "ideal_factorized_committed_state_write_bytes": 6291456,
+        "serial_logical_state_read_bytes": 50331648,
+        "serial_logical_state_write_bytes": 50331648,
+        "snapshot_compression_ratio": 42.555844155844156,
+        "speculative_full_snapshot_bytes": 25165824
+      },
+      "transition_rank": 4
+    },
+    {
+      "additive_rank": 7,
+      "block_tokens": 7,
+      "cpu_factorized_speedup": 0.32810936978993,
+      "factorized_cpu_timing": {
+        "maximum_ms": 0.3075,
+        "mean_ms": 0.30055714285714286,
+        "minimum_ms": 0.2964,
+        "p50_ms": 0.2999,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "operation_model": {
+        "accepted_reconstruction_estimated_flops_all_heads": 67805184,
+        "factor_flop_ratio_vs_serial": 1.0195054945054944,
+        "factor_output_estimated_flops_all_heads": 23396352,
+        "factor_total_estimated_flops_all_heads": 91201536,
+        "note": "analytical scalar-operation estimate; not a GPU counter",
+        "serial_estimated_flops_all_heads": 89456640
+      },
+      "output_metrics": {
+        "actual_l2": 1.1033036717972255,
+        "inf_count": 0,
+        "maximum_absolute_error": 2.2351741790771484e-08,
+        "nan_count": 0,
+        "reference_l2": 1.103303683574676,
+        "relative_l2_error": 1.8774323143704214e-07
+      },
+      "replay_cpu_timing": {
+        "maximum_ms": 0.0861,
+        "mean_ms": 0.08325714285714285,
+        "minimum_ms": 0.0824,
+        "p50_ms": 0.0829,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "replay_metrics": {
+        "actual_l2": 4.807902881059273,
+        "inf_count": 0,
+        "maximum_absolute_error": 0.0,
+        "nan_count": 0,
+        "reference_l2": 4.807902881059273,
+        "relative_l2_error": 0.0
+      },
+      "serial_cpu_timing": {
+        "maximum_ms": 0.1027,
+        "mean_ms": 0.09885714285714285,
+        "minimum_ms": 0.0972,
+        "p50_ms": 0.0984,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "serial_retained_full_state_bytes": 458752,
+      "state_metrics": {
+        "actual_l2": 4.80790287982533,
+        "inf_count": 0,
+        "maximum_absolute_error": 3.725290298461914e-08,
+        "nan_count": 0,
+        "reference_l2": 4.807902881059273,
+        "relative_l2_error": 1.1655899588376167e-07
+      },
+      "status": "PASS",
+      "traffic": {
+        "accepted_state_copy_bytes": 0,
+        "accepted_state_copy_launches": 0,
+        "accepted_state_materializations_factorized": 1,
+        "block_tokens": 7,
+        "compact_token_factor_bytes": 1034880,
+        "factor_bytes_vs_full_snapshots": 0.02349853515625,
+        "full_state_bytes": 6291456,
+        "generic_composed_factor_peak_bytes": 1425408,
+        "ideal_factorized_committed_state_read_bytes": 12582912,
+        "ideal_factorized_committed_state_write_bytes": 6291456,
+        "serial_logical_state_read_bytes": 88080384,
+        "serial_logical_state_write_bytes": 88080384,
+        "snapshot_compression_ratio": 42.555844155844156,
+        "speculative_full_snapshot_bytes": 44040192
+      },
+      "transition_rank": 7
+    },
+    {
+      "additive_rank": 12,
+      "block_tokens": 12,
+      "cpu_factorized_speedup": 0.3426461784075035,
+      "factorized_cpu_timing": {
+        "maximum_ms": 0.5031,
+        "mean_ms": 0.5004571428571428,
+        "minimum_ms": 0.4974,
+        "p50_ms": 0.5011,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "operation_model": {
+        "accepted_reconstruction_estimated_flops_all_heads": 115113984,
+        "factor_flop_ratio_vs_serial": 1.0217948717948717,
+        "factor_output_estimated_flops_all_heads": 41582592,
+        "factor_total_estimated_flops_all_heads": 156696576,
+        "note": "analytical scalar-operation estimate; not a GPU counter",
+        "serial_estimated_flops_all_heads": 153354240
+      },
+      "output_metrics": {
+        "actual_l2": 1.5139573129661588,
+        "inf_count": 0,
+        "maximum_absolute_error": 3.725290298461914e-08,
+        "nan_count": 0,
+        "reference_l2": 1.5139572631120455,
+        "relative_l2_error": 1.9062521536915873e-07
+      },
+      "replay_cpu_timing": {
+        "maximum_ms": 0.1479,
+        "mean_ms": 0.1446,
+        "minimum_ms": 0.1434,
+        "p50_ms": 0.144,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "replay_metrics": {
+        "actual_l2": 4.854035555220452,
+        "inf_count": 0,
+        "maximum_absolute_error": 0.0,
+        "nan_count": 0,
+        "reference_l2": 4.854035555220452,
+        "relative_l2_error": 0.0
+      },
+      "serial_cpu_timing": {
+        "maximum_ms": 0.1754,
+        "mean_ms": 0.1722857142857143,
+        "minimum_ms": 0.1684,
+        "p50_ms": 0.1717,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "serial_retained_full_state_bytes": 786432,
+      "state_metrics": {
+        "actual_l2": 4.854035558961891,
+        "inf_count": 0,
+        "maximum_absolute_error": 2.9802322387695312e-08,
+        "nan_count": 0,
+        "reference_l2": 4.854035555220452,
+        "relative_l2_error": 1.3692590978879404e-07
+      },
+      "status": "PASS",
+      "traffic": {
+        "accepted_state_copy_bytes": 0,
+        "accepted_state_copy_launches": 0,
+        "accepted_state_materializations_factorized": 1,
+        "block_tokens": 12,
+        "compact_token_factor_bytes": 1774080,
+        "factor_bytes_vs_full_snapshots": 0.02349853515625,
+        "full_state_bytes": 6291456,
+        "generic_composed_factor_peak_bytes": 2408448,
+        "ideal_factorized_committed_state_read_bytes": 12582912,
+        "ideal_factorized_committed_state_write_bytes": 6291456,
+        "serial_logical_state_read_bytes": 150994944,
+        "serial_logical_state_write_bytes": 150994944,
+        "snapshot_compression_ratio": 42.555844155844156,
+        "speculative_full_snapshot_bytes": 75497472
+      },
+      "transition_rank": 12
+    },
+    {
+      "additive_rank": 16,
+      "block_tokens": 16,
+      "cpu_factorized_speedup": 0.32582938388625593,
+      "factorized_cpu_timing": {
+        "maximum_ms": 0.7131,
+        "mean_ms": 0.6869857142857142,
+        "minimum_ms": 0.6733,
+        "p50_ms": 0.6752,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "operation_model": {
+        "accepted_reconstruction_estimated_flops_all_heads": 152961024,
+        "factor_flop_ratio_vs_serial": 1.0269230769230768,
+        "factor_output_estimated_flops_all_heads": 57016320,
+        "factor_total_estimated_flops_all_heads": 209977344,
+        "note": "analytical scalar-operation estimate; not a GPU counter",
+        "serial_estimated_flops_all_heads": 204472320
+      },
+      "output_metrics": {
+        "actual_l2": 1.598779862688751,
+        "inf_count": 0,
+        "maximum_absolute_error": 4.470348358154297e-08,
+        "nan_count": 0,
+        "reference_l2": 1.5987798474238706,
+        "relative_l2_error": 1.8790293367300651e-07
+      },
+      "replay_cpu_timing": {
+        "maximum_ms": 0.1992,
+        "mean_ms": 0.19202857142857144,
+        "minimum_ms": 0.189,
+        "p50_ms": 0.1909,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "replay_metrics": {
+        "actual_l2": 4.476965952706283,
+        "inf_count": 0,
+        "maximum_absolute_error": 0.0,
+        "nan_count": 0,
+        "reference_l2": 4.476965952706283,
+        "relative_l2_error": 0.0
+      },
+      "serial_cpu_timing": {
+        "maximum_ms": 0.2491,
+        "mean_ms": 0.2232,
+        "minimum_ms": 0.2156,
+        "p50_ms": 0.22,
+        "retained_iterations": 7,
+        "warmup_iterations": 2
+      },
+      "serial_retained_full_state_bytes": 1048576,
+      "state_metrics": {
+        "actual_l2": 4.476965989814088,
+        "inf_count": 0,
+        "maximum_absolute_error": 5.21540641784668e-08,
+        "nan_count": 0,
+        "reference_l2": 4.476965952706283,
+        "relative_l2_error": 1.5537928090925513e-07
+      },
+      "status": "PASS",
+      "traffic": {
+        "accepted_state_copy_bytes": 0,
+        "accepted_state_copy_launches": 0,
+        "accepted_state_materializations_factorized": 1,
+        "block_tokens": 16,
+        "compact_token_factor_bytes": 2365440,
+        "factor_bytes_vs_full_snapshots": 0.02349853515625,
+        "full_state_bytes": 6291456,
+        "generic_composed_factor_peak_bytes": 3194880,
+        "ideal_factorized_committed_state_read_bytes": 12582912,
+        "ideal_factorized_committed_state_write_bytes": 6291456,
+        "serial_logical_state_read_bytes": 201326592,
+        "serial_logical_state_write_bytes": 201326592,
+        "snapshot_compression_ratio": 42.555844155844156,
+        "speculative_full_snapshot_bytes": 100663296
+      },
+      "transition_rank": 16
+    }
+  ],
+  "schema_version": "experiment-017-kda-reference-v1",
+  "seed": 17017,
+  "status": "PASS"
+}

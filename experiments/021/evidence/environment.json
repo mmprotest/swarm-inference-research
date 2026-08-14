@@ -1,0 +1,47 @@
+{
+  "captured_at": "2026-08-13T12:41:59.700465+00:00",
+  "checkpoint": "<local-kimi-k3-checkpoint>",
+  "checkpoint_writes": 0,
+  "git_commit": "db0b048b20e3f9f9625e163c5a604e9014352693",
+  "git_status_at_finalize": [
+    "M scripts/run_experiment_021.py",
+    " m third_party/colibri",
+    "?? AGENTS.md",
+    "?? docs/experiments/EXPERIMENT_021_REPORT.md",
+    "?? scripts/validate_experiment_021.py",
+    "?? src/swarm_inference/experiments/experiment_021/",
+    "?? tests/test_experiment_021.py"
+  ],
+  "gpu_query": {
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=name,driver_version,memory.total,compute_cap",
+      "--format=csv,noheader,nounits"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "NVIDIA GeForce RTX 5090, 591.86, 32607, 12.0"
+  },
+  "machine": "AMD64",
+  "packages": {
+    "cryptography": "49.0.0",
+    "matplotlib": "3.11.1",
+    "numpy": "2.4.6",
+    "psutil": "7.2.2",
+    "pytest": "9.1.1",
+    "safetensors": "0.8.0"
+  },
+  "physical_gpu_count_used": 1,
+  "physical_gpu_role": "ordered PHYSICAL_SHARD_EXECUTION replay only",
+  "physical_independent_machine_swarm": false,
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.9",
+  "python_executable": "<local-repo>\\.venv\\Scripts\\python.exe",
+  "release": "10",
+  "repository": "<local-repo>",
+  "schema_version": "experiment-021-environment-v1",
+  "system": "Windows",
+  "timezone_context": "Australia/Sydney",
+  "vast_resource_mutations": 0,
+  "zero_gpu_rental": true
+}

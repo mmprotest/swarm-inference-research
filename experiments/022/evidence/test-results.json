@@ -1,0 +1,37 @@
+{
+  "artifact_integrity": {
+    "chart_generation": {
+      "chart_count": 12,
+      "files": [
+        "artifacts/experiment-022\\charts\\chart-01-whole-vs-adaptive.png",
+        "artifacts/experiment-022\\charts\\chart-02-throughput-uplift-distribution.png",
+        "artifacts/experiment-022\\charts\\chart-03-target-crossings.png",
+        "artifacts/experiment-022\\charts\\chart-04-capacity-unlocks.png",
+        "artifacts/experiment-022\\charts\\chart-05-memory-utilization.png",
+        "artifacts/experiment-022\\charts\\chart-06-sub-layer-usage.png",
+        "artifacts/experiment-022\\charts\\chart-07-network-vs-granularity.png",
+        "artifacts/experiment-022\\charts\\chart-08-memory-vs-granularity.png",
+        "artifacts/experiment-022\\charts\\chart-09-dynamic-adaptation.png",
+        "artifacts/experiment-022\\charts\\chart-10-ablation-ladder.png",
+        "artifacts/experiment-022\\charts\\chart-11-critical-path.png",
+        "artifacts/experiment-022\\charts\\chart-12-product-thesis.png"
+      ],
+      "status": "PASS"
+    },
+    "inventory_count": 27,
+    "inventory_suite_hash_present": true,
+    "placement_manifest_count": 135,
+    "report_created": true
+  },
+  "pytest": {
+    "command": "python scripts/experiment_022_test.py",
+    "elapsed_seconds": 20.8957907,
+    "exit_code": 0,
+    "failed": 0,
+    "passed": 18,
+    "skipped": 0,
+    "status": "PASS"
+  },
+  "schema_version": "experiment-022-test-results-v1",
+  "status": "PASS"
+}

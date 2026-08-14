@@ -1,0 +1,122 @@
+{
+  "block7": {
+    "fused_short_window": {
+      "allocated_scratch_bytes": 0,
+      "attention_pre_moe_device_ms": 3.10646390914917,
+      "block_size": 7,
+      "cuda_graph_replay_ms": null,
+      "cuda_graph_status": "UNSUPPORTED_BY_NATIVE_ABI",
+      "eager_device_p50_ms": 12.211135864257812,
+      "eager_wall_p50_ms": 13.290849999999999,
+      "full_real_kda_layer_device_ms": 12.211135864257812,
+      "kda_recurrence_kernel_count": 1,
+      "logical_state_read_bytes": 88080384,
+      "logical_state_write_bytes": 88080384,
+      "organization": "fused-short-window-head-recurrence",
+      "peak_vram_bytes": 18285068288,
+      "relative_l2_error": 0.0,
+      "route_exact": true,
+      "state_exact": true,
+      "verification_rows": 8,
+      "whole_oracle_tok_s_per_user": 2.668035108357215
+    },
+    "split_control": {
+      "allocated_scratch_bytes": 0,
+      "attention_pre_moe_device_ms": 3.1049280166625977,
+      "block_size": 7,
+      "cuda_graph_replay_ms": null,
+      "cuda_graph_status": "UNSUPPORTED_BY_NATIVE_ABI",
+      "eager_device_p50_ms": 12.201568126678467,
+      "eager_wall_p50_ms": 13.28585,
+      "full_real_kda_layer_device_ms": 12.201568126678467,
+      "kda_recurrence_kernel_count": 8,
+      "logical_state_read_bytes": 88080384,
+      "logical_state_write_bytes": 88080384,
+      "organization": "split-projection-head-recurrence",
+      "peak_vram_bytes": 18285068288,
+      "relative_l2_error": 0.0,
+      "route_exact": true,
+      "state_exact": true,
+      "verification_rows": 8,
+      "whole_oracle_tok_s_per_user": 2.6691235692169797
+    },
+    "unfused_expert_control": {
+      "activation_precision": "FP32",
+      "actual_k3_shape_supported": true,
+      "available": true,
+      "backend": "Colibri native MXFP4 unfused exact control",
+      "block7_max_m": 8,
+      "block7_mean_m": 3.5555555555555554,
+      "correctness_pass": true,
+      "expert_phase_device_ms": 5.839263916015625,
+      "full_kda_layer_device_ms": 13.064911842346191,
+      "full_kda_layer_wall_ms": 14.1342,
+      "fused_gate_up": false,
+      "hot_path_repacking": false,
+      "native_checkpoint_representation": true,
+      "note": "same native representation; separate gate/up kernels",
+      "preprocessing": "one-time checkpoint load/upload",
+      "real_small_m_supported": true,
+      "sm120_supported": true,
+      "verification_major_supported": true,
+      "weight_precision": "MXFP4 group-32"
+    }
+  },
+  "claim_boundary": {
+    "model_bridge": "whole-verifier oracle uses the unchanged Experiment 016 validated model",
+    "not_claimed": [
+      "physical 93-device result",
+      "physical WAN result"
+    ],
+    "physical": "real Kimi K3 layer 89 on one RTX 5090"
+  },
+  "correctness": {
+    "approximate_full_graph_relative_l2_gate": 0.003,
+    "exact_relative_l2_gate": 2e-05,
+    "expert_controls_pass": true,
+    "factor_reference_pass": true,
+    "full_93_layer_anchor": "artifacts/experiment-014\\oracle-full-93\\serial-oracle-receipt.json",
+    "short_window_bit_identity": true,
+    "short_window_pass": true
+  },
+  "decision": {
+    "expert_change_retained": false,
+    "reason": "neither candidate improved the exact whole-layer control",
+    "short_window_retained": false
+  },
+  "fixture": {
+    "block_sizes": [
+      1,
+      2,
+      4,
+      7,
+      12,
+      16
+    ],
+    "checkpoint": "<local-kimi-k3-checkpoint>",
+    "experts_resident": 896,
+    "layer": 89,
+    "profile_iterations": 5,
+    "resident_device_bytes": 18285068288,
+    "retained_iterations": 30,
+    "warmup_iterations": 5
+  },
+  "raw_receipts": [
+    {
+      "bytes": 333302,
+      "path": "artifacts/experiment-017/physical/kda-split-control-physical.json",
+      "sha256": "2051949422c4a7087e4af5d90d2a4ed1c1ad87714896360a74be80dd4120cd43"
+    },
+    {
+      "bytes": 332723,
+      "path": "artifacts/experiment-017/physical/kda-short-window-physical.json",
+      "sha256": "db806f32e8e4838690f35bb9b4ee94d4b21de513a070c80d2b0d0e4a82201895"
+    },
+    {
+      "bytes": 332847,
+      "path": "artifacts/experiment-017/physical/expert-unfused-control-physical.json",
+      "sha256": "98abf6a5e632398efc8199039cf1b15888c8c8475aac972ccf1dd84db32fd9e0"
+    }
+  ],
+  "schema_version": "experiment-017-real-kda-layer-summary-v1"
+}

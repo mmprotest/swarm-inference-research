@@ -1,0 +1,7 @@
+verification_block,accepted_rows,target_pass_ms,oracle_tok_s_per_user,evidence_class
+1,2,1337.7682243433117,1.4950272876916082,RESULT A: immutable Experiment 016/017 exact baseline
+2,3,1732.3314842740583,1.7317701763396423,RESULT A: immutable Experiment 016/017 exact baseline
+4,5,2221.4136161386446,2.250819011675643,RESULT A: immutable Experiment 016/017 exact baseline
+7,8,2997.238528880436,2.6691235692169797,RESULT A: immutable Experiment 016/017 exact baseline
+12,13,4291.965465036907,3.028915331658712,RESULT A: immutable Experiment 016/017 exact baseline
+16,17,5484.922520799224,3.099405677205971,RESULT A: immutable Experiment 016/017 exact baseline

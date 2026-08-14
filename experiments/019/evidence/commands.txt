@@ -1,0 +1,12 @@
+# Experiment 019 command receipt
+cmd /c src\swarm_inference\experiments\experiment_019\native\build_kda_shard.bat artifacts\experiment-019\physical\exp019-kda-shard-sm120-v2.dll
+python scripts/experiment_019_physical.py attention --output artifacts/experiment-019/physical/attention-raw.json
+python scripts/experiment_019_physical.py expert --output artifacts/experiment-019/physical/expert-stripe-raw.json
+python scripts/experiment_019_physical.py other --output artifacts/experiment-019/physical/other-shards-raw.json
+python scripts/experiment_019_physical.py representative --output artifacts/experiment-019/correctness/representative-layers-raw.json
+python scripts/experiment_019_physical.py depth --output artifacts/experiment-019/correctness/depth-span.json
+python scripts/experiment_019_physical.py protocol --output artifacts/experiment-019/control-plane/protocol-and-scaling.json
+python scripts/experiment_019_full_sharded.py --degree 4 --layer-limit 93 ...
+python scripts/experiment_019_full_sharded.py --recertify-existing ...  # type-stable predicate repair only; no physical re-execution
+python -m pytest -q tests/unit/test_experiment_019_no_monolith.py
+python -m swarm_inference.experiments.experiment_019.finalize ...

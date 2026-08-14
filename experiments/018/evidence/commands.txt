@@ -1,0 +1,15 @@
+# Experiment 018 command log (PowerShell)
+$env:PYTHONPATH=(Resolve-Path src).Path
+.\.venv\Scripts\python.exe -m swarm_inference.experiments.experiment_016.benchmark --checkpoint <local-kimi-k3-checkpoint> --cuda-library artifacts\experiment-016\cuda\coli_cuda-sm120-h016-final.dll --oracle-trace artifacts\experiment-014\oracle-full-93\hidden-trace.f32 --layers 89,91 --warmup 5 --iterations 30 --profile-iterations 5 --output artifacts\experiment-018\physical\baseline-reproduction.json --gpu-samples artifacts\experiment-018\physical\gpu-samples-baseline.csv
+.\.venv\Scripts\python.exe -m swarm_inference.experiments.experiment_018.physical_benchmark --checkpoint <local-kimi-k3-checkpoint> --cuda-library artifacts\experiment-016\cuda\coli_cuda-sm120-h016-final.dll --oracle-trace artifacts\experiment-014\oracle-full-93\hidden-trace.f32 --output artifacts\experiment-018\physical\service-raw.json --gpu-samples artifacts\experiment-018\physical\gpu-samples-service-raw.csv --warmup 3 --iterations 20 --profile-iterations 5
+# First physical service attempt was interrupted by a telemetry subprocess violating PREPARE thread quiescence; source was redesigned and the same command resumed from its atomic checkpoint.
+# The resumed shell reached its one-hour watchdog after layer 83; a first retry used an obsolete trace path and failed before loading, then the exact receipt path above resumed the final layers.
+.\.venv\Scripts\python.exe -m swarm_inference.experiments.experiment_018.microshard_benchmark --checkpoint <local-kimi-k3-checkpoint> --cuda-library artifacts\experiment-016\cuda\coli_cuda-sm120-h016-final.dll --output artifacts\experiment-018\microshards\physical-raw.json --layer 89 --expert 885 --warmup 5 --iterations 30
+.\.venv\Scripts\python.exe -m swarm_inference.experiments.experiment_018.attnres_benchmark --checkpoint <local-kimi-k3-checkpoint> --cuda-library artifacts\experiment-016\cuda\coli_cuda-sm120-h016-final.dll --service-receipt artifacts\experiment-018\physical\service-raw.json --output artifacts\experiment-018\attnres\future-score-raw.json --bound-layer 84
+.\.venv\Scripts\python.exe -m swarm_inference.experiments.experiment_018.control_benchmark --output artifacts\experiment-018\control-plane\scaling-raw-preliminary.json --natural-task-count 10000 --iterations 200
+.\.venv\Scripts\python.exe -m swarm_inference.experiments.experiment_018.control_benchmark --output artifacts\experiment-018\control-plane\scaling-raw-compact-smoke.json --natural-task-count 50000 --iterations 20
+# Finalization reruns the same physical CPU benchmark at Model D's natural logical-task count using persistent-worker compact buckets.
+.\.venv\Scripts\ruff.exe check src\swarm_inference\experiments\experiment_018 tests\unit\test_experiment_018_wavefront.py
+.\.venv\Scripts\python.exe -m pytest -q tests\unit\test_experiment_018_wavefront.py
+.\.venv\Scripts\python.exe -m pytest -q --junitxml artifacts\experiment-018\pytest.xml
+.\.venv\Scripts\python.exe -m swarm_inference.experiments.experiment_018.finalize --root . --checkpoint <local-kimi-k3-checkpoint>

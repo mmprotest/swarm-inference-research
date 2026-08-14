@@ -1,0 +1,20 @@
+{
+  "experiment_020_unit": {
+    "errors": 0,
+    "failures": 0,
+    "junit": "artifacts/experiment-020\\tests\\unit-junit.xml",
+    "skipped": 0,
+    "status": "PASS",
+    "tests": 50
+  },
+  "repository_full_suite": {
+    "errors": 0,
+    "failures": 0,
+    "junit": "artifacts/experiment-020\\tests\\full-junit.xml",
+    "skipped": 13,
+    "status": "PASS",
+    "tests": 1270
+  },
+  "schema_version": "experiment-020-test-results-v1",
+  "status": "PASS"
+}

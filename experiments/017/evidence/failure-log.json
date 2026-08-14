@@ -1,0 +1,26 @@
+{
+  "failures": [
+    {
+      "error": "VS 18 Insiders was not returned without vswhere -prerelease",
+      "resolution": "build helper now includes -prerelease; ALLOW_UNSUPPORTED=1 used with CUDA 13.0",
+      "scientific_impact": "none; paired candidate/control use the same rebuilt DLL",
+      "stage": "initial CUDA build",
+      "status": "RESOLVED"
+    },
+    {
+      "error": "ERR_NVGPUCTRPERM",
+      "resolution": "none; no administrative driver setting changed",
+      "scientific_impact": "counter metrics unavailable; failed profiled timings excluded",
+      "stage": "Nsight Compute hardware counters",
+      "status": "UNRESOLVED_ENVIRONMENT_PERMISSION"
+    },
+    {
+      "error": "native Colibri ABI has no graph capture/replay export",
+      "resolution": "reported eager CUDA-event timing only",
+      "scientific_impact": "no graph-replay claim",
+      "stage": "CUDA Graph replay",
+      "status": "UNSUPPORTED"
+    }
+  ],
+  "schema_version": "experiment-017-failure-log-v1"
+}

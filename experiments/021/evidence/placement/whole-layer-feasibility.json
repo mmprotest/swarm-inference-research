@@ -1,0 +1,4357 @@
+{
+  "checkpoint_index": "<local-kimi-k3-checkpoint>\\model.safetensors.index.json",
+  "checkpoint_index_sha256": "a1c5210650ce71d2d3ae9ec5a101ac4afd3cf4b10091be589853437eb967febd",
+  "headline_8g_complete_model_whole_layer_placement_possible": false,
+  "layers": [
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 76333837,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 2341213184,
+      "complete_layer_peak_bytes": 2620795063,
+      "complete_layer_peak_gib": 2.440805605612695,
+      "cuda_workspace_bytes": 195101098,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": true,
+        "8": true
+      },
+      "layer": 0,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 23,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 1,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 2,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 3,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 4,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 5,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 6,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 7,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 8,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 9,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 10,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 11,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 12,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 13,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 14,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 15,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 16,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 17,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 18,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 19,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 20,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 21,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 22,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 23,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 24,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 25,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 26,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 27,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 28,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 29,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 30,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 31,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 32,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 33,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 34,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 35,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 36,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 37,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 38,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 39,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 40,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 41,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 42,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 43,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 44,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 45,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 46,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 47,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 48,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 49,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 50,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 51,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 52,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 53,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 54,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 55,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 56,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 57,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 58,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 59,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 60,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 61,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 62,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 63,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 64,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 65,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 66,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 67,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 68,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 69,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 70,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 71,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 72,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 73,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 74,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 75,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 76,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 77,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 78,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 79,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 80,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 81,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 82,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 83,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 84,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 85,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 86,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 87,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 88,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 89,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 742059976,
+      "attention_type": "KDA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16990092800,
+      "complete_layer_peak_bytes": 18277170632,
+      "complete_layer_peak_gib": 17.021941609680653,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 90,
+      "persistent_state_bytes": 7368704,
+      "runtime_state_kind_code": 1,
+      "scratch_bytes": 491520,
+      "tensor_count": 5404,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 91,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    },
+    {
+      "activation_bytes": 172032,
+      "allocator_overhead_bytes": 729434394,
+      "attention_type": "GATED_MLA",
+      "attnres_cache_bytes": 487424,
+      "checkpoint_weight_bytes": 16566684160,
+      "complete_layer_peak_bytes": 17843692314,
+      "complete_layer_peak_gib": 16.618233466520905,
+      "cuda_workspace_bytes": 536870912,
+      "fits": {
+        "1": false,
+        "2": false,
+        "4": false,
+        "8": false
+      },
+      "layer": 92,
+      "persistent_state_bytes": 9924608,
+      "runtime_state_kind_code": 2,
+      "scratch_bytes": 491520,
+      "tensor_count": 5398,
+      "transport_and_reduction_buffer_bytes": 114688
+    }
+  ],
+  "runtime_memory_policy": {
+    "allocator_fraction": 0.03,
+    "block_candidates": 16,
+    "chunk_rows": 1,
+    "expert_allocation_overhead_factor": 1.0137388288648792,
+    "includes": [
+      "checkpoint weights and quantization scales",
+      "KDA recurrent/conv or MLA cache state",
+      "immutable AttnRes cache",
+      "activations and scratch",
+      "transport and reduction buffers",
+      "CUDA workspace",
+      "measured/declared allocator overhead"
+    ],
+    "maximum_context": 4096,
+    "workspace_ceiling_bytes": 536870912,
+    "workspace_floor_bytes": 67108864
+  },
+  "schema_version": "experiment-021-whole-layer-feasibility-v1",
+  "status": "PASS",
+  "tiers": [
+    {
+      "complete_model_whole_layer_placement_possible": false,
+      "fitting_layer_count": 1,
+      "fitting_whole_layers": [
+        0
+      ],
+      "non_fitting_layer_count": 92,
+      "non_fitting_whole_layers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "placement_attempt": [
+        {
+          "assigned_worker": "whole-layer-control-machine-000",
+          "layer": 0,
+          "placed": true
+        },
+        {
+          "assigned_worker": null,
+          "layer": 1,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 2,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 3,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 4,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 5,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 6,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 7,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 8,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 9,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 10,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 11,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 12,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 13,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 14,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 15,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 16,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 17,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 18,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 19,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 20,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 21,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 22,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 23,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 24,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 25,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 26,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 27,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 28,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 29,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 30,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 31,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 32,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 33,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 34,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 35,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 36,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 37,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 38,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 39,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 40,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 41,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 42,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 43,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 44,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 45,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 46,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 47,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 48,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 49,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 50,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 51,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 52,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 53,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 54,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 55,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 56,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 57,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 58,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 59,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 60,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 61,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 62,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 63,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 64,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 65,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 66,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 67,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 68,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 69,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 70,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 71,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 72,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 73,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 74,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 75,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 76,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 77,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 78,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 79,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 80,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 81,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 82,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 83,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 84,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 85,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 86,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 87,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 88,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 89,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 90,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 91,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 92,
+          "placed": false
+        }
+      ],
+      "worker_cap_bytes": 8589934592,
+      "worker_cap_gib": 8
+    },
+    {
+      "complete_model_whole_layer_placement_possible": false,
+      "fitting_layer_count": 1,
+      "fitting_whole_layers": [
+        0
+      ],
+      "non_fitting_layer_count": 92,
+      "non_fitting_whole_layers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "placement_attempt": [
+        {
+          "assigned_worker": "whole-layer-control-machine-000",
+          "layer": 0,
+          "placed": true
+        },
+        {
+          "assigned_worker": null,
+          "layer": 1,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 2,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 3,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 4,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 5,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 6,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 7,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 8,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 9,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 10,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 11,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 12,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 13,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 14,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 15,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 16,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 17,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 18,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 19,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 20,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 21,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 22,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 23,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 24,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 25,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 26,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 27,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 28,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 29,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 30,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 31,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 32,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 33,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 34,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 35,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 36,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 37,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 38,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 39,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 40,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 41,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 42,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 43,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 44,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 45,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 46,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 47,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 48,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 49,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 50,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 51,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 52,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 53,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 54,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 55,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 56,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 57,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 58,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 59,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 60,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 61,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 62,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 63,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 64,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 65,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 66,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 67,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 68,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 69,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 70,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 71,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 72,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 73,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 74,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 75,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 76,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 77,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 78,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 79,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 80,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 81,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 82,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 83,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 84,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 85,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 86,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 87,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 88,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 89,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 90,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 91,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 92,
+          "placed": false
+        }
+      ],
+      "worker_cap_bytes": 4294967296,
+      "worker_cap_gib": 4
+    },
+    {
+      "complete_model_whole_layer_placement_possible": false,
+      "fitting_layer_count": 0,
+      "fitting_whole_layers": [],
+      "non_fitting_layer_count": 93,
+      "non_fitting_whole_layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "placement_attempt": [
+        {
+          "assigned_worker": null,
+          "layer": 0,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 1,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 2,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 3,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 4,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 5,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 6,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 7,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 8,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 9,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 10,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 11,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 12,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 13,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 14,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 15,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 16,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 17,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 18,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 19,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 20,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 21,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 22,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 23,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 24,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 25,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 26,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 27,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 28,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 29,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 30,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 31,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 32,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 33,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 34,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 35,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 36,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 37,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 38,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 39,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 40,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 41,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 42,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 43,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 44,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 45,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 46,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 47,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 48,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 49,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 50,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 51,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 52,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 53,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 54,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 55,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 56,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 57,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 58,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 59,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 60,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 61,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 62,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 63,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 64,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 65,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 66,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 67,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 68,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 69,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 70,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 71,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 72,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 73,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 74,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 75,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 76,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 77,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 78,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 79,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 80,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 81,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 82,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 83,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 84,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 85,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 86,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 87,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 88,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 89,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 90,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 91,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 92,
+          "placed": false
+        }
+      ],
+      "worker_cap_bytes": 2147483648,
+      "worker_cap_gib": 2
+    },
+    {
+      "complete_model_whole_layer_placement_possible": false,
+      "fitting_layer_count": 0,
+      "fitting_whole_layers": [],
+      "non_fitting_layer_count": 93,
+      "non_fitting_whole_layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "placement_attempt": [
+        {
+          "assigned_worker": null,
+          "layer": 0,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 1,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 2,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 3,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 4,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 5,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 6,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 7,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 8,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 9,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 10,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 11,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 12,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 13,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 14,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 15,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 16,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 17,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 18,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 19,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 20,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 21,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 22,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 23,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 24,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 25,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 26,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 27,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 28,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 29,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 30,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 31,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 32,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 33,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 34,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 35,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 36,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 37,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 38,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 39,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 40,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 41,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 42,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 43,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 44,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 45,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 46,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 47,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 48,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 49,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 50,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 51,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 52,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 53,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 54,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 55,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 56,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 57,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 58,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 59,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 60,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 61,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 62,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 63,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 64,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 65,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 66,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 67,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 68,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 69,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 70,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 71,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 72,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 73,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 74,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 75,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 76,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 77,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 78,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 79,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 80,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 81,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 82,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 83,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 84,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 85,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 86,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 87,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 88,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 89,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 90,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 91,
+          "placed": false
+        },
+        {
+          "assigned_worker": null,
+          "layer": 92,
+          "placed": false
+        }
+      ],
+      "worker_cap_bytes": 1073741824,
+      "worker_cap_gib": 1
+    }
+  ]
+}

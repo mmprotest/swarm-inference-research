@@ -1,0 +1,92 @@
+{
+  "check_count": 17,
+  "checks": [
+    {
+      "detail": "missing=[]",
+      "name": "required_artifacts",
+      "status": "PASS"
+    },
+    {
+      "detail": "<local-repo>\\docs\\experiments\\EXPERIMENT_017_REPORT.md",
+      "name": "report_exists",
+      "status": "PASS"
+    },
+    {
+      "detail": "all mandated constants match",
+      "name": "immutable_tracker_constants",
+      "status": "PASS"
+    },
+    {
+      "detail": "budget=162.16, speedup=9.616428",
+      "name": "initial_kda_budget",
+      "status": "PASS"
+    },
+    {
+      "detail": "[1, 2, 4, 7, 12, 16]",
+      "name": "exact_block_sweep",
+      "status": "PASS"
+    },
+    {
+      "detail": "rows=12",
+      "name": "short_window_pair_count",
+      "status": "PASS"
+    },
+    {
+      "detail": "six rows recomputed from raw fields",
+      "name": "tracker_recalculation",
+      "status": "PASS"
+    },
+    {
+      "detail": "block=16, oracle=3.0994056772, expected=FAIL",
+      "name": "primary_result_selection",
+      "status": "PASS"
+    },
+    {
+      "detail": "deviation=1.148728%",
+      "name": "baseline_reproduction_gate",
+      "status": "PASS"
+    },
+    {
+      "detail": "all blocks <= 2e-5; no NaN/Inf",
+      "name": "factor_and_replay_correctness",
+      "status": "PASS"
+    },
+    {
+      "detail": "window and expert controls exact",
+      "name": "physical_exact_controls",
+      "status": "PASS"
+    },
+    {
+      "detail": "BF16 rel-L2=0.0035231655227915513; throughput absent",
+      "name": "approximate_separation",
+      "status": "PASS"
+    },
+    {
+      "detail": "aggregate, GPU-hours, and cost recomputed",
+      "name": "economic_recalculation",
+      "status": "PASS"
+    },
+    {
+      "detail": "targeted 53 passed; full 1183 passed, 13 skipped, 0 failed",
+      "name": "tests",
+      "status": "PASS"
+    },
+    {
+      "detail": "mismatches=[]",
+      "name": "source_manifest_hashes",
+      "status": "PASS"
+    },
+    {
+      "detail": "seven nonempty, high-resolution charts",
+      "name": "chart_validation",
+      "status": "PASS"
+    },
+    {
+      "detail": "20 numbered sections and decisive values present",
+      "name": "report_structure_and_claims",
+      "status": "PASS"
+    }
+  ],
+  "schema_version": "experiment-017-independent-audit-v1",
+  "status": "PASS"
+}

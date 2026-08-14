@@ -1,0 +1,11 @@
+absolute_percentage_error,actual_sharded_wall_ms,compute_task_count,network_task_count,physical_actual_source,predicted_sharded_wall_ms,workload,error_percent,gate_status,normalization
+0.0006226650062265815,0.1606,1,0,independent heldout RTX 5090 worker wall,0.1605,expert_stripe,0.06226650062265816,FAIL,NONE
+0.010737294201861142,0.2794,1,0,independent heldout RTX 5090 worker wall,0.2824,KDA_stripe,1.0737294201861143,FAIL,NONE
+0.06779661016949151,0.2124,1,0,independent heldout RTX 5090 worker wall,0.198,MLA_stripe,6.779661016949151,FAIL,NONE
+0.04098360655737708,0.0488,1,0,independent heldout RTX 5090 worker wall,0.0468,projection_stripe,4.098360655737708,FAIL,NONE
+0.014925373134328396,0.1072,1,0,independent heldout RTX 5090 worker wall,0.1056,shared_expert_stripe,1.4925373134328397,FAIL,NONE
+0.046099630532352255,7.807004000767997,67,8,"single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap",8.166904000767998,complete_sharded_KDA_layer,4.609963053235226,FAIL,NONE
+0.043858893317038516,7.195804000767998,67,8,"single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap",7.5114040007680005,complete_sharded_MLA_layer,4.385889331703852,FAIL,NONE
+0.046099630532351756,15.614008001536009,134,16,"single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap",16.333808001536003,two_layer_span,4.609963053235176,FAIL,NONE
+0.045572994914295714,30.616816003072078,268,32,"single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap",32.01211600307201,four_layer_span,4.557299491429571,FAIL,NONE
+0.04586608450246331,61.26313223552026,536,65,"single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap",64.07303223552022,eight_layer_span,4.586608450246331,FAIL,NONE

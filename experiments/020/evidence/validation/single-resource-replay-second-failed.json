@@ -1,0 +1,117 @@
+{
+  "compute_overlap": false,
+  "global_normalization_factor": null,
+  "mode": "single_resource_replay",
+  "operation_order_preserved": true,
+  "physical_compute_resources": 1,
+  "post_hoc_multiplier": null,
+  "real_local_software_overhead": true,
+  "rows": [
+    {
+      "absolute_percentage_error": 0.014687882496939936,
+      "actual_sharded_wall_ms": 0.1634,
+      "compute_task_count": 1,
+      "network_task_count": 0,
+      "physical_actual_source": "independent heldout RTX 5090 worker wall",
+      "predicted_sharded_wall_ms": 0.161,
+      "workload": "expert_stripe"
+    },
+    {
+      "absolute_percentage_error": 0.010737294201861142,
+      "actual_sharded_wall_ms": 0.2794,
+      "compute_task_count": 1,
+      "network_task_count": 0,
+      "physical_actual_source": "independent heldout RTX 5090 worker wall",
+      "predicted_sharded_wall_ms": 0.2824,
+      "workload": "KDA_stripe"
+    },
+    {
+      "absolute_percentage_error": 0.06779661016949151,
+      "actual_sharded_wall_ms": 0.2124,
+      "compute_task_count": 1,
+      "network_task_count": 0,
+      "physical_actual_source": "independent heldout RTX 5090 worker wall",
+      "predicted_sharded_wall_ms": 0.198,
+      "workload": "MLA_stripe"
+    },
+    {
+      "absolute_percentage_error": 0.06896551724137932,
+      "actual_sharded_wall_ms": 0.0493,
+      "compute_task_count": 1,
+      "network_task_count": 0,
+      "physical_actual_source": "independent heldout RTX 5090 worker wall",
+      "predicted_sharded_wall_ms": 0.0527,
+      "workload": "projection_stripe"
+    },
+    {
+      "absolute_percentage_error": 0.10137795275590555,
+      "actual_sharded_wall_ms": 0.1016,
+      "compute_task_count": 1,
+      "network_task_count": 0,
+      "physical_actual_source": "independent heldout RTX 5090 worker wall",
+      "predicted_sharded_wall_ms": 0.1119,
+      "workload": "shared_expert_stripe"
+    },
+    {
+      "absolute_percentage_error": 0.08350555642454621,
+      "actual_sharded_wall_ms": 7.764154000768006,
+      "compute_task_count": 67,
+      "network_task_count": 8,
+      "physical_actual_source": "single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap",
+      "predicted_sharded_wall_ms": 8.412504000768005,
+      "workload": "complete_sharded_KDA_layer"
+    },
+    {
+      "absolute_percentage_error": 0.08444762820159935,
+      "actual_sharded_wall_ms": 7.1529540007680055,
+      "compute_task_count": 67,
+      "network_task_count": 8,
+      "physical_actual_source": "single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap",
+      "predicted_sharded_wall_ms": 7.757004000768005,
+      "workload": "complete_sharded_MLA_layer"
+    },
+    {
+      "absolute_percentage_error": 0.08350555642454707,
+      "actual_sharded_wall_ms": 15.528308001535999,
+      "compute_task_count": 134,
+      "network_task_count": 16,
+      "physical_actual_source": "single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap",
+      "predicted_sharded_wall_ms": 16.82500800153601,
+      "workload": "two_layer_span"
+    },
+    {
+      "absolute_percentage_error": 0.0837268901086059,
+      "actual_sharded_wall_ms": 30.44541600307198,
+      "compute_task_count": 268,
+      "network_task_count": 32,
+      "physical_actual_source": "single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap",
+      "predicted_sharded_wall_ms": 32.99451600307198,
+      "workload": "four_layer_span"
+    },
+    {
+      "absolute_percentage_error": 0.08400315317085695,
+      "actual_sharded_wall_ms": 60.92033223552015,
+      "compute_task_count": 536,
+      "network_task_count": 65,
+      "physical_actual_source": "single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap",
+      "predicted_sharded_wall_ms": 66.03783223552004,
+      "workload": "eight_layer_span"
+    }
+  ],
+  "same_worker_task_graph": true,
+  "schema_version": "experiment-020-single-resource-replay-v1",
+  "status": "FAIL",
+  "validation": {
+    "maximum_error": 0.10137795275590555,
+    "median_error": 0.08350555642454664,
+    "normalization_applied": false,
+    "p90_error": 0.08444762820159935,
+    "post_hoc_multiplier": null,
+    "status": "FAIL",
+    "targets": {
+      "maximum": 0.15,
+      "median": 0.05,
+      "p90": 0.1
+    }
+  }
+}

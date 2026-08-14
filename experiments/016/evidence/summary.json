@@ -1,0 +1,750 @@
+{
+  "arms": [
+    {
+      "admitted_to_final_exact_path": true,
+      "arm": "A: Experiment 015 baseline",
+      "evidence_class": "E015 PROJECTED from measured components + shaped topology",
+      "note": "Canonical Experiment 015 block-7 oracle target pass.",
+      "speedup_vs_experiment_015": 1.0,
+      "target_ms_per_accepted_token": 457.91313044124405,
+      "target_pass_ms": 3663.3050435299524,
+      "verifier_tokens_per_second": 2.1838203220693897,
+      "whole_system_oracle_tok_s_per_user": 2.1838203220693897
+    },
+    {
+      "admitted_to_final_exact_path": false,
+      "arm": "B: device-resident token-major",
+      "evidence_class": "MEASURED stages + validated/shaped 8-layer bridge",
+      "note": "Regressed against the historical batch-8 calibration; that baseline already amortized device-resident row work.",
+      "speedup_vs_experiment_015": 0.8918381803696501,
+      "target_ms_per_accepted_token": 513.4486732239336,
+      "target_pass_ms": 4107.589385791469,
+      "verifier_tokens_per_second": 1.9476143422886276,
+      "whole_system_oracle_tok_s_per_user": 1.9476143422886276
+    },
+    {
+      "admitted_to_final_exact_path": true,
+      "arm": "C: verification-major batching",
+      "evidence_class": "MEASURED stages + validated/shaped 8-layer bridge",
+      "note": "Grouped experts, fused indexed dispatch, and triangular MLA.",
+      "speedup_vs_experiment_015": 1.204643003046406,
+      "target_ms_per_accepted_token": 380.1235131762966,
+      "target_pass_ms": 3040.988105410373,
+      "verifier_tokens_per_second": 2.630723870891439,
+      "whole_system_oracle_tok_s_per_user": 2.630723870891439
+    },
+    {
+      "admitted_to_final_exact_path": true,
+      "arm": "D: + exact DCP8",
+      "evidence_class": "MEASURED single-GPU DCP compute + shaped internal transport",
+      "note": "Exact DCP compute passed; physical inter-device communication not run.",
+      "speedup_vs_experiment_015": 1.2222267291146538,
+      "target_ms_per_accepted_token": 374.6548161100545,
+      "target_pass_ms": 2997.238528880436,
+      "verifier_tokens_per_second": 2.6691235692169797,
+      "whole_system_oracle_tok_s_per_user": 2.6691235692169797
+    },
+    {
+      "admitted_to_final_exact_path": true,
+      "arm": "E: + overlap (retained serial)",
+      "evidence_class": "RETAINED D + measured overlap rejection",
+      "note": "Same-GPU overlap candidate regressed 0.23%; serial schedule retained.",
+      "speedup_vs_experiment_015": 1.2222267291146538,
+      "target_ms_per_accepted_token": 374.6548161100545,
+      "target_pass_ms": 2997.238528880436,
+      "verifier_tokens_per_second": 2.6691235692169797,
+      "whole_system_oracle_tok_s_per_user": 2.6691235692169797
+    }
+  ],
+  "block_scaling": [
+    {
+      "candidate_block_size": 1,
+      "cost_vs_block_1": 1.0,
+      "device_p50_ms": 8.923936367034912,
+      "latency_per_accepted_token_ms": 4.619875,
+      "latency_per_candidate_ms": 9.23975,
+      "mean_adjacent_position_overlap": 4.75,
+      "mean_assignments_per_touched_expert": 1.1839080459770115,
+      "mean_unique_experts": 27.25,
+      "total_assignments": 32,
+      "total_wall_p50_ms": 9.23975,
+      "unique_experts_per_assignment": 0.8515625,
+      "verification_rows": 2
+    },
+    {
+      "candidate_block_size": 2,
+      "cost_vs_block_1": 1.2321816066452014,
+      "device_p50_ms": 10.975103855133057,
+      "latency_per_accepted_token_ms": 3.7950166666666667,
+      "latency_per_candidate_ms": 5.692525,
+      "mean_adjacent_position_overlap": 3.0,
+      "mean_assignments_per_touched_expert": 1.3333333333333333,
+      "mean_unique_experts": 36.0,
+      "total_assignments": 48,
+      "total_wall_p50_ms": 11.38505,
+      "unique_experts_per_assignment": 0.75,
+      "verification_rows": 3
+    },
+    {
+      "candidate_block_size": 4,
+      "cost_vs_block_1": 1.7023296084850779,
+      "device_p50_ms": 14.927232265472412,
+      "latency_per_accepted_token_ms": 3.1458199999999996,
+      "latency_per_candidate_ms": 3.9322749999999997,
+      "mean_adjacent_position_overlap": 4.6875,
+      "mean_assignments_per_touched_expert": 2.2222222222222223,
+      "mean_unique_experts": 36.0,
+      "total_assignments": 80,
+      "total_wall_p50_ms": 15.729099999999999,
+      "unique_experts_per_assignment": 0.45,
+      "verification_rows": 5
+    },
+    {
+      "candidate_block_size": 7,
+      "cost_vs_block_1": 2.5005222002759813,
+      "device_p50_ms": 21.795472145080566,
+      "latency_per_accepted_token_ms": 2.888025,
+      "latency_per_candidate_ms": 3.3005999999999998,
+      "mean_adjacent_position_overlap": 4.678571428571429,
+      "mean_assignments_per_touched_expert": 3.555555555555556,
+      "mean_unique_experts": 36.0,
+      "total_assignments": 128,
+      "total_wall_p50_ms": 23.1042,
+      "unique_experts_per_assignment": 0.28125,
+      "verification_rows": 8
+    },
+    {
+      "candidate_block_size": 12,
+      "cost_vs_block_1": 3.638577883600747,
+      "device_p50_ms": 31.91486358642578,
+      "latency_per_accepted_token_ms": 2.586119230769231,
+      "latency_per_candidate_ms": 2.801629166666667,
+      "mean_adjacent_position_overlap": 4.666666666666667,
+      "mean_assignments_per_touched_expert": 5.777777777777778,
+      "mean_unique_experts": 36.0,
+      "total_assignments": 208,
+      "total_wall_p50_ms": 33.619550000000004,
+      "unique_experts_per_assignment": 0.17307692307692307,
+      "verification_rows": 13
+    },
+    {
+      "candidate_block_size": 16,
+      "cost_vs_block_1": 4.661993019291646,
+      "device_p50_ms": 40.48310470581055,
+      "latency_per_accepted_token_ms": 2.533861764705882,
+      "latency_per_candidate_ms": 2.6922281249999997,
+      "mean_adjacent_position_overlap": 4.671875,
+      "mean_assignments_per_touched_expert": 7.555555555555555,
+      "mean_unique_experts": 36.0,
+      "total_assignments": 272,
+      "total_wall_p50_ms": 43.075649999999996,
+      "unique_experts_per_assignment": 0.1323529411764706,
+      "verification_rows": 17
+    }
+  ],
+  "central_hypothesis": "Rejected at the fixed 8-layer verifier level: exact local optimizations improved representative stages but did not provide 2.3x whole-verifier speedup.",
+  "correctness": {
+    "changed_paths_gate": "PASS",
+    "dcp_all_active_cache_fingerprints_exact": true,
+    "dcp_all_routes_exact": true,
+    "dcp_complete_layer": true,
+    "dcp_maximum_absolute_error": 0.002009868621826172,
+    "dcp_maximum_relative_l2_error": 1.2391588250598281e-05,
+    "eight_k_mla_all_blocks": true,
+    "full_93_layer_greedy_rerun": "NOT_RUN; inherited E014 full-model qualification",
+    "short_context_kda_and_mla_all_blocks": true
+  },
+  "dcp": {
+    "correctness": {
+      "changed_paths_gate": "PASS",
+      "dcp_all_active_cache_fingerprints_exact": true,
+      "dcp_all_routes_exact": true,
+      "dcp_complete_layer": true,
+      "dcp_maximum_absolute_error": 0.002009868621826172,
+      "dcp_maximum_relative_l2_error": 1.2391588250598281e-05,
+      "eight_k_mla_all_blocks": true,
+      "full_93_layer_greedy_rerun": "NOT_RUN; inherited E014 full-model qualification",
+      "short_context_kda_and_mla_all_blocks": true
+    },
+    "eight_k_dcp8_local_whole_layer_gain_fraction": 0.0441972744181196,
+    "eight_k_dcp8_shaped_whole_layer_gain_fraction": 0.008542561143075722,
+    "physical_multi_device_communication": "NOT_RUN_SINGLE_GPU",
+    "rows": [
+      {
+        "attention_pre_moe_device_p50_ms": 4.700256109237671,
+        "context_tokens": 2048,
+        "degree": 1,
+        "device_p50_ms": 13.388799667358398,
+        "local_gpu_speedup_vs_dcp1": 1.0,
+        "partial_payload_bytes_per_worker": 266240,
+        "shaped_speedup_vs_dcp1": 1.0,
+        "shaped_transport_ms": 0.0,
+        "shaped_wall_p50_ms": 14.3978,
+        "wall_p50_ms": 14.3978
+      },
+      {
+        "attention_pre_moe_device_p50_ms": 5.807935953140259,
+        "context_tokens": 2048,
+        "degree": 2,
+        "device_p50_ms": 14.076848030090332,
+        "local_gpu_speedup_vs_dcp1": 0.9421811554607414,
+        "partial_payload_bytes_per_worker": 266240,
+        "shaped_speedup_vs_dcp1": 0.8941721005237794,
+        "shaped_transport_ms": 0.820472,
+        "shaped_wall_p50_ms": 16.101822,
+        "wall_p50_ms": 15.28135
+      },
+      {
+        "attention_pre_moe_device_p50_ms": 4.4737279415130615,
+        "context_tokens": 2048,
+        "degree": 4,
+        "device_p50_ms": 13.244832038879395,
+        "local_gpu_speedup_vs_dcp1": 1.003152749859781,
+        "partial_payload_bytes_per_worker": 266240,
+        "shaped_speedup_vs_dcp1": 0.9489078708249418,
+        "shaped_transport_ms": 0.820472,
+        "shaped_wall_p50_ms": 15.173022000000001,
+        "wall_p50_ms": 14.35255
+      },
+      {
+        "attention_pre_moe_device_p50_ms": 4.630959987640381,
+        "context_tokens": 2048,
+        "degree": 8,
+        "device_p50_ms": 13.285391807556152,
+        "local_gpu_speedup_vs_dcp1": 0.9986439949089119,
+        "partial_payload_bytes_per_worker": 266240,
+        "shaped_speedup_vs_dcp1": 0.9448725677462304,
+        "shaped_transport_ms": 0.820472,
+        "shaped_wall_p50_ms": 15.237822,
+        "wall_p50_ms": 14.417349999999999
+      },
+      {
+        "attention_pre_moe_device_p50_ms": 12.861440181732178,
+        "context_tokens": 8192,
+        "degree": 1,
+        "device_p50_ms": 21.83945655822754,
+        "local_gpu_speedup_vs_dcp1": 1.0,
+        "partial_payload_bytes_per_worker": 266240,
+        "shaped_speedup_vs_dcp1": 1.0,
+        "shaped_transport_ms": 0.0,
+        "shaped_wall_p50_ms": 23.0116,
+        "wall_p50_ms": 23.0116
+      },
+      {
+        "attention_pre_moe_device_p50_ms": 13.447855949401855,
+        "context_tokens": 8192,
+        "degree": 2,
+        "device_p50_ms": 22.524368286132812,
+        "local_gpu_speedup_vs_dcp1": 0.960710066088583,
+        "partial_payload_bytes_per_worker": 266240,
+        "shaped_speedup_vs_dcp1": 0.9288919481122564,
+        "shaped_transport_ms": 0.820472,
+        "shaped_wall_p50_ms": 24.773172,
+        "wall_p50_ms": 23.9527
+      },
+      {
+        "attention_pre_moe_device_p50_ms": 12.158143997192383,
+        "context_tokens": 8192,
+        "degree": 4,
+        "device_p50_ms": 21.22212791442871,
+        "local_gpu_speedup_vs_dcp1": 1.021961087351391,
+        "partial_payload_bytes_per_worker": 266240,
+        "shaped_speedup_vs_dcp1": 0.9860323087594547,
+        "shaped_transport_ms": 0.820472,
+        "shaped_wall_p50_ms": 23.337571999999998,
+        "wall_p50_ms": 22.5171
+      },
+      {
+        "attention_pre_moe_device_p50_ms": 12.11291217803955,
+        "context_tokens": 8192,
+        "degree": 8,
+        "device_p50_ms": 20.710479736328125,
+        "local_gpu_speedup_vs_dcp1": 1.0462410006115153,
+        "partial_payload_bytes_per_worker": 266240,
+        "shaped_speedup_vs_dcp1": 1.008616165261642,
+        "shaped_transport_ms": 0.820472,
+        "shaped_wall_p50_ms": 22.815022,
+        "wall_p50_ms": 21.99455
+      },
+      {
+        "attention_pre_moe_device_p50_ms": 44.255903244018555,
+        "context_tokens": 32768,
+        "degree": 1,
+        "device_p50_ms": 53.47715187072754,
+        "local_gpu_speedup_vs_dcp1": 1.0,
+        "partial_payload_bytes_per_worker": 266240,
+        "shaped_speedup_vs_dcp1": 1.0,
+        "shaped_transport_ms": 0.0,
+        "shaped_wall_p50_ms": 55.2005,
+        "wall_p50_ms": 55.2005
+      },
+      {
+        "attention_pre_moe_device_p50_ms": 44.878944396972656,
+        "context_tokens": 32768,
+        "degree": 2,
+        "device_p50_ms": 53.95449638366699,
+        "local_gpu_speedup_vs_dcp1": 0.9889053704957739,
+        "partial_payload_bytes_per_worker": 266240,
+        "shaped_speedup_vs_dcp1": 0.9745804186816052,
+        "shaped_transport_ms": 0.820472,
+        "shaped_wall_p50_ms": 56.640272,
+        "wall_p50_ms": 55.8198
+      },
+      {
+        "attention_pre_moe_device_p50_ms": 43.48076820373535,
+        "context_tokens": 32768,
+        "degree": 4,
+        "device_p50_ms": 52.316511154174805,
+        "local_gpu_speedup_vs_dcp1": 1.0203117837550089,
+        "partial_payload_bytes_per_worker": 266240,
+        "shaped_speedup_vs_dcp1": 1.0050695101233615,
+        "shaped_transport_ms": 0.820472,
+        "shaped_wall_p50_ms": 54.92207200000001,
+        "wall_p50_ms": 54.101600000000005
+      },
+      {
+        "attention_pre_moe_device_p50_ms": 42.566816329956055,
+        "context_tokens": 32768,
+        "degree": 8,
+        "device_p50_ms": 51.75369644165039,
+        "local_gpu_speedup_vs_dcp1": 1.0335256197821003,
+        "partial_payload_bytes_per_worker": 266240,
+        "shaped_speedup_vs_dcp1": 1.0178890161402543,
+        "shaped_transport_ms": 0.820472,
+        "shaped_wall_p50_ms": 54.230372,
+        "wall_p50_ms": 53.4099
+      }
+    ]
+  },
+  "detailed_final_decomposition": [
+    {
+      "component": "attention / pre-MoE",
+      "measurement_method": "normalized representative KDA/MLA CUDA phase profiles",
+      "modeled_wall_ms": 1082.9831719139595,
+      "percent": 36.132698865261425
+    },
+    {
+      "component": "expert compute",
+      "measurement_method": "normalized representative KDA/MLA CUDA phase profiles",
+      "modeled_wall_ms": 1177.5841990224867,
+      "percent": 39.288971754355224
+    },
+    {
+      "component": "routing",
+      "measurement_method": "normalized representative KDA/MLA CUDA phase profiles",
+      "modeled_wall_ms": 111.3986030268367,
+      "percent": 3.716707961459698
+    },
+    {
+      "component": "dispatch / scatter / reduction",
+      "measurement_method": "normalized representative KDA/MLA CUDA phase profiles",
+      "modeled_wall_ms": 77.34895335437879,
+      "percent": 2.580673930655465
+    },
+    {
+      "component": "device transfers",
+      "measurement_method": "normalized representative KDA/MLA CUDA phase profiles",
+      "modeled_wall_ms": 148.75434943521543,
+      "percent": 4.9630467512634
+    },
+    {
+      "component": "latent / residual / other",
+      "measurement_method": "normalized representative KDA/MLA CUDA phase profiles",
+      "modeled_wall_ms": 156.60717835177226,
+      "percent": 5.225048885591032
+    },
+    {
+      "component": "endpoint",
+      "measurement_method": "Experiment 015 fixed-topology model + shaped DCP transport",
+      "modeled_wall_ms": 58.244246095787275,
+      "percent": 1.9432636253192486
+    },
+    {
+      "component": "communication",
+      "measurement_method": "Experiment 015 fixed-topology model + shaped DCP transport",
+      "modeled_wall_ms": 184.31782767999994,
+      "percent": 6.149588226094521
+    }
+  ],
+  "device_residency_analysis": {
+    "canonical_gap_removed_fraction": -0.12127964692599158,
+    "canonical_speedup": 0.8918381803696501,
+    "conclusion": "Local serial replay overhead was removed, but none of the historical 21.19% gap can be credited again because E015 already used batch-8 device-resident calibration.",
+    "experiment_015_microwork_inefficiency_fraction": 0.2119103323147442,
+    "local_kda_wall_reduction_fraction": 0.3989089039864153,
+    "local_mla_8k_wall_reduction_fraction": 0.3849428659175871
+  },
+  "environment": {
+    "cuda_library": "artifacts/experiment-016/cuda/coli_cuda-sm120-h016-final.dll",
+    "cuda_library_sha256": "113d9857735649b5c9773a474b73517fc1615547a99992ce401a294bc39f7eb1",
+    "git_commit": "e75a17b2b0ae052eccdd1a43ebb171616cd475ca",
+    "git_status": "M src/swarm_inference/execution/kimi_cuda_runtime.py\n M src/swarm_inference/execution/kimi_k3_stage.py\n M tests/unit/test_kimi_k3_adapter.py\n m third_party/colibri\n?? docs/EXPERIMENT_016_REPORT.md\n?? src/swarm_inference/execution/dcp.py\n?? src/swarm_inference/execution/verification.py\n?? src/swarm_inference/experiments/experiment_016/\n?? tests/unit/test_kimi_indexed_copy_runtime.py\n?? tests/unit/test_kimi_verification_state.py\n?? tests/unit/test_verification_runtime.py",
+    "gpu": "Wed Aug 12 20:00:24 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 591.86                 Driver Version: 591.86         CUDA Version: 13.1     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 5090      WDDM  |   00000000:02:00.0 Off |                  N/A |\n| 30%   40C    P8             24W /  431W |    2508MiB /  32607MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            3080    C+G   ...2txyewy\\CrossDeviceResume.exe      N/A      |\n|    0   N/A  N/A            8872    C+G   ...indows\\System32\\ShellHost.exe      N/A      |\n|    0   N/A  N/A           10436    C+G   C:\\Windows\\explorer.exe               N/A      |\n|    0   N/A  N/A           11284    C+G   ...5n1h2txyewy\\TextInputHost.exe      N/A      |\n|    0   N/A  N/A           11984    C+G   ..._cw5n1h2txyewy\\SearchHost.exe      N/A      |\n|    0   N/A  N/A           11992    C+G   ...y\\StartMenuExperienceHost.exe      N/A      |\n|    0   N/A  N/A           13108    C+G   ...Chrome\\Application\\chrome.exe      N/A      |\n|    0   N/A  N/A           13232    C+G   ...IA App\\CEF\\NVIDIA Overlay.exe      N/A      |\n|    0   N/A  N/A           14084    C+G   ....0.4129.72\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           15324    C+G   ...IA App\\CEF\\NVIDIA Overlay.exe      N/A      |\n|    0   N/A  N/A           15920    C+G   ...ffice\\root\\Office16\\EXCEL.EXE      N/A      |\n|    0   N/A  N/A           17984    C+G   ...ms\\Microsoft VS Code\\Code.exe      N/A      |\n|    0   N/A  N/A           19828    C+G   ...lot\\Application\\mscopilot.exe      N/A      |\n|    0   N/A  N/A           21192    C+G   ...yApp\\MicrosoftSecurityApp.exe      N/A      |\n|    0   N/A  N/A           21632    C+G   ...xyewy\\ShellExperienceHost.exe      N/A      |\n|    0   N/A  N/A           26932    C+G   ....0.4129.78\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           28332    C+G   ...Chrome\\Application\\chrome.exe      N/A      |\n|    0   N/A  N/A           32840    C+G   ...cw5n1h2txyewy\\WidgetBoard.exe      N/A      |\n+-----------------------------------------------------------------------------------------+",
+    "host_ram_total_bytes": 102496780288,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "torch": "2.13.0+cpu"
+  },
+  "experiment_015_canonical_values": {
+    "best_qualified_tok_s_per_user": 1.1766258547730912,
+    "dcp_8k_mla_stage_gain_fraction_shaped": 0.4046831604398621,
+    "microwork_efficiency": 0.7880896676852558,
+    "oracle_target_pass_ms": 3663.3050435299524,
+    "oracle_tok_s_per_user": 2.1838203220693897,
+    "required_verifier_speedup_for_5_tok_s": 2.28956565220622,
+    "route_prediction_precision": 0.17085597826086957,
+    "route_prediction_recall": 0.17085597826086957,
+    "source_scope": "all values parsed from Experiment 015 artifacts",
+    "winning_microcell_depth_layers": 8
+  },
+  "experiment_017_recommendation": "Treat the current speculative architecture as falsified as the primary route to 5 tok/s/user. Test verifier work reduction centered on KDA: verification-specific precision/quantization and information-aware state representations, with an exact control and an oracle ceiling recomputed first.",
+  "expert_reuse_block_7": {
+    "candidate_block_size": 7,
+    "cost_vs_block_1": 2.5005222002759813,
+    "device_p50_ms": 21.795472145080566,
+    "fixture_limitation": "Real Kimi layer-91 routes, but three real stage boundaries are cycled; this is not a natural-prompt distribution.",
+    "group_size_histogram": {
+      "2": 12,
+      "3": 14,
+      "5": 2,
+      "6": 6,
+      "8": 2
+    },
+    "latency_per_accepted_token_ms": 2.888025,
+    "latency_per_candidate_ms": 3.3005999999999998,
+    "logical_assignments": 128,
+    "mean_adjacent_position_overlap": 4.678571428571429,
+    "mean_assignments_per_touched_expert": 3.555555555555556,
+    "mean_unique_experts": 36.0,
+    "native_expert_calls": 58,
+    "top_expert_assignment_p50_across_retained": 53.0,
+    "top_expert_assignment_p95_across_retained": 120.25,
+    "top_expert_assignment_p99_across_retained": 160.0,
+    "total_assignments": 128,
+    "total_wall_p50_ms": 23.1042,
+    "unique_experts_per_assignment": 0.28125,
+    "verification_rows": 8
+  },
+  "gates": {
+    "correctness_changed_paths": "PASS",
+    "oracle_5_tok_s": false,
+    "useful_sublinear_local_block_scaling": true,
+    "whole_verifier_speedup_1_25x": false,
+    "whole_verifier_speedup_1_5x": false,
+    "whole_verifier_speedup_2_0x": false,
+    "whole_verifier_speedup_2_3x": false,
+    "whole_verifier_speedup_3_0x": false
+  },
+  "latency_decomposition": {
+    "baseline": {
+      "DCP communication": 0.0,
+      "KDA layers": 1721.9370517793232,
+      "MLA layers": 1717.676773974842,
+      "endpoint": 58.244246095787275,
+      "topology communication": 165.44697167999993
+    },
+    "final": {
+      "DCP communication": 18.870856,
+      "KDA layers": 1559.369291174753,
+      "MLA layers": 1195.3071639298962,
+      "endpoint": 58.244246095787275,
+      "topology communication": 165.44697167999993
+    }
+  },
+  "model_metadata": {
+    "architecture": [
+      "KimiK3ForConditionalGeneration"
+    ],
+    "attention_residual_block_size": 12,
+    "checkpoint": "<local-kimi-k3-checkpoint>",
+    "checkpoint_shard_count_present": 96,
+    "checkpoint_total_bytes_from_index": 1560860324864,
+    "config": {
+      "bytes": 7006,
+      "path": "<local-kimi-k3-checkpoint>\\config.json",
+      "sha256": "9710e121a58d03ac92c8d6da287a19541994319afbbe6d6202af001ffd379213"
+    },
+    "dtype": "bfloat16",
+    "full_attention_layer_count": 24,
+    "hidden_size": 7168,
+    "max_position_embeddings": 1048576,
+    "model_type": "kimi_k3",
+    "moe_intermediate_size": 3072,
+    "num_attention_heads": 96,
+    "num_experts": 896,
+    "num_experts_per_token": 16,
+    "num_hidden_layers": 93,
+    "num_key_value_heads": 96,
+    "num_shared_experts": 2,
+    "schema_version": "experiment-016-kimi-k3-metadata-v1",
+    "weight_index": {
+      "bytes": 59764096,
+      "path": "<local-kimi-k3-checkpoint>\\model.safetensors.index.json",
+      "sha256": "a1c5210650ce71d2d3ae9ec5a101ac4afd3cf4b10091be589853437eb967febd"
+    }
+  },
+  "oracle_by_block": [
+    {
+      "accepted_tokens": 2,
+      "candidate_block_size": 1,
+      "dcp_degree": 1,
+      "evidence_class": "ANALYTICAL 8-layer bridge, anchored to primary block 7",
+      "normalization_to_primary_block7": 1.0018380036770342,
+      "oracle_tok_s_per_user": 1.4950272876916082,
+      "target_pass_ms": 1337.7682243433117
+    },
+    {
+      "accepted_tokens": 3,
+      "candidate_block_size": 2,
+      "dcp_degree": 1,
+      "evidence_class": "ANALYTICAL 8-layer bridge, anchored to primary block 7",
+      "normalization_to_primary_block7": 1.0018380036770342,
+      "oracle_tok_s_per_user": 1.7317701763396423,
+      "target_pass_ms": 1732.3314842740583
+    },
+    {
+      "accepted_tokens": 5,
+      "candidate_block_size": 4,
+      "dcp_degree": 1,
+      "evidence_class": "ANALYTICAL 8-layer bridge, anchored to primary block 7",
+      "normalization_to_primary_block7": 1.0018380036770342,
+      "oracle_tok_s_per_user": 2.250819011675643,
+      "target_pass_ms": 2221.4136161386446
+    },
+    {
+      "accepted_tokens": 8,
+      "candidate_block_size": 7,
+      "dcp_degree": 8,
+      "evidence_class": "ANALYTICAL 8-layer bridge, anchored to primary block 7",
+      "normalization_to_primary_block7": 1.0018380036770342,
+      "oracle_tok_s_per_user": 2.6691235692169797,
+      "target_pass_ms": 2997.238528880436
+    },
+    {
+      "accepted_tokens": 13,
+      "candidate_block_size": 12,
+      "dcp_degree": 1,
+      "evidence_class": "ANALYTICAL 8-layer bridge, anchored to primary block 7",
+      "normalization_to_primary_block7": 1.0018380036770342,
+      "oracle_tok_s_per_user": 3.028915331658712,
+      "target_pass_ms": 4291.965465036907
+    },
+    {
+      "accepted_tokens": 17,
+      "candidate_block_size": 16,
+      "dcp_degree": 1,
+      "evidence_class": "ANALYTICAL 8-layer bridge, anchored to primary block 7",
+      "normalization_to_primary_block7": 1.0018380036770342,
+      "oracle_tok_s_per_user": 3.099405677205971,
+      "target_pass_ms": 5484.922520799224
+    }
+  ],
+  "overlap": {
+    "candidate_wall_p50_ms": 17.4499,
+    "collection_wait_p50_ms": 7.9213000000000005,
+    "decision": {
+      "next_hypothesis": "H014-SUB-009: the persistent collective fails closed on timeout, loss, partial, duplicate and stale responses, supports explicit cancellation and clean slot reuse, and never reduces an incomplete selected-expert set.",
+      "sub_layer_batch": "REJECT_SAME_GPU_OVERLAP_RETAIN_SERIAL_PARENT"
+    },
+    "overlap_window_p50_ms": 0.1704,
+    "regression_percent": 0.2320572101438767,
+    "retained_in_experiment_016": false,
+    "saved_ms": -0.040399999999998215,
+    "serial_reference_wall_p50_ms": 17.4095,
+    "source_experiment": "Experiment 014 exact same-GPU parent/shared overlap"
+  },
+  "primary_result": {
+    "baseline_oracle_tok_s_per_user": 2.1838203220693897,
+    "baseline_target_ms_per_accepted_token": 457.91313044124405,
+    "baseline_target_pass_ms": 3663.3050435299524,
+    "dominant_component": "KDA layers",
+    "favorable_sensitivity_still_below_5": true,
+    "favorable_serial_replay_sensitivity_ms": 1733.1675904527613,
+    "favorable_serial_replay_sensitivity_oracle_tok_s": 4.615825984785541,
+    "final_oracle_tok_s_per_user": 2.6691235692169797,
+    "final_target_ms_per_accepted_token": 374.6548161100545,
+    "final_target_pass_ms": 2997.238528880436,
+    "final_verifier_tokens_per_second": 2.6691235692169797,
+    "five_tok_s_reachable": false,
+    "largest_improvement": "verification-major expert grouping plus exact triangular MLA scheduling",
+    "minimum_speedup_gate": false,
+    "verifier_speedup": 1.2222267291146538
+  },
+  "roofline": {
+    "free_component_oracle_bounds": {
+      "DCP communication": 2.6860350630461443,
+      "KDA layers": 5.563788271014889,
+      "MLA layers": 4.439680753445116,
+      "endpoint": 2.722019585699953,
+      "topology communication": 2.8250666895514565
+    },
+    "largest_topology_component": "KDA layers",
+    "stage_diagnosis": {
+      "KDA": "expert fragmentation/weight service, then sequential state work",
+      "MLA": "context-memory traffic, then fragmented expert work",
+      "PCIe": "not dominant; block-7 boundary traffic is under 4.2 MB each way",
+      "capacity": "18.25 GB resident layer fits; capacity limits layer co-residency, not this layer latency",
+      "dispatch": "no longer material after two fused indexed-copy launches",
+      "routing": "small and launch/synchronization dominated"
+    }
+  },
+  "run_seeds": {
+    "cpu_dcp_component_seed": 1601601,
+    "physical_gpu_benchmarks": {
+      "oracle_trace_path": "artifacts/experiment-014/oracle-full-93/hidden-trace.f32",
+      "oracle_trace_sha256": "95012ceb968aaa31f51ccbea38beff44e47dec72572b8c22ca4fe01bbadd56ae",
+      "reason": "no RNG; deterministic replay of immutable real Kimi boundaries",
+      "seed": null
+    }
+  },
+  "schema_version": "experiment-016-final-analysis-v1",
+  "source_manifest": [
+    {
+      "bytes": 15319,
+      "path": "artifacts/experiment-015/architecture-pareto/results.json",
+      "sha256": "a726acd703778df9d1904bcbaaa82207487db2cb28e7a0a6477896b94b71b626"
+    },
+    {
+      "bytes": 1347,
+      "path": "artifacts/experiment-015/final-recommended-architecture.json",
+      "sha256": "de44e4db87edfe85da055959b9ef2808ca13115d1a4accc0479f677fa5f3c634"
+    },
+    {
+      "bytes": 6602,
+      "path": "artifacts/experiment-015/microwork/results.json",
+      "sha256": "00a72dc61e256686ff4fc3fca4539d4ed045fbb95806586591837e05c1e28c35"
+    },
+    {
+      "bytes": 2164,
+      "path": "artifacts/experiment-015/expert-routing/results.json",
+      "sha256": "77a21ded965b7232978f64e2001344d71d9816f17978034d41059625a1327438"
+    },
+    {
+      "bytes": 16207,
+      "path": "artifacts/experiment-015/dcp/results.json",
+      "sha256": "564cfefff3859e1e7579532bde94c707d8a4bc6e0e6633f9ffa8d4dd375335db"
+    },
+    {
+      "bytes": 2075,
+      "path": "artifacts/experiment-015/model-validation/results.json",
+      "sha256": "cf934f1cb3ae3fa908e6b2a3f9b27998ec375a6d9b7e15a5f0ac4c5856740dae"
+    },
+    {
+      "bytes": 142407,
+      "path": "artifacts/experiment-014/performance/h014-034d-contextual-batch-layer91-8k.json",
+      "sha256": "bd0dc855de8fc482363a26aa3c5b769d67db117a667ca17aa56325de3960ebc3"
+    },
+    {
+      "bytes": 221781,
+      "path": "artifacts/experiment-014/sub-layer/h014-sub-008-parent-shared-overlap.json",
+      "sha256": "cbd919adbe576226680ce11b62650e261fb7cf7ed7ec665d0601fa66ff4d6299"
+    },
+    {
+      "bytes": 8085504,
+      "path": "artifacts/experiment-014/oracle-full-93/hidden-trace.f32",
+      "sha256": "95012ceb968aaa31f51ccbea38beff44e47dec72572b8c22ca4fe01bbadd56ae"
+    },
+    {
+      "bytes": 658384,
+      "path": "artifacts/experiment-016/physical/verification-major-final.json",
+      "sha256": "814f58ae5e32b47447f487a05b771bfeca2ab09874da07d76078f91063a1974c"
+    },
+    {
+      "bytes": 284846,
+      "path": "artifacts/experiment-016/physical/mla-8k-block-sweep-final.json",
+      "sha256": "e524378c84628e8bd547d4073fcadd33c1cba82be254dce760c0defe0b57198c"
+    },
+    {
+      "bytes": 145100,
+      "path": "artifacts/experiment-016/dcp/gpu-results.json",
+      "sha256": "1ac7b1840020ceb05797e42ffd9729688a3d0acf4874057103295c23db93d2c2"
+    },
+    {
+      "bytes": 11280,
+      "path": "artifacts/experiment-016/dcp/component-results.json",
+      "sha256": "2668dfd0aed53eddb6b9905510ba0dc865c43da2a3fb7ea724744218104ddb41"
+    },
+    {
+      "bytes": 1303040,
+      "path": "artifacts/experiment-016/cuda/coli_cuda-sm120-h016-final.dll",
+      "sha256": "113d9857735649b5c9773a474b73517fc1615547a99992ce401a294bc39f7eb1"
+    },
+    {
+      "bytes": 637,
+      "path": "artifacts/experiment-016/test-results.json",
+      "sha256": "c09ef7d5274169a92976d546777713ab604579eed6418ba384a9c9788b0b0a68"
+    }
+  ],
+  "telemetry": {
+    "block_7_transfers": {
+      "boundary_d2h_bytes": 2064384,
+      "boundary_h2d_bytes": 2064384,
+      "expert_gather_d2d_bytes": 1835008,
+      "expert_scatter_d2d_bytes": 1835008,
+      "host_device_transfer_count": 12,
+      "route_weight_h2d_bytes": 512,
+      "router_metadata_d2h_bytes": 1056
+    },
+    "expert_native_calls": 58,
+    "fused_index_copy_kernel_launches": 2,
+    "gpu": {
+      "gpu_utilization_percent": {
+        "maximum": 96.0,
+        "mean": 79.69811320754717,
+        "minimum": 0.0
+      },
+      "memory_controller_utilization_percent": {
+        "maximum": 68.0,
+        "mean": 17.49056603773585,
+        "minimum": 0.0
+      },
+      "power_w": {
+        "maximum": 348.29,
+        "mean": 292.7988679245283,
+        "minimum": 24.84
+      },
+      "sample_count": 53,
+      "status": "MEASURED",
+      "vram_used_mib": {
+        "maximum": 20451.0,
+        "mean": 20432.094339622643,
+        "minimum": 20409.0
+      }
+    },
+    "kernel_launch_total": "NOT_MEASURED",
+    "logical_dispatch_assignments": 256,
+    "memory": {
+      "cpu_dcp_peak_process_rss_bytes": 1394475008,
+      "gpu_sampled_vram_max_mib": 20451.0,
+      "host_ram_total_bytes": 102496780288,
+      "repeated_execution_growth_zero": true,
+      "resident_layer_device_bytes": 18251513856,
+      "tracked_layer_device_bytes": 16100812928
+    },
+    "occupancy": "NOT_MEASURED; Nsight occupancy capture was not available",
+    "scheduler_wall_minus_device_ms_at_dcp8": 1.2840702636718753
+  },
+  "validation": {
+    "full_pytest": {
+      "command": "$env:PYTHONPATH=(Resolve-Path src).Path; & .venv\\Scripts\\python.exe -m pytest -q",
+      "completed_at": "2026-08-12T20:35:31.0976259+10:00",
+      "duration_seconds": 188.9,
+      "exit_code": 0,
+      "failed": 0,
+      "git_commit_at_run": "e75a17b2b0ae052eccdd1a43ebb171616cd475ca",
+      "passed": 1143,
+      "result": "PASS",
+      "schema_version": "experiment-016-test-results-v1",
+      "skip_scope": [
+        "opt-in historical real-model integration audits",
+        "unconfigured generic Colibri native component acceptance",
+        "unconfigured universal real-model acceptance evidence",
+        "manual multi-host physical test"
+      ],
+      "skipped": 13
+    },
+    "new_file_format_check": "PASS",
+    "ruff_check": "PASS"
+  },
+  "verdict": "FAIL"
+}

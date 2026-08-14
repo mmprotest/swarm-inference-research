@@ -1,0 +1,7 @@
+backend,available,sm120_supported,actual_k3_shape_supported,native_checkpoint_representation,weight_precision,activation_precision,preprocessing,hot_path_repacking,real_small_m_supported,verification_major_supported,fused_gate_up,block7_mean_m,block7_max_m,expert_phase_device_ms,full_kda_layer_device_ms,full_kda_layer_wall_ms,correctness_pass,note
+Colibri native MXFP4 fused gate/up,True,True,True,True,MXFP4 group-32,FP32,one-time checkpoint load/upload,False,True,True,True,3.5555555555555554,8,4.866528034210205,12.201568126678467,13.28585,True,canonical; native packed MXFP4 and uint8 scales; repack/upload once
+Colibri native MXFP4 unfused exact control,True,True,True,True,MXFP4 group-32,FP32,one-time checkpoint load/upload,False,True,True,False,3.5555555555555554,8,5.839263916015625,13.064911842346191,14.1342,True,same native representation; separate gate/up kernels
+FlashInfer native MXFP4,False,,,,,,,,,,,,,,,,,not installed; K3 small-M Windows/SM120 compatibility unestablished
+Marlin,False,,,,,,,,,,,,,,,,,not installed; no supportable native K3 MXFP4 shape path in this environment
+SGLang execution primitive,False,,,,,,,,,,,,,,,,,not installed; runtime replacement is out of scope
+vLLM K3 fused expert primitive,False,,,,,,,,,,,,,,,,,not installed/exported as a Colibri-compatible Windows primitive

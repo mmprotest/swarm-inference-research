@@ -1,0 +1,130 @@
+{
+  "files": [
+    {
+      "bytes": 34087,
+      "path": "artifacts/experiment-016/summary.json",
+      "sha256": "84fc5a0d4243fe90a0af91443e56f784aff8bbbbb9e88bcee9c91e6ad7b3fbbe"
+    },
+    {
+      "bytes": 658384,
+      "path": "artifacts/experiment-016/physical/verification-major-final.json",
+      "sha256": "814f58ae5e32b47447f487a05b771bfeca2ab09874da07d76078f91063a1974c"
+    },
+    {
+      "bytes": 284846,
+      "path": "artifacts/experiment-016/physical/mla-8k-block-sweep-final.json",
+      "sha256": "e524378c84628e8bd547d4073fcadd33c1cba82be254dce760c0defe0b57198c"
+    },
+    {
+      "bytes": 145100,
+      "path": "artifacts/experiment-016/dcp/gpu-results.json",
+      "sha256": "1ac7b1840020ceb05797e42ffd9729688a3d0acf4874057103295c23db93d2c2"
+    },
+    {
+      "bytes": 162559,
+      "path": "artifacts/experiment-014/oracle-full-93/serial-oracle-receipt.json",
+      "sha256": "97090c1e36d74b3e2a6598de5b371c1b2b70c13a1df6895a522fef49fe6f95e4"
+    },
+    {
+      "bytes": 8085504,
+      "path": "artifacts/experiment-014/oracle-full-93/hidden-trace.f32",
+      "sha256": "95012ceb968aaa31f51ccbea38beff44e47dec72572b8c22ca4fe01bbadd56ae"
+    },
+    {
+      "bytes": 16448,
+      "path": "artifacts/experiment-014/cuda/h014-025y-real-kda-core.json",
+      "sha256": "df84f1afc6171bf9e3d9f238041ffa5332a46940c153fe5495d5bec8bb5ca48e"
+    },
+    {
+      "bytes": 657619,
+      "path": "artifacts/experiment-017/physical/baseline-reproduction.json",
+      "sha256": "10e92742828188e2102c802ff469d3db6687fa8ae0f9aad30b9d7f3af947b5a3"
+    },
+    {
+      "bytes": 284861,
+      "path": "artifacts/experiment-017/physical/baseline-mla8k-reproduction.json",
+      "sha256": "759d85de50438492b4b980efe6549d3b194f9e307469d26701b70e3a33bade14"
+    },
+    {
+      "bytes": 146117,
+      "path": "artifacts/experiment-017/physical/baseline-dcp-reproduction.json",
+      "sha256": "a14c0549875af2840f19c4fb60aafc9bb3ac62dc5953fef7ad97b80f5ed48ddc"
+    },
+    {
+      "bytes": 333302,
+      "path": "artifacts/experiment-017/physical/kda-split-control-physical.json",
+      "sha256": "2051949422c4a7087e4af5d90d2a4ed1c1ad87714896360a74be80dd4120cd43"
+    },
+    {
+      "bytes": 332723,
+      "path": "artifacts/experiment-017/physical/kda-short-window-physical.json",
+      "sha256": "db806f32e8e4838690f35bb9b4ee94d4b21de513a070c80d2b0d0e4a82201895"
+    },
+    {
+      "bytes": 332847,
+      "path": "artifacts/experiment-017/physical/expert-unfused-control-physical.json",
+      "sha256": "98abf6a5e632398efc8199039cf1b15888c8c8475aac972ccf1dd84db32fd9e0"
+    },
+    {
+      "bytes": 20500,
+      "path": "artifacts/experiment-017/physical/factor-reference.json",
+      "sha256": "a7c55b8d1a8d34fe99ccee1bc464193434688cf458ef148ece34b83edeb638c2"
+    },
+    {
+      "bytes": 1012,
+      "path": "artifacts/experiment-017/test-results.json",
+      "sha256": "c63816d14ba7283d1e10a79fcd5e661be1aed28edb5b033826a7cc03a70bf4a8"
+    },
+    {
+      "bytes": 7514,
+      "path": "artifacts/experiment-017/targeted-pytest.xml",
+      "sha256": "2bcfb0aafa34ada93795a81f7edebf196215a248027c2229d89cd922ecffb0c2"
+    },
+    {
+      "bytes": 174922,
+      "path": "artifacts/experiment-017/full-pytest.xml",
+      "sha256": "58926378835d52d73ae8f586af349c268f99656379ac9da8844a54db77311349"
+    },
+    {
+      "bytes": 1345536,
+      "path": "artifacts/experiment-017/cuda/coli_cuda-sm120-h017-window.dll",
+      "sha256": "c240a7cf5af6f4fb12cb9ed900f67062edcb7bfb030a51fdb8eb3c47a1a5ccfd"
+    },
+    {
+      "bytes": 15874,
+      "path": "src/swarm_inference/execution/kda_verification.py",
+      "sha256": "d34f12e97c2dd3d0d2467f0d265a885f7c3fbe1b599189445e5f7b5fdbb8c4d8"
+    },
+    {
+      "bytes": 12020,
+      "path": "src/swarm_inference/experiments/experiment_017/reference_benchmark.py",
+      "sha256": "746bb06ac2213425701242d316462c34327e798d001fa1ed2203b0d20793c1ab"
+    },
+    {
+      "bytes": 72726,
+      "path": "src/swarm_inference/experiments/experiment_017/finalize.py",
+      "sha256": "0ed977e8de0a24e21c0dd03318dd00ed9065ea6e387a7ba8043493de2d20c6df"
+    },
+    {
+      "bytes": 16249,
+      "path": "src/swarm_inference/experiments/experiment_017/figures.py",
+      "sha256": "6b55a29761e5ebb7702dc95ab46c01c3671f35fa1b859d546e40c50b6e0cd9c8"
+    },
+    {
+      "bytes": 3180,
+      "path": "src/swarm_inference/experiments/experiment_017/test_receipt.py",
+      "sha256": "54c4203482b2b96fc802d0ac5afe743c5e45b7a1e9bede5125434c9928b70017"
+    },
+    {
+      "bytes": 12218,
+      "path": "src/swarm_inference/experiments/experiment_017/audit.py",
+      "sha256": "fc65a487b3fcdd510da4867b4ae75a74dd2ab7a0e58b7b6e4aabbccd83c1826c"
+    },
+    {
+      "bytes": 6436,
+      "path": "tests/test_kda_verification.py",
+      "sha256": "0dfa372eab8e027751a12a62748647e04858b6867858fe38710322f967bebdcf"
+    }
+  ],
+  "schema_version": "experiment-017-source-manifest-v1"
+}

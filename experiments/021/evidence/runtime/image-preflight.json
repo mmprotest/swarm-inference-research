@@ -1,0 +1,14 @@
+{
+  "failure": "The only built image is local/unpublished and embeds the rejected E020 eight-workers-per-host lifecycle. It is not an immutable E021 one-worker-per-independent-machine deployment image.",
+  "linux_amd64": true,
+  "linux_image_present": true,
+  "local_digest": "sha256:fe0350e637a708ec6ca4d5ae3013b87cacde58b810f8e3d4360bc54459749650",
+  "locally_immutable_digest_present": true,
+  "pinned_for_future_independent_machine_deployment": false,
+  "published_registry_digest": null,
+  "rejected_e020_eight_worker_host_lifecycle_embedded": true,
+  "schema_version": "experiment-021-image-preflight-v1",
+  "source_dockerfile": "<local-repo>\\deployment\\Dockerfile.e021",
+  "source_dockerfile_sha256": "de9483d1d886baf9e124e97b4ad73883fd24ba3359cbe9381ce5d64a075ed964",
+  "status": "FAIL"
+}

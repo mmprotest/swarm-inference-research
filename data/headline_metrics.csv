@@ -1,0 +1,8 @@
+experiment,verdict,admissible_tok_s_per_user,diagnostic_tok_s_per_user,model_error_median_percent,workers,max_worker_peak_gib,capacity_unlocks,evidence_class,headline
+016,FAIL,2.6691235692169797,,,,,,measured stages + validated/shaped bridge,Verification-major batching improved the E015 oracle but did not reach 5 tok/s/user.
+017,FAIL,3.099405677205971,,,,,,exact local / inherited topology model,Best exact block-16 path reached 3.099 tok/s/user; KDA-focused optimization path was falsified.
+018,PASS_STRONG,6.702244850841379,,,,,,validated independent-resource model + physical K3 service + shaped network,Coarse wavefront + immutable AttnRes cache crossed 5 tok/s/user in the validated model.
+019,MODEL_INVALID,,20.8836,,376,4.494645617902279,,physical sequential sub-layer correctness + invalid timing model,Full K3 graph was partitioned below 4.5 GiB/worker and passed 93-layer shard correctness; throughput projection was invalid.
+020,NOT_READY,,15.310918200580241,4.471594411566712,96,16.978617458604276,,pre-spend readiness / predicted only,Deployment rehearsal correctly refused GPU spend because production and projection gates were still open.
+021,MODEL_INVALID,,,95.5390936021116,376,4.494645617902279,,ordered physical replay invalidated scheduler model,Ordered replay exposed a 95.54% median timing-model error.
+022,MODEL_INVALID,,,2.713617684164345,,,6,physically grounded model + controlled heterogeneity + shaped network,Timing model repaired to 2.71% median error; planner value claim remains invalid pending native and representative gates.

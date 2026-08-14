@@ -1,0 +1,32 @@
+{
+  "artifact_validation": {
+    "artifact": "qa/artifact-validation.json",
+    "check_count": 15,
+    "failure_count": 0,
+    "status": "PASS"
+  },
+  "compileall": "PASS",
+  "initial_expanded_attempt": {
+    "cause": "sandbox denied the default user Temp pytest directory",
+    "fixture_errors": 5,
+    "passed_tests_before_fixture_errors": 39,
+    "redesign": "rerun identical suite with --basetemp inside artifact workspace",
+    "status": "INFRASTRUCTURE_ERROR"
+  },
+  "pytest": {
+    "errors": 0,
+    "failures": 0,
+    "junit": "qa/pytest.xml",
+    "skipped": 0,
+    "status": "PASS",
+    "tests": 44,
+    "time_seconds": 1.381
+  },
+  "pytest_warning": "one pre-existing PytestConfigWarning: unknown asyncio_mode option",
+  "ruff": {
+    "message": "All checks passed!",
+    "status": "PASS"
+  },
+  "schema_version": "experiment-021-test-results-v1",
+  "status": "PASS"
+}

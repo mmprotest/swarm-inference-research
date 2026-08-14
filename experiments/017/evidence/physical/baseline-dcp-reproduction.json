@@ -1,0 +1,4706 @@
+{
+  "complete_kimi_dcp_compute_gate": "PASS",
+  "configuration": {
+    "candidate_count": 7,
+    "contexts": [
+      2048,
+      8192,
+      32768
+    ],
+    "degrees": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "device": 0,
+    "iterations": 12,
+    "layer": 91,
+    "profile_iterations": 2,
+    "verification_rows": 8,
+    "warmup": 2
+  },
+  "correctness": [
+    {
+      "context_tokens": 2048,
+      "degree": 1,
+      "metrics": {
+        "actual_finite": true,
+        "actual_l2": 1678.204458375032,
+        "cosine_similarity": 1.0000000000000002,
+        "maximum_absolute_error": 0.0,
+        "mean_absolute_error": 0.0,
+        "reference_finite": true,
+        "reference_l2": 1678.204458375032,
+        "relative_l2_error": 0.0
+      },
+      "pass": true,
+      "route_exact": true,
+      "state_active_prefix_fingerprint_exact": true
+    },
+    {
+      "context_tokens": 2048,
+      "degree": 2,
+      "metrics": {
+        "actual_finite": true,
+        "actual_l2": 1678.204458375032,
+        "cosine_similarity": 0.9999999999998882,
+        "maximum_absolute_error": 3.7670135498046875e-05,
+        "mean_absolute_error": 2.524904633872442e-07,
+        "reference_finite": true,
+        "reference_l2": 1678.2044567888208,
+        "relative_l2_error": 4.734575857889889e-07
+      },
+      "pass": true,
+      "route_exact": true,
+      "state_active_prefix_fingerprint_exact": true
+    },
+    {
+      "context_tokens": 2048,
+      "degree": 4,
+      "metrics": {
+        "actual_finite": true,
+        "actual_l2": 1678.204458375032,
+        "cosine_similarity": 0.999999999999899,
+        "maximum_absolute_error": 2.9325485229492188e-05,
+        "mean_absolute_error": 2.4157828099146533e-07,
+        "reference_finite": true,
+        "reference_l2": 1678.2044563029867,
+        "relative_l2_error": 4.5014954752577727e-07
+      },
+      "pass": true,
+      "route_exact": true,
+      "state_active_prefix_fingerprint_exact": true
+    },
+    {
+      "context_tokens": 2048,
+      "degree": 8,
+      "metrics": {
+        "actual_finite": true,
+        "actual_l2": 1678.204458375032,
+        "cosine_similarity": 0.9999999999999026,
+        "maximum_absolute_error": 2.956390380859375e-05,
+        "mean_absolute_error": 2.3697338209540394e-07,
+        "reference_finite": true,
+        "reference_l2": 1678.2044551050976,
+        "relative_l2_error": 4.414924019951292e-07
+      },
+      "pass": true,
+      "route_exact": true,
+      "state_active_prefix_fingerprint_exact": true
+    },
+    {
+      "context_tokens": 8192,
+      "degree": 1,
+      "metrics": {
+        "actual_finite": true,
+        "actual_l2": 1678.2043356013862,
+        "cosine_similarity": 1.0000000000000002,
+        "maximum_absolute_error": 0.0,
+        "mean_absolute_error": 0.0,
+        "reference_finite": true,
+        "reference_l2": 1678.2043356013862,
+        "relative_l2_error": 0.0
+      },
+      "pass": true,
+      "route_exact": true,
+      "state_active_prefix_fingerprint_exact": true
+    },
+    {
+      "context_tokens": 8192,
+      "degree": 2,
+      "metrics": {
+        "actual_finite": true,
+        "actual_l2": 1678.2043356013862,
+        "cosine_similarity": 0.9999999999978876,
+        "maximum_absolute_error": 0.00019884109497070312,
+        "mean_absolute_error": 1.0914658756764621e-06,
+        "reference_finite": true,
+        "reference_l2": 1678.2043579693934,
+        "relative_l2_error": 2.0555979758985637e-06
+      },
+      "pass": true,
+      "route_exact": true,
+      "state_active_prefix_fingerprint_exact": true
+    },
+    {
+      "context_tokens": 8192,
+      "degree": 4,
+      "metrics": {
+        "actual_finite": true,
+        "actual_l2": 1678.2043356013862,
+        "cosine_similarity": 0.9999999999981035,
+        "maximum_absolute_error": 0.0002391338348388672,
+        "mean_absolute_error": 1.0310371005780037e-06,
+        "reference_finite": true,
+        "reference_l2": 1678.20434524933,
+        "relative_l2_error": 1.9476337247987196e-06
+      },
+      "pass": true,
+      "route_exact": true,
+      "state_active_prefix_fingerprint_exact": true
+    },
+    {
+      "context_tokens": 8192,
+      "degree": 8,
+      "metrics": {
+        "actual_finite": true,
+        "actual_l2": 1678.2043356013862,
+        "cosine_similarity": 0.9999999999981724,
+        "maximum_absolute_error": 0.00019073486328125,
+        "mean_absolute_error": 1.0099273153072218e-06,
+        "reference_finite": true,
+        "reference_l2": 1678.2043499168415,
+        "relative_l2_error": 1.9120258194022003e-06
+      },
+      "pass": true,
+      "route_exact": true,
+      "state_active_prefix_fingerprint_exact": true
+    },
+    {
+      "context_tokens": 32768,
+      "degree": 1,
+      "metrics": {
+        "actual_finite": true,
+        "actual_l2": 1678.204171874728,
+        "cosine_similarity": 1.0,
+        "maximum_absolute_error": 0.0,
+        "mean_absolute_error": 0.0,
+        "reference_finite": true,
+        "reference_l2": 1678.204171874728,
+        "relative_l2_error": 0.0
+      },
+      "pass": true,
+      "route_exact": true,
+      "state_active_prefix_fingerprint_exact": true
+    },
+    {
+      "context_tokens": 32768,
+      "degree": 2,
+      "metrics": {
+        "actual_finite": true,
+        "actual_l2": 1678.204171874728,
+        "cosine_similarity": 0.9999999999232319,
+        "maximum_absolute_error": 0.002009868621826172,
+        "mean_absolute_error": 5.712042963519736e-06,
+        "reference_finite": true,
+        "reference_l2": 1678.2043769486042,
+        "relative_l2_error": 1.2391588250598281e-05
+      },
+      "pass": true,
+      "route_exact": true,
+      "state_active_prefix_fingerprint_exact": true
+    },
+    {
+      "context_tokens": 32768,
+      "degree": 4,
+      "metrics": {
+        "actual_finite": true,
+        "actual_l2": 1678.204171874728,
+        "cosine_similarity": 0.9999999999391435,
+        "maximum_absolute_error": 0.0016520023345947266,
+        "mean_absolute_error": 5.193241751356485e-06,
+        "reference_finite": true,
+        "reference_l2": 1678.2043103902508,
+        "relative_l2_error": 1.1032694607701901e-05
+      },
+      "pass": true,
+      "route_exact": true,
+      "state_active_prefix_fingerprint_exact": true
+    },
+    {
+      "context_tokens": 32768,
+      "degree": 8,
+      "metrics": {
+        "actual_finite": true,
+        "actual_l2": 1678.204171874728,
+        "cosine_similarity": 0.9999999999357675,
+        "maximum_absolute_error": 0.0017435550689697266,
+        "mean_absolute_error": 5.285589513696611e-06,
+        "reference_finite": true,
+        "reference_l2": 1678.2043311789037,
+        "relative_l2_error": 1.1334655273627836e-05
+      },
+      "pass": true,
+      "route_exact": true,
+      "state_active_prefix_fingerprint_exact": true
+    }
+  ],
+  "correctness_pass": true,
+  "finished_unix_ns": 1786538553162294700,
+  "load": {
+    "lifecycle": {
+      "active_sessions": 0,
+      "backend_identity": "nvidia_cuda_persistent_kimi_stage",
+      "batch_capacity": 17,
+      "batch_execute_count": 0,
+      "batch_supported_sizes": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "batch_workspace_bytes": 16961920,
+      "complete_expert_ownership": true,
+      "cpu_mathematical_fallbacks": 0,
+      "cpu_transport_threads": {
+        "interop_threads": 1,
+        "intraop_threads": 1
+      },
+      "cuda_library_sha256": "113d9857735649b5c9773a474b73517fc1615547a99992ce401a294bc39f7eb1",
+      "execute_count": 0,
+      "measured_free_memory_delta_bytes": 18251513856,
+      "model_materialization_count": 1,
+      "native_batch_supported_sizes": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "owned_expert_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462,
+        463,
+        464,
+        465,
+        466,
+        467,
+        468,
+        469,
+        470,
+        471,
+        472,
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        499,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519,
+        520,
+        521,
+        522,
+        523,
+        524,
+        525,
+        526,
+        527,
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        538,
+        539,
+        540,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        568,
+        569,
+        570,
+        571,
+        572,
+        573,
+        574,
+        575,
+        576,
+        577,
+        578,
+        579,
+        580,
+        581,
+        582,
+        583,
+        584,
+        585,
+        586,
+        587,
+        588,
+        589,
+        590,
+        591,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599,
+        600,
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        612,
+        613,
+        614,
+        615,
+        616,
+        617,
+        618,
+        619,
+        620,
+        621,
+        622,
+        623,
+        624,
+        625,
+        626,
+        627,
+        628,
+        629,
+        630,
+        631,
+        632,
+        633,
+        634,
+        635,
+        636,
+        637,
+        638,
+        639,
+        640,
+        641,
+        642,
+        643,
+        644,
+        645,
+        646,
+        647,
+        648,
+        649,
+        650,
+        651,
+        652,
+        653,
+        654,
+        655,
+        656,
+        657,
+        658,
+        659,
+        660,
+        661,
+        662,
+        663,
+        664,
+        665,
+        666,
+        667,
+        668,
+        669,
+        670,
+        671,
+        672,
+        673,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680,
+        681,
+        682,
+        683,
+        684,
+        685,
+        686,
+        687,
+        688,
+        689,
+        690,
+        691,
+        692,
+        693,
+        694,
+        695,
+        696,
+        697,
+        698,
+        699,
+        700,
+        701,
+        702,
+        703,
+        704,
+        705,
+        706,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712,
+        713,
+        714,
+        715,
+        716,
+        717,
+        718,
+        719,
+        720,
+        721,
+        722,
+        723,
+        724,
+        725,
+        726,
+        727,
+        728,
+        729,
+        730,
+        731,
+        732,
+        733,
+        734,
+        735,
+        736,
+        737,
+        738,
+        739,
+        740,
+        741,
+        742,
+        743,
+        744,
+        745,
+        746,
+        747,
+        748,
+        749,
+        750,
+        751,
+        752,
+        753,
+        754,
+        755,
+        756,
+        757,
+        758,
+        759,
+        760,
+        761,
+        762,
+        763,
+        764,
+        765,
+        766,
+        767,
+        768,
+        769,
+        770,
+        771,
+        772,
+        773,
+        774,
+        775,
+        776,
+        777,
+        778,
+        779,
+        780,
+        781,
+        782,
+        783,
+        784,
+        785,
+        786,
+        787,
+        788,
+        789,
+        790,
+        791,
+        792,
+        793,
+        794,
+        795,
+        796,
+        797,
+        798,
+        799,
+        800,
+        801,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807,
+        808,
+        809,
+        810,
+        811,
+        812,
+        813,
+        814,
+        815,
+        816,
+        817,
+        818,
+        819,
+        820,
+        821,
+        822,
+        823,
+        824,
+        825,
+        826,
+        827,
+        828,
+        829,
+        830,
+        831,
+        832,
+        833,
+        834,
+        835,
+        836,
+        837,
+        838,
+        839,
+        840,
+        841,
+        842,
+        843,
+        844,
+        845,
+        846,
+        847,
+        848,
+        849,
+        850,
+        851,
+        852,
+        853,
+        854,
+        855,
+        856,
+        857,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863,
+        864,
+        865,
+        866,
+        867,
+        868,
+        869,
+        870,
+        871,
+        872,
+        873,
+        874,
+        875,
+        876,
+        877,
+        878,
+        879,
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888,
+        889,
+        890,
+        891,
+        892,
+        893,
+        894,
+        895
+      ],
+      "persistent_buffer_allocation_count": 39,
+      "prepare_warmup": {
+        "count": 1,
+        "cpu_transport_threads": {
+          "interop_threads": 1,
+          "intraop_threads": 1
+        },
+        "maximum_temporary_device_bytes": 0,
+        "measured_device_ms": 107.8366379737854,
+        "measured_wall_ms": 3754.6371,
+        "primitive": "isolated assigned-stage Kimi CUDA fixture",
+        "stage_fixture": {
+          "active_sessions_after": 0,
+          "canonical_transport_round_trip": {
+            "compression_mode": "none",
+            "decode_ns": 59400,
+            "dtype": "float32",
+            "encode_ns": 700,
+            "encoded_bytes": 258048,
+            "final_warm_iteration": 7,
+            "os_thread_count_after_final_warm": 25,
+            "os_thread_count_after_round_trip": 25,
+            "os_thread_count_before": 25,
+            "os_thread_ids_added_by_final_warm": [],
+            "os_thread_ids_added_by_round_trip": [],
+            "pass": true,
+            "python_thread_count_after_round_trip": 1,
+            "python_thread_count_before": 1,
+            "python_thread_ids_added_by_round_trip": [],
+            "raw_bytes": 258048,
+            "raw_checksum": "4612fb902faddb62ea7221766297f713d2b1e4690eef543853db2de9139ca94c",
+            "shape": [
+              1,
+              9,
+              7168
+            ],
+            "source_iteration": 6
+          },
+          "cpu_mathematical_fallbacks": 0,
+          "cpu_transport_threads": {
+            "interop_threads": 1,
+            "intraop_threads": 1
+          },
+          "device": {
+            "maximum_ms": 37.418846130371094,
+            "mean_ms": 15.405233996255058,
+            "minimum_ms": 3.1242880821228027,
+            "p50_ms": 3.5758719444274902,
+            "p95_ms": 36.74974555969238,
+            "p99_ms": 37.28502601623535,
+            "standard_deviation_ms": 14.7112385722761
+          },
+          "device_ms_values": [
+            37.418846130371094,
+            35.18851089477539,
+            22.262208938598633,
+            3.134687900543213,
+            3.1322240829467773,
+            3.1242880821228027,
+            3.5758719444274902
+          ],
+          "free_bytes_after_close": 14177796096,
+          "free_bytes_before": 14177796096,
+          "host_thread_idents": [
+            3392,
+            3392,
+            3392,
+            3392,
+            3392,
+            3392,
+            3392
+          ],
+          "host_thread_native_ids": [
+            3392,
+            3392,
+            3392,
+            3392,
+            3392,
+            3392,
+            3392
+          ],
+          "input": "float32 zero [1,9,7168]",
+          "iterations": 7,
+          "last_selected_expert_ids": [
+            806,
+            195,
+            626,
+            200,
+            715,
+            791,
+            307,
+            204,
+            495,
+            773,
+            475,
+            855,
+            489,
+            284,
+            483,
+            344
+          ],
+          "measured_device_ms": 107.8366379737854,
+          "measured_wall_ms": 3754.6371,
+          "memory_recovery_tolerance_bytes": 4194304,
+          "output_fingerprint": "sha256:f04993ef97d6659709c4fcd6d7d95df637093b52cd06a4893ac0701c14926511",
+          "output_finite": true,
+          "research_records_removed": true,
+          "retained_after_close_bytes": 0,
+          "serving_execute_count_restored": true,
+          "single_host_thread": true,
+          "temporary_device_bytes": 0,
+          "temporary_memory_recovered": true,
+          "thread_quiescence": {
+            "elapsed_ms": 3568.040900000142,
+            "final_thread_count": 25,
+            "final_thread_ids": [
+              1344,
+              3392,
+              5308,
+              7088,
+              8060,
+              8880,
+              9436,
+              9960,
+              11356,
+              11536,
+              11712,
+              12928,
+              14788,
+              14852,
+              15032,
+              15604,
+              15976,
+              17704,
+              17792,
+              17844,
+              22672,
+              25704,
+              25912,
+              27232,
+              27356
+            ],
+            "minimum_observation_ms": 3500.0,
+            "pass": true,
+            "required_stable_samples": 20,
+            "sample_count": 48,
+            "sample_interval_ms": 50.0,
+            "stable_samples_observed": 48,
+            "timeout_ms": 8000.0,
+            "transitions": [
+              {
+                "added_thread_ids": [],
+                "elapsed_ms": 24.86170000020138,
+                "removed_thread_ids": [],
+                "sample": 1,
+                "thread_count": 25
+              }
+            ]
+          }
+        },
+        "temporary_device_bytes": 0,
+        "temporary_memory_recovered": true,
+        "total_measured_wall_ms": 3754.6371
+      },
+      "prepare_warmup_count": 1,
+      "resident_device_bytes": 18251513856,
+      "resident_expert_count": 896,
+      "session_close_count": 1,
+      "session_open_count": 1,
+      "shared_memory_limits": {
+        "default_per_block_bytes": 49152,
+        "optin_per_block_bytes": 101376
+      },
+      "tracked_device_bytes": 16100812928,
+      "verification_major_enabled": true,
+      "verification_max_rows": 17,
+      "weight_fingerprint": "sha256:0ecdc7e5e5c9d239b6c146a02a320000d31d3766fba9d6c6647ee7060bf629e1",
+      "weight_load_count": 1
+    },
+    "resident_device_bytes": 18251513856,
+    "tracked_device_bytes": 16100812928
+  },
+  "load_wall_ms": 17551.5274,
+  "network_shaping": {
+    "bandwidth_gbps": 25.0,
+    "domain": "low-latency microcell",
+    "jitter_ms": 0.0,
+    "packet_loss_percent": 0.0,
+    "rtt_ms": 0.25
+  },
+  "physical_multi_device_communication_gate": "NOT_RUN_SINGLE_GPU",
+  "prefill_segments": [
+    {
+      "calls": 128,
+      "device_ms": 2568.748571395874,
+      "end": 2048,
+      "rows": 2048,
+      "start": 0,
+      "wall_ms": 2814.3859
+    },
+    {
+      "calls": 384,
+      "device_ms": 11462.991743087769,
+      "end": 8192,
+      "rows": 6144,
+      "start": 2048,
+      "wall_ms": 12321.5554
+    },
+    {
+      "calls": 1536,
+      "device_ms": 112517.27400970459,
+      "end": 32768,
+      "rows": 24576,
+      "start": 8192,
+      "wall_ms": 116321.0564
+    }
+  ],
+  "rows": [
+    {
+      "candidate_count": 7,
+      "context_tokens": 2048,
+      "degree": 1,
+      "device": {
+        "maximum_ms": 13.812224388122559,
+        "mean_ms": 13.438181241353353,
+        "minimum_ms": 12.942015647888184,
+        "p50_ms": 13.437583923339844,
+        "p95_ms": 13.77667236328125,
+        "p99_ms": 13.805113983154296,
+        "standard_deviation_ms": 0.28820281883515864
+      },
+      "evidence_class": "MEASURED_LOCAL_GPU_COMPUTE_PLUS_SHAPED_TRANSPORT",
+      "latency_per_accepted_token_wall_ms": 1.82836875,
+      "local_gpu_speedup_vs_dcp1": 1.0,
+      "local_gpu_synchronization_count": 2,
+      "maximum_device_memory_growth_bytes_after_warmup": 0,
+      "partial_payload_bytes_per_worker": 266240,
+      "phase_decomposition": {
+        "attention_and_pre_moe": {
+          "device": {
+            "maximum_ms": 4.681632041931152,
+            "mean_ms": 4.6658079624176025,
+            "minimum_ms": 4.649983882904053,
+            "p50_ms": 4.6658079624176025,
+            "p95_ms": 4.680049633979797,
+            "p99_ms": 4.681315560340882,
+            "standard_deviation_ms": 0.015824079513549805
+          },
+          "wall": {
+            "maximum_ms": 4.6898,
+            "mean_ms": 4.67375,
+            "minimum_ms": 4.6577,
+            "p50_ms": 4.67375,
+            "p95_ms": 4.688195,
+            "p99_ms": 4.689479,
+            "standard_deviation_ms": 0.016049999999999898
+          }
+        },
+        "boundary_d2h": {
+          "device": {
+            "maximum_ms": 0.6597440242767334,
+            "mean_ms": 0.6306720077991486,
+            "minimum_ms": 0.6015999913215637,
+            "p50_ms": 0.6306720077991486,
+            "p95_ms": 0.6568368226289749,
+            "p99_ms": 0.6591625839471817,
+            "standard_deviation_ms": 0.02907201647758484
+          },
+          "wall": {
+            "maximum_ms": 0.6663,
+            "mean_ms": 0.64435,
+            "minimum_ms": 0.6224,
+            "p50_ms": 0.64435,
+            "p95_ms": 0.6641050000000001,
+            "p99_ms": 0.665861,
+            "standard_deviation_ms": 0.021950000000000025
+          }
+        },
+        "boundary_h2d": {
+          "device": {
+            "maximum_ms": 0.20000000298023224,
+            "mean_ms": 0.1964000016450882,
+            "minimum_ms": 0.19280000030994415,
+            "p50_ms": 0.1964000016450882,
+            "p95_ms": 0.19964000284671785,
+            "p99_ms": 0.19992800295352936,
+            "standard_deviation_ms": 0.003600001335144043
+          },
+          "wall": {
+            "maximum_ms": 0.2285,
+            "mean_ms": 0.22525,
+            "minimum_ms": 0.222,
+            "p50_ms": 0.22525,
+            "p95_ms": 0.228175,
+            "p99_ms": 0.228435,
+            "standard_deviation_ms": 0.003250000000000003
+          }
+        },
+        "expert_collection": {
+          "device": {
+            "maximum_ms": 0.03657599911093712,
+            "mean_ms": 0.02855999954044819,
+            "minimum_ms": 0.02054399996995926,
+            "p50_ms": 0.02855999954044819,
+            "p95_ms": 0.03577439915388823,
+            "p99_ms": 0.036415679119527346,
+            "standard_deviation_ms": 0.00801599957048893
+          },
+          "wall": {
+            "maximum_ms": 0.0442,
+            "mean_ms": 0.0371,
+            "minimum_ms": 0.03,
+            "p50_ms": 0.0371,
+            "p95_ms": 0.04349,
+            "p99_ms": 0.04405800000000001,
+            "standard_deviation_ms": 0.007100000000000002
+          }
+        },
+        "expert_dispatch": {
+          "device": {
+            "maximum_ms": 0.0225600004196167,
+            "mean_ms": 0.020848000422120094,
+            "minimum_ms": 0.01913600042462349,
+            "p50_ms": 0.020848000422120094,
+            "p95_ms": 0.022388800419867037,
+            "p99_ms": 0.022525760419666765,
+            "standard_deviation_ms": 0.001711999997496605
+          },
+          "wall": {
+            "maximum_ms": 0.0308,
+            "mean_ms": 0.0291,
+            "minimum_ms": 0.0274,
+            "p50_ms": 0.0291,
+            "p95_ms": 0.03063,
+            "p99_ms": 0.030766,
+            "standard_deviation_ms": 0.0017000000000000001
+          }
+        },
+        "latent_down": {
+          "device": {
+            "maximum_ms": 0.32207998633384705,
+            "mean_ms": 0.3205919861793518,
+            "minimum_ms": 0.31910398602485657,
+            "p50_ms": 0.3205919861793518,
+            "p95_ms": 0.3219311863183975,
+            "p99_ms": 0.32205022633075714,
+            "standard_deviation_ms": 0.0014880001544952393
+          },
+          "wall": {
+            "maximum_ms": 0.343,
+            "mean_ms": 0.34065,
+            "minimum_ms": 0.3383,
+            "p50_ms": 0.34065,
+            "p95_ms": 0.34276500000000004,
+            "p99_ms": 0.34295300000000006,
+            "standard_deviation_ms": 0.0023500000000000187
+          }
+        },
+        "latent_up": {
+          "device": {
+            "maximum_ms": 0.321727991104126,
+            "mean_ms": 0.32153598964214325,
+            "minimum_ms": 0.3213439881801605,
+            "p50_ms": 0.32153598964214325,
+            "p95_ms": 0.3217087909579277,
+            "p99_ms": 0.32172415107488633,
+            "standard_deviation_ms": 0.00019200146198272705
+          },
+          "wall": {
+            "maximum_ms": 0.3275,
+            "mean_ms": 0.3275,
+            "minimum_ms": 0.3275,
+            "p50_ms": 0.3275,
+            "p95_ms": 0.3275,
+            "p99_ms": 0.3275,
+            "standard_deviation_ms": 0.0
+          }
+        },
+        "residual": {
+          "device": {
+            "maximum_ms": 0.2017280012369156,
+            "mean_ms": 0.19300799816846848,
+            "minimum_ms": 0.18428799510002136,
+            "p50_ms": 0.19300799816846848,
+            "p95_ms": 0.20085600093007086,
+            "p99_ms": 0.20155360117554663,
+            "standard_deviation_ms": 0.008720003068447113
+          },
+          "wall": {
+            "maximum_ms": 0.2081,
+            "mean_ms": 0.19925,
+            "minimum_ms": 0.1904,
+            "p50_ms": 0.19925,
+            "p95_ms": 0.207215,
+            "p99_ms": 0.207923,
+            "standard_deviation_ms": 0.008849999999999997
+          }
+        },
+        "routed_expert_compute": {
+          "device": {
+            "maximum_ms": 5.1302080154418945,
+            "mean_ms": 4.889983892440796,
+            "minimum_ms": 4.649759769439697,
+            "p50_ms": 4.889983892440796,
+            "p95_ms": 5.1061856031417845,
+            "p99_ms": 5.125403532981872,
+            "standard_deviation_ms": 0.24022412300109863
+          },
+          "wall": {
+            "maximum_ms": 5.1367,
+            "mean_ms": 4.8967,
+            "minimum_ms": 4.6567,
+            "p50_ms": 4.8967,
+            "p95_ms": 5.1127,
+            "p99_ms": 5.131900000000001,
+            "standard_deviation_ms": 0.2400000000000002
+          }
+        },
+        "router": {
+          "device": {
+            "maximum_ms": 0.6048319935798645,
+            "mean_ms": 0.5921120047569275,
+            "minimum_ms": 0.5793920159339905,
+            "p50_ms": 0.5921120047569275,
+            "p95_ms": 0.6035599946975708,
+            "p99_ms": 0.6045775938034057,
+            "standard_deviation_ms": 0.012719988822937012
+          },
+          "wall": {
+            "maximum_ms": 0.618,
+            "mean_ms": 0.6029,
+            "minimum_ms": 0.5878,
+            "p50_ms": 0.6029,
+            "p95_ms": 0.61649,
+            "p99_ms": 0.6176980000000001,
+            "standard_deviation_ms": 0.015100000000000002
+          }
+        },
+        "scatter_reduction": {
+          "device": {
+            "maximum_ms": 0.39635199308395386,
+            "mean_ms": 0.3598559945821762,
+            "minimum_ms": 0.32335999608039856,
+            "p50_ms": 0.3598559945821762,
+            "p95_ms": 0.3927023932337761,
+            "p99_ms": 0.3956220731139183,
+            "standard_deviation_ms": 0.03649599850177765
+          },
+          "wall": {
+            "maximum_ms": 0.4025,
+            "mean_ms": 0.36585,
+            "minimum_ms": 0.3292,
+            "p50_ms": 0.36585,
+            "p95_ms": 0.39883500000000005,
+            "p99_ms": 0.40176700000000004,
+            "standard_deviation_ms": 0.036650000000000016
+          }
+        },
+        "shared_expert": {
+          "device": {
+            "maximum_ms": 1.494431972503662,
+            "mean_ms": 1.4928159713745117,
+            "minimum_ms": 1.4911999702453613,
+            "p50_ms": 1.4928159713745117,
+            "p95_ms": 1.494270372390747,
+            "p99_ms": 1.494399652481079,
+            "standard_deviation_ms": 0.0016160011291503906
+          },
+          "wall": {
+            "maximum_ms": 1.5013,
+            "mean_ms": 1.4997500000000001,
+            "minimum_ms": 1.4982,
+            "p50_ms": 1.4997500000000001,
+            "p95_ms": 1.501145,
+            "p99_ms": 1.5012690000000002,
+            "standard_deviation_ms": 0.0015500000000000513
+          }
+        }
+      },
+      "repeated_execution_allocations_zero": true,
+      "shaped_internal_transport_ms": 0.0,
+      "shaped_speedup_vs_dcp1": 1.0,
+      "shaped_wall_p50_ms": 14.62695,
+      "verification_rows": 8,
+      "verifier_tokens_per_second": 546.9356222589124,
+      "wall": {
+        "maximum_ms": 15.2876,
+        "mean_ms": 14.608933333333333,
+        "minimum_ms": 13.9732,
+        "p50_ms": 14.62695,
+        "p95_ms": 15.1875,
+        "p99_ms": 15.26758,
+        "standard_deviation_ms": 0.4015644517246127
+      }
+    },
+    {
+      "candidate_count": 7,
+      "context_tokens": 2048,
+      "degree": 2,
+      "device": {
+        "maximum_ms": 14.489151954650879,
+        "mean_ms": 14.09275714556376,
+        "minimum_ms": 13.369952201843262,
+        "p50_ms": 14.194223880767822,
+        "p95_ms": 14.441279983520507,
+        "p99_ms": 14.479577560424804,
+        "standard_deviation_ms": 0.34425820831346854
+      },
+      "evidence_class": "MEASURED_LOCAL_GPU_COMPUTE_PLUS_SHAPED_TRANSPORT",
+      "latency_per_accepted_token_wall_ms": 1.9245875,
+      "local_gpu_speedup_vs_dcp1": 0.950005520663519,
+      "local_gpu_synchronization_count": 2,
+      "maximum_device_memory_growth_bytes_after_warmup": 0,
+      "partial_payload_bytes_per_worker": 266240,
+      "phase_decomposition": {
+        "attention_and_pre_moe": {
+          "device": {
+            "maximum_ms": 5.345024108886719,
+            "mean_ms": 5.2830400466918945,
+            "minimum_ms": 5.22105598449707,
+            "p50_ms": 5.2830400466918945,
+            "p95_ms": 5.338825702667236,
+            "p99_ms": 5.343784427642823,
+            "standard_deviation_ms": 0.06198406219482422
+          },
+          "wall": {
+            "maximum_ms": 5.3562,
+            "mean_ms": 5.2932500000000005,
+            "minimum_ms": 5.2303,
+            "p50_ms": 5.2932500000000005,
+            "p95_ms": 5.349905000000001,
+            "p99_ms": 5.354941,
+            "standard_deviation_ms": 0.06295000000000028
+          }
+        },
+        "boundary_d2h": {
+          "device": {
+            "maximum_ms": 0.6372159719467163,
+            "mean_ms": 0.6218559741973877,
+            "minimum_ms": 0.6064959764480591,
+            "p50_ms": 0.6218559741973877,
+            "p95_ms": 0.6356799721717835,
+            "p99_ms": 0.6369087719917298,
+            "standard_deviation_ms": 0.015359997749328613
+          },
+          "wall": {
+            "maximum_ms": 0.6437,
+            "mean_ms": 0.62845,
+            "minimum_ms": 0.6132,
+            "p50_ms": 0.62845,
+            "p95_ms": 0.642175,
+            "p99_ms": 0.643395,
+            "standard_deviation_ms": 0.015250000000000041
+          }
+        },
+        "boundary_h2d": {
+          "device": {
+            "maximum_ms": 0.20175999402999878,
+            "mean_ms": 0.19702399522066116,
+            "minimum_ms": 0.19228799641132355,
+            "p50_ms": 0.19702399522066116,
+            "p95_ms": 0.20128639414906502,
+            "p99_ms": 0.20166527405381204,
+            "standard_deviation_ms": 0.004735998809337616
+          },
+          "wall": {
+            "maximum_ms": 0.2309,
+            "mean_ms": 0.22575,
+            "minimum_ms": 0.2206,
+            "p50_ms": 0.22575,
+            "p95_ms": 0.230385,
+            "p99_ms": 0.230797,
+            "standard_deviation_ms": 0.005150000000000002
+          }
+        },
+        "expert_collection": {
+          "device": {
+            "maximum_ms": 0.02800000086426735,
+            "mean_ms": 0.025520000606775284,
+            "minimum_ms": 0.02304000034928322,
+            "p50_ms": 0.025520000606775284,
+            "p95_ms": 0.027752000838518143,
+            "p99_ms": 0.02795040085911751,
+            "standard_deviation_ms": 0.0024800002574920654
+          },
+          "wall": {
+            "maximum_ms": 0.0393,
+            "mean_ms": 0.0383,
+            "minimum_ms": 0.0373,
+            "p50_ms": 0.0383,
+            "p95_ms": 0.0392,
+            "p99_ms": 0.03928,
+            "standard_deviation_ms": 0.0010000000000000009
+          }
+        },
+        "expert_dispatch": {
+          "device": {
+            "maximum_ms": 0.040031999349594116,
+            "mean_ms": 0.030592000111937523,
+            "minimum_ms": 0.02115200087428093,
+            "p50_ms": 0.030592000111937523,
+            "p95_ms": 0.039087999425828454,
+            "p99_ms": 0.03984319936484099,
+            "standard_deviation_ms": 0.009439999237656593
+          },
+          "wall": {
+            "maximum_ms": 0.0469,
+            "mean_ms": 0.038149999999999996,
+            "minimum_ms": 0.0294,
+            "p50_ms": 0.038149999999999996,
+            "p95_ms": 0.046024999999999996,
+            "p99_ms": 0.046725,
+            "standard_deviation_ms": 0.008749999999999999
+          }
+        },
+        "latent_down": {
+          "device": {
+            "maximum_ms": 0.32313600182533264,
+            "mean_ms": 0.3177119940519333,
+            "minimum_ms": 0.31228798627853394,
+            "p50_ms": 0.3177119940519333,
+            "p95_ms": 0.32259360104799273,
+            "p99_ms": 0.3230275216698647,
+            "standard_deviation_ms": 0.005424007773399353
+          },
+          "wall": {
+            "maximum_ms": 0.346,
+            "mean_ms": 0.3396,
+            "minimum_ms": 0.3332,
+            "p50_ms": 0.3396,
+            "p95_ms": 0.34535999999999994,
+            "p99_ms": 0.34587199999999996,
+            "standard_deviation_ms": 0.006399999999999989
+          }
+        },
+        "latent_up": {
+          "device": {
+            "maximum_ms": 0.3232960104942322,
+            "mean_ms": 0.32094401121139526,
+            "minimum_ms": 0.31859201192855835,
+            "p50_ms": 0.32094401121139526,
+            "p95_ms": 0.3230608105659485,
+            "p99_ms": 0.32324897050857543,
+            "standard_deviation_ms": 0.002351999282836914
+          },
+          "wall": {
+            "maximum_ms": 0.3295,
+            "mean_ms": 0.32730000000000004,
+            "minimum_ms": 0.3251,
+            "p50_ms": 0.32730000000000004,
+            "p95_ms": 0.32928,
+            "p99_ms": 0.329456,
+            "standard_deviation_ms": 0.0022000000000000075
+          }
+        },
+        "residual": {
+          "device": {
+            "maximum_ms": 0.22684800624847412,
+            "mean_ms": 0.19841600209474564,
+            "minimum_ms": 0.16998399794101715,
+            "p50_ms": 0.19841600209474564,
+            "p95_ms": 0.22400480583310126,
+            "p99_ms": 0.22627936616539954,
+            "standard_deviation_ms": 0.028432004153728485
+          },
+          "wall": {
+            "maximum_ms": 0.2335,
+            "mean_ms": 0.20525,
+            "minimum_ms": 0.177,
+            "p50_ms": 0.20525,
+            "p95_ms": 0.230675,
+            "p99_ms": 0.232935,
+            "standard_deviation_ms": 0.02825000000000001
+          }
+        },
+        "routed_expert_compute": {
+          "device": {
+            "maximum_ms": 4.659071922302246,
+            "mean_ms": 4.6561439037323,
+            "minimum_ms": 4.6532158851623535,
+            "p50_ms": 4.6561439037323,
+            "p95_ms": 4.658779120445252,
+            "p99_ms": 4.659013361930847,
+            "standard_deviation_ms": 0.002928018569946289
+          },
+          "wall": {
+            "maximum_ms": 4.6666,
+            "mean_ms": 4.6631,
+            "minimum_ms": 4.6596,
+            "p50_ms": 4.6631,
+            "p95_ms": 4.66625,
+            "p99_ms": 4.66653,
+            "standard_deviation_ms": 0.0034999999999998366
+          }
+        },
+        "router": {
+          "device": {
+            "maximum_ms": 0.6240320205688477,
+            "mean_ms": 0.6134079992771149,
+            "minimum_ms": 0.6027839779853821,
+            "p50_ms": 0.6134079992771149,
+            "p95_ms": 0.6229696184396744,
+            "p99_ms": 0.623819540143013,
+            "standard_deviation_ms": 0.010624021291732788
+          },
+          "wall": {
+            "maximum_ms": 0.6475,
+            "mean_ms": 0.6433,
+            "minimum_ms": 0.6391,
+            "p50_ms": 0.6433,
+            "p95_ms": 0.64708,
+            "p99_ms": 0.647416,
+            "standard_deviation_ms": 0.0041999999999999815
+          }
+        },
+        "scatter_reduction": {
+          "device": {
+            "maximum_ms": 0.5125120282173157,
+            "mean_ms": 0.4440480172634125,
+            "minimum_ms": 0.3755840063095093,
+            "p50_ms": 0.4440480172634125,
+            "p95_ms": 0.5056656271219254,
+            "p99_ms": 0.5111427479982377,
+            "standard_deviation_ms": 0.0684640109539032
+          },
+          "wall": {
+            "maximum_ms": 0.5205,
+            "mean_ms": 0.45204999999999995,
+            "minimum_ms": 0.3836,
+            "p50_ms": 0.45204999999999995,
+            "p95_ms": 0.513655,
+            "p99_ms": 0.5191309999999999,
+            "standard_deviation_ms": 0.06844999999999998
+          }
+        },
+        "shared_expert": {
+          "device": {
+            "maximum_ms": 1.494431972503662,
+            "mean_ms": 1.4917759895324707,
+            "minimum_ms": 1.4891200065612793,
+            "p50_ms": 1.4917759895324707,
+            "p95_ms": 1.494166374206543,
+            "p99_ms": 1.494378852844238,
+            "standard_deviation_ms": 0.0026559829711914062
+          },
+          "wall": {
+            "maximum_ms": 1.5026,
+            "mean_ms": 1.4994999999999998,
+            "minimum_ms": 1.4964,
+            "p50_ms": 1.4994999999999998,
+            "p95_ms": 1.50229,
+            "p99_ms": 1.502538,
+            "standard_deviation_ms": 0.0030999999999999917
+          }
+        }
+      },
+      "repeated_execution_allocations_zero": true,
+      "shaped_internal_transport_ms": 0.820472,
+      "shaped_speedup_vs_dcp1": 0.9019420895332431,
+      "shaped_wall_p50_ms": 16.217171999999998,
+      "verification_rows": 8,
+      "verifier_tokens_per_second": 519.5918605935038,
+      "wall": {
+        "maximum_ms": 15.6301,
+        "mean_ms": 15.250066666666667,
+        "minimum_ms": 14.3983,
+        "p50_ms": 15.3967,
+        "p95_ms": 15.60524,
+        "p99_ms": 15.625128000000002,
+        "standard_deviation_ms": 0.38733677063879274
+      }
+    },
+    {
+      "candidate_count": 7,
+      "context_tokens": 2048,
+      "degree": 4,
+      "device": {
+        "maximum_ms": 13.619104385375977,
+        "mean_ms": 13.189501444498697,
+        "minimum_ms": 12.687392234802246,
+        "p50_ms": 13.21452808380127,
+        "p95_ms": 13.561587524414062,
+        "p99_ms": 13.607601013183594,
+        "standard_deviation_ms": 0.2849247640139993
+      },
+      "evidence_class": "MEASURED_LOCAL_GPU_COMPUTE_PLUS_SHAPED_TRANSPORT",
+      "latency_per_accepted_token_wall_ms": 1.8037812500000001,
+      "local_gpu_speedup_vs_dcp1": 1.013631087472497,
+      "local_gpu_synchronization_count": 2,
+      "maximum_device_memory_growth_bytes_after_warmup": 0,
+      "partial_payload_bytes_per_worker": 266240,
+      "phase_decomposition": {
+        "attention_and_pre_moe": {
+          "device": {
+            "maximum_ms": 4.607967853546143,
+            "mean_ms": 4.521087884902954,
+            "minimum_ms": 4.434207916259766,
+            "p50_ms": 4.521087884902954,
+            "p95_ms": 4.599279856681823,
+            "p99_ms": 4.606230254173279,
+            "standard_deviation_ms": 0.08687996864318848
+          },
+          "wall": {
+            "maximum_ms": 4.6156,
+            "mean_ms": 4.5288,
+            "minimum_ms": 4.442,
+            "p50_ms": 4.5288,
+            "p95_ms": 4.60692,
+            "p99_ms": 4.6138639999999995,
+            "standard_deviation_ms": 0.08679999999999977
+          }
+        },
+        "boundary_d2h": {
+          "device": {
+            "maximum_ms": 0.6541119813919067,
+            "mean_ms": 0.6423519849777222,
+            "minimum_ms": 0.6305919885635376,
+            "p50_ms": 0.6423519849777222,
+            "p95_ms": 0.6529359817504883,
+            "p99_ms": 0.653876781463623,
+            "standard_deviation_ms": 0.01175999641418457
+          },
+          "wall": {
+            "maximum_ms": 0.6628,
+            "mean_ms": 0.6617,
+            "minimum_ms": 0.6606,
+            "p50_ms": 0.6617,
+            "p95_ms": 0.6626899999999999,
+            "p99_ms": 0.662778,
+            "standard_deviation_ms": 0.0010999999999999899
+          }
+        },
+        "boundary_h2d": {
+          "device": {
+            "maximum_ms": 0.20604799687862396,
+            "mean_ms": 0.20131199806928635,
+            "minimum_ms": 0.19657599925994873,
+            "p50_ms": 0.20131199806928635,
+            "p95_ms": 0.2055743969976902,
+            "p99_ms": 0.2059532769024372,
+            "standard_deviation_ms": 0.004735998809337616
+          },
+          "wall": {
+            "maximum_ms": 0.2358,
+            "mean_ms": 0.23125,
+            "minimum_ms": 0.2267,
+            "p50_ms": 0.23125,
+            "p95_ms": 0.235345,
+            "p99_ms": 0.235709,
+            "standard_deviation_ms": 0.0045499999999999985
+          }
+        },
+        "expert_collection": {
+          "device": {
+            "maximum_ms": 0.026976000517606735,
+            "mean_ms": 0.023231999948620796,
+            "minimum_ms": 0.019487999379634857,
+            "p50_ms": 0.023231999948620796,
+            "p95_ms": 0.02660160046070814,
+            "p99_ms": 0.026901120506227016,
+            "standard_deviation_ms": 0.003744000568985939
+          },
+          "wall": {
+            "maximum_ms": 0.0386,
+            "mean_ms": 0.033,
+            "minimum_ms": 0.0274,
+            "p50_ms": 0.033,
+            "p95_ms": 0.038040000000000004,
+            "p99_ms": 0.03848800000000001,
+            "standard_deviation_ms": 0.005600000000000001
+          }
+        },
+        "expert_dispatch": {
+          "device": {
+            "maximum_ms": 0.020576000213623047,
+            "mean_ms": 0.019456000067293644,
+            "minimum_ms": 0.01833599992096424,
+            "p50_ms": 0.019456000067293644,
+            "p95_ms": 0.020464000198990105,
+            "p99_ms": 0.02055360021069646,
+            "standard_deviation_ms": 0.001120000146329403
+          },
+          "wall": {
+            "maximum_ms": 0.0292,
+            "mean_ms": 0.0279,
+            "minimum_ms": 0.0266,
+            "p50_ms": 0.0279,
+            "p95_ms": 0.02907,
+            "p99_ms": 0.029174,
+            "standard_deviation_ms": 0.0013000000000000008
+          }
+        },
+        "latent_down": {
+          "device": {
+            "maximum_ms": 0.32470399141311646,
+            "mean_ms": 0.321712002158165,
+            "minimum_ms": 0.3187200129032135,
+            "p50_ms": 0.321712002158165,
+            "p95_ms": 0.32440479248762133,
+            "p99_ms": 0.3246441516280174,
+            "standard_deviation_ms": 0.002991989254951477
+          },
+          "wall": {
+            "maximum_ms": 0.3473,
+            "mean_ms": 0.34385,
+            "minimum_ms": 0.3404,
+            "p50_ms": 0.34385,
+            "p95_ms": 0.346955,
+            "p99_ms": 0.347231,
+            "standard_deviation_ms": 0.0034500000000000086
+          }
+        },
+        "latent_up": {
+          "device": {
+            "maximum_ms": 0.32179200649261475,
+            "mean_ms": 0.3211680054664612,
+            "minimum_ms": 0.3205440044403076,
+            "p50_ms": 0.3211680054664612,
+            "p95_ms": 0.32172960638999937,
+            "p99_ms": 0.3217795264720917,
+            "standard_deviation_ms": 0.0006240010261535645
+          },
+          "wall": {
+            "maximum_ms": 0.3281,
+            "mean_ms": 0.32730000000000004,
+            "minimum_ms": 0.3265,
+            "p50_ms": 0.32730000000000004,
+            "p95_ms": 0.32802000000000003,
+            "p99_ms": 0.32808400000000004,
+            "standard_deviation_ms": 0.0007999999999999952
+          }
+        },
+        "residual": {
+          "device": {
+            "maximum_ms": 0.19724799692630768,
+            "mean_ms": 0.18051199615001678,
+            "minimum_ms": 0.1637759953737259,
+            "p50_ms": 0.18051199615001678,
+            "p95_ms": 0.19557439684867858,
+            "p99_ms": 0.19691327691078186,
+            "standard_deviation_ms": 0.016736000776290894
+          },
+          "wall": {
+            "maximum_ms": 0.2039,
+            "mean_ms": 0.1873,
+            "minimum_ms": 0.1707,
+            "p50_ms": 0.1873,
+            "p95_ms": 0.20224,
+            "p99_ms": 0.203568,
+            "standard_deviation_ms": 0.016600000000000004
+          }
+        },
+        "routed_expert_compute": {
+          "device": {
+            "maximum_ms": 4.671072006225586,
+            "mean_ms": 4.6657280921936035,
+            "minimum_ms": 4.660384178161621,
+            "p50_ms": 4.6657280921936035,
+            "p95_ms": 4.670537614822388,
+            "p99_ms": 4.670965127944946,
+            "standard_deviation_ms": 0.005343914031982422
+          },
+          "wall": {
+            "maximum_ms": 4.6773,
+            "mean_ms": 4.67215,
+            "minimum_ms": 4.667,
+            "p50_ms": 4.67215,
+            "p95_ms": 4.676785000000001,
+            "p99_ms": 4.677197,
+            "standard_deviation_ms": 0.005149999999999988
+          }
+        },
+        "router": {
+          "device": {
+            "maximum_ms": 0.6016960144042969,
+            "mean_ms": 0.5934720039367676,
+            "minimum_ms": 0.5852479934692383,
+            "p50_ms": 0.5934720039367676,
+            "p95_ms": 0.6008736133575439,
+            "p99_ms": 0.6015315341949463,
+            "standard_deviation_ms": 0.008224010467529297
+          },
+          "wall": {
+            "maximum_ms": 0.6093,
+            "mean_ms": 0.60095,
+            "minimum_ms": 0.5926,
+            "p50_ms": 0.60095,
+            "p95_ms": 0.6084649999999999,
+            "p99_ms": 0.6091329999999999,
+            "standard_deviation_ms": 0.008349999999999969
+          }
+        },
+        "scatter_reduction": {
+          "device": {
+            "maximum_ms": 0.3158079981803894,
+            "mean_ms": 0.3028640002012253,
+            "minimum_ms": 0.28992000222206116,
+            "p50_ms": 0.3028640002012253,
+            "p95_ms": 0.314513598382473,
+            "p99_ms": 0.3155491182208061,
+            "standard_deviation_ms": 0.012943997979164124
+          },
+          "wall": {
+            "maximum_ms": 0.3224,
+            "mean_ms": 0.3095,
+            "minimum_ms": 0.2966,
+            "p50_ms": 0.3095,
+            "p95_ms": 0.32111,
+            "p99_ms": 0.32214200000000004,
+            "standard_deviation_ms": 0.012900000000000023
+          }
+        },
+        "shared_expert": {
+          "device": {
+            "maximum_ms": 1.4942400455474854,
+            "mean_ms": 1.493008017539978,
+            "minimum_ms": 1.4917759895324707,
+            "p50_ms": 1.493008017539978,
+            "p95_ms": 1.4941168427467346,
+            "p99_ms": 1.4942154049873353,
+            "standard_deviation_ms": 0.0012320280075073242
+          },
+          "wall": {
+            "maximum_ms": 1.5029,
+            "mean_ms": 1.50185,
+            "minimum_ms": 1.5008,
+            "p50_ms": 1.50185,
+            "p95_ms": 1.5027949999999999,
+            "p99_ms": 1.5028789999999999,
+            "standard_deviation_ms": 0.0010499999999999954
+          }
+        }
+      },
+      "repeated_execution_allocations_zero": true,
+      "shaped_internal_transport_ms": 0.820472,
+      "shaped_speedup_vs_dcp1": 0.9590988544673491,
+      "shaped_wall_p50_ms": 15.250722000000001,
+      "verification_rows": 8,
+      "verifier_tokens_per_second": 554.3909495677483,
+      "wall": {
+        "maximum_ms": 14.8859,
+        "mean_ms": 14.353691666666668,
+        "minimum_ms": 13.746,
+        "p50_ms": 14.430250000000001,
+        "p95_ms": 14.757365,
+        "p99_ms": 14.860193,
+        "standard_deviation_ms": 0.31546591326251944
+      }
+    },
+    {
+      "candidate_count": 7,
+      "context_tokens": 2048,
+      "degree": 8,
+      "device": {
+        "maximum_ms": 14.0447359085083,
+        "mean_ms": 13.291618585586548,
+        "minimum_ms": 12.75443172454834,
+        "p50_ms": 13.245407581329346,
+        "p95_ms": 13.797825574874878,
+        "p99_ms": 13.995353841781617,
+        "standard_deviation_ms": 0.35438209804622867
+      },
+      "evidence_class": "MEASURED_LOCAL_GPU_COMPUTE_PLUS_SHAPED_TRANSPORT",
+      "latency_per_accepted_token_wall_ms": 1.7979500000000002,
+      "local_gpu_speedup_vs_dcp1": 1.016918573931422,
+      "local_gpu_synchronization_count": 2,
+      "maximum_device_memory_growth_bytes_after_warmup": 0,
+      "partial_payload_bytes_per_worker": 266240,
+      "phase_decomposition": {
+        "attention_and_pre_moe": {
+          "device": {
+            "maximum_ms": 4.767327785491943,
+            "mean_ms": 4.61627197265625,
+            "minimum_ms": 4.465216159820557,
+            "p50_ms": 4.61627197265625,
+            "p95_ms": 4.7522222042083735,
+            "p99_ms": 4.764306669235229,
+            "standard_deviation_ms": 0.15105581283569336
+          },
+          "wall": {
+            "maximum_ms": 4.7763,
+            "mean_ms": 4.6251999999999995,
+            "minimum_ms": 4.4741,
+            "p50_ms": 4.6251999999999995,
+            "p95_ms": 4.76119,
+            "p99_ms": 4.773278,
+            "standard_deviation_ms": 0.1511
+          }
+        },
+        "boundary_d2h": {
+          "device": {
+            "maximum_ms": 0.620415985584259,
+            "mean_ms": 0.6017760038375854,
+            "minimum_ms": 0.5831360220909119,
+            "p50_ms": 0.6017760038375854,
+            "p95_ms": 0.6185519874095917,
+            "p99_ms": 0.6200431859493256,
+            "standard_deviation_ms": 0.018639981746673584
+          },
+          "wall": {
+            "maximum_ms": 0.6343,
+            "mean_ms": 0.6305000000000001,
+            "minimum_ms": 0.6267,
+            "p50_ms": 0.6305000000000001,
+            "p95_ms": 0.6339199999999999,
+            "p99_ms": 0.634224,
+            "standard_deviation_ms": 0.00379999999999997
+          }
+        },
+        "boundary_h2d": {
+          "device": {
+            "maximum_ms": 0.21027199923992157,
+            "mean_ms": 0.2025119960308075,
+            "minimum_ms": 0.19475199282169342,
+            "p50_ms": 0.2025119960308075,
+            "p95_ms": 0.20949599891901016,
+            "p99_ms": 0.21011679917573928,
+            "standard_deviation_ms": 0.007760003209114075
+          },
+          "wall": {
+            "maximum_ms": 0.2379,
+            "mean_ms": 0.23170000000000002,
+            "minimum_ms": 0.2255,
+            "p50_ms": 0.23170000000000002,
+            "p95_ms": 0.23728,
+            "p99_ms": 0.23777600000000002,
+            "standard_deviation_ms": 0.006199999999999997
+          }
+        },
+        "expert_collection": {
+          "device": {
+            "maximum_ms": 0.026048000901937485,
+            "mean_ms": 0.02284800074994564,
+            "minimum_ms": 0.019648000597953796,
+            "p50_ms": 0.02284800074994564,
+            "p95_ms": 0.025728000886738298,
+            "p99_ms": 0.025984000898897647,
+            "standard_deviation_ms": 0.003200000151991844
+          },
+          "wall": {
+            "maximum_ms": 0.0384,
+            "mean_ms": 0.033,
+            "minimum_ms": 0.0276,
+            "p50_ms": 0.033,
+            "p95_ms": 0.03786,
+            "p99_ms": 0.03829199999999999,
+            "standard_deviation_ms": 0.0053999999999999986
+          }
+        },
+        "expert_dispatch": {
+          "device": {
+            "maximum_ms": 0.01974399946630001,
+            "mean_ms": 0.019216000102460384,
+            "minimum_ms": 0.018688000738620758,
+            "p50_ms": 0.019216000102460384,
+            "p95_ms": 0.019691199529916048,
+            "p99_ms": 0.019733439479023215,
+            "standard_deviation_ms": 0.0005279993638396263
+          },
+          "wall": {
+            "maximum_ms": 0.0274,
+            "mean_ms": 0.02685,
+            "minimum_ms": 0.0263,
+            "p50_ms": 0.02685,
+            "p95_ms": 0.027345,
+            "p99_ms": 0.027389,
+            "standard_deviation_ms": 0.0005500000000000001
+          }
+        },
+        "latent_down": {
+          "device": {
+            "maximum_ms": 0.3189760148525238,
+            "mean_ms": 0.3184960037469864,
+            "minimum_ms": 0.318015992641449,
+            "p50_ms": 0.3184960037469864,
+            "p95_ms": 0.31892801374197005,
+            "p99_ms": 0.3189664146304131,
+            "standard_deviation_ms": 0.00048001110553741455
+          },
+          "wall": {
+            "maximum_ms": 0.3403,
+            "mean_ms": 0.34004999999999996,
+            "minimum_ms": 0.3398,
+            "p50_ms": 0.34004999999999996,
+            "p95_ms": 0.340275,
+            "p99_ms": 0.340295,
+            "standard_deviation_ms": 0.0002500000000000002
+          }
+        },
+        "latent_up": {
+          "device": {
+            "maximum_ms": 0.32678401470184326,
+            "mean_ms": 0.32369600236415863,
+            "minimum_ms": 0.320607990026474,
+            "p50_ms": 0.32369600236415863,
+            "p95_ms": 0.32647521346807484,
+            "p99_ms": 0.32672225445508957,
+            "standard_deviation_ms": 0.0030880123376846313
+          },
+          "wall": {
+            "maximum_ms": 0.3327,
+            "mean_ms": 0.3298,
+            "minimum_ms": 0.3269,
+            "p50_ms": 0.3298,
+            "p95_ms": 0.33241,
+            "p99_ms": 0.332642,
+            "standard_deviation_ms": 0.002899999999999986
+          }
+        },
+        "residual": {
+          "device": {
+            "maximum_ms": 0.1955520063638687,
+            "mean_ms": 0.1868320032954216,
+            "minimum_ms": 0.1781120002269745,
+            "p50_ms": 0.1868320032954216,
+            "p95_ms": 0.194680006057024,
+            "p99_ms": 0.19537760630249976,
+            "standard_deviation_ms": 0.008720003068447113
+          },
+          "wall": {
+            "maximum_ms": 0.2026,
+            "mean_ms": 0.19365,
+            "minimum_ms": 0.1847,
+            "p50_ms": 0.19365,
+            "p95_ms": 0.20170500000000002,
+            "p99_ms": 0.20242100000000002,
+            "standard_deviation_ms": 0.00895
+          }
+        },
+        "routed_expert_compute": {
+          "device": {
+            "maximum_ms": 5.003136157989502,
+            "mean_ms": 4.833120107650757,
+            "minimum_ms": 4.663104057312012,
+            "p50_ms": 4.833120107650757,
+            "p95_ms": 4.986134552955628,
+            "p99_ms": 4.999735836982728,
+            "standard_deviation_ms": 0.17001605033874512
+          },
+          "wall": {
+            "maximum_ms": 5.0105,
+            "mean_ms": 4.8988,
+            "minimum_ms": 4.7871,
+            "p50_ms": 4.8988,
+            "p95_ms": 4.9993300000000005,
+            "p99_ms": 5.008266,
+            "standard_deviation_ms": 0.11170000000000035
+          }
+        },
+        "router": {
+          "device": {
+            "maximum_ms": 0.6320000290870667,
+            "mean_ms": 0.6111520230770111,
+            "minimum_ms": 0.5903040170669556,
+            "p50_ms": 0.6111520230770111,
+            "p95_ms": 0.6299152284860611,
+            "p99_ms": 0.6315830689668656,
+            "standard_deviation_ms": 0.020848006010055542
+          },
+          "wall": {
+            "maximum_ms": 0.6426,
+            "mean_ms": 0.6201,
+            "minimum_ms": 0.5976,
+            "p50_ms": 0.6201,
+            "p95_ms": 0.64035,
+            "p99_ms": 0.6421499999999999,
+            "standard_deviation_ms": 0.022499999999999964
+          }
+        },
+        "scatter_reduction": {
+          "device": {
+            "maximum_ms": 0.3670719861984253,
+            "mean_ms": 0.3389759957790375,
+            "minimum_ms": 0.31088000535964966,
+            "p50_ms": 0.3389759957790375,
+            "p95_ms": 0.3642623871564865,
+            "p99_ms": 0.3665100663900375,
+            "standard_deviation_ms": 0.028095990419387817
+          },
+          "wall": {
+            "maximum_ms": 0.3747,
+            "mean_ms": 0.3459,
+            "minimum_ms": 0.3171,
+            "p50_ms": 0.3459,
+            "p95_ms": 0.37182,
+            "p99_ms": 0.37412399999999996,
+            "standard_deviation_ms": 0.028799999999999992
+          }
+        },
+        "shared_expert": {
+          "device": {
+            "maximum_ms": 1.4958720207214355,
+            "mean_ms": 1.4954879879951477,
+            "minimum_ms": 1.4951039552688599,
+            "p50_ms": 1.4954879879951477,
+            "p95_ms": 1.4958336174488067,
+            "p99_ms": 1.4958643400669098,
+            "standard_deviation_ms": 0.0003840327262878418
+          },
+          "wall": {
+            "maximum_ms": 1.5033,
+            "mean_ms": 1.5032,
+            "minimum_ms": 1.5031,
+            "p50_ms": 1.5032,
+            "p95_ms": 1.50329,
+            "p99_ms": 1.503298,
+            "standard_deviation_ms": 9.999999999998899e-05
+          }
+        }
+      },
+      "repeated_execution_allocations_zero": true,
+      "shaped_internal_transport_ms": 0.820472,
+      "shaped_speedup_vs_dcp1": 0.9620416162196548,
+      "shaped_wall_p50_ms": 15.204072000000002,
+      "verification_rows": 8,
+      "verifier_tokens_per_second": 556.1889930198281,
+      "wall": {
+        "maximum_ms": 15.2671,
+        "mean_ms": 14.426966666666667,
+        "minimum_ms": 13.821,
+        "p50_ms": 14.383600000000001,
+        "p95_ms": 15.02543,
+        "p99_ms": 15.218766,
+        "standard_deviation_ms": 0.39975651408770757
+      }
+    },
+    {
+      "candidate_count": 7,
+      "context_tokens": 8192,
+      "degree": 1,
+      "device": {
+        "maximum_ms": 21.709535598754883,
+        "mean_ms": 21.572192033131916,
+        "minimum_ms": 21.379840850830078,
+        "p50_ms": 21.594544410705566,
+        "p95_ms": 21.707987213134764,
+        "p99_ms": 21.70922592163086,
+        "standard_deviation_ms": 0.12296507440954531
+      },
+      "evidence_class": "MEASURED_LOCAL_GPU_COMPUTE_PLUS_SHAPED_TRANSPORT",
+      "latency_per_accepted_token_wall_ms": 2.84775,
+      "local_gpu_speedup_vs_dcp1": 1.0,
+      "local_gpu_synchronization_count": 2,
+      "maximum_device_memory_growth_bytes_after_warmup": 0,
+      "partial_payload_bytes_per_worker": 266240,
+      "phase_decomposition": {
+        "attention_and_pre_moe": {
+          "device": {
+            "maximum_ms": 13.050111770629883,
+            "mean_ms": 13.026288032531738,
+            "minimum_ms": 13.002464294433594,
+            "p50_ms": 13.026288032531738,
+            "p95_ms": 13.047729396820067,
+            "p99_ms": 13.04963529586792,
+            "standard_deviation_ms": 0.02382373809814453
+          },
+          "wall": {
+            "maximum_ms": 13.0675,
+            "mean_ms": 13.03875,
+            "minimum_ms": 13.01,
+            "p50_ms": 13.03875,
+            "p95_ms": 13.064625000000001,
+            "p99_ms": 13.066925000000001,
+            "standard_deviation_ms": 0.028750000000000497
+          }
+        },
+        "boundary_d2h": {
+          "device": {
+            "maximum_ms": 0.6592640280723572,
+            "mean_ms": 0.6480160057544708,
+            "minimum_ms": 0.6367679834365845,
+            "p50_ms": 0.6480160057544708,
+            "p95_ms": 0.6581392258405686,
+            "p99_ms": 0.6590390676259994,
+            "standard_deviation_ms": 0.011248022317886353
+          },
+          "wall": {
+            "maximum_ms": 0.687,
+            "mean_ms": 0.6843,
+            "minimum_ms": 0.6816,
+            "p50_ms": 0.6843,
+            "p95_ms": 0.6867300000000001,
+            "p99_ms": 0.6869460000000001,
+            "standard_deviation_ms": 0.0027000000000000357
+          }
+        },
+        "boundary_h2d": {
+          "device": {
+            "maximum_ms": 0.18377600610256195,
+            "mean_ms": 0.1780799999833107,
+            "minimum_ms": 0.17238399386405945,
+            "p50_ms": 0.1780799999833107,
+            "p95_ms": 0.18320640549063683,
+            "p99_ms": 0.18366208598017691,
+            "standard_deviation_ms": 0.005696006119251251
+          },
+          "wall": {
+            "maximum_ms": 0.2123,
+            "mean_ms": 0.20779999999999998,
+            "minimum_ms": 0.2033,
+            "p50_ms": 0.20779999999999998,
+            "p95_ms": 0.21184999999999998,
+            "p99_ms": 0.21220999999999998,
+            "standard_deviation_ms": 0.00449999999999999
+          }
+        },
+        "expert_collection": {
+          "device": {
+            "maximum_ms": 0.03587200120091438,
+            "mean_ms": 0.027808000333607197,
+            "minimum_ms": 0.01974399946630001,
+            "p50_ms": 0.027808000333607197,
+            "p95_ms": 0.035065601114183664,
+            "p99_ms": 0.03571072118356824,
+            "standard_deviation_ms": 0.008064000867307186
+          },
+          "wall": {
+            "maximum_ms": 0.0431,
+            "mean_ms": 0.03565,
+            "minimum_ms": 0.0282,
+            "p50_ms": 0.03565,
+            "p95_ms": 0.042355,
+            "p99_ms": 0.042950999999999996,
+            "standard_deviation_ms": 0.00745
+          }
+        },
+        "expert_dispatch": {
+          "device": {
+            "maximum_ms": 0.02582399919629097,
+            "mean_ms": 0.024096000008285046,
+            "minimum_ms": 0.02236800082027912,
+            "p50_ms": 0.024096000008285046,
+            "p95_ms": 0.025651199277490377,
+            "p99_ms": 0.02578943921253085,
+            "standard_deviation_ms": 0.0017279991880059242
+          },
+          "wall": {
+            "maximum_ms": 0.0332,
+            "mean_ms": 0.03155,
+            "minimum_ms": 0.0299,
+            "p50_ms": 0.03155,
+            "p95_ms": 0.033035,
+            "p99_ms": 0.033167,
+            "standard_deviation_ms": 0.0016500000000000004
+          }
+        },
+        "latent_down": {
+          "device": {
+            "maximum_ms": 0.320607990026474,
+            "mean_ms": 0.3187199980020523,
+            "minimum_ms": 0.3168320059776306,
+            "p50_ms": 0.3187199980020523,
+            "p95_ms": 0.3204191908240318,
+            "p99_ms": 0.32057023018598557,
+            "standard_deviation_ms": 0.001887992024421692
+          },
+          "wall": {
+            "maximum_ms": 0.3425,
+            "mean_ms": 0.34005,
+            "minimum_ms": 0.3376,
+            "p50_ms": 0.34005,
+            "p95_ms": 0.34225500000000003,
+            "p99_ms": 0.342451,
+            "standard_deviation_ms": 0.0024500000000000077
+          }
+        },
+        "latent_up": {
+          "device": {
+            "maximum_ms": 0.3221440017223358,
+            "mean_ms": 0.321600005030632,
+            "minimum_ms": 0.3210560083389282,
+            "p50_ms": 0.321600005030632,
+            "p95_ms": 0.3220896020531654,
+            "p99_ms": 0.32213312178850173,
+            "standard_deviation_ms": 0.0005439966917037964
+          },
+          "wall": {
+            "maximum_ms": 0.3284,
+            "mean_ms": 0.32775,
+            "minimum_ms": 0.3271,
+            "p50_ms": 0.32775,
+            "p95_ms": 0.32833500000000004,
+            "p99_ms": 0.32838700000000004,
+            "standard_deviation_ms": 0.0006500000000000117
+          }
+        },
+        "residual": {
+          "device": {
+            "maximum_ms": 0.1974399983882904,
+            "mean_ms": 0.1823519989848137,
+            "minimum_ms": 0.16726399958133698,
+            "p50_ms": 0.1823519989848137,
+            "p95_ms": 0.1959311984479427,
+            "p99_ms": 0.19713823840022088,
+            "standard_deviation_ms": 0.015087999403476715
+          },
+          "wall": {
+            "maximum_ms": 0.2039,
+            "mean_ms": 0.18914999999999998,
+            "minimum_ms": 0.1744,
+            "p50_ms": 0.18914999999999998,
+            "p95_ms": 0.202425,
+            "p99_ms": 0.20360499999999998,
+            "standard_deviation_ms": 0.01475
+          }
+        },
+        "routed_expert_compute": {
+          "device": {
+            "maximum_ms": 4.656544208526611,
+            "mean_ms": 4.655344009399414,
+            "minimum_ms": 4.654143810272217,
+            "p50_ms": 4.655344009399414,
+            "p95_ms": 4.656424188613891,
+            "p99_ms": 4.6565202045440675,
+            "standard_deviation_ms": 0.0012001991271972656
+          },
+          "wall": {
+            "maximum_ms": 4.6633,
+            "mean_ms": 4.661899999999999,
+            "minimum_ms": 4.6605,
+            "p50_ms": 4.661899999999999,
+            "p95_ms": 4.6631599999999995,
+            "p99_ms": 4.663272,
+            "standard_deviation_ms": 0.0013999999999998458
+          }
+        },
+        "router": {
+          "device": {
+            "maximum_ms": 0.8178240060806274,
+            "mean_ms": 0.7339679896831512,
+            "minimum_ms": 0.650111973285675,
+            "p50_ms": 0.7339679896831512,
+            "p95_ms": 0.8094384044408799,
+            "p99_ms": 0.8161468857526779,
+            "standard_deviation_ms": 0.0838560163974762
+          },
+          "wall": {
+            "maximum_ms": 0.8265,
+            "mean_ms": 0.7511,
+            "minimum_ms": 0.6757,
+            "p50_ms": 0.7511,
+            "p95_ms": 0.81896,
+            "p99_ms": 0.8249920000000001,
+            "standard_deviation_ms": 0.07540000000000002
+          }
+        },
+        "scatter_reduction": {
+          "device": {
+            "maximum_ms": 0.3905920088291168,
+            "mean_ms": 0.38467200100421906,
+            "minimum_ms": 0.3787519931793213,
+            "p50_ms": 0.38467200100421906,
+            "p95_ms": 0.39000000804662704,
+            "p99_ms": 0.3904736086726189,
+            "standard_deviation_ms": 0.005920007824897766
+          },
+          "wall": {
+            "maximum_ms": 0.396,
+            "mean_ms": 0.39055,
+            "minimum_ms": 0.3851,
+            "p50_ms": 0.39055,
+            "p95_ms": 0.395455,
+            "p99_ms": 0.395891,
+            "standard_deviation_ms": 0.00545000000000001
+          }
+        },
+        "shared_expert": {
+          "device": {
+            "maximum_ms": 1.4991040229797363,
+            "mean_ms": 1.498687982559204,
+            "minimum_ms": 1.4982719421386719,
+            "p50_ms": 1.498687982559204,
+            "p95_ms": 1.499062418937683,
+            "p99_ms": 1.4990957021713256,
+            "standard_deviation_ms": 0.00041604042053222656
+          },
+          "wall": {
+            "maximum_ms": 1.5083,
+            "mean_ms": 1.5070000000000001,
+            "minimum_ms": 1.5057,
+            "p50_ms": 1.5070000000000001,
+            "p95_ms": 1.50817,
+            "p99_ms": 1.5082740000000001,
+            "standard_deviation_ms": 0.0012999999999999678
+          }
+        }
+      },
+      "repeated_execution_allocations_zero": true,
+      "shaped_internal_transport_ms": 0.0,
+      "shaped_speedup_vs_dcp1": 1.0,
+      "shaped_wall_p50_ms": 22.782,
+      "verification_rows": 8,
+      "verifier_tokens_per_second": 351.1544201562637,
+      "wall": {
+        "maximum_ms": 22.9584,
+        "mean_ms": 22.782875,
+        "minimum_ms": 22.5607,
+        "p50_ms": 22.782,
+        "p95_ms": 22.952129999999997,
+        "p99_ms": 22.957146,
+        "standard_deviation_ms": 0.14020836948984192
+      }
+    },
+    {
+      "candidate_count": 7,
+      "context_tokens": 8192,
+      "degree": 2,
+      "device": {
+        "maximum_ms": 22.837055206298828,
+        "mean_ms": 22.260224024454754,
+        "minimum_ms": 21.866464614868164,
+        "p50_ms": 22.261695861816406,
+        "p95_ms": 22.730733776092528,
+        "p99_ms": 22.81579092025757,
+        "standard_deviation_ms": 0.30176998424305806
+      },
+      "evidence_class": "MEASURED_LOCAL_GPU_COMPUTE_PLUS_SHAPED_TRANSPORT",
+      "latency_per_accepted_token_wall_ms": 2.95515625,
+      "local_gpu_speedup_vs_dcp1": 0.9636546290911013,
+      "local_gpu_synchronization_count": 2,
+      "maximum_device_memory_growth_bytes_after_warmup": 0,
+      "partial_payload_bytes_per_worker": 266240,
+      "phase_decomposition": {
+        "attention_and_pre_moe": {
+          "device": {
+            "maximum_ms": 13.361151695251465,
+            "mean_ms": 13.323935985565186,
+            "minimum_ms": 13.286720275878906,
+            "p50_ms": 13.323935985565186,
+            "p95_ms": 13.357430124282837,
+            "p99_ms": 13.360407381057739,
+            "standard_deviation_ms": 0.0372157096862793
+          },
+          "wall": {
+            "maximum_ms": 13.37,
+            "mean_ms": 13.335799999999999,
+            "minimum_ms": 13.3016,
+            "p50_ms": 13.335799999999999,
+            "p95_ms": 13.36658,
+            "p99_ms": 13.369316,
+            "standard_deviation_ms": 0.03419999999999934
+          }
+        },
+        "boundary_d2h": {
+          "device": {
+            "maximum_ms": 0.6189119815826416,
+            "mean_ms": 0.6034879982471466,
+            "minimum_ms": 0.5880640149116516,
+            "p50_ms": 0.6034879982471466,
+            "p95_ms": 0.6173695832490921,
+            "p99_ms": 0.6186035019159317,
+            "standard_deviation_ms": 0.015423983335494995
+          },
+          "wall": {
+            "maximum_ms": 0.6251,
+            "mean_ms": 0.6105,
+            "minimum_ms": 0.5959,
+            "p50_ms": 0.6105,
+            "p95_ms": 0.62364,
+            "p99_ms": 0.624808,
+            "standard_deviation_ms": 0.014600000000000002
+          }
+        },
+        "boundary_h2d": {
+          "device": {
+            "maximum_ms": 0.18838399648666382,
+            "mean_ms": 0.18702399730682373,
+            "minimum_ms": 0.18566399812698364,
+            "p50_ms": 0.18702399730682373,
+            "p95_ms": 0.1882479965686798,
+            "p99_ms": 0.18835679650306703,
+            "standard_deviation_ms": 0.0013599991798400879
+          },
+          "wall": {
+            "maximum_ms": 0.2179,
+            "mean_ms": 0.21575,
+            "minimum_ms": 0.2136,
+            "p50_ms": 0.21575,
+            "p95_ms": 0.21768500000000002,
+            "p99_ms": 0.217857,
+            "standard_deviation_ms": 0.002149999999999999
+          }
+        },
+        "expert_collection": {
+          "device": {
+            "maximum_ms": 0.04700800031423569,
+            "mean_ms": 0.04283200018107891,
+            "minimum_ms": 0.038656000047922134,
+            "p50_ms": 0.04283200018107891,
+            "p95_ms": 0.04659040030092001,
+            "p99_ms": 0.04692448031157255,
+            "standard_deviation_ms": 0.004176000133156776
+          },
+          "wall": {
+            "maximum_ms": 0.0561,
+            "mean_ms": 0.05185,
+            "minimum_ms": 0.0476,
+            "p50_ms": 0.05185,
+            "p95_ms": 0.055674999999999995,
+            "p99_ms": 0.056014999999999995,
+            "standard_deviation_ms": 0.004249999999999997
+          }
+        },
+        "expert_dispatch": {
+          "device": {
+            "maximum_ms": 0.03292800113558769,
+            "mean_ms": 0.02665600087493658,
+            "minimum_ms": 0.02038400061428547,
+            "p50_ms": 0.02665600087493658,
+            "p95_ms": 0.03230080110952258,
+            "p99_ms": 0.03280256113037467,
+            "standard_deviation_ms": 0.006272000260651112
+          },
+          "wall": {
+            "maximum_ms": 0.0426,
+            "mean_ms": 0.035449999999999995,
+            "minimum_ms": 0.0283,
+            "p50_ms": 0.035449999999999995,
+            "p95_ms": 0.041885,
+            "p99_ms": 0.042456999999999995,
+            "standard_deviation_ms": 0.00715
+          }
+        },
+        "latent_down": {
+          "device": {
+            "maximum_ms": 0.31779199838638306,
+            "mean_ms": 0.317455992102623,
+            "minimum_ms": 0.3171199858188629,
+            "p50_ms": 0.317455992102623,
+            "p95_ms": 0.31775839775800707,
+            "p99_ms": 0.31778527826070785,
+            "standard_deviation_ms": 0.0003360062837600708
+          },
+          "wall": {
+            "maximum_ms": 0.3383,
+            "mean_ms": 0.3378,
+            "minimum_ms": 0.3373,
+            "p50_ms": 0.3378,
+            "p95_ms": 0.33825,
+            "p99_ms": 0.33829,
+            "standard_deviation_ms": 0.0005000000000000004
+          }
+        },
+        "latent_up": {
+          "device": {
+            "maximum_ms": 0.3230400085449219,
+            "mean_ms": 0.3222559988498688,
+            "minimum_ms": 0.3214719891548157,
+            "p50_ms": 0.3222559988498688,
+            "p95_ms": 0.32296160757541653,
+            "p99_ms": 0.3230243283510208,
+            "standard_deviation_ms": 0.0007840096950531006
+          },
+          "wall": {
+            "maximum_ms": 0.3304,
+            "mean_ms": 0.32930000000000004,
+            "minimum_ms": 0.3282,
+            "p50_ms": 0.32930000000000004,
+            "p95_ms": 0.33029000000000003,
+            "p99_ms": 0.330378,
+            "standard_deviation_ms": 0.0011000000000000176
+          }
+        },
+        "residual": {
+          "device": {
+            "maximum_ms": 0.2038400024175644,
+            "mean_ms": 0.18488000333309174,
+            "minimum_ms": 0.16592000424861908,
+            "p50_ms": 0.18488000333309174,
+            "p95_ms": 0.20194400250911712,
+            "p99_ms": 0.20346080243587492,
+            "standard_deviation_ms": 0.018959999084472656
+          },
+          "wall": {
+            "maximum_ms": 0.2112,
+            "mean_ms": 0.19215,
+            "minimum_ms": 0.1731,
+            "p50_ms": 0.19215,
+            "p95_ms": 0.20929499999999998,
+            "p99_ms": 0.210819,
+            "standard_deviation_ms": 0.019049999999999997
+          }
+        },
+        "routed_expert_compute": {
+          "device": {
+            "maximum_ms": 4.689536094665527,
+            "mean_ms": 4.683887958526611,
+            "minimum_ms": 4.678239822387695,
+            "p50_ms": 4.683887958526611,
+            "p95_ms": 4.688971281051636,
+            "p99_ms": 4.68942313194275,
+            "standard_deviation_ms": 0.005648136138916016
+          },
+          "wall": {
+            "maximum_ms": 4.6972,
+            "mean_ms": 4.690899999999999,
+            "minimum_ms": 4.6846,
+            "p50_ms": 4.690899999999999,
+            "p95_ms": 4.6965699999999995,
+            "p99_ms": 4.697074,
+            "standard_deviation_ms": 0.006299999999999972
+          }
+        },
+        "router": {
+          "device": {
+            "maximum_ms": 0.6155840158462524,
+            "mean_ms": 0.6142719984054565,
+            "minimum_ms": 0.6129599809646606,
+            "p50_ms": 0.6142719984054565,
+            "p95_ms": 0.6154528141021728,
+            "p99_ms": 0.6155577754974365,
+            "standard_deviation_ms": 0.0013120174407958984
+          },
+          "wall": {
+            "maximum_ms": 0.6442,
+            "mean_ms": 0.63565,
+            "minimum_ms": 0.6271,
+            "p50_ms": 0.63565,
+            "p95_ms": 0.643345,
+            "p99_ms": 0.644029,
+            "standard_deviation_ms": 0.008550000000000002
+          }
+        },
+        "scatter_reduction": {
+          "device": {
+            "maximum_ms": 0.37327998876571655,
+            "mean_ms": 0.3641439974308014,
+            "minimum_ms": 0.35500800609588623,
+            "p50_ms": 0.3641439974308014,
+            "p95_ms": 0.372366389632225,
+            "p99_ms": 0.37309726893901823,
+            "standard_deviation_ms": 0.009135991334915161
+          },
+          "wall": {
+            "maximum_ms": 0.3813,
+            "mean_ms": 0.37185,
+            "minimum_ms": 0.3624,
+            "p50_ms": 0.37185,
+            "p95_ms": 0.380355,
+            "p99_ms": 0.381111,
+            "standard_deviation_ms": 0.009449999999999986
+          }
+        },
+        "shared_expert": {
+          "device": {
+            "maximum_ms": 1.7420480251312256,
+            "mean_ms": 1.61871999502182,
+            "minimum_ms": 1.4953919649124146,
+            "p50_ms": 1.61871999502182,
+            "p95_ms": 1.729715222120285,
+            "p99_ms": 1.7395814645290375,
+            "standard_deviation_ms": 0.12332803010940552
+          },
+          "wall": {
+            "maximum_ms": 1.7502,
+            "mean_ms": 1.6265999999999998,
+            "minimum_ms": 1.503,
+            "p50_ms": 1.6265999999999998,
+            "p95_ms": 1.73784,
+            "p99_ms": 1.7477280000000002,
+            "standard_deviation_ms": 0.12360000000000004
+          }
+        }
+      },
+      "repeated_execution_allocations_zero": true,
+      "shaped_internal_transport_ms": 0.820472,
+      "shaped_speedup_vs_dcp1": 0.9313326347180302,
+      "shaped_wall_p50_ms": 24.461721999999998,
+      "verification_rows": 8,
+      "verifier_tokens_per_second": 338.3915825093851,
+      "wall": {
+        "maximum_ms": 24.4594,
+        "mean_ms": 23.709541666666667,
+        "minimum_ms": 23.1756,
+        "p50_ms": 23.64125,
+        "p95_ms": 24.236374999999995,
+        "p99_ms": 24.414794999999998,
+        "standard_deviation_ms": 0.3568584043621347
+      }
+    },
+    {
+      "candidate_count": 7,
+      "context_tokens": 8192,
+      "degree": 4,
+      "device": {
+        "maximum_ms": 21.69388771057129,
+        "mean_ms": 20.955162525177002,
+        "minimum_ms": 20.280960083007812,
+        "p50_ms": 20.809887886047363,
+        "p95_ms": 21.690701770782468,
+        "p99_ms": 21.693250522613525,
+        "standard_deviation_ms": 0.413470446998105
+      },
+      "evidence_class": "MEASURED_LOCAL_GPU_COMPUTE_PLUS_SHAPED_TRANSPORT",
+      "latency_per_accepted_token_wall_ms": 2.77981875,
+      "local_gpu_speedup_vs_dcp1": 1.024437294697721,
+      "local_gpu_synchronization_count": 2,
+      "maximum_device_memory_growth_bytes_after_warmup": 0,
+      "partial_payload_bytes_per_worker": 266240,
+      "phase_decomposition": {
+        "attention_and_pre_moe": {
+          "device": {
+            "maximum_ms": 12.096511840820312,
+            "mean_ms": 12.044943809509277,
+            "minimum_ms": 11.993375778198242,
+            "p50_ms": 12.044943809509277,
+            "p95_ms": 12.091355037689208,
+            "p99_ms": 12.095480480194091,
+            "standard_deviation_ms": 0.051568031311035156
+          },
+          "wall": {
+            "maximum_ms": 12.1033,
+            "mean_ms": 12.052050000000001,
+            "minimum_ms": 12.0008,
+            "p50_ms": 12.052050000000001,
+            "p95_ms": 12.098175,
+            "p99_ms": 12.102275,
+            "standard_deviation_ms": 0.05125000000000046
+          }
+        },
+        "boundary_d2h": {
+          "device": {
+            "maximum_ms": 0.5972480177879333,
+            "mean_ms": 0.5904160141944885,
+            "minimum_ms": 0.5835840106010437,
+            "p50_ms": 0.5904160141944885,
+            "p95_ms": 0.5965648174285888,
+            "p99_ms": 0.5971113777160645,
+            "standard_deviation_ms": 0.006832003593444824
+          },
+          "wall": {
+            "maximum_ms": 0.6039,
+            "mean_ms": 0.59685,
+            "minimum_ms": 0.5898,
+            "p50_ms": 0.59685,
+            "p95_ms": 0.603195,
+            "p99_ms": 0.6037589999999999,
+            "standard_deviation_ms": 0.007050000000000001
+          }
+        },
+        "boundary_h2d": {
+          "device": {
+            "maximum_ms": 0.18556800484657288,
+            "mean_ms": 0.17584000527858734,
+            "minimum_ms": 0.1661120057106018,
+            "p50_ms": 0.17584000527858734,
+            "p95_ms": 0.18459520488977432,
+            "p99_ms": 0.18537344485521318,
+            "standard_deviation_ms": 0.009727999567985535
+          },
+          "wall": {
+            "maximum_ms": 0.2154,
+            "mean_ms": 0.2066,
+            "minimum_ms": 0.1978,
+            "p50_ms": 0.2066,
+            "p95_ms": 0.21452000000000002,
+            "p99_ms": 0.21522400000000003,
+            "standard_deviation_ms": 0.008800000000000002
+          }
+        },
+        "expert_collection": {
+          "device": {
+            "maximum_ms": 0.019807999953627586,
+            "mean_ms": 0.018079999834299088,
+            "minimum_ms": 0.01635199971497059,
+            "p50_ms": 0.018079999834299088,
+            "p95_ms": 0.019635199941694735,
+            "p99_ms": 0.019773439951241017,
+            "standard_deviation_ms": 0.0017280001193284988
+          },
+          "wall": {
+            "maximum_ms": 0.0297,
+            "mean_ms": 0.0274,
+            "minimum_ms": 0.0251,
+            "p50_ms": 0.0274,
+            "p95_ms": 0.029470000000000003,
+            "p99_ms": 0.029654000000000003,
+            "standard_deviation_ms": 0.0023
+          }
+        },
+        "expert_dispatch": {
+          "device": {
+            "maximum_ms": 0.020096000283956528,
+            "mean_ms": 0.0197759997099638,
+            "minimum_ms": 0.01945599913597107,
+            "p50_ms": 0.0197759997099638,
+            "p95_ms": 0.020064000226557254,
+            "p99_ms": 0.020089600272476672,
+            "standard_deviation_ms": 0.0003200005739927292
+          },
+          "wall": {
+            "maximum_ms": 0.0283,
+            "mean_ms": 0.027749999999999997,
+            "minimum_ms": 0.0272,
+            "p50_ms": 0.027749999999999997,
+            "p95_ms": 0.028245,
+            "p99_ms": 0.028289,
+            "standard_deviation_ms": 0.0005500000000000001
+          }
+        },
+        "latent_down": {
+          "device": {
+            "maximum_ms": 0.61244797706604,
+            "mean_ms": 0.4679199904203415,
+            "minimum_ms": 0.32339200377464294,
+            "p50_ms": 0.4679199904203415,
+            "p95_ms": 0.5979951784014702,
+            "p99_ms": 0.6095574173331261,
+            "standard_deviation_ms": 0.14452798664569855
+          },
+          "wall": {
+            "maximum_ms": 0.6333,
+            "mean_ms": 0.48919999999999997,
+            "minimum_ms": 0.3451,
+            "p50_ms": 0.48919999999999997,
+            "p95_ms": 0.6188899999999999,
+            "p99_ms": 0.6304179999999999,
+            "standard_deviation_ms": 0.14409999999999998
+          }
+        },
+        "latent_up": {
+          "device": {
+            "maximum_ms": 0.32342401146888733,
+            "mean_ms": 0.3224000036716461,
+            "minimum_ms": 0.3213759958744049,
+            "p50_ms": 0.3224000036716461,
+            "p95_ms": 0.3233216106891632,
+            "p99_ms": 0.3234035313129425,
+            "standard_deviation_ms": 0.001024007797241211
+          },
+          "wall": {
+            "maximum_ms": 0.3291,
+            "mean_ms": 0.32830000000000004,
+            "minimum_ms": 0.3275,
+            "p50_ms": 0.32830000000000004,
+            "p95_ms": 0.32902000000000003,
+            "p99_ms": 0.32908400000000004,
+            "standard_deviation_ms": 0.0007999999999999952
+          }
+        },
+        "residual": {
+          "device": {
+            "maximum_ms": 0.21247999370098114,
+            "mean_ms": 0.19385599344968796,
+            "minimum_ms": 0.17523199319839478,
+            "p50_ms": 0.19385599344968796,
+            "p95_ms": 0.2106175936758518,
+            "p99_ms": 0.21210751369595526,
+            "standard_deviation_ms": 0.018624000251293182
+          },
+          "wall": {
+            "maximum_ms": 0.2199,
+            "mean_ms": 0.2008,
+            "minimum_ms": 0.1817,
+            "p50_ms": 0.2008,
+            "p95_ms": 0.21799000000000002,
+            "p99_ms": 0.21951800000000002,
+            "standard_deviation_ms": 0.019100000000000006
+          }
+        },
+        "routed_expert_compute": {
+          "device": {
+            "maximum_ms": 5.353824138641357,
+            "mean_ms": 5.0057761669158936,
+            "minimum_ms": 4.65772819519043,
+            "p50_ms": 5.0057761669158936,
+            "p95_ms": 5.319019341468811,
+            "p99_ms": 5.346863179206848,
+            "standard_deviation_ms": 0.34804797172546387
+          },
+          "wall": {
+            "maximum_ms": 5.3601,
+            "mean_ms": 5.011950000000001,
+            "minimum_ms": 4.6638,
+            "p50_ms": 5.011950000000001,
+            "p95_ms": 5.325285,
+            "p99_ms": 5.353136999999999,
+            "standard_deviation_ms": 0.34814999999999996
+          }
+        },
+        "router": {
+          "device": {
+            "maximum_ms": 0.6004160046577454,
+            "mean_ms": 0.5976639986038208,
+            "minimum_ms": 0.5949119925498962,
+            "p50_ms": 0.5976639986038208,
+            "p95_ms": 0.6001408040523528,
+            "p99_ms": 0.6003609645366669,
+            "standard_deviation_ms": 0.0027520060539245605
+          },
+          "wall": {
+            "maximum_ms": 0.6085,
+            "mean_ms": 0.60535,
+            "minimum_ms": 0.6022,
+            "p50_ms": 0.60535,
+            "p95_ms": 0.608185,
+            "p99_ms": 0.608437,
+            "standard_deviation_ms": 0.0031500000000000417
+          }
+        },
+        "scatter_reduction": {
+          "device": {
+            "maximum_ms": 0.32335999608039856,
+            "mean_ms": 0.32227200269699097,
+            "minimum_ms": 0.3211840093135834,
+            "p50_ms": 0.32227200269699097,
+            "p95_ms": 0.32325119674205777,
+            "p99_ms": 0.32333823621273045,
+            "standard_deviation_ms": 0.0010879933834075928
+          },
+          "wall": {
+            "maximum_ms": 0.3295,
+            "mean_ms": 0.3286,
+            "minimum_ms": 0.3277,
+            "p50_ms": 0.3286,
+            "p95_ms": 0.32941000000000004,
+            "p99_ms": 0.32948200000000005,
+            "standard_deviation_ms": 0.0009000000000000119
+          }
+        },
+        "shared_expert": {
+          "device": {
+            "maximum_ms": 1.5058879852294922,
+            "mean_ms": 1.5000959634780884,
+            "minimum_ms": 1.4943039417266846,
+            "p50_ms": 1.5000959634780884,
+            "p95_ms": 1.5053087830543517,
+            "p99_ms": 1.505772144794464,
+            "standard_deviation_ms": 0.005792021751403809
+          },
+          "wall": {
+            "maximum_ms": 1.514,
+            "mean_ms": 1.5085,
+            "minimum_ms": 1.503,
+            "p50_ms": 1.5085,
+            "p95_ms": 1.51345,
+            "p99_ms": 1.5138900000000002,
+            "standard_deviation_ms": 0.00550000000000006
+          }
+        }
+      },
+      "repeated_execution_allocations_zero": true,
+      "shaped_internal_transport_ms": 0.820472,
+      "shaped_speedup_vs_dcp1": 0.9879863942191478,
+      "shaped_wall_p50_ms": 23.059022,
+      "verification_rows": 8,
+      "verifier_tokens_per_second": 359.73568420602965,
+      "wall": {
+        "maximum_ms": 23.1507,
+        "mean_ms": 22.284341666666666,
+        "minimum_ms": 21.4171,
+        "p50_ms": 22.23855,
+        "p95_ms": 23.039215,
+        "p99_ms": 23.128403,
+        "standard_deviation_ms": 0.4797086224267346
+      }
+    },
+    {
+      "candidate_count": 7,
+      "context_tokens": 8192,
+      "degree": 8,
+      "device": {
+        "maximum_ms": 21.17737579345703,
+        "mean_ms": 20.834538459777832,
+        "minimum_ms": 20.36182403564453,
+        "p50_ms": 20.835407257080078,
+        "p95_ms": 21.16551322937012,
+        "p99_ms": 21.175003280639647,
+        "standard_deviation_ms": 0.23376255104685575
+      },
+      "evidence_class": "MEASURED_LOCAL_GPU_COMPUTE_PLUS_SHAPED_TRANSPORT",
+      "latency_per_accepted_token_wall_ms": 2.771425,
+      "local_gpu_speedup_vs_dcp1": 1.0275399839432784,
+      "local_gpu_synchronization_count": 2,
+      "maximum_device_memory_growth_bytes_after_warmup": 0,
+      "partial_payload_bytes_per_worker": 266240,
+      "phase_decomposition": {
+        "attention_and_pre_moe": {
+          "device": {
+            "maximum_ms": 12.770015716552734,
+            "mean_ms": 12.352031707763672,
+            "minimum_ms": 11.93404769897461,
+            "p50_ms": 12.352031707763672,
+            "p95_ms": 12.728217315673827,
+            "p99_ms": 12.761656036376953,
+            "standard_deviation_ms": 0.4179840087890625
+          },
+          "wall": {
+            "maximum_ms": 12.8078,
+            "mean_ms": 12.3784,
+            "minimum_ms": 11.949,
+            "p50_ms": 12.3784,
+            "p95_ms": 12.76486,
+            "p99_ms": 12.799212,
+            "standard_deviation_ms": 0.4294000000000002
+          }
+        },
+        "boundary_d2h": {
+          "device": {
+            "maximum_ms": 0.6290559768676758,
+            "mean_ms": 0.6094879806041718,
+            "minimum_ms": 0.5899199843406677,
+            "p50_ms": 0.6094879806041718,
+            "p95_ms": 0.6270991772413254,
+            "p99_ms": 0.6286646169424057,
+            "standard_deviation_ms": 0.01956799626350403
+          },
+          "wall": {
+            "maximum_ms": 0.6356,
+            "mean_ms": 0.6172,
+            "minimum_ms": 0.5988,
+            "p50_ms": 0.6172,
+            "p95_ms": 0.6337600000000001,
+            "p99_ms": 0.635232,
+            "standard_deviation_ms": 0.018400000000000027
+          }
+        },
+        "boundary_h2d": {
+          "device": {
+            "maximum_ms": 0.2563199996948242,
+            "mean_ms": 0.2293279990553856,
+            "minimum_ms": 0.20233599841594696,
+            "p50_ms": 0.2293279990553856,
+            "p95_ms": 0.25362079963088036,
+            "p99_ms": 0.25578015968203544,
+            "standard_deviation_ms": 0.02699200063943863
+          },
+          "wall": {
+            "maximum_ms": 0.2958,
+            "mean_ms": 0.2643,
+            "minimum_ms": 0.2328,
+            "p50_ms": 0.2643,
+            "p95_ms": 0.29264999999999997,
+            "p99_ms": 0.29517,
+            "standard_deviation_ms": 0.0315
+          }
+        },
+        "expert_collection": {
+          "device": {
+            "maximum_ms": 0.036928001791238785,
+            "mean_ms": 0.02907200064510107,
+            "minimum_ms": 0.021215999498963356,
+            "p50_ms": 0.02907200064510107,
+            "p95_ms": 0.03614240167662502,
+            "p99_ms": 0.036770881768316034,
+            "standard_deviation_ms": 0.007856001146137714
+          },
+          "wall": {
+            "maximum_ms": 0.0447,
+            "mean_ms": 0.03655,
+            "minimum_ms": 0.0284,
+            "p50_ms": 0.03655,
+            "p95_ms": 0.043885,
+            "p99_ms": 0.04453699999999999,
+            "standard_deviation_ms": 0.008149999999999998
+          }
+        },
+        "expert_dispatch": {
+          "device": {
+            "maximum_ms": 0.034591998904943466,
+            "mean_ms": 0.02838399913161993,
+            "minimum_ms": 0.022175999358296394,
+            "p50_ms": 0.02838399913161993,
+            "p95_ms": 0.03397119892761111,
+            "p99_ms": 0.034467838909476994,
+            "standard_deviation_ms": 0.006207999773323536
+          },
+          "wall": {
+            "maximum_ms": 0.0415,
+            "mean_ms": 0.03605,
+            "minimum_ms": 0.0306,
+            "p50_ms": 0.03605,
+            "p95_ms": 0.040955000000000005,
+            "p99_ms": 0.041391000000000004,
+            "standard_deviation_ms": 0.005450000000000002
+          }
+        },
+        "latent_down": {
+          "device": {
+            "maximum_ms": 0.6082879900932312,
+            "mean_ms": 0.4637119919061661,
+            "minimum_ms": 0.31913599371910095,
+            "p50_ms": 0.4637119919061661,
+            "p95_ms": 0.5938303902745247,
+            "p99_ms": 0.6053964701294898,
+            "standard_deviation_ms": 0.14457599818706512
+          },
+          "wall": {
+            "maximum_ms": 0.632,
+            "mean_ms": 0.48614999999999997,
+            "minimum_ms": 0.3403,
+            "p50_ms": 0.48614999999999997,
+            "p95_ms": 0.6174149999999999,
+            "p99_ms": 0.6290830000000001,
+            "standard_deviation_ms": 0.14585
+          }
+        },
+        "latent_up": {
+          "device": {
+            "maximum_ms": 0.3222079873085022,
+            "mean_ms": 0.32155199348926544,
+            "minimum_ms": 0.3208959996700287,
+            "p50_ms": 0.32155199348926544,
+            "p95_ms": 0.3221423879265785,
+            "p99_ms": 0.32219486743211745,
+            "standard_deviation_ms": 0.0006559938192367554
+          },
+          "wall": {
+            "maximum_ms": 0.3282,
+            "mean_ms": 0.32805,
+            "minimum_ms": 0.3279,
+            "p50_ms": 0.32805,
+            "p95_ms": 0.32818499999999995,
+            "p99_ms": 0.32819699999999996,
+            "standard_deviation_ms": 0.00014999999999998348
+          }
+        },
+        "residual": {
+          "device": {
+            "maximum_ms": 0.21129600703716278,
+            "mean_ms": 0.20340800285339355,
+            "minimum_ms": 0.19551999866962433,
+            "p50_ms": 0.20340800285339355,
+            "p95_ms": 0.21050720661878586,
+            "p99_ms": 0.2111382469534874,
+            "standard_deviation_ms": 0.007888004183769226
+          },
+          "wall": {
+            "maximum_ms": 0.2188,
+            "mean_ms": 0.2105,
+            "minimum_ms": 0.2022,
+            "p50_ms": 0.2105,
+            "p95_ms": 0.21797,
+            "p99_ms": 0.218634,
+            "standard_deviation_ms": 0.008300000000000002
+          }
+        },
+        "routed_expert_compute": {
+          "device": {
+            "maximum_ms": 4.708799839019775,
+            "mean_ms": 4.6865599155426025,
+            "minimum_ms": 4.66431999206543,
+            "p50_ms": 4.6865599155426025,
+            "p95_ms": 4.706575846672058,
+            "p99_ms": 4.708355040550233,
+            "standard_deviation_ms": 0.02223992347717285
+          },
+          "wall": {
+            "maximum_ms": 4.715,
+            "mean_ms": 4.69365,
+            "minimum_ms": 4.6723,
+            "p50_ms": 4.69365,
+            "p95_ms": 4.712865,
+            "p99_ms": 4.714573,
+            "standard_deviation_ms": 0.02134999999999998
+          }
+        },
+        "router": {
+          "device": {
+            "maximum_ms": 0.6711040139198303,
+            "mean_ms": 0.6626720130443573,
+            "minimum_ms": 0.6542400121688843,
+            "p50_ms": 0.6626720130443573,
+            "p95_ms": 0.6702608138322831,
+            "p99_ms": 0.6709353739023208,
+            "standard_deviation_ms": 0.008432000875473022
+          },
+          "wall": {
+            "maximum_ms": 0.7042,
+            "mean_ms": 0.6910000000000001,
+            "minimum_ms": 0.6778,
+            "p50_ms": 0.6910000000000001,
+            "p95_ms": 0.70288,
+            "p99_ms": 0.703936,
+            "standard_deviation_ms": 0.013200000000000045
+          }
+        },
+        "scatter_reduction": {
+          "device": {
+            "maximum_ms": 0.3423680067062378,
+            "mean_ms": 0.3338080048561096,
+            "minimum_ms": 0.32524800300598145,
+            "p50_ms": 0.3338080048561096,
+            "p95_ms": 0.34151200652122493,
+            "p99_ms": 0.3421968066692352,
+            "standard_deviation_ms": 0.008560001850128174
+          },
+          "wall": {
+            "maximum_ms": 0.3485,
+            "mean_ms": 0.33999999999999997,
+            "minimum_ms": 0.3315,
+            "p50_ms": 0.33999999999999997,
+            "p95_ms": 0.34764999999999996,
+            "p99_ms": 0.34833,
+            "standard_deviation_ms": 0.00849999999999998
+          }
+        },
+        "shared_expert": {
+          "device": {
+            "maximum_ms": 1.512511968612671,
+            "mean_ms": 1.5108479857444763,
+            "minimum_ms": 1.5091840028762817,
+            "p50_ms": 1.5108479857444763,
+            "p95_ms": 1.5123455703258515,
+            "p99_ms": 1.512478688955307,
+            "standard_deviation_ms": 0.00166398286819458
+          },
+          "wall": {
+            "maximum_ms": 1.5229,
+            "mean_ms": 1.51965,
+            "minimum_ms": 1.5164,
+            "p50_ms": 1.51965,
+            "p95_ms": 1.5225749999999998,
+            "p99_ms": 1.522835,
+            "standard_deviation_ms": 0.003249999999999975
+          }
+        }
+      },
+      "repeated_execution_allocations_zero": true,
+      "shaped_internal_transport_ms": 0.820472,
+      "shaped_speedup_vs_dcp1": 0.9908719046452591,
+      "shaped_wall_p50_ms": 22.991871999999997,
+      "verification_rows": 8,
+      "verifier_tokens_per_second": 360.8252072489784,
+      "wall": {
+        "maximum_ms": 22.4899,
+        "mean_ms": 22.118466666666666,
+        "minimum_ms": 21.4835,
+        "p50_ms": 22.1714,
+        "p95_ms": 22.44821,
+        "p99_ms": 22.481562,
+        "standard_deviation_ms": 0.28904080257907444
+      }
+    },
+    {
+      "candidate_count": 7,
+      "context_tokens": 32768,
+      "degree": 1,
+      "device": {
+        "maximum_ms": 53.76464080810547,
+        "mean_ms": 53.24822171529134,
+        "minimum_ms": 52.38934326171875,
+        "p50_ms": 53.343488693237305,
+        "p95_ms": 53.736127853393555,
+        "p99_ms": 53.758938217163085,
+        "standard_deviation_ms": 0.43033201006496113
+      },
+      "evidence_class": "MEASURED_LOCAL_GPU_COMPUTE_PLUS_SHAPED_TRANSPORT",
+      "latency_per_accepted_token_wall_ms": 6.882875,
+      "local_gpu_speedup_vs_dcp1": 1.0,
+      "local_gpu_synchronization_count": 2,
+      "maximum_device_memory_growth_bytes_after_warmup": 0,
+      "partial_payload_bytes_per_worker": 266240,
+      "phase_decomposition": {
+        "attention_and_pre_moe": {
+          "device": {
+            "maximum_ms": 44.635616302490234,
+            "mean_ms": 44.203983306884766,
+            "minimum_ms": 43.7723503112793,
+            "p50_ms": 44.203983306884766,
+            "p95_ms": 44.59245300292969,
+            "p99_ms": 44.626983642578125,
+            "standard_deviation_ms": 0.43163299560546875
+          },
+          "wall": {
+            "maximum_ms": 44.6629,
+            "mean_ms": 44.2312,
+            "minimum_ms": 43.7995,
+            "p50_ms": 44.2312,
+            "p95_ms": 44.619730000000004,
+            "p99_ms": 44.654266,
+            "standard_deviation_ms": 0.4316999999999993
+          }
+        },
+        "boundary_d2h": {
+          "device": {
+            "maximum_ms": 0.6529920101165771,
+            "mean_ms": 0.6071520149707794,
+            "minimum_ms": 0.5613120198249817,
+            "p50_ms": 0.6071520149707794,
+            "p95_ms": 0.6484080106019974,
+            "p99_ms": 0.6520752102136611,
+            "standard_deviation_ms": 0.04583999514579773
+          },
+          "wall": {
+            "maximum_ms": 0.6591,
+            "mean_ms": 0.61345,
+            "minimum_ms": 0.5678,
+            "p50_ms": 0.61345,
+            "p95_ms": 0.654535,
+            "p99_ms": 0.658187,
+            "standard_deviation_ms": 0.045650000000000024
+          }
+        },
+        "boundary_h2d": {
+          "device": {
+            "maximum_ms": 0.21775999665260315,
+            "mean_ms": 0.2128159999847412,
+            "minimum_ms": 0.20787200331687927,
+            "p50_ms": 0.2128159999847412,
+            "p95_ms": 0.21726559698581696,
+            "p99_ms": 0.21766111671924593,
+            "standard_deviation_ms": 0.0049439966678619385
+          },
+          "wall": {
+            "maximum_ms": 0.2505,
+            "mean_ms": 0.24509999999999998,
+            "minimum_ms": 0.2397,
+            "p50_ms": 0.24509999999999998,
+            "p95_ms": 0.24996000000000002,
+            "p99_ms": 0.250392,
+            "standard_deviation_ms": 0.005400000000000002
+          }
+        },
+        "expert_collection": {
+          "device": {
+            "maximum_ms": 0.05161599814891815,
+            "mean_ms": 0.038111998699605465,
+            "minimum_ms": 0.024607999250292778,
+            "p50_ms": 0.038111998699605465,
+            "p95_ms": 0.05026559820398688,
+            "p99_ms": 0.0513459181599319,
+            "standard_deviation_ms": 0.013503999449312687
+          },
+          "wall": {
+            "maximum_ms": 0.0756,
+            "mean_ms": 0.0543,
+            "minimum_ms": 0.033,
+            "p50_ms": 0.0543,
+            "p95_ms": 0.07347,
+            "p99_ms": 0.07517399999999999,
+            "standard_deviation_ms": 0.0213
+          }
+        },
+        "expert_dispatch": {
+          "device": {
+            "maximum_ms": 0.0342399999499321,
+            "mean_ms": 0.03361600078642368,
+            "minimum_ms": 0.03299200162291527,
+            "p50_ms": 0.03361600078642368,
+            "p95_ms": 0.03417760003358126,
+            "p99_ms": 0.03422751996666193,
+            "standard_deviation_ms": 0.0006239991635084152
+          },
+          "wall": {
+            "maximum_ms": 0.0414,
+            "mean_ms": 0.04065,
+            "minimum_ms": 0.0399,
+            "p50_ms": 0.04065,
+            "p95_ms": 0.041325,
+            "p99_ms": 0.041385000000000005,
+            "standard_deviation_ms": 0.0007500000000000007
+          }
+        },
+        "latent_down": {
+          "device": {
+            "maximum_ms": 0.32179200649261475,
+            "mean_ms": 0.30846400558948517,
+            "minimum_ms": 0.2951360046863556,
+            "p50_ms": 0.30846400558948517,
+            "p95_ms": 0.3204592064023018,
+            "p99_ms": 0.32152544647455217,
+            "standard_deviation_ms": 0.013328000903129578
+          },
+          "wall": {
+            "maximum_ms": 0.3439,
+            "mean_ms": 0.3302,
+            "minimum_ms": 0.3165,
+            "p50_ms": 0.3302,
+            "p95_ms": 0.34253,
+            "p99_ms": 0.343626,
+            "standard_deviation_ms": 0.01369999999999999
+          }
+        },
+        "latent_up": {
+          "device": {
+            "maximum_ms": 0.3264639973640442,
+            "mean_ms": 0.32444800436496735,
+            "minimum_ms": 0.3224320113658905,
+            "p50_ms": 0.32444800436496735,
+            "p95_ms": 0.3262623980641365,
+            "p99_ms": 0.32642367750406265,
+            "standard_deviation_ms": 0.0020159929990768433
+          },
+          "wall": {
+            "maximum_ms": 0.3344,
+            "mean_ms": 0.33140000000000003,
+            "minimum_ms": 0.3284,
+            "p50_ms": 0.33140000000000003,
+            "p95_ms": 0.33409999999999995,
+            "p99_ms": 0.33433999999999997,
+            "standard_deviation_ms": 0.002999999999999975
+          }
+        },
+        "residual": {
+          "device": {
+            "maximum_ms": 0.22323200106620789,
+            "mean_ms": 0.21006400138139725,
+            "minimum_ms": 0.1968960016965866,
+            "p50_ms": 0.21006400138139725,
+            "p95_ms": 0.22191520109772683,
+            "p99_ms": 0.22296864107251166,
+            "standard_deviation_ms": 0.013167999684810638
+          },
+          "wall": {
+            "maximum_ms": 0.23,
+            "mean_ms": 0.21675,
+            "minimum_ms": 0.2035,
+            "p50_ms": 0.21675,
+            "p95_ms": 0.22867500000000002,
+            "p99_ms": 0.22973500000000002,
+            "standard_deviation_ms": 0.013250000000000012
+          }
+        },
+        "routed_expert_compute": {
+          "device": {
+            "maximum_ms": 4.969600200653076,
+            "mean_ms": 4.8216001987457275,
+            "minimum_ms": 4.673600196838379,
+            "p50_ms": 4.8216001987457275,
+            "p95_ms": 4.9548002004623415,
+            "p99_ms": 4.966640200614929,
+            "standard_deviation_ms": 0.14800000190734863
+          },
+          "wall": {
+            "maximum_ms": 4.9844,
+            "mean_ms": 4.83235,
+            "minimum_ms": 4.6803,
+            "p50_ms": 4.83235,
+            "p95_ms": 4.969195,
+            "p99_ms": 4.981358999999999,
+            "standard_deviation_ms": 0.15205000000000002
+          }
+        },
+        "router": {
+          "device": {
+            "maximum_ms": 0.688480019569397,
+            "mean_ms": 0.6863999962806702,
+            "minimum_ms": 0.6843199729919434,
+            "p50_ms": 0.6863999962806702,
+            "p95_ms": 0.6882720172405243,
+            "p99_ms": 0.6884384191036225,
+            "standard_deviation_ms": 0.0020800232887268066
+          },
+          "wall": {
+            "maximum_ms": 0.7264,
+            "mean_ms": 0.72515,
+            "minimum_ms": 0.7239,
+            "p50_ms": 0.72515,
+            "p95_ms": 0.726275,
+            "p99_ms": 0.726375,
+            "standard_deviation_ms": 0.0012500000000000289
+          }
+        },
+        "scatter_reduction": {
+          "device": {
+            "maximum_ms": 0.6623679995536804,
+            "mean_ms": 0.5027360022068024,
+            "minimum_ms": 0.3431040048599243,
+            "p50_ms": 0.5027360022068024,
+            "p95_ms": 0.6464047998189926,
+            "p99_ms": 0.6591753596067429,
+            "standard_deviation_ms": 0.15963199734687805
+          },
+          "wall": {
+            "maximum_ms": 0.6712,
+            "mean_ms": 0.5105999999999999,
+            "minimum_ms": 0.35,
+            "p50_ms": 0.5105999999999999,
+            "p95_ms": 0.6551400000000001,
+            "p99_ms": 0.6679879999999999,
+            "standard_deviation_ms": 0.16060000000000002
+          }
+        },
+        "shared_expert": {
+          "device": {
+            "maximum_ms": 1.5057920217514038,
+            "mean_ms": 1.503279983997345,
+            "minimum_ms": 1.5007679462432861,
+            "p50_ms": 1.503279983997345,
+            "p95_ms": 1.505540817975998,
+            "p99_ms": 1.5057417809963227,
+            "standard_deviation_ms": 0.002512037754058838
+          },
+          "wall": {
+            "maximum_ms": 1.5126,
+            "mean_ms": 1.51025,
+            "minimum_ms": 1.5079,
+            "p50_ms": 1.51025,
+            "p95_ms": 1.512365,
+            "p99_ms": 1.512553,
+            "standard_deviation_ms": 0.0023499999999999632
+          }
+        }
+      },
+      "repeated_execution_allocations_zero": true,
+      "shaped_internal_transport_ms": 0.0,
+      "shaped_speedup_vs_dcp1": 1.0,
+      "shaped_wall_p50_ms": 55.063,
+      "verification_rows": 8,
+      "verifier_tokens_per_second": 145.2881245119227,
+      "wall": {
+        "maximum_ms": 55.8023,
+        "mean_ms": 54.96155833333333,
+        "minimum_ms": 54.061,
+        "p50_ms": 55.063,
+        "p95_ms": 55.612660000000005,
+        "p99_ms": 55.764372,
+        "standard_deviation_ms": 0.48732622451210533
+      }
+    },
+    {
+      "candidate_count": 7,
+      "context_tokens": 32768,
+      "degree": 2,
+      "device": {
+        "maximum_ms": 54.39750289916992,
+        "mean_ms": 53.808045387268066,
+        "minimum_ms": 53.088321685791016,
+        "p50_ms": 53.84212684631348,
+        "p95_ms": 54.27393417358398,
+        "p99_ms": 54.37278915405273,
+        "standard_deviation_ms": 0.32635407642145187
+      },
+      "evidence_class": "MEASURED_LOCAL_GPU_COMPUTE_PLUS_SHAPED_TRANSPORT",
+      "latency_per_accepted_token_wall_ms": 6.93536875,
+      "local_gpu_speedup_vs_dcp1": 0.9924310080844656,
+      "local_gpu_synchronization_count": 2,
+      "maximum_device_memory_growth_bytes_after_warmup": 0,
+      "partial_payload_bytes_per_worker": 266240,
+      "phase_decomposition": {
+        "attention_and_pre_moe": {
+          "device": {
+            "maximum_ms": 45.28015899658203,
+            "mean_ms": 44.936702728271484,
+            "minimum_ms": 44.59324645996094,
+            "p50_ms": 44.936702728271484,
+            "p95_ms": 45.24581336975098,
+            "p99_ms": 45.273289871215816,
+            "standard_deviation_ms": 0.3434562683105469
+          },
+          "wall": {
+            "maximum_ms": 45.3032,
+            "mean_ms": 44.95725,
+            "minimum_ms": 44.6113,
+            "p50_ms": 44.95725,
+            "p95_ms": 45.268604999999994,
+            "p99_ms": 45.29628099999999,
+            "standard_deviation_ms": 0.3459499999999984
+          }
+        },
+        "boundary_d2h": {
+          "device": {
+            "maximum_ms": 0.6565759778022766,
+            "mean_ms": 0.6429599821567535,
+            "minimum_ms": 0.6293439865112305,
+            "p50_ms": 0.6429599821567535,
+            "p95_ms": 0.6552143782377243,
+            "p99_ms": 0.6563036578893662,
+            "standard_deviation_ms": 0.013615995645523071
+          },
+          "wall": {
+            "maximum_ms": 0.6627,
+            "mean_ms": 0.64945,
+            "minimum_ms": 0.6362,
+            "p50_ms": 0.64945,
+            "p95_ms": 0.6613749999999999,
+            "p99_ms": 0.6624349999999999,
+            "standard_deviation_ms": 0.013249999999999984
+          }
+        },
+        "boundary_h2d": {
+          "device": {
+            "maximum_ms": 0.20614400506019592,
+            "mean_ms": 0.2024800032377243,
+            "minimum_ms": 0.19881600141525269,
+            "p50_ms": 0.2024800032377243,
+            "p95_ms": 0.20577760487794877,
+            "p99_ms": 0.2060707250237465,
+            "standard_deviation_ms": 0.0036640018224716187
+          },
+          "wall": {
+            "maximum_ms": 0.2337,
+            "mean_ms": 0.23195,
+            "minimum_ms": 0.2302,
+            "p50_ms": 0.23195,
+            "p95_ms": 0.233525,
+            "p99_ms": 0.23366499999999998,
+            "standard_deviation_ms": 0.0017500000000000016
+          }
+        },
+        "expert_collection": {
+          "device": {
+            "maximum_ms": 0.03862399980425835,
+            "mean_ms": 0.03286399971693754,
+            "minimum_ms": 0.027103999629616737,
+            "p50_ms": 0.03286399971693754,
+            "p95_ms": 0.03804799979552626,
+            "p99_ms": 0.03850879980251193,
+            "standard_deviation_ms": 0.005760000087320805
+          },
+          "wall": {
+            "maximum_ms": 0.0484,
+            "mean_ms": 0.0416,
+            "minimum_ms": 0.0348,
+            "p50_ms": 0.0416,
+            "p95_ms": 0.04771999999999999,
+            "p99_ms": 0.048264,
+            "standard_deviation_ms": 0.0068000000000000005
+          }
+        },
+        "expert_dispatch": {
+          "device": {
+            "maximum_ms": 0.027424000203609467,
+            "mean_ms": 0.027231999672949314,
+            "minimum_ms": 0.02703999914228916,
+            "p50_ms": 0.027231999672949314,
+            "p95_ms": 0.027404800150543453,
+            "p99_ms": 0.027420160192996264,
+            "standard_deviation_ms": 0.00019200053066015244
+          },
+          "wall": {
+            "maximum_ms": 0.0361,
+            "mean_ms": 0.0351,
+            "minimum_ms": 0.0341,
+            "p50_ms": 0.0351,
+            "p95_ms": 0.036,
+            "p99_ms": 0.03608,
+            "standard_deviation_ms": 0.0010000000000000009
+          }
+        },
+        "latent_down": {
+          "device": {
+            "maximum_ms": 0.3199999928474426,
+            "mean_ms": 0.30696000158786774,
+            "minimum_ms": 0.29392001032829285,
+            "p50_ms": 0.30696000158786774,
+            "p95_ms": 0.31869599372148516,
+            "p99_ms": 0.3197391930222511,
+            "standard_deviation_ms": 0.01303999125957489
+          },
+          "wall": {
+            "maximum_ms": 0.3424,
+            "mean_ms": 0.32904999999999995,
+            "minimum_ms": 0.3157,
+            "p50_ms": 0.32904999999999995,
+            "p95_ms": 0.34106499999999995,
+            "p99_ms": 0.342133,
+            "standard_deviation_ms": 0.01335
+          }
+        },
+        "latent_up": {
+          "device": {
+            "maximum_ms": 0.3224000036716461,
+            "mean_ms": 0.32203200459480286,
+            "minimum_ms": 0.3216640055179596,
+            "p50_ms": 0.32203200459480286,
+            "p95_ms": 0.32236320376396177,
+            "p99_ms": 0.3223926436901092,
+            "standard_deviation_ms": 0.0003679990768432617
+          },
+          "wall": {
+            "maximum_ms": 0.329,
+            "mean_ms": 0.32825000000000004,
+            "minimum_ms": 0.3275,
+            "p50_ms": 0.32825000000000004,
+            "p95_ms": 0.328925,
+            "p99_ms": 0.328985,
+            "standard_deviation_ms": 0.0007500000000000007
+          }
+        },
+        "residual": {
+          "device": {
+            "maximum_ms": 0.21238400042057037,
+            "mean_ms": 0.20905599743127823,
+            "minimum_ms": 0.20572799444198608,
+            "p50_ms": 0.20905599743127823,
+            "p95_ms": 0.21205120012164114,
+            "p99_ms": 0.21231744036078454,
+            "standard_deviation_ms": 0.0033280029892921448
+          },
+          "wall": {
+            "maximum_ms": 0.2193,
+            "mean_ms": 0.21575,
+            "minimum_ms": 0.2122,
+            "p50_ms": 0.21575,
+            "p95_ms": 0.218945,
+            "p99_ms": 0.219229,
+            "standard_deviation_ms": 0.0035499999999999976
+          }
+        },
+        "routed_expert_compute": {
+          "device": {
+            "maximum_ms": 4.6708478927612305,
+            "mean_ms": 4.6631200313568115,
+            "minimum_ms": 4.655392169952393,
+            "p50_ms": 4.6631200313568115,
+            "p95_ms": 4.670075106620788,
+            "p99_ms": 4.670693335533143,
+            "standard_deviation_ms": 0.007727861404418945
+          },
+          "wall": {
+            "maximum_ms": 4.6771,
+            "mean_ms": 4.67185,
+            "minimum_ms": 4.6666,
+            "p50_ms": 4.67185,
+            "p95_ms": 4.676575000000001,
+            "p99_ms": 4.676995000000001,
+            "standard_deviation_ms": 0.005250000000000199
+          }
+        },
+        "router": {
+          "device": {
+            "maximum_ms": 0.6765440106391907,
+            "mean_ms": 0.6686559915542603,
+            "minimum_ms": 0.6607679724693298,
+            "p50_ms": 0.6686559915542603,
+            "p95_ms": 0.6757552087306976,
+            "p99_ms": 0.6763862502574921,
+            "standard_deviation_ms": 0.00788801908493042
+          },
+          "wall": {
+            "maximum_ms": 0.7102,
+            "mean_ms": 0.7001,
+            "minimum_ms": 0.69,
+            "p50_ms": 0.7001,
+            "p95_ms": 0.70919,
+            "p99_ms": 0.709998,
+            "standard_deviation_ms": 0.010100000000000053
+          }
+        },
+        "scatter_reduction": {
+          "device": {
+            "maximum_ms": 0.3489280045032501,
+            "mean_ms": 0.3452640026807785,
+            "minimum_ms": 0.3416000008583069,
+            "p50_ms": 0.3452640026807785,
+            "p95_ms": 0.34856160432100297,
+            "p99_ms": 0.34885472446680066,
+            "standard_deviation_ms": 0.0036640018224716187
+          },
+          "wall": {
+            "maximum_ms": 0.3559,
+            "mean_ms": 0.3527,
+            "minimum_ms": 0.3495,
+            "p50_ms": 0.3527,
+            "p95_ms": 0.35558,
+            "p99_ms": 0.35583600000000004,
+            "standard_deviation_ms": 0.0032000000000000084
+          }
+        },
+        "shared_expert": {
+          "device": {
+            "maximum_ms": 1.5043519735336304,
+            "mean_ms": 1.5027679800987244,
+            "minimum_ms": 1.5011839866638184,
+            "p50_ms": 1.5027679800987244,
+            "p95_ms": 1.5041935741901398,
+            "p99_ms": 1.5043202936649323,
+            "standard_deviation_ms": 0.0015839934349060059
+          },
+          "wall": {
+            "maximum_ms": 1.5126,
+            "mean_ms": 1.51175,
+            "minimum_ms": 1.5109,
+            "p50_ms": 1.51175,
+            "p95_ms": 1.5125149999999998,
+            "p99_ms": 1.512583,
+            "standard_deviation_ms": 0.0008500000000000174
+          }
+        }
+      },
+      "repeated_execution_allocations_zero": true,
+      "shaped_internal_transport_ms": 0.820472,
+      "shaped_speedup_vs_dcp1": 0.9779689767346645,
+      "shaped_wall_p50_ms": 56.303422000000005,
+      "verification_rows": 8,
+      "verifier_tokens_per_second": 144.1884398720688,
+      "wall": {
+        "maximum_ms": 56.0918,
+        "mean_ms": 55.461975,
+        "minimum_ms": 54.6617,
+        "p50_ms": 55.48295,
+        "p95_ms": 55.96101,
+        "p99_ms": 56.065642,
+        "standard_deviation_ms": 0.3481986289581459
+      }
+    },
+    {
+      "candidate_count": 7,
+      "context_tokens": 32768,
+      "degree": 4,
+      "device": {
+        "maximum_ms": 52.60335922241211,
+        "mean_ms": 52.18708038330078,
+        "minimum_ms": 51.554176330566406,
+        "p50_ms": 52.29728126525879,
+        "p95_ms": 52.54645919799805,
+        "p99_ms": 52.5919792175293,
+        "standard_deviation_ms": 0.32196479647158743
+      },
+      "evidence_class": "MEASURED_LOCAL_GPU_COMPUTE_PLUS_SHAPED_TRANSPORT",
+      "latency_per_accepted_token_wall_ms": 6.74455,
+      "local_gpu_speedup_vs_dcp1": 1.0205091518337028,
+      "local_gpu_synchronization_count": 2,
+      "maximum_device_memory_growth_bytes_after_warmup": 0,
+      "partial_payload_bytes_per_worker": 266240,
+      "phase_decomposition": {
+        "attention_and_pre_moe": {
+          "device": {
+            "maximum_ms": 43.467262268066406,
+            "mean_ms": 43.04499053955078,
+            "minimum_ms": 42.622718811035156,
+            "p50_ms": 43.04499053955078,
+            "p95_ms": 43.425035095214845,
+            "p99_ms": 43.458816833496094,
+            "standard_deviation_ms": 0.422271728515625
+          },
+          "wall": {
+            "maximum_ms": 43.4978,
+            "mean_ms": 43.074,
+            "minimum_ms": 42.6502,
+            "p50_ms": 43.074,
+            "p95_ms": 43.45542,
+            "p99_ms": 43.489323999999996,
+            "standard_deviation_ms": 0.42379999999999995
+          }
+        },
+        "boundary_d2h": {
+          "device": {
+            "maximum_ms": 0.6304640173912048,
+            "mean_ms": 0.6252640187740326,
+            "minimum_ms": 0.6200640201568604,
+            "p50_ms": 0.6252640187740326,
+            "p95_ms": 0.6299440175294876,
+            "p99_ms": 0.6303600174188614,
+            "standard_deviation_ms": 0.005199998617172241
+          },
+          "wall": {
+            "maximum_ms": 0.6366,
+            "mean_ms": 0.6314500000000001,
+            "minimum_ms": 0.6263,
+            "p50_ms": 0.6314500000000001,
+            "p95_ms": 0.636085,
+            "p99_ms": 0.6364970000000001,
+            "standard_deviation_ms": 0.005150000000000043
+          }
+        },
+        "boundary_h2d": {
+          "device": {
+            "maximum_ms": 0.20601600408554077,
+            "mean_ms": 0.20070400089025497,
+            "minimum_ms": 0.19539199769496918,
+            "p50_ms": 0.20070400089025497,
+            "p95_ms": 0.2054848037660122,
+            "p99_ms": 0.20590976402163505,
+            "standard_deviation_ms": 0.005312003195285797
+          },
+          "wall": {
+            "maximum_ms": 0.2398,
+            "mean_ms": 0.23220000000000002,
+            "minimum_ms": 0.2246,
+            "p50_ms": 0.23220000000000002,
+            "p95_ms": 0.23904000000000003,
+            "p99_ms": 0.239648,
+            "standard_deviation_ms": 0.0076000000000000095
+          }
+        },
+        "expert_collection": {
+          "device": {
+            "maximum_ms": 0.027327999472618103,
+            "mean_ms": 0.024575999937951565,
+            "minimum_ms": 0.021824000403285027,
+            "p50_ms": 0.024575999937951565,
+            "p95_ms": 0.02705279951915145,
+            "p99_ms": 0.027272959481924774,
+            "standard_deviation_ms": 0.0027519995346665382
+          },
+          "wall": {
+            "maximum_ms": 0.0351,
+            "mean_ms": 0.03205,
+            "minimum_ms": 0.029,
+            "p50_ms": 0.03205,
+            "p95_ms": 0.034795,
+            "p99_ms": 0.035039,
+            "standard_deviation_ms": 0.003049999999999999
+          }
+        },
+        "expert_dispatch": {
+          "device": {
+            "maximum_ms": 0.047200001776218414,
+            "mean_ms": 0.04448000155389309,
+            "minimum_ms": 0.041760001331567764,
+            "p50_ms": 0.04448000155389309,
+            "p95_ms": 0.04692800175398588,
+            "p99_ms": 0.047145601771771906,
+            "standard_deviation_ms": 0.002720000222325325
+          },
+          "wall": {
+            "maximum_ms": 0.0545,
+            "mean_ms": 0.05295,
+            "minimum_ms": 0.0514,
+            "p50_ms": 0.05295,
+            "p95_ms": 0.054345,
+            "p99_ms": 0.054469,
+            "standard_deviation_ms": 0.0015499999999999993
+          }
+        },
+        "latent_down": {
+          "device": {
+            "maximum_ms": 0.3253439962863922,
+            "mean_ms": 0.30990399420261383,
+            "minimum_ms": 0.29446399211883545,
+            "p50_ms": 0.30990399420261383,
+            "p95_ms": 0.32379999607801435,
+            "p99_ms": 0.32503519624471666,
+            "standard_deviation_ms": 0.015440002083778381
+          },
+          "wall": {
+            "maximum_ms": 0.3903,
+            "mean_ms": 0.35795,
+            "minimum_ms": 0.3256,
+            "p50_ms": 0.35795,
+            "p95_ms": 0.387065,
+            "p99_ms": 0.38965299999999997,
+            "standard_deviation_ms": 0.03234999999999999
+          }
+        },
+        "latent_up": {
+          "device": {
+            "maximum_ms": 0.3256640136241913,
+            "mean_ms": 0.3240800052881241,
+            "minimum_ms": 0.3224959969520569,
+            "p50_ms": 0.3240800052881241,
+            "p95_ms": 0.32550561279058454,
+            "p99_ms": 0.3256323334574699,
+            "standard_deviation_ms": 0.0015840083360671997
+          },
+          "wall": {
+            "maximum_ms": 0.3382,
+            "mean_ms": 0.3338,
+            "minimum_ms": 0.3294,
+            "p50_ms": 0.3338,
+            "p95_ms": 0.33776,
+            "p99_ms": 0.338112,
+            "standard_deviation_ms": 0.004399999999999987
+          }
+        },
+        "residual": {
+          "device": {
+            "maximum_ms": 0.20508800446987152,
+            "mean_ms": 0.18689600378274918,
+            "minimum_ms": 0.16870400309562683,
+            "p50_ms": 0.18689600378274918,
+            "p95_ms": 0.2032688044011593,
+            "p99_ms": 0.20472416445612907,
+            "standard_deviation_ms": 0.018192000687122345
+          },
+          "wall": {
+            "maximum_ms": 0.2126,
+            "mean_ms": 0.194,
+            "minimum_ms": 0.1754,
+            "p50_ms": 0.194,
+            "p95_ms": 0.21074,
+            "p99_ms": 0.21222800000000003,
+            "standard_deviation_ms": 0.018600000000000005
+          }
+        },
+        "routed_expert_compute": {
+          "device": {
+            "maximum_ms": 4.674079895019531,
+            "mean_ms": 4.667072057723999,
+            "minimum_ms": 4.660064220428467,
+            "p50_ms": 4.667072057723999,
+            "p95_ms": 4.673379111289978,
+            "p99_ms": 4.673939738273621,
+            "standard_deviation_ms": 0.0070078372955322266
+          },
+          "wall": {
+            "maximum_ms": 4.6816,
+            "mean_ms": 4.6738,
+            "minimum_ms": 4.666,
+            "p50_ms": 4.6738,
+            "p95_ms": 4.68082,
+            "p99_ms": 4.681444000000001,
+            "standard_deviation_ms": 0.007800000000000029
+          }
+        },
+        "router": {
+          "device": {
+            "maximum_ms": 0.764735996723175,
+            "mean_ms": 0.7295359969139099,
+            "minimum_ms": 0.6943359971046448,
+            "p50_ms": 0.7295359969139099,
+            "p95_ms": 0.7612159967422485,
+            "p99_ms": 0.7640319967269897,
+            "standard_deviation_ms": 0.03519999980926514
+          },
+          "wall": {
+            "maximum_ms": 0.8015,
+            "mean_ms": 0.76955,
+            "minimum_ms": 0.7376,
+            "p50_ms": 0.76955,
+            "p95_ms": 0.7983049999999999,
+            "p99_ms": 0.800861,
+            "standard_deviation_ms": 0.03194999999999998
+          }
+        },
+        "scatter_reduction": {
+          "device": {
+            "maximum_ms": 0.3638400137424469,
+            "mean_ms": 0.3532160073518753,
+            "minimum_ms": 0.3425920009613037,
+            "p50_ms": 0.3532160073518753,
+            "p95_ms": 0.36277761310338974,
+            "p99_ms": 0.3636275336146355,
+            "standard_deviation_ms": 0.010624006390571594
+          },
+          "wall": {
+            "maximum_ms": 0.3702,
+            "mean_ms": 0.36055,
+            "minimum_ms": 0.3509,
+            "p50_ms": 0.36055,
+            "p95_ms": 0.369235,
+            "p99_ms": 0.370007,
+            "standard_deviation_ms": 0.009649999999999992
+          }
+        },
+        "shared_expert": {
+          "device": {
+            "maximum_ms": 1.8079040050506592,
+            "mean_ms": 1.6637279987335205,
+            "minimum_ms": 1.5195519924163818,
+            "p50_ms": 1.6637279987335205,
+            "p95_ms": 1.7934864044189454,
+            "p99_ms": 1.8050204849243163,
+            "standard_deviation_ms": 0.14417600631713867
+          },
+          "wall": {
+            "maximum_ms": 1.8299,
+            "mean_ms": 1.6786500000000002,
+            "minimum_ms": 1.5274,
+            "p50_ms": 1.6786500000000002,
+            "p95_ms": 1.814775,
+            "p99_ms": 1.826875,
+            "standard_deviation_ms": 0.15125
+          }
+        }
+      },
+      "repeated_execution_allocations_zero": true,
+      "shaped_internal_transport_ms": 0.820472,
+      "shaped_speedup_vs_dcp1": 1.0052235184221545,
+      "shaped_wall_p50_ms": 54.776872000000004,
+      "verification_rows": 8,
+      "verifier_tokens_per_second": 148.26786071717163,
+      "wall": {
+        "maximum_ms": 54.294,
+        "mean_ms": 53.84840833333334,
+        "minimum_ms": 53.1801,
+        "p50_ms": 53.9564,
+        "p95_ms": 54.273979999999995,
+        "p99_ms": 54.289996,
+        "standard_deviation_ms": 0.3763832277044518
+      }
+    },
+    {
+      "candidate_count": 7,
+      "context_tokens": 32768,
+      "degree": 8,
+      "device": {
+        "maximum_ms": 51.820960998535156,
+        "mean_ms": 51.437870025634766,
+        "minimum_ms": 50.33990478515625,
+        "p50_ms": 51.559425354003906,
+        "p95_ms": 51.790301704406744,
+        "p99_ms": 51.814829139709474,
+        "standard_deviation_ms": 0.38153354375134946
+      },
+      "evidence_class": "MEASURED_LOCAL_GPU_COMPUTE_PLUS_SHAPED_TRANSPORT",
+      "latency_per_accepted_token_wall_ms": 6.64575625,
+      "local_gpu_speedup_vs_dcp1": 1.0356797241848887,
+      "local_gpu_synchronization_count": 2,
+      "maximum_device_memory_growth_bytes_after_warmup": 0,
+      "partial_payload_bytes_per_worker": 266240,
+      "phase_decomposition": {
+        "attention_and_pre_moe": {
+          "device": {
+            "maximum_ms": 42.527008056640625,
+            "mean_ms": 42.52177619934082,
+            "minimum_ms": 42.516544342041016,
+            "p50_ms": 42.52177619934082,
+            "p95_ms": 42.52648487091064,
+            "p99_ms": 42.52690341949463,
+            "standard_deviation_ms": 0.0052318572998046875
+          },
+          "wall": {
+            "maximum_ms": 42.5405,
+            "mean_ms": 42.53715,
+            "minimum_ms": 42.5338,
+            "p50_ms": 42.53715,
+            "p95_ms": 42.540165,
+            "p99_ms": 42.54043300000001,
+            "standard_deviation_ms": 0.0033500000000010743
+          }
+        },
+        "boundary_d2h": {
+          "device": {
+            "maximum_ms": 0.6218559741973877,
+            "mean_ms": 0.6055039763450623,
+            "minimum_ms": 0.5891519784927368,
+            "p50_ms": 0.6055039763450623,
+            "p95_ms": 0.6202207744121552,
+            "p99_ms": 0.6215289342403413,
+            "standard_deviation_ms": 0.01635199785232544
+          },
+          "wall": {
+            "maximum_ms": 0.6278,
+            "mean_ms": 0.61195,
+            "minimum_ms": 0.5961,
+            "p50_ms": 0.61195,
+            "p95_ms": 0.626215,
+            "p99_ms": 0.627483,
+            "standard_deviation_ms": 0.01585000000000003
+          }
+        },
+        "boundary_h2d": {
+          "device": {
+            "maximum_ms": 0.18512000143527985,
+            "mean_ms": 0.18459200114011765,
+            "minimum_ms": 0.18406400084495544,
+            "p50_ms": 0.18459200114011765,
+            "p95_ms": 0.18506720140576363,
+            "p99_ms": 0.1851094414293766,
+            "standard_deviation_ms": 0.0005280002951622009
+          },
+          "wall": {
+            "maximum_ms": 0.2166,
+            "mean_ms": 0.214,
+            "minimum_ms": 0.2114,
+            "p50_ms": 0.214,
+            "p95_ms": 0.21633999999999998,
+            "p99_ms": 0.216548,
+            "standard_deviation_ms": 0.002599999999999991
+          }
+        },
+        "expert_collection": {
+          "device": {
+            "maximum_ms": 0.029472000896930695,
+            "mean_ms": 0.02883200068026781,
+            "minimum_ms": 0.028192000463604927,
+            "p50_ms": 0.02883200068026781,
+            "p95_ms": 0.029408000875264406,
+            "p99_ms": 0.02945920089259744,
+            "standard_deviation_ms": 0.0006400002166628838
+          },
+          "wall": {
+            "maximum_ms": 0.0445,
+            "mean_ms": 0.039999999999999994,
+            "minimum_ms": 0.0355,
+            "p50_ms": 0.039999999999999994,
+            "p95_ms": 0.04404999999999999,
+            "p99_ms": 0.04441,
+            "standard_deviation_ms": 0.0045000000000000005
+          }
+        },
+        "expert_dispatch": {
+          "device": {
+            "maximum_ms": 0.04745600000023842,
+            "mean_ms": 0.04079999960958958,
+            "minimum_ms": 0.034143999218940735,
+            "p50_ms": 0.04079999960958958,
+            "p95_ms": 0.04679039996117353,
+            "p99_ms": 0.04732287999242544,
+            "standard_deviation_ms": 0.006656000390648842
+          },
+          "wall": {
+            "maximum_ms": 0.0544,
+            "mean_ms": 0.04775,
+            "minimum_ms": 0.0411,
+            "p50_ms": 0.04775,
+            "p95_ms": 0.053735,
+            "p99_ms": 0.054266999999999996,
+            "standard_deviation_ms": 0.00665
+          }
+        },
+        "latent_down": {
+          "device": {
+            "maximum_ms": 0.3041279911994934,
+            "mean_ms": 0.3016799986362457,
+            "minimum_ms": 0.29923200607299805,
+            "p50_ms": 0.3016799986362457,
+            "p95_ms": 0.30388319194316865,
+            "p99_ms": 0.30407903134822845,
+            "standard_deviation_ms": 0.0024479925632476807
+          },
+          "wall": {
+            "maximum_ms": 0.3277,
+            "mean_ms": 0.3272,
+            "minimum_ms": 0.3267,
+            "p50_ms": 0.3272,
+            "p95_ms": 0.32764999999999994,
+            "p99_ms": 0.32769,
+            "standard_deviation_ms": 0.0005000000000000004
+          }
+        },
+        "latent_up": {
+          "device": {
+            "maximum_ms": 0.32287999987602234,
+            "mean_ms": 0.3224000036716461,
+            "minimum_ms": 0.3219200074672699,
+            "p50_ms": 0.3224000036716461,
+            "p95_ms": 0.32283200025558473,
+            "p99_ms": 0.3228703999519348,
+            "standard_deviation_ms": 0.0004799962043762207
+          },
+          "wall": {
+            "maximum_ms": 0.329,
+            "mean_ms": 0.32889999999999997,
+            "minimum_ms": 0.3288,
+            "p50_ms": 0.32889999999999997,
+            "p95_ms": 0.32899,
+            "p99_ms": 0.328998,
+            "standard_deviation_ms": 0.00010000000000001674
+          }
+        },
+        "residual": {
+          "device": {
+            "maximum_ms": 0.31164801120758057,
+            "mean_ms": 0.23713600635528564,
+            "minimum_ms": 0.16262400150299072,
+            "p50_ms": 0.23713600635528564,
+            "p95_ms": 0.3041968107223511,
+            "p99_ms": 0.31015777111053466,
+            "standard_deviation_ms": 0.07451200485229492
+          },
+          "wall": {
+            "maximum_ms": 0.3183,
+            "mean_ms": 0.2444,
+            "minimum_ms": 0.1705,
+            "p50_ms": 0.2444,
+            "p95_ms": 0.31091,
+            "p99_ms": 0.31682200000000005,
+            "standard_deviation_ms": 0.07390000000000001
+          }
+        },
+        "routed_expert_compute": {
+          "device": {
+            "maximum_ms": 4.680319786071777,
+            "mean_ms": 4.678031921386719,
+            "minimum_ms": 4.67574405670166,
+            "p50_ms": 4.678031921386719,
+            "p95_ms": 4.680090999603272,
+            "p99_ms": 4.680274028778077,
+            "standard_deviation_ms": 0.0022878646850585938
+          },
+          "wall": {
+            "maximum_ms": 4.6896,
+            "mean_ms": 4.68595,
+            "minimum_ms": 4.6823,
+            "p50_ms": 4.68595,
+            "p95_ms": 4.689235,
+            "p99_ms": 4.689527,
+            "standard_deviation_ms": 0.003650000000000375
+          }
+        },
+        "router": {
+          "device": {
+            "maximum_ms": 0.7550719976425171,
+            "mean_ms": 0.7235200107097626,
+            "minimum_ms": 0.6919680237770081,
+            "p50_ms": 0.7235200107097626,
+            "p95_ms": 0.7519167989492417,
+            "p99_ms": 0.754440957903862,
+            "standard_deviation_ms": 0.03155198693275452
+          },
+          "wall": {
+            "maximum_ms": 0.769,
+            "mean_ms": 0.7473000000000001,
+            "minimum_ms": 0.7256,
+            "p50_ms": 0.7473000000000001,
+            "p95_ms": 0.7668300000000001,
+            "p99_ms": 0.7685660000000001,
+            "standard_deviation_ms": 0.021699999999999997
+          }
+        },
+        "scatter_reduction": {
+          "device": {
+            "maximum_ms": 0.3685759902000427,
+            "mean_ms": 0.36297599971294403,
+            "minimum_ms": 0.35737600922584534,
+            "p50_ms": 0.36297599971294403,
+            "p95_ms": 0.3680159911513329,
+            "p99_ms": 0.36846399039030076,
+            "standard_deviation_ms": 0.005599990487098694
+          },
+          "wall": {
+            "maximum_ms": 0.3759,
+            "mean_ms": 0.3705,
+            "minimum_ms": 0.3651,
+            "p50_ms": 0.3705,
+            "p95_ms": 0.37536,
+            "p99_ms": 0.375792,
+            "standard_deviation_ms": 0.005400000000000016
+          }
+        },
+        "shared_expert": {
+          "device": {
+            "maximum_ms": 1.5076160430908203,
+            "mean_ms": 1.504688024520874,
+            "minimum_ms": 1.5017600059509277,
+            "p50_ms": 1.504688024520874,
+            "p95_ms": 1.5073232412338258,
+            "p99_ms": 1.5075574827194214,
+            "standard_deviation_ms": 0.002928018569946289
+          },
+          "wall": {
+            "maximum_ms": 1.5151,
+            "mean_ms": 1.51185,
+            "minimum_ms": 1.5086,
+            "p50_ms": 1.51185,
+            "p95_ms": 1.514775,
+            "p99_ms": 1.515035,
+            "standard_deviation_ms": 0.003249999999999975
+          }
+        }
+      },
+      "repeated_execution_allocations_zero": true,
+      "shaped_internal_transport_ms": 0.820472,
+      "shaped_speedup_vs_dcp1": 1.0199397545928224,
+      "shaped_wall_p50_ms": 53.986522,
+      "verification_rows": 8,
+      "verifier_tokens_per_second": 150.47196472184788,
+      "wall": {
+        "maximum_ms": 53.7658,
+        "mean_ms": 53.11834166666667,
+        "minimum_ms": 51.9809,
+        "p50_ms": 53.16605,
+        "p95_ms": 53.70024,
+        "p99_ms": 53.752688,
+        "standard_deviation_ms": 0.4474166131961225
+      }
+    }
+  ],
+  "schema_version": "experiment-016-kimi-mla-device-dcp-v1",
+  "scope": "complete exact Kimi MLA context-shard compute/reduction on one RTX 5090; inter-device transport is shaped, not physically measured",
+  "status": "PASS"
+}

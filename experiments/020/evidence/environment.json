@@ -1,0 +1,21 @@
+{
+  "cwd": "<local-repo>",
+  "git_commit": "ef1abb4b6a92ac4c43ce2fff53824a6d069fac9f",
+  "git_status": "M .gitignore\n M pyproject.toml\n m third_party/colibri\n?? .dockerignore\n?? deployment/\n?? docs/experiments/EXPERIMENT_020_REPORT.md\n?? docs/experiments/EXPERIMENT_021_RUNBOOK.md\n?? scripts/experiment_020_full_sharded.py\n?? scripts/experiment_020_network_rehearsal.py\n?? scripts/experiment_020_physical.py\n?? scripts/experiment_020_validate.py\n?? scripts/finalize_experiment_020.py\n?? scripts/run_experiment_021.py\n?? scripts/swarm_vast.py\n?? src/swarm_inference/experiments/experiment_020/\n?? tests/unit/test_experiment_020_cost.py\n?? tests/unit/test_experiment_020_fleet.py\n?? tests/unit/test_experiment_020_manifest_hashes.py\n?? tests/unit/test_experiment_020_model_distribution.py\n?? tests/unit/test_experiment_020_provisioning.py\n?? tests/unit/test_experiment_020_topology.py\n?? tests/unit/test_experiment_020_transport.py\n?? tests/unit/test_experiment_020_vast_safety.py\n?? tests/unit/test_experiment_020_worker_lifecycle.py",
+  "gpu_rentals": 0,
+  "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Aug_20_13:58:20_Pacific_Daylight_Time_2025\nCuda compilation tools, release 13.0, V13.0.88\nBuild cuda_13.0.r13.0/compiler.36424714_0",
+  "nvidia_smi": "NVIDIA GeForce RTX 5090, 12.0, 32607, 591.86",
+  "physical_compute_device": "NVIDIA GeForce RTX 5090 SM120",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "rtx_3090_physically_tested": false,
+  "schema_version": "experiment-020-environment-v1",
+  "timestamp_utc": "2026-08-13T10:00:15.645653+00:00",
+  "timezone": [
+    "AUS Eastern Standard Time",
+    "AUS Eastern Daylight Time"
+  ],
+  "vast_cli_path": "<user-home>/AppData\\Local\\Programs\\Python\\Python311\\Scripts\\vastai.exe",
+  "vast_cli_version": "1.5.4",
+  "vast_mode": "READ_ONLY"
+}

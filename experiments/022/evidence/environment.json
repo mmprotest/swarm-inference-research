@@ -1,0 +1,22 @@
+{
+  "captured_unix_ns": 1786660947378214300,
+  "checkpoint": "<local-kimi-k3-checkpoint>",
+  "evidence_class": "PHYSICALLY GROUNDED MODEL + CONTROLLED HETEROGENEITY + SHAPED NETWORK",
+  "external_physical_swarm": false,
+  "git_commit": "f4c377b7eb48e0c3e1bc0a51184fccaa2bd0d7b2",
+  "git_status_at_finalize": "M AGENTS.md\n m third_party/colibri\n?? scripts/experiment_022_correctness.py\n?? scripts/experiment_022_finalize.py\n?? scripts/experiment_022_physical.py\n?? scripts/experiment_022_run.py\n?? scripts/experiment_022_test.py\n?? src/swarm_inference/experiments/experiment_022/\n?? tests/test_experiment_022.py",
+  "gpu": "NVIDIA GeForce RTX 5090, 32607, 591.86, 12.0",
+  "gpu_rentals": 0,
+  "logical_cpu_count": 20,
+  "numpy": "2.4.6",
+  "physical_cpu_count": 20,
+  "physical_heterogeneous_swarm_tested": false,
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "schema_version": "experiment-022-environment-v1",
+  "system_ram_bytes": 102496780288,
+  "vast_access_guard": false,
+  "vast_mutations": 0,
+  "vast_queries": 0,
+  "zero_rental_guard": true
+}

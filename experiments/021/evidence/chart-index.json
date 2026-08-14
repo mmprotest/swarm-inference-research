@@ -1,0 +1,68 @@
+{
+  "chart_count": 10,
+  "charts": [
+    {
+      "bytes": 107972,
+      "exists": true,
+      "file": "charts/chart-01-memory-fragmentation-curve.png",
+      "sha256": "90f28d3ef38614b3e9009448cd47985a23c05ddd11dc58aa85bc36671ebd2c1c"
+    },
+    {
+      "bytes": 117592,
+      "exists": true,
+      "file": "charts/chart-02-network-envelope.png",
+      "sha256": "23246df3a60a206e81dd28709c51cf7af3477ca504bff416686c8c948d576972"
+    },
+    {
+      "bytes": 63839,
+      "exists": true,
+      "file": "charts/chart-03-worker-count.png",
+      "sha256": "933f700cf127012d8aeb9a5d25c02b99122ceadc1c492d7dc510b18c98556087"
+    },
+    {
+      "bytes": 70580,
+      "exists": true,
+      "file": "charts/chart-04-critical-path.png",
+      "sha256": "d69f1bcf6613635d5d82ce69675d72a85f83079031801fde3d0a94d7fe90d1e7"
+    },
+    {
+      "bytes": 65052,
+      "exists": true,
+      "file": "charts/chart-05-network-vs-compute.png",
+      "sha256": "d4a462af8e04347db270f49c011b058d144b69dca92352e5ea6b44ff28d69ab9"
+    },
+    {
+      "bytes": 74237,
+      "exists": true,
+      "file": "charts/chart-06-whole-layer-control.png",
+      "sha256": "b58bc8d936bc5601a107c856564e39edcac907672e83f8f90cf81089868673b7"
+    },
+    {
+      "bytes": 74796,
+      "exists": true,
+      "file": "charts/chart-07-worker-utilization.png",
+      "sha256": "375ff4c39495f0355c0089302305c328abc1d22d5668319fcf18a40770eee73e"
+    },
+    {
+      "bytes": 75638,
+      "exists": true,
+      "file": "charts/chart-08-market-fragmented-inventory.png",
+      "sha256": "715d121656c41a6068c00faf6dd73e7d7df2eab87c65b0d03590b81d7ad75c5a"
+    },
+    {
+      "bytes": 121209,
+      "exists": true,
+      "file": "charts/chart-09-concurrency.png",
+      "sha256": "c9f54d5a2f2ed88721480cadacfe0fcfa7091f4057dec139c2078be4086fe085"
+    },
+    {
+      "bytes": 70956,
+      "exists": true,
+      "file": "charts/chart-10-evidence-stack.png",
+      "sha256": "0199a8f3f0b458a5c1e9577532dd9396e5df123b3b63410c334b437e8cb52e25"
+    }
+  ],
+  "model_invalid_throughput_policy": "diagnostic values are labeled inadmissible and exact/admissible throughput is suppressed",
+  "schema_version": "experiment-021-chart-index-v1",
+  "status": "PASS"
+}

@@ -1,0 +1,6 @@
+family,count,whole_feasible,capacity_unlocks,median_uplift_percent
+coarse-friendly,3,3,0,0.0
+memory-fragmented,6,3,3,0.0
+compute-heterogeneous,6,6,0,0.0
+network-heterogeneous,6,6,0,0.0
+full-mixed,6,3,3,0.0

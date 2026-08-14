@@ -1,0 +1,201 @@
+{
+  "files": [
+    {
+      "bytes": 1887696,
+      "path": "artifacts/experiment-020/deployment/native/sm86/libcoli_cuda-sm86.so",
+      "sha256": "3ddcb99001d0144f5d9fb04f83df07f939c9e0bcda2ed78d0846e021df08b09f"
+    },
+    {
+      "bytes": 1088400,
+      "path": "artifacts/experiment-020/deployment/native/sm86/libe019_kda_shard-sm86.so",
+      "sha256": "b70e632ffd166d38f7a6e39900d32c1092c4104718b931bf87b05d2ef479560a"
+    },
+    {
+      "bytes": 1028528,
+      "path": "artifacts/experiment-020/deployment/native/sm86/libe020_grouped_top16-sm86.so",
+      "sha256": "df17acd5e312c36216586dfe98e1a699cd58aa7647b2e8260d45afd728334081"
+    },
+    {
+      "bytes": 744,
+      "path": "deployment/bootstrap_e021.sh",
+      "sha256": "dbb0eb74c3bfc379d39af1f4b613954c840cb90fcd83bf16cbb92ad12cbf6c69"
+    },
+    {
+      "bytes": 2582,
+      "path": "deployment/Dockerfile.e021",
+      "sha256": "de9483d1d886baf9e124e97b4ad73883fd24ba3359cbe9381ce5d64a075ed964"
+    },
+    {
+      "bytes": 2447,
+      "path": "scripts/experiment_020_full_sharded.py",
+      "sha256": "3ef1487403a01190ad71e6107bdc135b3b379b6b0cc59f8a3bcb3194529d16e7"
+    },
+    {
+      "bytes": 807,
+      "path": "scripts/experiment_020_network_rehearsal.py",
+      "sha256": "b95ea2d8f665f6e9c8943f35154319740f2b40eb60b6b6314695e786d07f11a2"
+    },
+    {
+      "bytes": 3068,
+      "path": "scripts/experiment_020_physical.py",
+      "sha256": "bdda545216335e407ee412c7c50b7d11edcd32bbf440870691677f240822a31a"
+    },
+    {
+      "bytes": 5372,
+      "path": "scripts/experiment_020_validate.py",
+      "sha256": "25d97d2b517d88206cabfa67d6dd6400ec2e2e09e32528ac2364993e3455bdbc"
+    },
+    {
+      "bytes": 919,
+      "path": "scripts/finalize_experiment_020.py",
+      "sha256": "9ab6e6c6efbb151789ae47fc2855cf47a37f24e791ebe4e57257c6e5a0ce653c"
+    },
+    {
+      "bytes": 7999,
+      "path": "scripts/run_experiment_021.py",
+      "sha256": "2534c06b60a5b571e1914f5012fa828353ff9e8e035272f46d383ee06c32c4f7"
+    },
+    {
+      "bytes": 332,
+      "path": "src/swarm_inference/experiments/experiment_020/__init__.py",
+      "sha256": "90c11de56ee404a653e0370b0d203b92de50d7b36a2f5267903645d7f4cf8637"
+    },
+    {
+      "bytes": 9557,
+      "path": "src/swarm_inference/experiments/experiment_020/control_plane.py",
+      "sha256": "3969a57cf7ac9feed713549f33e7fab99a946612e5843aa0ad5d391f9e170857"
+    },
+    {
+      "bytes": 5413,
+      "path": "src/swarm_inference/experiments/experiment_020/cost.py",
+      "sha256": "2e875af94476470890d466b24617546f8982e3509d62f9dbcddd0b4e8a0bb4c0"
+    },
+    {
+      "bytes": 10883,
+      "path": "src/swarm_inference/experiments/experiment_020/expert_grouped.py",
+      "sha256": "dc969fc6c6ad4814528ebd9398589cd55ab8af49734e95aa6dab4687c9227429"
+    },
+    {
+      "bytes": 104108,
+      "path": "src/swarm_inference/experiments/experiment_020/finalize.py",
+      "sha256": "37cdac096564e7b158b33e36256b47b359b0195d9ccd3b6e9495db0173572add"
+    },
+    {
+      "bytes": 12239,
+      "path": "src/swarm_inference/experiments/experiment_020/fleet.py",
+      "sha256": "39769da9ba0f149eb25e84d938b82c036ae78b47b928eea1218a325aa25a8af6"
+    },
+    {
+      "bytes": 14075,
+      "path": "src/swarm_inference/experiments/experiment_020/model_distribution.py",
+      "sha256": "840f4906debf8bc4ecfa715b87441af859322f80cad4662381fc8253e65de24e"
+    },
+    {
+      "bytes": 4370,
+      "path": "src/swarm_inference/experiments/experiment_020/network_rehearsal.py",
+      "sha256": "23e66729bcce85ca3b2762320f25de8a1609d75bf7f18795bd413764712ac429"
+    },
+    {
+      "bytes": 10705,
+      "path": "src/swarm_inference/experiments/experiment_020/placement.py",
+      "sha256": "aa655a0b5959f58e4e8197fb6d2254bc455cb816216e60e5c4655073e2450a27"
+    },
+    {
+      "bytes": 11238,
+      "path": "src/swarm_inference/experiments/experiment_020/provisioning.py",
+      "sha256": "e677a3f30c5fc65c38e4603a687b64663b0343b4b5657f26a0f1dcdb9d50c3e0"
+    },
+    {
+      "bytes": 7711,
+      "path": "src/swarm_inference/experiments/experiment_020/replay.py",
+      "sha256": "843fdf36713dd5b79432167d946aa60b83b18965ac4691e1e8fdc94fe12686f3"
+    },
+    {
+      "bytes": 6586,
+      "path": "src/swarm_inference/experiments/experiment_020/sharded_graph.py",
+      "sha256": "43a90c741f60d58ee7175976d793901134a4b6742cd9beb4565689dcfc173e16"
+    },
+    {
+      "bytes": 19874,
+      "path": "src/swarm_inference/experiments/experiment_020/simulation.py",
+      "sha256": "b92b0281c2477704278c1b01dfbcc444bfd246d54afbc4d60d90791cbcaa5401"
+    },
+    {
+      "bytes": 7559,
+      "path": "src/swarm_inference/experiments/experiment_020/topology.py",
+      "sha256": "aa1beed8fcd227b0f9e1e25c102c87ff27c89f37b032f45c5efb78744b34e469"
+    },
+    {
+      "bytes": 10265,
+      "path": "src/swarm_inference/experiments/experiment_020/transport.py",
+      "sha256": "d9c49dd94e5751dc19c02ece0f6ae7112edb7b72b0a7992b846b30ab08044652"
+    },
+    {
+      "bytes": 10119,
+      "path": "src/swarm_inference/experiments/experiment_020/vast.py",
+      "sha256": "68957f327fdf4276d874223d1603d18fd6c444f5f512437a6ed1c79dda7d3478"
+    },
+    {
+      "bytes": 14744,
+      "path": "src/swarm_inference/experiments/experiment_020/vast_cli.py",
+      "sha256": "0fb9016953b4e5098f1bd0e648e4ced7a8572b56cbfba788cd87093006bd7283"
+    },
+    {
+      "bytes": 6439,
+      "path": "src/swarm_inference/experiments/experiment_020/worker_main.py",
+      "sha256": "bc8fc56dcddb25bf90ef85599d9d4cb378c3741bdd2f280111d2f55cdfcd5f21"
+    },
+    {
+      "bytes": 1640,
+      "path": "tests/unit/test_experiment_020_cost.py",
+      "sha256": "bf483bda62dcc1b17023b6f4cdfdd6df8f4e3aa4129073f22a5d5f9ccf9e9538"
+    },
+    {
+      "bytes": 3155,
+      "path": "tests/unit/test_experiment_020_fleet.py",
+      "sha256": "040b189d26a6c8a70e5d6d362dd39ada401d2bed4843fca6d2d70f6a7e2a8d96"
+    },
+    {
+      "bytes": 1584,
+      "path": "tests/unit/test_experiment_020_manifest_hashes.py",
+      "sha256": "e1a80565c552977059c3b6f82993a3e678391f2eac95a116365552ae3801fb75"
+    },
+    {
+      "bytes": 1783,
+      "path": "tests/unit/test_experiment_020_model_distribution.py",
+      "sha256": "a054f72d1690f63cd092e5e0180f9a4eaa07a4319cb570ba57fdde1c61d74586"
+    },
+    {
+      "bytes": 2733,
+      "path": "tests/unit/test_experiment_020_provisioning.py",
+      "sha256": "ee369c31c48d7c7b772b3db51c11e185b6b0d89d0d3de23dacaedf58b2d17f82"
+    },
+    {
+      "bytes": 1157,
+      "path": "tests/unit/test_experiment_020_topology.py",
+      "sha256": "d4b2f8587a7f927b92662cfa4c7f4a652d95eb3c52d6eac81a572f3cd10ac09b"
+    },
+    {
+      "bytes": 1541,
+      "path": "tests/unit/test_experiment_020_transport.py",
+      "sha256": "d270ef0fcd2b55b2011345a4c1f8eca4c1b92d29c5d72e1f936ba5bb247091c3"
+    },
+    {
+      "bytes": 4214,
+      "path": "tests/unit/test_experiment_020_vast_safety.py",
+      "sha256": "944f725f5ebad4a15fa9e997c57da9e7a0deae361614a2655fdaa9669329df4b"
+    },
+    {
+      "bytes": 1233,
+      "path": "tests/unit/test_experiment_020_worker_lifecycle.py",
+      "sha256": "782a2e2f4e906bc4a313b0960bb882e43457b8472231b952a4011249fa39c97c"
+    }
+  ],
+  "generated_unix_ns": 1786615215817144300,
+  "git_commit": "ef1abb4b6a92ac4c43ce2fff53824a6d069fac9f",
+  "preexisting_dirty_paths_preserved": [
+    ".gitignore",
+    "third_party/colibri"
+  ],
+  "schema_version": "experiment-020-source-manifest-v1"
+}

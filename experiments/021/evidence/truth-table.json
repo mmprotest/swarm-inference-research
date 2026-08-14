@@ -1,0 +1,83 @@
+{
+  "diagnostic_projection_is_not_an_exact_result": true,
+  "outcome": "MODEL_INVALID",
+  "rows": [
+    {
+      "answer": "NO",
+      "question": "Any GPUs rented in E021?"
+    },
+    {
+      "answer": "NO",
+      "question": "Any Vast resources mutated?"
+    },
+    {
+      "answer": "4.495 GiB peak (8 GiB cap)",
+      "question": "Headline max memory per independent machine"
+    },
+    {
+      "answer": "NO",
+      "question": "Can complete K3 be executed by assigning whole layers to these machines?"
+    },
+    {
+      "answer": "NO",
+      "question": "Does any headline machine host multiple compute workers?"
+    },
+    {
+      "answer": "NO",
+      "question": "Does any headline worker own a whole ordinary transformer layer?"
+    },
+    {
+      "answer": "NO",
+      "question": "Does any headline worker own a whole routed/shared expert?"
+    },
+    {
+      "answer": "YES",
+      "question": "Full checkpoint covered?"
+    },
+    {
+      "answer": "FAIL",
+      "question": "Full 93-layer worker-process shard correctness?"
+    },
+    {
+      "answer": "FAIL",
+      "question": "Timing model validated against ordered physical shard execution?"
+    },
+    {
+      "answer": "YES",
+      "question": "Headline compute events all tied to explicit workers?"
+    },
+    {
+      "answer": "NO",
+      "question": "Same-host NCCL/NVLink assumed?"
+    },
+    {
+      "answer": "N/A \u2014 MODEL_INVALID",
+      "question": "Best 8 GiB / Regime B tok/s"
+    },
+    {
+      "answer": "N/A \u2014 MODEL_INVALID",
+      "question": "Best 8 GiB / Regime C tok/s"
+    },
+    {
+      "answer": "N/A \u2014 MODEL_INVALID",
+      "question": "Best 8 GiB / Regime D tok/s"
+    },
+    {
+      "answer": "N/A \u2014 MODEL_INVALID",
+      "question": "Best 4 GiB result"
+    },
+    {
+      "answer": "N/A \u2014 MODEL_INVALID",
+      "question": "Best 2 GiB result"
+    },
+    {
+      "answer": "N/A \u2014 MODEL_INVALID",
+      "question": "Best 1 GiB result"
+    },
+    {
+      "answer": "NO",
+      "question": "Physical independent-machine Swarm measured?"
+    }
+  ],
+  "schema_version": "experiment-021-truth-table-v1"
+}

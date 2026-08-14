@@ -1,0 +1,171 @@
+{
+  "remaining_pre_rental_testable_critical_risks": 6,
+  "remaining_pre_rental_testable_high_impact_failed": 6,
+  "remaining_pre_rental_testable_high_impact_untested": 0,
+  "risks": [
+    {
+      "E021_mitigation": "measure worker services before headline run; abort if conservative gate fails",
+      "can_test_without_rental": false,
+      "impact": "high",
+      "probability": "medium",
+      "result": "requires E021",
+      "risk": "actual RTX 3090 SM86 shard throughput",
+      "tested": false
+    },
+    {
+      "E021_mitigation": "measure all required intra-pod paths before READY",
+      "can_test_without_rental": false,
+      "impact": "high",
+      "probability": "medium",
+      "result": "requires physical P8 host",
+      "risk": "actual local eight-GPU collective latency",
+      "tested": false
+    },
+    {
+      "E021_mitigation": "topology gate rejects slow fleet before benchmark",
+      "can_test_without_rental": false,
+      "impact": "high",
+      "probability": "medium",
+      "result": "requires independent hosts",
+      "risk": "actual inter-host transport and jitter",
+      "tested": false
+    },
+    {
+      "E021_mitigation": "health, power, and sustained service qualification",
+      "can_test_without_rental": false,
+      "impact": "high",
+      "probability": "medium",
+      "result": "requires rental",
+      "risk": "actual Vast host behavior and throttling",
+      "tested": false
+    },
+    {
+      "E021_mitigation": "E021 primary measurement and kill switch",
+      "can_test_without_rental": false,
+      "impact": "high",
+      "probability": "medium",
+      "result": "requires full swarm",
+      "risk": "full distributed critical path and cost/token",
+      "tested": false
+    },
+    {
+      "E021_mitigation": "refresh snapshot; spend $0 unless all 12 satisfy policy",
+      "can_test_without_rental": true,
+      "impact": "high",
+      "probability": "high",
+      "result": "NO: 0 of 12 in snapshot",
+      "risk": "12 homogeneous P8 RTX 3090 hosts available simultaneously",
+      "tested": true
+    },
+    {
+      "E021_mitigation": "revalidate hashes and manifest on every pod",
+      "can_test_without_rental": true,
+      "impact": "high",
+      "probability": "low",
+      "result": "PASS byte-exact coverage and 16.979 GiB peak",
+      "risk": "checkpoint byte placement or worker memory error",
+      "tested": true
+    },
+    {
+      "E021_mitigation": "run resident-weight RTX 5090 replays for every primitive, full KDA/MLA layer, and 2/4/8-layer spans; then revalidate without normalization",
+      "can_test_without_rental": true,
+      "impact": "high",
+      "probability": "high",
+      "result": "FAIL: numeric service sums pass thresholds but the required end-to-end physical wall was not measured",
+      "risk": "single-resource replay does not physically execute the ordered shard workload",
+      "tested": true
+    },
+    {
+      "E021_mitigation": "content-addressed retry then clean abort",
+      "can_test_without_rental": true,
+      "impact": "high",
+      "probability": "low",
+      "result": "PASS real 64 KiB ranged/resumed proof and cache tests",
+      "risk": "remote shard acquisition, resume, or hash failure",
+      "tested": true
+    },
+    {
+      "E021_mitigation": "retain the frozen framing, credentials, and bounds in the production data path",
+      "can_test_without_rental": true,
+      "impact": "high",
+      "probability": "low",
+      "result": "PASS TLS/HMAC/bounds plus 96/376/1000 lightweight workers",
+      "risk": "control-plane transport/security scaling",
+      "tested": true
+    },
+    {
+      "E021_mitigation": "ledger-only teardown plus verify-destroyed",
+      "can_test_without_rental": true,
+      "impact": "high",
+      "probability": "low",
+      "result": "PASS 11 injected failures and hash-chained ledger",
+      "risk": "provisioning rollback leaves rentals",
+      "tested": true
+    },
+    {
+      "E021_mitigation": "implement and loopback-test controller enrollment, registration, scheduling, and shutdown",
+      "can_test_without_rental": true,
+      "impact": "high",
+      "probability": "high",
+      "result": "FAIL: deployment audit found no controller-host-agent entrypoint",
+      "risk": "production controller host-agent role missing",
+      "tested": true
+    },
+    {
+      "E021_mitigation": "wire the frozen protocol to all native primitives and rerun full 93-layer correctness through worker processes",
+      "can_test_without_rental": true,
+      "impact": "high",
+      "probability": "high",
+      "result": "FAIL: lifecycle worker does not handle EXECUTE_SHARD",
+      "risk": "production worker process has no native shard dispatch",
+      "tested": true
+    },
+    {
+      "E021_mitigation": "implement the guarded real adapter and test every command with mocked subprocess boundaries while E020 stays read-only",
+      "can_test_without_rental": true,
+      "impact": "high",
+      "probability": "high",
+      "result": "FAIL: state machine currently has only a fake backend",
+      "risk": "real Vast provisioning backend adapter missing",
+      "tested": true
+    },
+    {
+      "E021_mitigation": "make cache completion a prerequisite for registration and prove shared concurrent access",
+      "can_test_without_rental": true,
+      "impact": "high",
+      "probability": "high",
+      "result": "FAIL: ShardCache and lifecycle are not integrated",
+      "risk": "host agent does not acquire and verify its pod model bundle",
+      "tested": true
+    },
+    {
+      "E021_mitigation": "run exact preregistered E021 secondary acceptance measurement after target-only pass",
+      "can_test_without_rental": true,
+      "impact": "medium",
+      "probability": "medium",
+      "result": "SCENARIO_ONLY_ACCEPTANCE_UNVALIDATED",
+      "risk": "production DSpark acceptance distribution",
+      "tested": true
+    },
+    {
+      "E021_mitigation": "add verified --image-ref input, then publish the corrected image by digest",
+      "can_test_without_rental": true,
+      "impact": "high",
+      "probability": "high",
+      "result": "FAIL: local image build=PASS, preflight published flag is hardcoded false",
+      "risk": "immutable registry image cannot be supplied and verified by preflight",
+      "tested": true
+    },
+    {
+      "E021_mitigation": "onstart bootstrap is noninteractive; add emergency key before E021 if policy requires",
+      "can_test_without_rental": true,
+      "impact": "low",
+      "probability": "high",
+      "result": "detected by redacted CLI receipt",
+      "risk": "no Vast SSH key registered",
+      "tested": true
+    }
+  ],
+  "schema_version": "experiment-020-risk-register-v1",
+  "status": "FAIL"
+}

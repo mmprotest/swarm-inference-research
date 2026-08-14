@@ -1,0 +1,21 @@
+{
+  "checkpoint_coverage_gap_bytes": 0,
+  "checkpoint_coverage_overlap_bytes": 0,
+  "checkpoint_index_sha256": "a1c5210650ce71d2d3ae9ec5a101ac4afd3cf4b10091be589853437eb967febd",
+  "checkpoint_metadata_revalidated": true,
+  "checkpoint_path": "<local-kimi-k3-checkpoint>\\model.safetensors.index.json",
+  "checkpoint_payload_bytes": 1560860324864,
+  "checkpoint_payload_gib": 1453.6644563674927,
+  "gated_mla_layers": 24,
+  "hidden_dimension": 7168,
+  "kda_layers": 69,
+  "latent_dimension": 3584,
+  "model": "Kimi K3",
+  "routed_experts": 896,
+  "schema_version": "experiment-021-model-metadata-v1",
+  "selected_routed_experts_per_applicable_token_layer": 16,
+  "shared_experts": 2,
+  "source_of_truth": "current local checkpoint index plus E021 byte-exact CheckpointCatalog census",
+  "tensor_count": 497220,
+  "transformer_layers": 93
+}

@@ -1,0 +1,11 @@
+workload,predicted_sharded_wall_ms,actual_sharded_wall_ms,absolute_percentage_error,compute_task_count,network_task_count,physical_actual_source
+expert_stripe,0.1605,0.1606,0.0006226650062265815,1,0,independent heldout RTX 5090 worker wall
+KDA_stripe,0.2824,0.2794,0.010737294201861142,1,0,independent heldout RTX 5090 worker wall
+MLA_stripe,0.198,0.2124,0.06779661016949151,1,0,independent heldout RTX 5090 worker wall
+projection_stripe,0.0468,0.0488,0.04098360655737708,1,0,independent heldout RTX 5090 worker wall
+shared_expert_stripe,0.1056,0.1072,0.014925373134328396,1,0,independent heldout RTX 5090 worker wall
+complete_sharded_KDA_layer,8.166904000767998,7.807004000767997,0.046099630532352255,67,8,"single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap"
+complete_sharded_MLA_layer,7.5114040007680005,7.195804000767998,0.043858893317038516,67,8,"single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap"
+two_layer_span,16.333808001536003,15.614008001536009,0.046099630532351756,134,16,"single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap"
+four_layer_span,32.01211600307201,30.616816003072078,0.045572994914295714,268,32,"single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap"
+eight_layer_span,64.07303223552022,61.26313223552026,0.04586608450246331,536,65,"single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap"

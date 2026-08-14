@@ -1,0 +1,66 @@
+{
+  "authenticated_binary_protocol": true,
+  "credential_value_persisted": false,
+  "persistent_tls_connection": true,
+  "samples": [
+    {
+      "download_gbps": 0.993905012411064,
+      "rtt_ms": 0.9414,
+      "upload_gbps": 0.9388349911165204
+    },
+    {
+      "download_gbps": 1.1398145965317525,
+      "rtt_ms": 0.4257,
+      "upload_gbps": 1.1836028981213007
+    },
+    {
+      "download_gbps": 1.1517236502929555,
+      "rtt_ms": 0.3419,
+      "upload_gbps": 1.1838367473662672
+    },
+    {
+      "download_gbps": 1.1751507531528753,
+      "rtt_ms": 0.4669,
+      "upload_gbps": 1.2077020699186933
+    },
+    {
+      "download_gbps": 1.1718756264602854,
+      "rtt_ms": 0.3869,
+      "upload_gbps": 1.1803303785000703
+    },
+    {
+      "download_gbps": 1.1921393854986784,
+      "rtt_ms": 0.3361,
+      "upload_gbps": 1.1805463219668715
+    },
+    {
+      "download_gbps": 1.1793098697482831,
+      "rtt_ms": 0.312,
+      "upload_gbps": 1.219779705255811
+    },
+    {
+      "download_gbps": 1.1213854549951041,
+      "rtt_ms": 0.3736,
+      "upload_gbps": 1.1514865082824013
+    },
+    {
+      "download_gbps": 1.1335305742575594,
+      "rtt_ms": 0.406,
+      "upload_gbps": 1.1841584409992907
+    },
+    {
+      "download_gbps": 1.1493605535383982,
+      "rtt_ms": 0.4172,
+      "upload_gbps": 1.1563954177637474
+    }
+  ],
+  "schema_version": "experiment-020-network-probe-smoke-v1",
+  "status": "PASS",
+  "summary": {
+    "download_gbps_p10": 0.993905012411064,
+    "jitter_ms": 0.17263584824711234,
+    "rtt_ms_p50": 0.39645,
+    "rtt_ms_p95": 0.4669,
+    "upload_gbps_p10": 0.9388349911165204
+  }
+}

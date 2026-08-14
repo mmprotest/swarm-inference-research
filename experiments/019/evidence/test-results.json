@@ -1,0 +1,79 @@
+{
+  "hard_gates": [
+    {
+      "evidence": "placement/tensor-coverage.csv",
+      "gate": "Gate 1",
+      "name": "Complete checkpoint worker placement",
+      "status": "PASS"
+    },
+    {
+      "evidence": "placement/worker-manifest-20g.json",
+      "gate": "Gate 2",
+      "name": "No monolith",
+      "status": "PASS"
+    },
+    {
+      "evidence": "placement/worker-manifest-20g.json",
+      "gate": "Gate 3",
+      "name": "Peak memory",
+      "status": "PASS"
+    },
+    {
+      "evidence": "placement/checkpoint-read-audit.json",
+      "gate": "Gate 4",
+      "name": "Direct shard loading",
+      "status": "PASS"
+    },
+    {
+      "evidence": "correctness/kda-layer.json; correctness/mla-layer.json",
+      "gate": "Gate 5",
+      "name": "Sharded KDA/MLA correctness",
+      "status": "PASS"
+    },
+    {
+      "evidence": "correctness/full-93-sharded.json",
+      "gate": "Gate 6",
+      "name": "Full 93-layer sharded correctness",
+      "status": "PASS"
+    },
+    {
+      "evidence": "validation/serial-reconstruction.csv; validation/baseline-comparison.csv",
+      "gate": "Gate 7",
+      "name": "Bottom-up timing validation",
+      "status": "FAIL"
+    },
+    {
+      "evidence": "correctness/expert-stripe.json",
+      "gate": "Gate 8",
+      "name": "Expert stripe bank",
+      "status": "PASS"
+    },
+    {
+      "evidence": "artifacts/experiment-019/simulation/event-traces/winning-tier-a.json",
+      "gate": "Gate 9",
+      "name": "Worker-level event trace",
+      "status": "PASS"
+    },
+    {
+      "evidence": "simulation/worker-sweep.csv",
+      "gate": "Gate 10",
+      "name": "Exact >=5 tok/s (requires valid timing model)",
+      "status": "FAIL"
+    }
+  ],
+  "physical_receipts": {
+    "attention": "PASS",
+    "depth": "PASS",
+    "expert": "PASS",
+    "full_93": "PASS",
+    "other": "PASS",
+    "protocol": "PASS",
+    "representative": "PASS"
+  },
+  "schema_version": "experiment-019-test-results-v1",
+  "unit_tests": {
+    "passed": 6,
+    "status": "PASS",
+    "warning": "unknown pytest asyncio_mode option"
+  }
+}

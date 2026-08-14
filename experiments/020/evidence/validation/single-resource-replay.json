@@ -1,0 +1,121 @@
+{
+  "compute_overlap": false,
+  "global_normalization_factor": null,
+  "methodology_classification": "FAIL_METHOD_INVALID",
+  "methodology_failure": "complete layer/span actuals are sums of independently held-out primitive walls rather than one physically executed ordered shard workload",
+  "mode": "single_resource_replay",
+  "numerical_service_stability_status": "PASS",
+  "operation_order_preserved": true,
+  "physical_compute_resources": 1,
+  "physical_equivalent_workload_executed": false,
+  "post_hoc_multiplier": null,
+  "real_local_software_overhead": true,
+  "rows": [
+    {
+      "absolute_percentage_error": 0.0006226650062265815,
+      "actual_sharded_wall_ms": 0.1606,
+      "compute_task_count": 1,
+      "network_task_count": 0,
+      "physical_actual_source": "independent heldout RTX 5090 worker wall",
+      "predicted_sharded_wall_ms": 0.1605,
+      "workload": "expert_stripe"
+    },
+    {
+      "absolute_percentage_error": 0.010737294201861142,
+      "actual_sharded_wall_ms": 0.2794,
+      "compute_task_count": 1,
+      "network_task_count": 0,
+      "physical_actual_source": "independent heldout RTX 5090 worker wall",
+      "predicted_sharded_wall_ms": 0.2824,
+      "workload": "KDA_stripe"
+    },
+    {
+      "absolute_percentage_error": 0.06779661016949151,
+      "actual_sharded_wall_ms": 0.2124,
+      "compute_task_count": 1,
+      "network_task_count": 0,
+      "physical_actual_source": "independent heldout RTX 5090 worker wall",
+      "predicted_sharded_wall_ms": 0.198,
+      "workload": "MLA_stripe"
+    },
+    {
+      "absolute_percentage_error": 0.04098360655737708,
+      "actual_sharded_wall_ms": 0.0488,
+      "compute_task_count": 1,
+      "network_task_count": 0,
+      "physical_actual_source": "independent heldout RTX 5090 worker wall",
+      "predicted_sharded_wall_ms": 0.0468,
+      "workload": "projection_stripe"
+    },
+    {
+      "absolute_percentage_error": 0.014925373134328396,
+      "actual_sharded_wall_ms": 0.1072,
+      "compute_task_count": 1,
+      "network_task_count": 0,
+      "physical_actual_source": "independent heldout RTX 5090 worker wall",
+      "predicted_sharded_wall_ms": 0.1056,
+      "workload": "shared_expert_stripe"
+    },
+    {
+      "absolute_percentage_error": 0.046099630532352255,
+      "actual_sharded_wall_ms": 7.807004000767997,
+      "compute_task_count": 67,
+      "network_task_count": 8,
+      "physical_actual_source": "single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap",
+      "predicted_sharded_wall_ms": 8.166904000767998,
+      "workload": "complete_sharded_KDA_layer"
+    },
+    {
+      "absolute_percentage_error": 0.043858893317038516,
+      "actual_sharded_wall_ms": 7.195804000767998,
+      "compute_task_count": 67,
+      "network_task_count": 8,
+      "physical_actual_source": "single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap",
+      "predicted_sharded_wall_ms": 7.5114040007680005,
+      "workload": "complete_sharded_MLA_layer"
+    },
+    {
+      "absolute_percentage_error": 0.046099630532351756,
+      "actual_sharded_wall_ms": 15.614008001536009,
+      "compute_task_count": 134,
+      "network_task_count": 16,
+      "physical_actual_source": "single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap",
+      "predicted_sharded_wall_ms": 16.333808001536003,
+      "workload": "two_layer_span"
+    },
+    {
+      "absolute_percentage_error": 0.045572994914295714,
+      "actual_sharded_wall_ms": 30.616816003072078,
+      "compute_task_count": 268,
+      "network_task_count": 32,
+      "physical_actual_source": "single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap",
+      "predicted_sharded_wall_ms": 32.01211600307201,
+      "workload": "four_layer_span"
+    },
+    {
+      "absolute_percentage_error": 0.04586608450246331,
+      "actual_sharded_wall_ms": 61.26313223552026,
+      "compute_task_count": 536,
+      "network_task_count": 65,
+      "physical_actual_source": "single-resource sum of independently heldout physical shard calls, physical reductions, and heldout protocol framing; no compute overlap",
+      "predicted_sharded_wall_ms": 64.07303223552022,
+      "workload": "eight_layer_span"
+    }
+  ],
+  "same_worker_task_graph": true,
+  "schema_version": "experiment-020-single-resource-replay-v1",
+  "status": "FAIL",
+  "validation": {
+    "maximum_error": 0.06779661016949151,
+    "median_error": 0.044715944115667115,
+    "normalization_applied": false,
+    "p90_error": 0.046099630532352255,
+    "post_hoc_multiplier": null,
+    "status": "PASS",
+    "targets": {
+      "maximum": 0.15,
+      "median": 0.05,
+      "p90": 0.1
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "failures": [
+    {
+      "arm": "tooling",
+      "result": "rg unavailable; PowerShell search used"
+    },
+    {
+      "arm": "lint",
+      "result": "ruff process blocked by sandbox PermissionError; py_compile and pytest used"
+    },
+    {
+      "arm": "KDA P<96 smoke",
+      "result": "inherited CUDA export rejected; redesigned with experiment-owned head-shard kernel"
+    },
+    {
+      "arm": "full oracle attempt 1",
+      "result": "terminated after pathological CPU shard quantization; redesigned with bit-exact GPU startup quantizer"
+    },
+    {
+      "arm": "oracle boundary",
+      "result": "non-idot0 trace incompatible with promoted current CUDA path; promoted idot0 trace selected from repository regression evidence"
+    },
+    {
+      "arm": "layer-0 smoke 1",
+      "result": "failed at relative L2 0.465 due obsolete dense width 18432; checkpoint shape 33792 fixed"
+    },
+    {
+      "arm": "full oracle pre-final layout",
+      "result": "terminated because latent-up ownership changed from output rows to input columns before final certification"
+    },
+    {
+      "arm": "full oracle validator 1",
+      "result": "false negative from JSON-list versus tuple route comparison; original receipt retained and 92/92 stored route rows recertified equal"
+    },
+    {
+      "arm": "depth span 8 fixture 1",
+      "result": "false negative from preloading the layer-84 AttnRes snapshot; original receipt retained and strict-before-start initialization passed"
+    },
+    {
+      "arm": "P32 dense stripe 1",
+      "result": "equal 1056-wide split violated 64-value MXFP4 group boundaries; balanced 17/16-group stripes passed"
+    },
+    {
+      "arm": "bottom-up serial reconstruction",
+      "result": "FAIL: headline P8 representative maximum error 2.566220; block-16 error 1.039074; no normalization applied"
+    },
+    {
+      "arm": "expert physical launch coalescing",
+      "result": "network outputs coalesced to one partial/worker, but 16 expert calls + one reduction remain per row; coalescing factor 1.0"
+    }
+  ],
+  "schema_version": "experiment-019-failure-log-v1",
+  "status": "RECORDED"
+}

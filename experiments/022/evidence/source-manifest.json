@@ -1,0 +1,171 @@
+{
+  "file_count": 33,
+  "files": [
+    {
+      "bytes": 22572,
+      "path": "<local-repo>\\AGENTS.md",
+      "sha256": "fbe8062a699cdf34f63ab4a23b44e4d331fe17328029d53f40987c806cc54ddf"
+    },
+    {
+      "bytes": 1303040,
+      "path": "artifacts/experiment-016\\cuda\\coli_cuda-sm120-h016-final.dll",
+      "sha256": "113d9857735649b5c9773a474b73517fc1615547a99992ce401a294bc39f7eb1"
+    },
+    {
+      "bytes": 223744,
+      "path": "artifacts/experiment-019\\physical\\exp019-kda-shard-sm120-v2.dll",
+      "sha256": "d88fe1da01793155993f2e8aec4a7e08c389bb433f79d24e9a32d5f49bfb384c"
+    },
+    {
+      "bytes": 175104,
+      "path": "artifacts/experiment-020\\physical\\e020-grouped-top16-sm120.dll",
+      "sha256": "9a03cd29d929f086494f9004ad0780c53f1a25f85585e4997f9a8e3e0716a043"
+    },
+    {
+      "bytes": 1824,
+      "path": "<local-repo>\\scripts\\experiment_022_correctness.py",
+      "sha256": "376ef20c2c8d1e59d241389116458fc4de0ba4843fa42bdc0a942c91f4003cb1"
+    },
+    {
+      "bytes": 3892,
+      "path": "<local-repo>\\scripts\\experiment_022_dynamic.py",
+      "sha256": "07f2d29966ba07f8a7fd142f0e28a24a4efd7843f178f54eaad3e75b3a93fd94"
+    },
+    {
+      "bytes": 442,
+      "path": "<local-repo>\\scripts\\experiment_022_finalize.py",
+      "sha256": "b0d9139881581a9487dacb44f811d30da482fb97936f5ac757515ca14a4468c3"
+    },
+    {
+      "bytes": 10923,
+      "path": "<local-repo>\\scripts\\experiment_022_physical.py",
+      "sha256": "8d3246aff045ee7d46145e13053274c5fca2712df3712b49fe6ce3e4dde72927"
+    },
+    {
+      "bytes": 430,
+      "path": "<local-repo>\\scripts\\experiment_022_run.py",
+      "sha256": "dc0bb7cbd9be829f70f144e7299a4818df38ef76df5f4776e1cd9f6158f6cbbd"
+    },
+    {
+      "bytes": 2588,
+      "path": "<local-repo>\\scripts\\experiment_022_test.py",
+      "sha256": "3bffddd16765b00a7cd8f8730b8e51abab13839024621323fce8f3d4f8bacfe2"
+    },
+    {
+      "bytes": 893,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\__init__.py",
+      "sha256": "db5ea11b72e5401697fa4fb5d350d71061f766a0a00f8c42bd91cc31e8ea7875"
+    },
+    {
+      "bytes": 19509,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\benchmark.py",
+      "sha256": "87c85031662c65c7733ce16423c7ea58179f5f010f80fb1019d3a284af51b7a7"
+    },
+    {
+      "bytes": 15434,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\calibration.py",
+      "sha256": "eaafc62c484899d6cad519d1b17ee7e5c2045e6c3ec730a6378a5b6be81b2d38"
+    },
+    {
+      "bytes": 9474,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\control_plane.py",
+      "sha256": "99d3727e467c3107830d5c82984ad400cc28d4a3134a51eb308d9fde389fe7dd"
+    },
+    {
+      "bytes": 14030,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\dynamic.py",
+      "sha256": "e9e08e89c8e61597c5eb5586f4d2f8ca815ea2ec65b677c6975290fd91a02c28"
+    },
+    {
+      "bytes": 32026,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\evaluator.py",
+      "sha256": "2e8f4a49224a1f7ee783246166d16c24f462115a02e5c16d91e845489851d1e6"
+    },
+    {
+      "bytes": 8426,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\event_model.py",
+      "sha256": "39b23d2460e1a26a86b5dae691958ec41d3fc4c19be7649266cc0cba275da364"
+    },
+    {
+      "bytes": 51774,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\finalize.py",
+      "sha256": "09bab58b27b72518c7f14ee45a3ba18196c0f75069cd62184c04a44a5b7aa62f"
+    },
+    {
+      "bytes": 12936,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\inventories.py",
+      "sha256": "06fdb2548017818c1e7e8dc95babe2df074d9e40054103b3fe3395c57c763724"
+    },
+    {
+      "bytes": 3717,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\io.py",
+      "sha256": "43f2b455c5b89d2535c7803e084f157aae120bd12dc478c909eaa54fc8b5f784"
+    },
+    {
+      "bytes": 15003,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\model_graph.py",
+      "sha256": "5620a4f2a4c12daa0ba9da113577905010d7aee314516b44825939e197e0a9c8"
+    },
+    {
+      "bytes": 16149,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\models.py",
+      "sha256": "92df1190f1fae9a3d33926957b576c8c167cbf2b77ddecbf70a82608eb86eed0"
+    },
+    {
+      "bytes": 9580,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\native_dispatch.py",
+      "sha256": "9e8150ab2d549a33815512aacff579401ec0a626f80f36855fcf6f8ac55b50c8"
+    },
+    {
+      "bytes": 8076,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\oracle.py",
+      "sha256": "4261c9263e830b0dc698e63eead90b6d97a5888b110a0f388a9ad441f0cc9cb4"
+    },
+    {
+      "bytes": 24447,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\planner.py",
+      "sha256": "a574d99092248a580dcc8418d4627ca694d1acd314109841154ccac1ecd7b48e"
+    },
+    {
+      "bytes": 14725,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\resident_replay.py",
+      "sha256": "73a5038b3c4cad68e1a1c6a25a7237eddc672b0b9c9c9bb90f32a6143d5a2e4d"
+    },
+    {
+      "bytes": 20427,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\runner.py",
+      "sha256": "695304770d49a9cf145e634b5faad7daf1cfc16850c356d79173d631ced9fe09"
+    },
+    {
+      "bytes": 4085,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\sensitivity.py",
+      "sha256": "5cf424a09f0480ea090fccee52f62b83ae801510d011184a369afffacdfa16e4"
+    },
+    {
+      "bytes": 6031,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\service.py",
+      "sha256": "9fe7cb2b7c68cbbe987906fee5e214b9f6c9b84115074f03e777445243ada4e8"
+    },
+    {
+      "bytes": 23958,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\validation.py",
+      "sha256": "7274df5cd286bd0383232a6c91ed7c7a7efbfbad9a67703d1a17afbc1da49bab"
+    },
+    {
+      "bytes": 7890,
+      "path": "<local-repo>\\src\\swarm_inference\\experiments\\experiment_022\\worker_correctness.py",
+      "sha256": "a82a1ad92d29e76bb3100502986babf5115e1ce49a1f5c1bee018897c9947a82"
+    },
+    {
+      "bytes": 11021,
+      "path": "<local-repo>\\tests\\test_experiment_022.py",
+      "sha256": "ad5bab8b49b1e5ccafedb5fe08c8e02eed473635ed368848d937154afb38de3e"
+    },
+    {
+      "bytes": 59764096,
+      "path": "<local-kimi-k3-checkpoint>\\model.safetensors.index.json",
+      "sha256": "a1c5210650ce71d2d3ae9ec5a101ac4afd3cf4b10091be589853437eb967febd"
+    }
+  ],
+  "schema_version": "experiment-022-source-manifest-v1"
+}

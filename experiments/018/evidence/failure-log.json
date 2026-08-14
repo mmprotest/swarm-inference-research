@@ -1,0 +1,37 @@
+{
+  "failures": [
+    {
+      "failure": "nvidia-smi sampler spawned during a CUDA PREPARE phase whose thread-quiescence contract rejects child threads/processes",
+      "inspection": "five prior layers were complete in atomic receipt",
+      "phase": "physical microcell service attempt 1",
+      "recovery": "PASS; completed layers preserved and remaining layers rerun",
+      "redesign": "start telemetry only after READY and resume by immutable layer key",
+      "scientific_impact": "no service or numerical result from the interrupted layer was retained"
+    },
+    {
+      "failure": "worker exception, lost predecessor, duplicate chunk, stale object, reduction child failure, retry, restart, cleanup",
+      "inspection": "persistent worker rejects invalid transitions deterministically",
+      "phase": "fault-injection tests",
+      "recovery": "PASS in focused unit suite",
+      "redesign": "bounded retry and request-scoped cleanup",
+      "scientific_impact": "synthetic fault injection only"
+    },
+    {
+      "failure": "one-hour shell watchdog expired after 21 complete layers; an immediate retry then referenced an obsolete trace path",
+      "inspection": "atomic receipt held layers through 83 and identified the exact hidden-trace source path/hash",
+      "phase": "physical service orchestration watchdog",
+      "recovery": "PASS when final receipt status is PASS",
+      "redesign": "fresh watchdog window and receipt-derived immutable input path",
+      "scientific_impact": "no incomplete-layer service, correctness, or timing result retained"
+    },
+    {
+      "failure": "initial extractor searched for materialized *_res_score_weight checkpoint tensors that do not exist",
+      "inspection": "real K3 runtime constructs each query exactly as *_res_norm.weight * *_res_proj.weight",
+      "phase": "AttnRes future-score input discovery",
+      "recovery": "PASS when redesigned future-score receipt is PASS",
+      "redesign": "construct all 184 per-layer queries and the final endpoint query from their real checkpoint factor tensors",
+      "scientific_impact": "failed before equivalence or timing; no result retained"
+    }
+  ],
+  "schema_version": "experiment-018-failure-log-v1"
+}

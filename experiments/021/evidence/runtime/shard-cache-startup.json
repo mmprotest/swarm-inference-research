@@ -1,0 +1,15 @@
+{
+  "atomic_complete_marker_verified": true,
+  "content_addressed": true,
+  "corrupted_object_rejected": true,
+  "expected_bytes": 262257,
+  "expected_sha256": "d8927dd752fb1de8d9bd04279975db4b014e8373cf9f5988ad1c17f7676ddc62",
+  "first_acquisition_fetch_calls": 1,
+  "real_checkpoint_bundle_startup_tested": false,
+  "schema_version": "experiment-021-shard-cache-startup-v1",
+  "scope": "production ShardCache acquisition/hash/atomic-marker primitive; not a full remote K3 bundle acquisition",
+  "second_startup_cache_hit_without_fetch": true,
+  "status": "PASS",
+  "test_object_persisted": false,
+  "verified_sha256": "d8927dd752fb1de8d9bd04279975db4b014e8373cf9f5988ad1c17f7676ddc62"
+}

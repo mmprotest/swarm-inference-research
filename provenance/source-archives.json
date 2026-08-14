@@ -1,0 +1,13 @@
+{
+  "experiments_zip": {
+    "name": "experiments.zip",
+    "size_bytes": 84536013,
+    "sha256": "8f11a51c21b0723a5c4c7d85447140a3645a9a8e70a00eca9c01cff0016056fc"
+  },
+  "runtime_repo_zip": {
+    "name": "swarm-inference-lab-main (33)(1).zip",
+    "size_bytes": 3966274,
+    "sha256": "e8350dc98e9572a1ea7a50fc865601721d452a77ede9548dfa78a8c9eb39d153"
+  },
+  "note": "Hashes refer to the user-provided source archives used to build this public evidence package."
+}

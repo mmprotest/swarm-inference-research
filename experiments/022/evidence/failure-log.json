@@ -1,0 +1,50 @@
+{
+  "failures": [
+    {
+      "failure_id": "E021_RESIDENCY_MISMATCH",
+      "impact": "E021 service model rejected; E022 fresh resident harness used",
+      "status": "REPAIRED"
+    },
+    {
+      "failure_id": "INITIAL_QUANTIZATION_COUNTER_CLASSIFICATION",
+      "impact": "RMSNorm hot-path calls were initially counted as one-time quantization; accounting was corrected and physical replay rerun",
+      "status": "REPAIRED_BEFORE_ADMISSION"
+    },
+    {
+      "failure_id": "COMPONENT_HELDOUT_VARIABILITY",
+      "impact": "Some low-degree attention microconditions exceed the component diagnostic target; headline candidates use stable eligible conditions and exact ordered-DAG validation is the preregistered gate",
+      "status": "DIAGNOSTIC_RETAINED"
+    },
+    {
+      "failure_id": "SELECTIVE_CANDIDATE_MEMORY_DAG_MISMATCH",
+      "impact": "Expert-only latent-down and attention-only MoE projection ownership were reconciled so scheduled operators now run only where their weights are charged",
+      "status": "REPAIRED_BEFORE_PLANNER_COMPARISON"
+    },
+    {
+      "failure_id": "ORDERED_RUNTIME_RESIDUAL_PLACEMENT",
+      "impact": "The synchronized resident outer-wall residual is charged to five exact phase barriers; held-out one-resource replay validates total time, but physical multi-node overlap remains unmeasured",
+      "status": "PHYSICALLY_GROUNDED_MODEL_ASSUMPTION"
+    },
+    {
+      "failure_id": "REPRESENTATIVE_PLAN_REPLAY",
+      "impact": "Headline invalid unless five selected plan manifests each satisfy the required full worker-path correctness gate",
+      "status": "FAIL"
+    },
+    {
+      "failure_id": "INDIVIDUAL_EXECUTE_SHARD_NATIVE_BINDINGS",
+      "impact": "The batched full-DAG native dispatch passed, but required individual KDA/MLA/expert/shared/projection/reduction task bindings remain incomplete",
+      "status": "FAIL_NOT_BOUND_TO_PRODUCTION_NATIVE_HANDLES"
+    },
+    {
+      "failure_id": "WHOLE_EXPERT_HEADLINE_SERVICE",
+      "impact": "The B-arm semantic class exists, but no separately validated production whole-expert-group service was admitted; B may therefore equal A in this run",
+      "status": "INELIGIBLE_UNVALIDATED"
+    },
+    {
+      "failure_id": "INITIAL_JOIN_USEFUL_NOT_ADMITTED",
+      "impact": "The first useful-join profile was merely ignored; the node profile and gate were tightened to require actual admission and positive modeled benefit across all five cases",
+      "status": "REPAIRED_AND_RERUN"
+    }
+  ],
+  "schema_version": "experiment-022-failure-log-v1"
+}
