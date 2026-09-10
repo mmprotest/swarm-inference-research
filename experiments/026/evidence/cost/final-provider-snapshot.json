@@ -1,0 +1,20 @@
+{
+  "all_e026_instances_absent": true,
+  "api_dns_override": {
+    "hostname": "console.vast.ai",
+    "ip": "54.88.4.224",
+    "scope": "this process"
+  },
+  "budget": {
+    "api_key_persisted": false,
+    "balance_usd": 0.0,
+    "conservative_available_usd": 44.886929487090015,
+    "credit_usd": 44.886929487090015,
+    "identity_fields_persisted": false
+  },
+  "target_presence": {
+    "e026-a-1789033163": false,
+    "e026-b-1789033167": false
+  },
+  "timestamp": "2026-09-10T13:34:17.257475+00:00"
+}

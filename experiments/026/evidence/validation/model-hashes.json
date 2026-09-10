@@ -1,0 +1,21 @@
+{
+  "experiment_id": "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+  "timestamp": "2026-09-10T15:13:44.4078649Z",
+  "method": "PowerShell Get-FileHash SHA256 over the complete local files",
+  "files": [
+    {
+      "name": "Qwen3.8-27B-Q4_K_M.gguf",
+      "role": "fixed target model",
+      "length_bytes": 18973870432,
+      "sha256": "31629f53165ab6a7dad8c9847dcfd1fdf55829dac1e6e748f4a68581b0033d34",
+      "matches_receipt": true
+    },
+    {
+      "name": "mtp-Qwen3.8-27B-Q8_0.gguf",
+      "role": "evaluated native MTP draft",
+      "length_bytes": 3164006688,
+      "sha256": "cbf60a0c48b431bb61f1d49b8948dc88ac29c398d6dbdbbb2e6e89ef77eacc9a",
+      "matches_recorded_source": true
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "assessment": "READY_TO_SHARE",
+  "check_summary": {
+    "failed": 0,
+    "passed": 12,
+    "total": 12
+  },
+  "checks": [
+    {
+      "details": [
+        "E026: Qwen3.8-27B Q4 WAN Swarm Integrated Proof"
+      ],
+      "name": "single_plain_english_title",
+      "pass": true
+    },
+    {
+      "details": [
+        "1. Canonical verdict",
+        "2. Executive result",
+        "3. Best configuration",
+        "4. Performance table",
+        "5. Bottleneck decomposition",
+        "6. Synchronization result",
+        "7. Compression result",
+        "8. Cold-start result",
+        "9. Churn result",
+        "10. Correctness",
+        "11. Cost",
+        "12. Negative results",
+        "13. Scientific interpretation",
+        "14. Next decision"
+      ],
+      "name": "required_14_sections_in_order",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "canonical_verdict_exact",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "direct_answer_first",
+      "pass": true
+    },
+    {
+      "details": {
+        "tables": 4
+      },
+      "name": "audit_tables_rendered",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "major_gate_values_present",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "exact_and_inexact_labeled",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "required_negative_and_limitations",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "single_decisive_recommendation",
+      "pass": true
+    },
+    {
+      "details": {
+        "audience": "technical",
+        "comparison_baseline": "ordinary single-token autoregressive WAN pipeline",
+        "decision": "whether to begin volunteer-runtime engineering or continue one blocking primitive",
+        "delivery_artifact": "docs/experiments/EXPERIMENT_026_REPORT.md",
+        "delivery_surface": "Markdown explicitly required by the user",
+        "measurement_window_utc": "2026-09-10",
+        "question": "Did E026 prove practical WAN swarm inference for Qwen3.8-27B Q4_K_M?",
+        "scope": "local RTX 5090 plus two Vast nodes on genuine WAN links",
+        "success_criteria_source": "artifacts/experiment-026/seal/configuration.json"
+      },
+      "name": "source_notes_match_report",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "markdown_structure_closed",
+      "pass": true
+    },
+    {
+      "details": [
+        "WAN_SWARM_NOT_VIABLE_UNDER_TESTED_CONDITIONS"
+      ],
+      "name": "one_primary_verdict_line",
+      "pass": true
+    }
+  ],
+  "experiment_id": "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+  "failures": [],
+  "rendered_html_omission_reason": "The user explicitly required Markdown; HTML was rendered in memory only for structural QA, not delivered as a second report surface.",
+  "rendered_html_retained": false,
+  "rendering": {
+    "engine": "markdown-it-py CommonMark with table rule",
+    "h1_count": 1,
+    "h2_count": 14,
+    "html_bytes": 25518,
+    "table_count": 4
+  },
+  "report": "docs\\experiments\\EXPERIMENT_026_REPORT.md",
+  "report_sha256": "9f279aa698663b6c173dba17658fa07c5a1f19333d0985d805193835c8eea207",
+  "timestamp": "2026-09-10T15:04:23.210627+00:00"
+}

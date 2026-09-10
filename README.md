@@ -30,6 +30,8 @@ The current performance target is **at least 20 output tokens per second per use
 
 That target has **not** been reached. This repository shows the strongest evidence so far, including the experiments that failed and the performance models that were invalidated.
 
+Experiment 026 uses the smaller Qwen3.8-27B target to test the distributed runtime on physical WAN hardware. It is an important systems proof, but it does not satisfy the Kimi K3 north star or the 20 tok/s/user target.
+
 ## What Swarm is trying to build
 
 ```mermaid
@@ -53,9 +55,11 @@ That separation between logical decomposition and physical placement is central 
 
 ---
 
-# What Experiments 016 to 022 found
+# What Experiments 016–022 and 026 found
 
-This repository contains the public evidence for seven consecutive experiments. Together they changed the direction of the project.
+This repository contains public evidence for the seven consecutive Experiments 016–022 and the later physical-WAN Experiment 026. Together they changed the direction of the project.
+
+Experiments 023–025 are not included in this public evidence package, so this repository makes no claims about them.
 
 The short version is:
 
@@ -65,6 +69,7 @@ The short version is:
 4. **The first performance model for that fine-grained design was badly wrong, and was rejected.**
 5. **The rebuilt model reduced median prediction error from 95.5% to 2.7%.**
 6. **Fine-grained splitting currently looks more valuable for unlocking otherwise unusable hardware than for making already-feasible placements faster.**
+7. **A real three-machine WAN run exposed serial synchronization and transport reliability as the next blocking primitives.**
 
 ![Research arc](figures/01-research-arc.png)
 
@@ -165,6 +170,21 @@ The strongest observed value of sub-layer execution so far is **capacity unlock*
 
 This result remains diagnostic because two Experiment 022 gates are still open: production-native primitive bindings and representative full-93-layer placement replay. The final E022 verdict is therefore `MODEL_INVALID`, not a declared planner win.
 
+## 5. Physical WAN execution worked, but practical WAN serving did not
+
+Experiment 026 moved from shaped links and modeled independent resources to a physical three-machine topology: a local RTX 5090 coordinated an RTX 3080 Ti in Japan and an RTX 3060 in South Korea over genuine WAN links.
+
+Qwen3.8-27B Q4_K_M was split into contiguous stages and executed across all three machines. Short target-only runs matched the local greedy stream, disk-warm verification of the same exact shard was **103.19x** faster than fully uncached acquisition, and a controlled production-stage kill recovered in **9.508 seconds** without prompt replay, token loss, or duplication.
+
+The integrated result was still decisively negative:
+
+- the best exact WAN development run reached **1.615 committed tok/s**, versus the experiment's **8 tok/s** interactive gate
+- the sealed run reached **0.590 tok/s**, diverged from the local greedy stream at zero-based token **178**, and ended on a transport reset after **282 of 512** requested tokens
+- native MTP reached 2.667 committed tokens per target traversal on one WAN prompt, but diverged on four of six development prompts and was rejected
+- response wait consumed **95–98%** of the measured token cycle while the two remote stages together needed only about **11 ms** of median compute in the sealed run
+
+This is the first physical heterogeneous swarm evidence in the public series, but not a viable serving result. The verdict is [`WAN_SWARM_NOT_VIABLE_UNDER_TESTED_CONDITIONS`](experiments/026/).
+
 ---
 
 # Why this could matter
@@ -205,6 +225,7 @@ That is the research programme.
 | [020](experiments/020/) | Is the architecture ready to justify renting a physical fleet? | `NOT_READY` | A 96-worker deployment was designed, then correctly stopped before spend because the projection gate failed. |
 | [021](experiments/021/) | Does the simulator actually predict ordered physical shard execution? | `MODEL_INVALID` | No. Median error was 95.54%. The throughput model was invalidated. |
 | [022](experiments/022/) | After repairing the model, when does sub-layer placement actually help? | `MODEL_INVALID` | Timing error fell to 2.71% median. Six diagnostic capacity unlocks appeared, with zero throughput uplift where whole-layer placement already fit. Two production gates remain open. |
+| [026](experiments/026/) | Does the integrated system make a 27B model practical across three heterogeneous machines on the real WAN? | `WAN_SWARM_NOT_VIABLE_UNDER_TESTED_CONDITIONS` | Physical distribution, exact shard caching, and controlled failover worked; throughput, sealed correctness, completion, and transport reliability did not. |
 
 The failures are part of the evidence. Each one removed an attractive explanation that did not survive measurement.
 
@@ -220,14 +241,19 @@ The failures are part of the evidence. Each one removed an attractive explanatio
 - A sequential full-93-layer sharded traversal passed numerical correctness checks.
 - The original fine-grained timing model failed validation at **95.54% median error** and was rejected.
 - The rebuilt E022 ordered-DAG model reached **2.71% median held-out error** without a global normalization multiplier.
+- Qwen3.8-27B Q4_K_M physically executed across three heterogeneous machines on measured, unshaped WAN links in E026.
+- E026 short target-only WAN runs reproduced the local greedy stream, and its exact same-shard disk-warm cache check measured a **103.19x** speedup over fully uncached acquisition.
+- E026's controlled warm-replica stage kill recovered in **9.508 seconds** with an exact 64-token control match and no prompt replay, lost tokens, or duplicate tokens.
 
 ## Still to be proved
 
 - Physical Kimi K3 execution across a real heterogeneous multi-machine swarm.
 - The 20 tok/s/user north-star target.
+- A completed, strictly identical 512-token physical WAN run at E026's 8 tok/s interactive gate.
+- An exact, reconnectable multi-token verification protocol that removes per-token WAN round trips.
 - Production-native execution for every required sub-layer primitive.
 - A repeatable performance advantage from sub-layer placement when coarse placement already fits.
-- Real LAN and WAN behaviour at scale.
+- Reliable LAN and WAN behaviour at larger scale.
 - Multi-user goodput, failure recovery and economics under sustained load.
 
 These are the next gates. The public claims stop where the evidence stops.
@@ -242,11 +268,11 @@ The experiments mix real execution with performance modeling, so every public re
 
 | Evidence class | Meaning |
 |---|---|
-| **Physical local** | Real Kimi K3 weights and CUDA execution measured on the local RTX 5090. |
+| **Physical local** | Real model weights and CUDA execution measured on the local RTX 5090. |
 | **Validated independent-resource model** | Service inputs are physically measured, independently resident resources are modeled, and the declared model-validation gate passed. |
 | **Shaped network** | RTT and bandwidth behaviour comes from an explicit network model rather than a physical WAN or LAN. |
 | **Diagnostic / model invalid** | Preserved because it explains the research path, but not admitted as a performance result. |
-| **Physical heterogeneous swarm** | Multiple independent physical machines execute the distributed graph. Experiments 016 to 022 do not yet reach this evidence class. |
+| **Physical heterogeneous swarm** | Multiple independent physical machines execute the distributed graph. E026 reaches this class for Qwen3.8-27B on three machines, with a negative viability verdict. Experiments 016–022 do not reach it. |
 
 See [METHODOLOGY.md](docs/METHODOLOGY.md) for the complete methodology.
 
@@ -270,14 +296,16 @@ python -m pip install -r requirements.txt
 python scripts/regenerate_figures.py
 ```
 
-Very large duplicate traces, generated placement payloads, temporary directories and repeated inventory copies were intentionally removed from the Git-friendly package. Every member of the original 3.2 GB expanded experiment archive is still indexed by path, uncompressed size and ZIP CRC32 in [`provenance/source-archive-members.csv`](provenance/source-archive-members.csv).
+Very large duplicate traces, generated placement payloads, temporary directories and repeated inventory copies were intentionally removed from the Git-friendly package. Every member of the original 3.2 GB expanded Experiments 016–022 archive is still indexed by path, uncompressed size and ZIP CRC32 in [`provenance/source-archive-members.csv`](provenance/source-archive-members.csv).
+
+For E026, the 71-row canonical dataset, compact proof receipts, focused state/network/cost evidence, and complete 31-file final remote collection are retained. All 831 supplied source artifacts are indexed by path, byte size, and SHA-256 in [`provenance/experiment-026-source-files.csv`](provenance/experiment-026-source-files.csv); the public transformations are recorded in [`experiments/026/evidence/source-manifest.json`](experiments/026/evidence/source-manifest.json).
 
 The Kimi K3 checkpoint is not redistributed. Re-running physical benchmarks from scratch requires the model, compatible hardware and the companion runtime source tree from the corresponding experiment revision.
 
 # Repository layout
 
 ```text
-experiments/016..022/
+experiments/016..022,026/
   README.md             accessible experiment summary
   REPORT.md             full technical report
   evidence/             curated measurements, receipts, validation and charts
@@ -291,16 +319,16 @@ provenance/              source archive hashes and complete member inventory
 
 # Where the project goes next
 
-The immediate research priority is to close the gap between a physically calibrated model and an actual distributed system.
+The immediate research priority is to turn E026's physical distribution proof into an exact, reconnectable protocol that does not pay a serial WAN round trip for every token.
 
 That means:
 
-1. bind every sub-layer operation to the canonical production-native execution path
-2. replay representative full 93-layer placements through that path
-3. move from shaped links to physical heterogeneous LAN and WAN measurements
-4. measure multi-request goodput and utilization, not only isolated user latency
-5. compare adaptive placement against strong whole-layer, tensor, pipeline and expert-parallel baselines
-6. keep increasing physical scale only when the previous scale is correctly predicted
+1. build exact, state-local multi-token verification with reconnectable transport
+2. complete a sealed 512-token three-machine run with identical greedy output and at least 8 committed tok/s
+3. remove the serial per-token RPC dependency exposed by the E026 wait decomposition
+4. close E022's native-primitive and representative full-93 Kimi K3 gates
+5. measure multi-request goodput and sustained recovery economics, not only isolated-user latency
+6. increase physical scale only after the previous topology completes correctly and repeatably
 
 The end goal remains simple to state, even if it is difficult to achieve:
 

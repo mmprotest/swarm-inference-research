@@ -1,0 +1,1279 @@
+ggml_cuda_init: found 1 CUDA devices (Total VRAM: 11907 MiB):
+  Device 0: NVIDIA GeForce RTX 3060, compute capability 8.6, VMM: yes, VRAM: 11907 MiB
+Starting RPC server v6.0.0
+  endpoint       : 127.0.0.1:50101
+  local cache    : /workspace/e026/cache-stage/rpc/
+Devices:
+  CUDA0: NVIDIA GeForce RTX 3060 (11907 MiB, 11794 MiB free)
+  transport      : TCP
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+E026_STAGE device=0 nodes=468 begin_us=8813125831830 end_us=8813125913197 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8813127571029 end_us=8813127585672 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813142663214 end_us=8813142722516 reused=0
+E026_STAGE device=0 nodes=468 begin_us=8813203260201 end_us=8813203274142 reused=0
+E026_STAGE device=0 nodes=468 begin_us=8813206796212 end_us=8813206811706 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8813208114304 end_us=8813208124604 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813209423172 end_us=8813209430357 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813210724166 end_us=8813210731361 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813212022215 end_us=8813212029410 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813213321120 end_us=8813213328304 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813214622110 end_us=8813214629310 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813215922109 end_us=8813215929363 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813216893552 end_us=8813216900751 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813217865134 end_us=8813217872332 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813218837162 end_us=8813218844359 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813219510187 end_us=8813219517391 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813220808059 end_us=8813220815264 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813221779063 end_us=8813221786227 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813222750234 end_us=8813222757388 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813223720147 end_us=8813223727343 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813224395096 end_us=8813224402255 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813225396163 end_us=8813225403341 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813226073120 end_us=8813226080317 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813226745033 end_us=8813226752204 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813227716155 end_us=8813227723340 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813228392142 end_us=8813228399327 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813229393012 end_us=8813229400183 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813230066245 end_us=8813230073436 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813230740211 end_us=8813230747369 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813231710379 end_us=8813231717530 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813232386025 end_us=8813232393223 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813233389162 end_us=8813233396325 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813234064046 end_us=8813234071201 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813234737981 end_us=8813234745138 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813235708986 end_us=8813235716151 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813236382033 end_us=8813236389231 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813237383410 end_us=8813237390569 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813238057148 end_us=8813238064308 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813238730972 end_us=8813238738130 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813239742673 end_us=8813239749834 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813240429652 end_us=8813240436818 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813241730158 end_us=8813241737274 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813242701369 end_us=8813242708564 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813243673019 end_us=8813243680210 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813244645965 end_us=8813244653165 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813245318317 end_us=8813245325491 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813246323421 end_us=8813246330573 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813246996486 end_us=8813247003646 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813247672074 end_us=8813247679268 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813249741231 end_us=8813249748435 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813251043083 end_us=8813251050277 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813252345627 end_us=8813252352788 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813253658731 end_us=8813253665889 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813254960517 end_us=8813254967670 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813256270570 end_us=8813256277753 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813257240087 end_us=8813257247250 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813258544159 end_us=8813258551356 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813259516404 end_us=8813259523597 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813260492164 end_us=8813260499360 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813261463898 end_us=8813261471098 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813262435897 end_us=8813262443108 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813263735896 end_us=8813263743072 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813264706955 end_us=8813264714107 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813265682142 end_us=8813265689362 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813266652805 end_us=8813266660570 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813267328710 end_us=8813267335870 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8813268628864 end_us=8813268636026 reused=1
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+E026_STAGE device=0 nodes=468 begin_us=8814157370069 end_us=8814157380645 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8814159004400 end_us=8814159015573 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814170278467 end_us=8814170297726 reused=0
+E026_STAGE device=0 nodes=468 begin_us=8814238308101 end_us=8814238317529 reused=0
+E026_STAGE device=0 nodes=468 begin_us=8814241457161 end_us=8814241464668 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8814242604776 end_us=8814242614847 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814243361114 end_us=8814243368305 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814244124604 end_us=8814244131791 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814245017470 end_us=8814245024628 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814246145767 end_us=8814246152958 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814246952107 end_us=8814246959267 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814247764095 end_us=8814247771282 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814248537441 end_us=8814248544625 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814249701311 end_us=8814249708478 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814250441357 end_us=8814250448511 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814251181098 end_us=8814251188249 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814251928515 end_us=8814251935664 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814253003723 end_us=8814253010913 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814253749527 end_us=8814253756713 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814254579742 end_us=8814254586940 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814255316261 end_us=8814255323454 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814256380412 end_us=8814256387599 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814257126723 end_us=8814257133912 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814257869338 end_us=8814257876532 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814258615122 end_us=8814258622313 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814259680815 end_us=8814259688022 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814260428864 end_us=8814260436057 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814261329027 end_us=8814261336214 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814262066109 end_us=8814262073263 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814263130697 end_us=8814263137846 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814263873021 end_us=8814263880189 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814264616209 end_us=8814264623361 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814265361480 end_us=8814265368629 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814266427617 end_us=8814266434773 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814267329027 end_us=8814267336182 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814268064498 end_us=8814268071648 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814268800600 end_us=8814268807746 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814269874098 end_us=8814269881256 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814270617084 end_us=8814270624238 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814271362524 end_us=8814271369680 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814272107650 end_us=8814272114800 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814273179079 end_us=8814273186269 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814274078160 end_us=8814274085315 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814274811911 end_us=8814274819097 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814275549116 end_us=8814275556300 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814276614912 end_us=8814276622669 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814277355398 end_us=8814277362543 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814278095522 end_us=8814278102663 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814278838280 end_us=8814278845426 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814280064666 end_us=8814280071855 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814280799710 end_us=8814280806868 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814281538717 end_us=8814281545872 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814282371120 end_us=8814282378280 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814283627239 end_us=8814283634430 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814284811260 end_us=8814284818451 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814286609193 end_us=8814286616355 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8814288204224 end_us=8814288211409 reused=1
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+E026_STAGE device=0 nodes=468 begin_us=8815118418960 end_us=8815118429444 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8815119944253 end_us=8815119955813 reused=1
+ggml_backend_cuda_graph_compute: CUDA graph warmup reset
+E026_STAGE device=0 nodes=468 begin_us=8815129560178 end_us=8815129578679 reused=0
+E026_STAGE device=0 nodes=468 begin_us=8815180534641 end_us=8815180544732 reused=0
+E026_STAGE device=0 nodes=468 begin_us=8815182161239 end_us=8815182168770 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8815182710481 end_us=8815182720561 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8815183166532 end_us=8815183173687 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8815183616736 end_us=8815183623888 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8815184065032 end_us=8815184072189 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8815184756715 end_us=8815184763900 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8815185243205 end_us=8815185250367 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8815185728864 end_us=8815185736014 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8815186216464 end_us=8815186223619 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8815186885775 end_us=8815186892922 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8815187481059 end_us=8815187488211 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8815188234511 end_us=8815188241661 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8815189005251 end_us=8815189012400 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8815191149609 end_us=8815191156799 reused=1
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+E026_STAGE device=0 nodes=468 begin_us=8816154936570 end_us=8816154947010 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8816157430128 end_us=8816157441640 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816174099751 end_us=8816174119129 reused=0
+E026_STAGE device=0 nodes=468 begin_us=8816284945093 end_us=8816284954484 reused=0
+E026_STAGE device=0 nodes=468 begin_us=8816288341205 end_us=8816288348729 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8816289653428 end_us=8816289663678 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816291331519 end_us=8816291338691 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816292933565 end_us=8816292940728 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816294536706 end_us=8816294543848 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816296137740 end_us=8816296144927 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816297739574 end_us=8816297746735 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816299339612 end_us=8816299346754 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816300944255 end_us=8816300951445 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816302546875 end_us=8816302554010 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816304147840 end_us=8816304155053 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816305751852 end_us=8816305758990 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816307356652 end_us=8816307363831 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816309236875 end_us=8816309244060 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816310837961 end_us=8816310845127 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816312439471 end_us=8816312446639 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816314042397 end_us=8816314049580 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816315647389 end_us=8816315654544 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816317252169 end_us=8816317259354 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816318854133 end_us=8816318861307 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816320456535 end_us=8816320463709 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816322055900 end_us=8816322063093 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816323707116 end_us=8816323714280 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816325351153 end_us=8816325358335 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816326998964 end_us=8816327006153 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816328616738 end_us=8816328623928 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816330222995 end_us=8816330230183 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816331826214 end_us=8816331833382 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816333430473 end_us=8816333437655 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816335034095 end_us=8816335041288 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816336636378 end_us=8816336643566 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816338238104 end_us=8816338245292 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816339840480 end_us=8816339847670 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816341441984 end_us=8816341449170 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816343044353 end_us=8816343051543 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816344647336 end_us=8816344654553 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816346248692 end_us=8816346256425 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816347852231 end_us=8816347859409 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816349452525 end_us=8816349459690 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816351063175 end_us=8816351070336 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816352661192 end_us=8816352668378 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816354280858 end_us=8816354288044 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816355881977 end_us=8816355889127 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816357505150 end_us=8816357512325 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816359107390 end_us=8816359114574 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816361235841 end_us=8816361243013 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816362838006 end_us=8816362845179 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816364440605 end_us=8816364447733 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816366041625 end_us=8816366048812 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816367642373 end_us=8816367649527 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816369245105 end_us=8816369252278 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816370845789 end_us=8816370852945 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816372444385 end_us=8816372451570 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816374046680 end_us=8816374053937 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816375648183 end_us=8816375655369 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816377247735 end_us=8816377254921 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816378847126 end_us=8816378854257 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816380448078 end_us=8816380455265 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816382051746 end_us=8816382058903 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816383654417 end_us=8816383661585 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816385298152 end_us=8816385305310 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816387144506 end_us=8816387151660 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816388847121 end_us=8816388854317 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816390516481 end_us=8816390523671 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816392192626 end_us=8816392199809 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816393957786 end_us=8816393964948 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816395689696 end_us=8816395696883 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816397352544 end_us=8816397359699 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816398988803 end_us=8816398995996 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816400636337 end_us=8816400643509 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816402296127 end_us=8816402303276 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816403956573 end_us=8816403963763 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816405599166 end_us=8816405606351 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816407200477 end_us=8816407207663 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816408802384 end_us=8816408809552 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816410408174 end_us=8816410415358 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816412010051 end_us=8816412017212 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816413609906 end_us=8816413617061 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816415262775 end_us=8816415269941 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816416972434 end_us=8816416979588 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816418725017 end_us=8816418732170 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816420435831 end_us=8816420443024 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816422161191 end_us=8816422168378 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816423861342 end_us=8816423868528 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816425495166 end_us=8816425502342 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816427152881 end_us=8816427160066 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816428798575 end_us=8816428805762 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816430418118 end_us=8816430425294 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816432025057 end_us=8816432032236 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816433627564 end_us=8816433634751 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816435238563 end_us=8816435245747 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816436838459 end_us=8816436845632 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816438443547 end_us=8816438450732 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816440044465 end_us=8816440051650 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816441645167 end_us=8816441652347 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816443245025 end_us=8816443252176 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816444845943 end_us=8816444853128 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816446447599 end_us=8816446454775 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816448058693 end_us=8816448065856 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816449657785 end_us=8816449664971 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816451257447 end_us=8816451264632 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816452861638 end_us=8816452868792 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816454463346 end_us=8816454470534 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816456070532 end_us=8816456077718 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816457714864 end_us=8816457722030 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816459316221 end_us=8816459323388 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816460921723 end_us=8816460928893 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816462522754 end_us=8816462529929 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816464120970 end_us=8816464128154 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816465720763 end_us=8816465727947 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816467320428 end_us=8816467327614 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816468921103 end_us=8816468928266 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816470520497 end_us=8816470527677 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816472121473 end_us=8816472128659 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816473719904 end_us=8816473727099 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816475323051 end_us=8816475330159 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816476922605 end_us=8816476929772 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816478524918 end_us=8816478532145 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816480135581 end_us=8816480142777 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816481742055 end_us=8816481749230 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816483345543 end_us=8816483352729 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816484947119 end_us=8816484954282 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816486552438 end_us=8816486559624 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816488177266 end_us=8816488184411 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816489798475 end_us=8816489805635 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816491402304 end_us=8816491409488 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816493004380 end_us=8816493011547 reused=1
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+E026_STAGE device=0 nodes=468 begin_us=8816863919683 end_us=8816863930136 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8816866323272 end_us=8816866334393 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816884064361 end_us=8816884083896 reused=0
+E026_STAGE device=0 nodes=468 begin_us=8816892353088 end_us=8816892360619 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8816894114422 end_us=8816894124588 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816895724243 end_us=8816895731397 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816897335639 end_us=8816897342825 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816898945987 end_us=8816898953163 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816900704618 end_us=8816900711790 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816902308546 end_us=8816902315734 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816903920166 end_us=8816903927357 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816905534232 end_us=8816905541402 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816907287841 end_us=8816907295019 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816908892451 end_us=8816908899642 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816910509010 end_us=8816910516181 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816912119205 end_us=8816912126373 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816914112592 end_us=8816914119775 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816915724377 end_us=8816915731531 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816917507215 end_us=8816917514398 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816919109482 end_us=8816919116665 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816920722688 end_us=8816920729876 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816922339208 end_us=8816922346395 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816924093552 end_us=8816924100732 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816925696162 end_us=8816925703315 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816927309704 end_us=8816927316855 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816928915236 end_us=8816928922425 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816930663976 end_us=8816930671189 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816932258899 end_us=8816932266060 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816933863081 end_us=8816933870269 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816935472296 end_us=8816935479482 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816937077871 end_us=8816937085054 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816938854111 end_us=8816938861310 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816940450581 end_us=8816940457757 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816942226323 end_us=8816942233509 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816943821870 end_us=8816943829036 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816945426918 end_us=8816945434089 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816947031588 end_us=8816947038742 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816948806328 end_us=8816948813518 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816950409340 end_us=8816950416534 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816952011531 end_us=8816952018721 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816953704343 end_us=8816953711529 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816955301743 end_us=8816955308925 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816956906656 end_us=8816956913809 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816958681615 end_us=8816958688777 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816960275591 end_us=8816960282761 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816962051659 end_us=8816962058823 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816963645119 end_us=8816963652303 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816965249374 end_us=8816965256563 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816967024213 end_us=8816967031401 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816968624563 end_us=8816968631755 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816970312294 end_us=8816970319474 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816972089144 end_us=8816972096323 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816973685185 end_us=8816973692336 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816975289686 end_us=8816975296847 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816976900226 end_us=8816976907415 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816978565858 end_us=8816978572994 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816980300445 end_us=8816980307634 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816981896366 end_us=8816981903529 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816983669479 end_us=8816983676669 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816985308098 end_us=8816985315286 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816986955987 end_us=8816986963195 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816988559291 end_us=8816988566475 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816990302760 end_us=8816990309887 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816992523804 end_us=8816992530969 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816994266685 end_us=8816994273873 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8816995862078 end_us=8816995869252 reused=1
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+E026_STAGE device=0 nodes=468 begin_us=8817684332042 end_us=8817684347594 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8817686708893 end_us=8817686720052 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817703184460 end_us=8817703203964 reused=0
+E026_STAGE device=0 nodes=468 begin_us=8817710965243 end_us=8817710972752 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8817712542858 end_us=8817712553138 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817714262505 end_us=8817714269697 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817715824220 end_us=8817715831403 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817717396734 end_us=8817717403902 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817718969305 end_us=8817718976491 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817720539489 end_us=8817720546644 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817722288762 end_us=8817722295951 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817723850865 end_us=8817723858055 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817725423056 end_us=8817725430243 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817727096133 end_us=8817727103273 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817728661708 end_us=8817728668894 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817730234300 end_us=8817730241461 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817731897764 end_us=8817731904935 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817733464279 end_us=8817733471458 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817735037876 end_us=8817735045025 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817736700024 end_us=8817736707189 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817738265156 end_us=8817738272358 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817739836409 end_us=8817739843531 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817741496655 end_us=8817741503846 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817743059284 end_us=8817743066439 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817744626471 end_us=8817744633623 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817746301704 end_us=8817746308859 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817747895291 end_us=8817747902448 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817749547730 end_us=8817749554914 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817751386074 end_us=8817751393289 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817752952080 end_us=8817752959269 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817754698541 end_us=8817754705731 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817756308818 end_us=8817756316020 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817757882793 end_us=8817757889974 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8817759634842 end_us=8817759642003 reused=1
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+E026_STAGE device=0 nodes=612 begin_us=8817894596118 end_us=8817894606732 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=612 begin_us=8817903689286 end_us=8817903701974 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8817917586793 end_us=8817917606948 reused=0
+E026_STAGE device=0 nodes=612 begin_us=8817934375818 end_us=8817934388328 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=612 begin_us=8817938660523 end_us=8817938676411 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8817942222722 end_us=8817942234003 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8817946190358 end_us=8817946201645 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8817949898007 end_us=8817949909290 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8817953440625 end_us=8817953451930 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8817957099971 end_us=8817957111283 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8817960683906 end_us=8817960695243 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8817964622104 end_us=8817964633420 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8817968243597 end_us=8817968254895 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8817971954387 end_us=8817971965664 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8817975781305 end_us=8817975792612 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8817979472783 end_us=8817979484056 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8817983338386 end_us=8817983349700 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8817987099545 end_us=8817987110828 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8817990770339 end_us=8817990781665 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8817994509402 end_us=8817994520692 reused=1
+E026_STAGE device=0 nodes=612 begin_us=8818008022052 end_us=8818008037299 reused=0
+E026_STAGE device=0 nodes=612 begin_us=8818020806473 end_us=8818020818433 reused=0
+E026_STAGE device=0 nodes=612 begin_us=8818034027097 end_us=8818034036917 reused=0
+E026_STAGE device=0 nodes=612 begin_us=8818038417866 end_us=8818038426024 reused=0
+E026_STAGE device=0 nodes=612 begin_us=8818042353347 end_us=8818042361143 reused=0
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+E026_STAGE device=0 nodes=522 begin_us=8818184369530 end_us=8818184377818 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=522 begin_us=8818193430777 end_us=8818193442399 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818208182943 end_us=8818208202680 reused=0
+E026_STAGE device=0 nodes=522 begin_us=8818222221110 end_us=8818222230650 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=522 begin_us=8818224731837 end_us=8818224744705 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818227717083 end_us=8818227726213 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818230506837 end_us=8818230515956 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818233187100 end_us=8818233196231 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818235993860 end_us=8818236002984 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818238781264 end_us=8818238790397 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818241101556 end_us=8818241110685 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818243432915 end_us=8818243442054 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818246570476 end_us=8818246579602 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818249387043 end_us=8818249396167 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818251984519 end_us=8818251993639 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818254577602 end_us=8818254586733 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818257945682 end_us=8818257954811 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818260923969 end_us=8818260933123 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818264000326 end_us=8818264009395 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818267083632 end_us=8818267092770 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818269862205 end_us=8818269871318 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818272936777 end_us=8818272945909 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818275979982 end_us=8818275989122 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818278772734 end_us=8818278781865 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818281555887 end_us=8818281565030 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818284595912 end_us=8818284605090 reused=1
+ggml_backend_cuda_graph_compute: CUDA graph warmup reset
+E026_STAGE device=0 nodes=522 begin_us=8818289075756 end_us=8818289083831 reused=0
+E026_STAGE device=0 nodes=522 begin_us=8818293151175 end_us=8818293158813 reused=0
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+E026_STAGE device=0 nodes=468 begin_us=8818539810184 end_us=8818539820943 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8818541579297 end_us=8818541590682 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818552457472 end_us=8818552477037 reused=0
+E026_STAGE device=0 nodes=468 begin_us=8818558188157 end_us=8818558195711 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8818558692957 end_us=8818558703234 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818559203214 end_us=8818559210398 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818559691894 end_us=8818559699098 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818560339240 end_us=8818560346394 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818560827259 end_us=8818560834463 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818561323019 end_us=8818561330164 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818561808191 end_us=8818561815338 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818562472507 end_us=8818562479659 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818562963994 end_us=8818562971190 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818563577713 end_us=8818563584879 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818564064666 end_us=8818564071850 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818564700089 end_us=8818564707243 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818565187348 end_us=8818565194495 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818565680397 end_us=8818565687553 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818566174685 end_us=8818566181830 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818566832223 end_us=8818566839372 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818567319253 end_us=8818567326405 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818567808569 end_us=8818567815717 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818568306820 end_us=8818568313967 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818568949058 end_us=8818568956203 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818569445329 end_us=8818569452479 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818569938214 end_us=8818569945366 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818570437263 end_us=8818570444395 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818571070298 end_us=8818571077483 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818571560372 end_us=8818571567527 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818572053262 end_us=8818572060409 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818572834403 end_us=8818572841553 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818573476443 end_us=8818573483594 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818574134250 end_us=8818574141396 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8818574910665 end_us=8818574917852 reused=1
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+E026_STAGE device=0 nodes=522 begin_us=8818786506545 end_us=8818786515431 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=522 begin_us=8818793185650 end_us=8818793197364 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818804148415 end_us=8818804168205 reused=0
+E026_STAGE device=0 nodes=522 begin_us=8818813424757 end_us=8818813434337 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=522 begin_us=8818814911418 end_us=8818814924555 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818816098805 end_us=8818816107969 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818817277404 end_us=8818817286553 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818818461777 end_us=8818818470916 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818819543611 end_us=8818819552731 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818820999643 end_us=8818821008796 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818822326519 end_us=8818822335659 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818823276284 end_us=8818823285451 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818824243091 end_us=8818824252222 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818825423981 end_us=8818825433160 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818826735985 end_us=8818826745167 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818827902677 end_us=8818827911807 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818829202096 end_us=8818829211225 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818830126204 end_us=8818830135319 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818831307470 end_us=8818831316587 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818832492147 end_us=8818832501274 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818833672834 end_us=8818833681973 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818834825841 end_us=8818834834967 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818835790058 end_us=8818835799214 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818836841556 end_us=8818836850706 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818837507636 end_us=8818837516783 reused=1
+E026_STAGE device=0 nodes=522 begin_us=8818838131517 end_us=8818838140649 reused=1
+ggml_backend_cuda_graph_compute: CUDA graph warmup reset
+E026_STAGE device=0 nodes=522 begin_us=8818840370098 end_us=8818840378137 reused=0
+E026_STAGE device=0 nodes=522 begin_us=8818842256653 end_us=8818842264149 reused=0
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+E026_STAGE device=0 nodes=468 begin_us=8820124759012 end_us=8820124770036 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8820126932202 end_us=8820126943857 reused=1
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+E026_STAGE device=0 nodes=468 begin_us=8821038304751 end_us=8821038315502 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8821040863502 end_us=8821040874965 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821063235360 end_us=8821063254926 reused=0
+E026_STAGE device=0 nodes=468 begin_us=8821068256159 end_us=8821068263715 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8821069609830 end_us=8821069620083 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821070964433 end_us=8821070971620 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821072877638 end_us=8821072884840 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821075113119 end_us=8821075120315 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821077342763 end_us=8821077349950 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821079650144 end_us=8821079657342 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821082039999 end_us=8821082047236 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821084267346 end_us=8821084274487 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821086101770 end_us=8821086108948 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821087802427 end_us=8821087809630 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821089136257 end_us=8821089143436 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821090575723 end_us=8821090582922 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821092002891 end_us=8821092010082 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821093376092 end_us=8821093383276 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821094717904 end_us=8821094725092 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821096646845 end_us=8821096654034 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821098876154 end_us=8821098883333 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821101238788 end_us=8821101245973 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821103464065 end_us=8821103471250 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821105832317 end_us=8821105839472 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821108063078 end_us=8821108070253 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821110290481 end_us=8821110298084 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821112649506 end_us=8821112656680 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821114878995 end_us=8821114886185 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821117250492 end_us=8821117257681 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821119477254 end_us=8821119484444 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821121706249 end_us=8821121713434 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821124045632 end_us=8821124052810 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821126274402 end_us=8821126281589 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821128639284 end_us=8821128646458 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821130870111 end_us=8821130877299 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821133099167 end_us=8821133106349 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821135445633 end_us=8821135452805 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821137669978 end_us=8821137677166 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821140041274 end_us=8821140048454 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821142270220 end_us=8821142277408 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821144500488 end_us=8821144507680 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821146837897 end_us=8821146845047 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821149072481 end_us=8821149079697 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821151442143 end_us=8821151449327 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821153663222 end_us=8821153670407 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821155921308 end_us=8821155928493 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821158239733 end_us=8821158246928 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821160471174 end_us=8821160478355 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821162845074 end_us=8821162852220 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821165071907 end_us=8821165079124 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821167301520 end_us=8821167308710 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821169641043 end_us=8821169648219 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821171873872 end_us=8821171881058 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821174242074 end_us=8821174249214 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821176468749 end_us=8821176475889 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821178699198 end_us=8821178706380 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821181047162 end_us=8821181054346 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821183279413 end_us=8821183286598 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821185632292 end_us=8821185639480 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821187869026 end_us=8821187876214 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821190098778 end_us=8821190105999 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821192446389 end_us=8821192453538 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821194686407 end_us=8821194693586 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821197038879 end_us=8821197046192 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821199271014 end_us=8821199278203 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821201497791 end_us=8821201504921 reused=1
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+E026_STAGE device=0 nodes=468 begin_us=8821606508877 end_us=8821606517667 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8821609042165 end_us=8821609053501 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821630207717 end_us=8821630227191 reused=0
+E026_STAGE device=0 nodes=468 begin_us=8821634983311 end_us=8821634990857 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8821636330657 end_us=8821636340789 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821637676351 end_us=8821637683500 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821639050866 end_us=8821639058001 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821641197556 end_us=8821641205300 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821643424751 end_us=8821643431941 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821645788723 end_us=8821645795906 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821648017058 end_us=8821648024240 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821650247110 end_us=8821650254291 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821652614576 end_us=8821652621760 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821654841237 end_us=8821654848416 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821657209123 end_us=8821657216304 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821659435518 end_us=8821659442709 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821661663350 end_us=8821661670533 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821664031109 end_us=8821664038290 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821666261271 end_us=8821666268460 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821668613247 end_us=8821668620426 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821670834675 end_us=8821670841859 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821673067101 end_us=8821673074272 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821675224435 end_us=8821675231560 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821677450671 end_us=8821677457856 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821679676599 end_us=8821679683749 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821682023631 end_us=8821682030814 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821684257184 end_us=8821684264367 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821686617507 end_us=8821686624681 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821688843775 end_us=8821688850964 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821691068587 end_us=8821691075770 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821693420084 end_us=8821693427268 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821695644789 end_us=8821695651954 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821698020148 end_us=8821698027324 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821700244787 end_us=8821700251952 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821702472980 end_us=8821702480161 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821704816920 end_us=8821704824105 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821707045829 end_us=8821707053009 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821709421000 end_us=8821709428186 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821711639514 end_us=8821711646699 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821713864903 end_us=8821713872094 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821716217251 end_us=8821716224435 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821718446231 end_us=8821718453365 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821720619386 end_us=8821720626643 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821722848486 end_us=8821722855672 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821725222995 end_us=8821725230190 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821727445656 end_us=8821727452819 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821729809769 end_us=8821729816969 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821732039021 end_us=8821732046213 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821734261722 end_us=8821734268915 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821736625645 end_us=8821736632856 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821738852295 end_us=8821738859425 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821741222106 end_us=8821741229271 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821743448720 end_us=8821743455882 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821745677457 end_us=8821745684642 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821748016539 end_us=8821748023721 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821750241706 end_us=8821750248851 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821752617648 end_us=8821752624843 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821754840522 end_us=8821754847714 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821757068377 end_us=8821757075561 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821759421032 end_us=8821759428217 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821761647774 end_us=8821761654979 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821764014395 end_us=8821764021583 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821766241466 end_us=8821766248659 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821768462490 end_us=8821768469679 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821770662497 end_us=8821770669687 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8821772402572 end_us=8821772409761 reused=1
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+Client connection closed
+Accepted client connection
+E026_STAGE device=0 nodes=468 begin_us=8822490805028 end_us=8822490815476 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8822493471530 end_us=8822493483013 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822510897811 end_us=8822510917461 reused=0
+E026_STAGE device=0 nodes=468 begin_us=8822519969963 end_us=8822519977502 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8822521543174 end_us=8822521553437 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822523114807 end_us=8822523121999 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822524826070 end_us=8822524833264 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822526378582 end_us=8822526385774 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822528034094 end_us=8822528041291 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822529594721 end_us=8822529601915 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822531153003 end_us=8822531160134 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822532711655 end_us=8822532718845 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822534420653 end_us=8822534427838 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822535969704 end_us=8822535976922 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822537627286 end_us=8822537634519 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822539178470 end_us=8822539185644 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822540810210 end_us=8822540817384 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822542372993 end_us=8822542380201 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822544030229 end_us=8822544037411 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822545580862 end_us=8822545588043 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822547226986 end_us=8822547234187 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822548777679 end_us=8822548784797 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822550335140 end_us=8822550342301 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822551895397 end_us=8822551902519 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822553623118 end_us=8822553630380 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822555173724 end_us=8822555180914 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822556828614 end_us=8822556835802 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822558383246 end_us=8822558390429 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822559941744 end_us=8822559948964 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822561502202 end_us=8822561509386 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822563220611 end_us=8822563227741 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822564770771 end_us=8822564777911 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822566435352 end_us=8822566442547 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822567991349 end_us=8822567998537 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822569555682 end_us=8822569562818 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822571182905 end_us=8822571190040 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822572827698 end_us=8822572834892 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822574378619 end_us=8822574385813 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822576026971 end_us=8822576034161 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822577579467 end_us=8822577586593 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822579135315 end_us=8822579142502 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822580692997 end_us=8822580700141 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822582422168 end_us=8822582429337 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822583971433 end_us=8822583978620 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822585628529 end_us=8822585635657 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822587179153 end_us=8822587186331 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822588738598 end_us=8822588745757 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822590303771 end_us=8822590310918 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822592025932 end_us=8822592033091 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822593576851 end_us=8822593584025 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822595227160 end_us=8822595234289 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822596773888 end_us=8822596781073 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822598331644 end_us=8822598338789 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822599896980 end_us=8822599904174 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822601663264 end_us=8822601670432 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822603215002 end_us=8822603222583 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822604946682 end_us=8822604953867 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822606499914 end_us=8822606507144 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822608056809 end_us=8822608064025 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822609795344 end_us=8822609802532 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822611349494 end_us=8822611356660 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822612923198 end_us=8822612930375 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822614620474 end_us=8822614627671 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822616173201 end_us=8822616180379 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822617733961 end_us=8822617741155 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822619421347 end_us=8822619428548 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822620976457 end_us=8822620983648 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822622533581 end_us=8822622540776 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822624221480 end_us=8822624228671 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822625774596 end_us=8822625781773 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822627332886 end_us=8822627340008 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822629036569 end_us=8822629043778 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822630590057 end_us=8822630597241 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822632150085 end_us=8822632157225 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822633821542 end_us=8822633828731 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822635371972 end_us=8822635379180 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822636936213 end_us=8822636943405 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822638621737 end_us=8822638628863 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822640174557 end_us=8822640181728 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822641740608 end_us=8822641747730 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822643428103 end_us=8822643435364 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822644980730 end_us=8822644987922 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822646545122 end_us=8822646552322 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822648225330 end_us=8822648232514 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822649775288 end_us=8822649782412 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822651336746 end_us=8822651343927 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822653021677 end_us=8822653028844 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822654579508 end_us=8822654586632 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822656138750 end_us=8822656145976 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822657826530 end_us=8822657833703 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822659386562 end_us=8822659393748 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822660949481 end_us=8822660956611 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822662624113 end_us=8822662631302 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822664175635 end_us=8822664182759 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822665733989 end_us=8822665741185 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822667420563 end_us=8822667427785 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822668970807 end_us=8822668978014 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822670530283 end_us=8822670537476 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822672218689 end_us=8822672225874 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822673773201 end_us=8822673780390 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822675334259 end_us=8822675341420 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822677019851 end_us=8822677026981 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822678568920 end_us=8822678576097 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822680131701 end_us=8822680138821 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822681820886 end_us=8822681828120 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822683372354 end_us=8822683379549 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822684934710 end_us=8822684941842 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822686620960 end_us=8822686628252 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822688175333 end_us=8822688182460 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822689736999 end_us=8822689744174 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822691420807 end_us=8822691428022 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822692975151 end_us=8822692982400 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822694534508 end_us=8822694541649 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822696222923 end_us=8822696230047 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822697771544 end_us=8822697778692 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822699335524 end_us=8822699342773 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822701019788 end_us=8822701026981 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822702571056 end_us=8822702578206 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822704132113 end_us=8822704139306 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822705818885 end_us=8822705826009 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822707374072 end_us=8822707381325 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822708934441 end_us=8822708941575 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822710619335 end_us=8822710626499 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822712176427 end_us=8822712183568 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822713732768 end_us=8822713739949 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822715418339 end_us=8822715425530 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822716970365 end_us=8822716977569 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822718531956 end_us=8822718539173 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822720221955 end_us=8822720229145 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822721773501 end_us=8822721780697 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822723336581 end_us=8822723343770 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822725029675 end_us=8822725036868 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822726585002 end_us=8822726592131 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822728150549 end_us=8822728157751 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822729821086 end_us=8822729828269 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822731370034 end_us=8822731377223 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822732931548 end_us=8822732938754 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822734619166 end_us=8822734626353 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822736172758 end_us=8822736179942 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822737733464 end_us=8822737740665 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822739421372 end_us=8822739428568 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822740973458 end_us=8822740980603 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822742557168 end_us=8822742564356 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822744344258 end_us=8822744351443 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822746130596 end_us=8822746137778 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822748100849 end_us=8822748107988 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822749723296 end_us=8822749730473 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822751421005 end_us=8822751428195 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822752980522 end_us=8822752987710 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822754540633 end_us=8822754547818 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822756223658 end_us=8822756230822 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822757776534 end_us=8822757783718 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822759337383 end_us=8822759344571 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822761020185 end_us=8822761027324 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822762575644 end_us=8822762582829 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822764135948 end_us=8822764143168 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822765819243 end_us=8822765826439 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822767371532 end_us=8822767378718 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822770152995 end_us=8822770160191 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822771703068 end_us=8822771710352 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822773400559 end_us=8822773407747 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822774955236 end_us=8822774962364 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822776530221 end_us=8822776537414 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822778091213 end_us=8822778098396 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822779652953 end_us=8822779660218 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822781395112 end_us=8822781402303 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822782954713 end_us=8822782961956 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822784561361 end_us=8822784568547 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822786382336 end_us=8822786389535 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822788061216 end_us=8822788068409 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822789889387 end_us=8822789896524 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822791612278 end_us=8822791619461 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822793221236 end_us=8822793228429 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822794954034 end_us=8822794961224 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822796506987 end_us=8822796514125 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822798067011 end_us=8822798074197 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822799627962 end_us=8822799635180 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822801367214 end_us=8822801374350 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822802921492 end_us=8822802928675 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822804620886 end_us=8822804628075 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822806170993 end_us=8822806178173 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822807728180 end_us=8822807735442 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822809291401 end_us=8822809298592 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822810898076 end_us=8822810905261 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822812777919 end_us=8822812785056 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822814524273 end_us=8822814531439 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822817854811 end_us=8822817861943 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822820908665 end_us=8822820915882 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822822602089 end_us=8822822609281 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822824399260 end_us=8822824406403 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822826161228 end_us=8822826168413 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822828839212 end_us=8822828846401 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822830561830 end_us=8822830569012 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822832650472 end_us=8822832657654 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822834826679 end_us=8822834833866 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822836560992 end_us=8822836568194 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822838336764 end_us=8822838343959 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822839889983 end_us=8822839897166 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822841452110 end_us=8822841459275 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822843189279 end_us=8822843196476 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822844738024 end_us=8822844745218 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822846300359 end_us=8822846307591 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822848032343 end_us=8822848039531 reused=1
+ggml_backend_cuda_graph_compute: CUDA graph warmup reset
+E026_STAGE device=0 nodes=468 begin_us=8822852469580 end_us=8822852478045 reused=0
+ggml_backend_cuda_graph_compute: CUDA graph warmup complete
+E026_STAGE device=0 nodes=468 begin_us=8822854351722 end_us=8822854362169 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822856061881 end_us=8822856069074 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822857984619 end_us=8822857991793 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822859537875 end_us=8822859545079 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822861328749 end_us=8822861335934 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822863028409 end_us=8822863035589 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822864726802 end_us=8822864733966 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822866426790 end_us=8822866434004 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822867982608 end_us=8822867989802 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822869549790 end_us=8822869556990 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822871111348 end_us=8822871118544 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822872824686 end_us=8822872831876 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822874377998 end_us=8822874385212 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822876031990 end_us=8822876039213 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822877589650 end_us=8822877596837 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822879153197 end_us=8822879160391 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822880721265 end_us=8822880728462 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822882427226 end_us=8822882434420 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822883981539 end_us=8822883988731 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822885631346 end_us=8822885638535 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822887184897 end_us=8822887192097 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822888746740 end_us=8822888753919 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822890309155 end_us=8822890316357 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822892028547 end_us=8822892035743 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822893646730 end_us=8822893653890 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822895431763 end_us=8822895438957 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822897139020 end_us=8822897146221 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822898954130 end_us=8822898961330 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822901715166 end_us=8822901722314 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822904656516 end_us=8822904663710 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822906586869 end_us=8822906594009 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822908341346 end_us=8822908348542 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822910229638 end_us=8822910236829 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822911980110 end_us=8822911987378 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822913637639 end_us=8822913644840 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822915191610 end_us=8822915198804 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822916836651 end_us=8822916843843 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822918389115 end_us=8822918396312 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822919949538 end_us=8822919956724 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822921509346 end_us=8822921516547 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822923229042 end_us=8822923236227 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822924780676 end_us=8822924787874 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822926435260 end_us=8822926442463 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822927989280 end_us=8822927996456 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822929549557 end_us=8822929556753 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822931113906 end_us=8822931121102 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822932832917 end_us=8822932840083 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822934382996 end_us=8822934390225 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822936858725 end_us=8822936865926 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822938841857 end_us=8822938849083 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822940690322 end_us=8822940697516 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822942683600 end_us=8822942690793 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822944347478 end_us=8822944354644 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822945897218 end_us=8822945904420 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822947454800 end_us=8822947461996 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822949018867 end_us=8822949026031 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822950754533 end_us=8822950761693 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822952306077 end_us=8822952313224 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822954006376 end_us=8822954013574 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822955558858 end_us=8822955566030 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822957120533 end_us=8822957127730 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822958683840 end_us=8822958691024 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822960249549 end_us=8822960256707 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822961981942 end_us=8822961989099 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822963531308 end_us=8822963538479 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822965091837 end_us=8822965099027 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822966824656 end_us=8822966831831 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822969829562 end_us=8822969836750 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822971562901 end_us=8822971570042 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822973147275 end_us=8822973154465 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822974707701 end_us=8822974714871 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822976441590 end_us=8822976448786 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822978100781 end_us=8822978107921 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822980595196 end_us=8822980602393 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822982937365 end_us=8822982944505 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822984879832 end_us=8822984887028 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822986636107 end_us=8822986643308 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822988918245 end_us=8822988925461 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822991070880 end_us=8822991078654 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822992910001 end_us=8822992917191 reused=1
+E026_STAGE device=0 nodes=468 begin_us=8822994672956 end_us=8822994680146 reused=1
+Client connection closed

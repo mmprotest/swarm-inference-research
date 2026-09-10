@@ -1,0 +1,601 @@
+{
+    "bytes":  {
+                  "byte_definition":  "RPC protocol bytes excluding TCP/IP/SSH framing; all-WAN total sums local-to-A and A-to-B",
+                  "bytes_per_committed_token_including_startup_all_wan_links":  310089.13475177303,
+                  "bytes_received":  6991455,
+                  "bytes_sent":  64740815,
+                  "coordinator_wan_protocol_bytes":  71732270,
+                  "median_steady_all_wan_links_bytes_per_token":  90192.0,
+                  "peer_wan_protocol_bytes":  15712866,
+                  "total_wan_protocol_bytes":  87445136
+              },
+    "canonical_verdict":  "WAN_SWARM_NOT_VIABLE_UNDER_TESTED_CONDITIONS",
+    "canonicality":  {
+                         "dataset":  "evidence/metrics.jsonl",
+                         "status":  "SOURCE_CANONICAL_PUBLIC_PATHS_SANITIZED"
+                     },
+    "committed_tok_s_partial":  0.5903353469265896,
+    "configuration_hash":  "cdc4ddbfb54c0e7dd07e21b0c51a5abae352a5e5bf5f0edb9020b9b733047b7c",
+    "cost":  {
+                 "actual_vast_expenditure_usd":  0.9181950026999459,
+                 "all_e026_instances_absent":  true,
+                 "conservative_upper_estimate_usd":  1.532201680273256,
+                 "final_available_credit_usd":  44.886929487090015,
+                 "hard_ceiling_usd":  38.0
+             },
+    "dataset":  {
+                    "path":  "evidence/metrics.jsonl",
+                    "rows":  71,
+                    "sha256":  "87d699fbd9be46415b2cc7f79e024b9887fb34069aa34281f459aeb7fdebf189"
+                },
+    "dirty_tree_porcelain_sha256":  "169a184628b4b70b30511d4f41fbdbf7a9404cde0c31476a2f4f9f85d9374eb8",
+    "dirty_tree_snapshot_source":  "seal/configuration.json",
+    "dirty_tree_state":  "DIRTY",
+    "exact_final_command":  [
+                                "\u003clocal-repo\u003e\\.runtime\\experiment-026\\build\\bin\\llama-server.exe",
+                                "-m",
+                                "\u003clocal-repo\u003e\\.runtime\\experiment-026\\models\\Qwen3.8-27B-Q4_K_M.gguf",
+                                "--host",
+                                "127.0.0.1",
+                                "--port",
+                                "42626",
+                                "-ngl",
+                                "99",
+                                "-c",
+                                "12288",
+                                "-b",
+                                "512",
+                                "-ub",
+                                "512",
+                                "-np",
+                                "1",
+                                "-fa",
+                                "on",
+                                "--fit",
+                                "off",
+                                "--metrics",
+                                "--spec-type",
+                                "none",
+                                "--no-webui",
+                                "--ctx-checkpoints",
+                                "0",
+                                "--rpc",
+                                "127.0.0.1:42646",
+                                "--split-mode",
+                                "layer",
+                                "--tensor-split",
+                                "1,1,6"
+                            ],
+    "exact_final_inference_config":  {
+                                         "activation_compression":  "off",
+                                         "batch":  512,
+                                         "context":  12288,
+                                         "contiguous_stages":  true,
+                                         "ctx_checkpoints":  0,
+                                         "flash_attention":  "on",
+                                         "ordered_async_cross_worker_copy":  true,
+                                         "peer_transport":  "Vast managed SSH proxy",
+                                         "pipelined_cache_validation":  true,
+                                         "required_exact_cas":  true,
+                                         "sampling":  "greedy",
+                                         "seed":  260026,
+                                         "speculation":  "none",
+                                         "split_mode":  "layer",
+                                         "stage_order":  [
+                                                             "Japan RTX 3080 Ti",
+                                                             "South Korea RTX 3060",
+                                                             "local RTX 5090"
+                                                         ],
+                                         "tensor_split":  [
+                                                              1,
+                                                              1,
+                                                              6
+                                                          ],
+                                         "ubatch":  512
+                                     },
+    "experiment_id":  "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+    "failure_injection":  {
+                              "committed_token":  20,
+                              "node_id":  50478198,
+                              "timestamp":  "2026-09-10T12:38:20.788782+00:00"
+                          },
+    "final_correctness":  {
+                              "first_mismatch":  178,
+                              "identical_history_logits":  {
+                                                               "first_mismatch_detail":  {
+                                                                                             "local_selected":  {
+                                                                                                                    "id":  15734,
+                                                                                                                    "logprob":  -0.7642916440963745,
+                                                                                                                    "token":  " passes"
+                                                                                                                },
+                                                                                             "local_top1_margin_logprob":  0.03976249694824219,
+                                                                                             "local_top2":  [
+                                                                                                                {
+                                                                                                                    "bytes":  [
+                                                                                                                                  32,
+                                                                                                                                  112,
+                                                                                                                                  97,
+                                                                                                                                  115,
+                                                                                                                                  115,
+                                                                                                                                  101,
+                                                                                                                                  115
+                                                                                                                              ],
+                                                                                                                    "id":  15734,
+                                                                                                                    "logprob":  -0.7642916440963745,
+                                                                                                                    "token":  " passes"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "bytes":  [
+                                                                                                                                  32,
+                                                                                                                                  101,
+                                                                                                                                  110,
+                                                                                                                                  116,
+                                                                                                                                  101,
+                                                                                                                                  114,
+                                                                                                                                  115
+                                                                                                                              ],
+                                                                                                                    "id":  27891,
+                                                                                                                    "logprob":  -0.8040541410446167,
+                                                                                                                    "token":  " enters"
+                                                                                                                }
+                                                                                                            ],
+                                                                                             "wan_selected":  {
+                                                                                                                  "id":  27891,
+                                                                                                                  "logprob":  -0.7793287038803101,
+                                                                                                                  "token":  " enters"
+                                                                                                              },
+                                                                                             "wan_top1_margin_logprob":  0.016004621982574463,
+                                                                                             "wan_top2":  [
+                                                                                                              {
+                                                                                                                  "bytes":  [
+                                                                                                                                32,
+                                                                                                                                101,
+                                                                                                                                110,
+                                                                                                                                116,
+                                                                                                                                101,
+                                                                                                                                114,
+                                                                                                                                115
+                                                                                                                            ],
+                                                                                                                  "id":  27891,
+                                                                                                                  "logprob":  -0.7793287038803101,
+                                                                                                                  "token":  " enters"
+                                                                                                              },
+                                                                                                              {
+                                                                                                                  "bytes":  [
+                                                                                                                                32,
+                                                                                                                                112,
+                                                                                                                                97,
+                                                                                                                                115,
+                                                                                                                                115,
+                                                                                                                                101,
+                                                                                                                                115
+                                                                                                                            ],
+                                                                                                                  "id":  15734,
+                                                                                                                  "logprob":  -0.7953333258628845,
+                                                                                                                  "token":  " passes"
+                                                                                                              }
+                                                                                                          ],
+                                                                                             "zero_based_token_index":  178
+                                                                                         },
+                                                               "identical_history_positions":  179,
+                                                               "max_common_top10_logprob_abs_delta":  0.28500795364379883,
+                                                               "mean_common_top10_logprob_abs_delta":  0.04499236183755603,
+                                                               "mean_top10_jaccard":  0.9746063991874049,
+                                                               "scope":  "Only positions whose input history is identical, including the first differing decision",
+                                                               "top1_agreement":  0.994413407821229
+                                                           },
+                              "matched_prefix_tokens":  178,
+                              "status":  "FAIL_STRICT_GREEDY_AND_INCOMPLETE"
+                          },
+    "final_failure":  {
+                          "message":  "[WinError 10054] An existing connection was forcibly closed by the remote host",
+                          "timestamp":  "2026-09-10T13:00:51.467098+00:00",
+                          "type":  "ConnectionResetError"
+                      },
+    "final_prompt":  {
+                         "content_sha256":  "a4da4d0ef291a10007d773711cc6d10822687d57755db71055b332671a7d4ed4",
+                         "id":  "sealed-01-factual"
+                     },
+    "gates":  {
+                  "budget":  {
+                                 "actual_usd":  0.9181950026999459,
+                                 "ceiling_usd":  38,
+                                 "pass":  true
+                             },
+                  "cached_startup":  {
+                                         "pass":  true,
+                                         "same_shard_speedup":  103.18658650185198
+                                     },
+                  "distributed_correctness":  {
+                                                  "pass":  false,
+                                                  "reason":  "sealed greedy stream first differed at token index 178"
+                                              },
+                  "exact_speculative_correctness":  {
+                                                        "pass":  false,
+                                                        "reason":  "native MTP diverged on 4 of 6 development prompts and was rejected"
+                                                    },
+                  "failure_survival":  {
+                                           "interruption_s":  9.508302600002935,
+                                           "pass":  true
+                                       },
+                  "genuine_wan":  {
+                                      "machines":  3,
+                                      "max_measured_application_rtt_ms":  355.11890000088897,
+                                      "pass":  true
+                                  },
+                  "interactive_decode":  {
+                                             "best_attempted_inexact_mtp_tok_s":  1.7323997235068367,
+                                             "best_exact_tok_s":  1.6150520769635919,
+                                             "best_measured_tok_s":  1.7323997235068367,
+                                             "pass":  false,
+                                             "required_tok_s":  8.0,
+                                             "sealed_partial_tok_s":  0.5903353469265896
+                                         },
+                  "ordinary_baseline_improvement":  {
+                                                        "development_pass":  true,
+                                                        "sealed_pass":  false
+                                                    },
+                  "sealed_512_tokens":  {
+                                            "completed":  282,
+                                            "pass":  false,
+                                            "requested":  512
+                                        },
+                  "synchronization_compression":  {
+                                                      "development_best_tokens_per_traversal":  2.6666666666666665,
+                                                      "development_pass":  true,
+                                                      "sealed_pass":  false,
+                                                      "sealed_tokens_per_traversal":  1.0
+                                                  }
+              },
+    "generated_tokens":  {
+                             "completed":  282,
+                             "requested":  512,
+                             "terminal_event":  false
+                         },
+    "gpu_utilization":  {
+                            "a":  {
+                                      "max_memory_used_mib":  2956.0,
+                                      "mean_gpu_utilization_percent":  0.5659176029962547,
+                                      "mean_power_w":  98.50024719101123,
+                                      "p95_gpu_utilization_percent":  4.0,
+                                      "samples":  2670
+                                  },
+                            "b":  {
+                                      "max_memory_used_mib":  2643.0,
+                                      "mean_gpu_utilization_percent":  0.811821922933034,
+                                      "mean_power_w":  41.713572764683875,
+                                      "p95_gpu_utilization_percent":  0.0,
+                                      "samples":  2673
+                                  }
+                        },
+    "hybrid_model_state":  {
+                               "attention_state_bytes":  526971680,
+                               "checkpoint_serialization_s":  0.0632325,
+                               "recurrent_state_with_header_bytes":  156894364,
+                               "restore_gpu_s":  0.0659283,
+                               "total_bytes":  683866044
+                           },
+    "llama_cpp":  {
+                      "commit":  "f1b6fbf35cfa010b0a8d6301fdfccbb7f41bd903",
+                      "instrumentation_diff_sha256":  "eed261160912740fb76dc325cc48c2b89cdce136ec915fb615a758312a94c539",
+                      "local_build":  {
+                                          "compiler":  "MSVC cl 14.44",
+                                          "cuda":  "13.0.88",
+                                          "driver":  "591.86",
+                                          "flags":  [
+                                                        "GGML_CUDA=ON",
+                                                        "GGML_RPC=ON",
+                                                        "CMAKE_CUDA_ARCHITECTURES=120",
+                                                        "LLAMA_BUILD_TESTS=OFF",
+                                                        "LLAMA_BUILD_EXAMPLES=OFF",
+                                                        "LLAMA_OPENSSL=OFF"
+                                                    ],
+                                          "generator":  "Ninja",
+                                          "type":  "Release"
+                                      },
+                      "release_tag":  "b10886",
+                      "remote_build":  {
+                                           "compiler":  "GNU 13.3.0",
+                                           "cuda":  "13.0.88",
+                                           "drivers":  {
+                                                           "worker_a":  "595.84",
+                                                           "worker_b":  "580.159.03"
+                                                       },
+                                           "flags":  [
+                                                         "GGML_CUDA=ON",
+                                                         "GGML_RPC=ON",
+                                                         "CMAKE_CUDA_ARCHITECTURES=86-real",
+                                                         "LLAMA_BUILD_TESTS=OFF",
+                                                         "LLAMA_BUILD_EXAMPLES=OFF",
+                                                         "LLAMA_BUILD_SERVER=OFF",
+                                                         "LLAMA_OPENSSL=OFF"
+                                                     ],
+                                           "generator":  "Ninja",
+                                           "type":  "Release"
+                                       },
+                      "version":  "0.4.0-dev"
+                  },
+    "local_host_inventory_source":  "resource/local-host-post-run-001.json",
+    "median_tpot_s":  1.565250300001935,
+    "model":  {
+                  "file":  "Qwen3.8-27B-Q4_K_M.gguf",
+                  "format":  "GGUF",
+                  "name":  "Qwen3.8-27B",
+                  "quantization":  "Q4_K_M",
+                  "revision":  "0669b98607d47046c7c2b3f801011d54a08cfccf",
+                  "sha256":  "31629f53165ab6a7dad8c9847dcfd1fdf55829dac1e6e748f4a68581b0033d34",
+                  "size_bytes":  18973870432,
+                  "source":  "https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF"
+              },
+    "nodes":  [
+                  {
+                      "cpu":  "Intel(R) Core(TM) Ultra 7 265K",
+                      "cpu_cores":  20,
+                      "cpu_logical_processors":  20,
+                      "driver":  "591.86",
+                      "gpu":  "NVIDIA GeForce RTX 5090",
+                      "node_id":  "local-rtx5090",
+                      "ram_mib":  97749,
+                      "region":  "user-local; Australia/Sydney timezone (physical location not independently geolocated)",
+                      "vram_mib":  32607
+                  },
+                  {
+                      "cpu":  "AMD Ryzen 5 3500 6-Core Processor",
+                      "driver":  "595.84",
+                      "gpu":  "RTX 3080 Ti",
+                      "hourly_usd":  0.17314814814814813,
+                      "machine_id":  140487,
+                      "node_id":  50478198,
+                      "ram_mib":  15912,
+                      "region":  "Japan, JP",
+                      "vram_mib":  12288
+                  },
+                  {
+                      "cpu":  "Intel Xeon E5-2680 v4",
+                      "driver":  "580.159.03",
+                      "gpu":  "RTX 3060",
+                      "hourly_usd":  0.06305555555555556,
+                      "machine_id":  29808,
+                      "node_id":  50478207,
+                      "ram_mib":  64284,
+                      "region":  "South Korea, KR",
+                      "vram_mib":  12288
+                  }
+              ],
+    "output_token_hash":  {
+                              "local_sealed_512":  "48cfd087c544b83350c55cc2220029604ef681ec0dff4e904f97b3d2ef9403ae",
+                              "partial_282":  "55329b735084bb6e7b20196d9f2a17df2e6000a456af86216833fd5681c76f50"
+                          },
+    "p95_tpot_s":  2.1130656999957864,
+    "pairwise_network":  [
+                             {
+                                 "application_rtt_ms":  290.06400000071153,
+                                 "destination":  50478198,
+                                 "jitter_stddev_ms":  0.37686904696861906,
+                                 "p95_rtt_ms":  290.41315500144265,
+                                 "source":  "local-rtx5090",
+                                 "throughput_mbps":  [
+                                                         {
+                                                             "bytes":  16777216,
+                                                             "direction":  "LOCAL_TO_REMOTE",
+                                                             "elapsed_s":  20.747958999996627,
+                                                             "mbps":  6.468960537276068
+                                                         },
+                                                         {
+                                                             "bytes":  16777216,
+                                                             "direction":  "REMOTE_TO_LOCAL",
+                                                             "elapsed_s":  8.79372869999861,
+                                                             "mbps":  15.262891610474771
+                                                         }
+                                                     ],
+                                 "transport":  "PERSISTENT_DIRECT_SSH_CHANNEL"
+                             },
+                             {
+                                 "application_rtt_ms":  355.11890000088897,
+                                 "destination":  50478207,
+                                 "jitter_stddev_ms":  31.45735917282077,
+                                 "p95_rtt_ms":  414.25871000046754,
+                                 "source":  "local-rtx5090",
+                                 "throughput_mbps":  [
+                                                         {
+                                                             "bytes":  16777216,
+                                                             "direction":  "LOCAL_TO_REMOTE",
+                                                             "elapsed_s":  46.31410210000104,
+                                                             "mbps":  2.897988342950019
+                                                         },
+                                                         {
+                                                             "bytes":  16777216,
+                                                             "direction":  "REMOTE_TO_LOCAL",
+                                                             "elapsed_s":  14.230524400001741,
+                                                             "mbps":  9.431678287272645
+                                                         }
+                                                     ],
+                                 "transport":  "PERSISTENT_DIRECT_SSH_CHANNEL"
+                             },
+                             {
+                                 "application_rtt_ms":  65.17186248674989,
+                                 "destination":  50478207,
+                                 "jitter_stddev_ms":  5.627692534195119,
+                                 "p95_rtt_ms":  null,
+                                 "source":  50478198,
+                                 "throughput_mbps":  [
+                                                         {
+                                                             "bytes":  16777216,
+                                                             "direction":  "A_TO_B",
+                                                             "elapsed_s":  7.790869865100831,
+                                                             "mbps":  17.227566410937982
+                                                         },
+                                                         {
+                                                             "bytes":  16777216,
+                                                             "direction":  "B_TO_A",
+                                                             "elapsed_s":  1.110085722990334,
+                                                             "mbps":  120.90753463475423
+                                                         }
+                                                     ],
+                                 "transport":  "DIRECT_PERSISTENT_SSH_A_TO_B"
+                             }
+                         ],
+    "recovery_completion":  {
+                                "duplicates":  0,
+                                "full_prompt_replay_tokens":  0,
+                                "lost":  0,
+                                "recovery_receipt_generated_at":  "2026-09-10T12:41:30.884830+00:00",
+                                "result":  "PASS",
+                                "timestamp":  "2026-09-10T12:38:30.297085+00:00",
+                                "timestamp_basis":  "failure injection wall time plus measured token-stream interruption",
+                                "user_visible_interruption_s":  9.508302600002935
+                            },
+    "remote_evidence_collection":  {
+                                       "bytes":  12970292,
+                                       "files":  31,
+                                       "receipt":  "remote-collected-final-002/receipt.json"
+                                   },
+    "repository_commit":  "d4b4cabd67bb3ef65ce8f2fe997099cb3487822b",
+    "speculation":  {
+                        "acceptances":  0,
+                        "method":  "none",
+                        "proposals":  0
+                    },
+    "stage_assignments":  [
+                              {
+                                  "cached_tensor_bytes":  2424279168,
+                                  "layers":  [
+                                                 0,
+                                                 8
+                                             ],
+                                  "node_id":  50478198,
+                                  "order":  0
+                              },
+                              {
+                                  "cached_tensor_bytes":  2150593792,
+                                  "layers":  [
+                                                 9,
+                                                 16
+                                             ],
+                                  "node_id":  50478207,
+                                  "order":  1
+                              },
+                              {
+                                  "also_owns":  [
+                                                    "embedding",
+                                                    "output"
+                                                ],
+                                  "layers":  [
+                                                 17,
+                                                 63
+                                             ],
+                                  "node_id":  "local-rtx5090",
+                                  "order":  2,
+                                  "whole_target_path":  false
+                              }
+                          ],
+    "stage_compute_times":  {
+                                "worker_a":  {
+                                                 "max_ms":  46.485,
+                                                 "mean_ms":  3.8567719298245615,
+                                                 "median_ms":  3.588,
+                                                 "p95_ms":  3.6018,
+                                                 "samples":  285
+                                             },
+                                "worker_b":  {
+                                                 "max_ms":  19.65,
+                                                 "mean_ms":  7.285171929824561,
+                                                 "median_ms":  7.189,
+                                                 "p95_ms":  7.2618,
+                                                 "samples":  285
+                                             }
+                            },
+    "startup":  {
+                    "a":  {
+                              "build_verified_timestamp":  "2026-09-10T10:02:26.299783+00:00",
+                              "create_attempt_timestamp":  "2026-09-10T09:39:23.309567+00:00",
+                              "first_successful_ssh_timestamp":  "2026-09-10T09:44:17.704920+00:00",
+                              "instance_id":  50478198,
+                              "provision_to_build_verified_s":  1382.990216,
+                              "provision_to_ssh_s":  294.395353,
+                              "provision_to_stage_launch_s":  1386.531363,
+                              "stage_launch_timestamp":  "2026-09-10T10:02:29.840930+00:00"
+                          },
+                    "b":  {
+                              "build_verified_timestamp":  "2026-09-10T10:11:19.927749+00:00",
+                              "create_attempt_timestamp":  "2026-09-10T09:39:27.410149+00:00",
+                              "first_successful_ssh_timestamp":  "2026-09-10T09:54:48.130116+00:00",
+                              "instance_id":  50478207,
+                              "provision_to_build_verified_s":  1912.5176,
+                              "provision_to_ssh_s":  920.719967,
+                              "provision_to_stage_launch_s":  1916.959862,
+                              "stage_launch_timestamp":  "2026-09-10T10:11:24.370011+00:00"
+                          },
+                    "best_disk_warm_full_server_ready_s":  63.320172300002014,
+                    "cold_shard_acquisition":  {
+                                                   "a":  {
+                                                             "elapsed_s":  36.692255361005664,
+                                                             "event":  "SHARD_READY",
+                                                             "network_bytes":  2396815360,
+                                                             "tensor_count":  52
+                                                         },
+                                                   "b":  {
+                                                             "elapsed_s":  54.98283142410219,
+                                                             "event":  "SHARD_READY",
+                                                             "network_bytes":  2123857920,
+                                                             "tensor_count":  46
+                                                         },
+                                                   "exact_cache_upgrade_a":  {
+                                                                                 "elapsed_s":  20.77295259386301,
+                                                                                 "event":  "SHARD_READY",
+                                                                                 "network_bytes":  27463808,
+                                                                                 "tensor_count":  120
+                                                                             },
+                                                   "exact_cache_upgrade_b":  {
+                                                                                 "elapsed_s":  19.75717811472714,
+                                                                                 "event":  "SHARD_READY",
+                                                                                 "network_bytes":  26735872,
+                                                                                 "tensor_count":  106
+                                                                             }
+                                               },
+                    "disk_warm_same_shard_speedup":  103.18658650185198,
+                    "full_cold_to_best_disk_warm_speedup":  30.274078423503262,
+                    "full_cold_topology_critical_node_s":  1916.959862,
+                    "gpu_warm_relay_registration_s":  5.132616,
+                    "sealed_disk_warm_full_server_ready_s":  83.8013217000007,
+                    "standby_same_shard_cold":  {
+                                                    "elapsed_s":  432.5707141440362,
+                                                    "event":  "SHARD_READY",
+                                                    "network_bytes":  2424279168,
+                                                    "tensor_count":  120
+                                                },
+                    "standby_same_shard_disk_warm_verify":  {
+                                                                "elapsed_s":  4.192121561616659,
+                                                                "event":  "SHARD_READY",
+                                                                "network_bytes":  0,
+                                                                "tensor_count":  120
+                                                            }
+                },
+    "synthesis_lineage":  {
+                              "canonical_dataset":  "artifacts\\experiment-026\\metrics-canonical-v3.jsonl",
+                              "reason":  "canonical run-directory IDs, consistent byte denominators with explicit scope, complete local host inventory, correct recovery timestamp semantics, and exact-vs-inexact throughput labels",
+                              "supersedes":  [
+                                                 "metrics.jsonl",
+                                                 "metrics-canonical.jsonl",
+                                                 "metrics-canonical-v2.jsonl",
+                                                 "summary.json",
+                                                 "summary-canonical.json",
+                                                 "summary-final.json",
+                                                 "final-receipt.json",
+                                                 "final-receipt-canonical.json",
+                                                 "final-receipt-canonical-v2.json"
+                                             ]
+                          },
+    "timestamp":  "2026-09-10T14:45:17.569608+00:00",
+    "tokens_per_expensive_target_traversal":  1.0,
+    "ttft_s":  23.060123999999632,
+    "public_curation":  {
+                            "derived":  true,
+                            "source_path":  "experiment-026/final-receipt-canonical-v3.json",
+                            "source_sha256":  "1fa2da74b5d83df8a7ec7c00aff78f0a333f516b7c76020d65016ed686e7533b",
+                            "dataset_source_path":  "experiment-026/metrics-canonical-v3.jsonl",
+                            "dataset_source_sha256":  "f00b54562c10674114ec70ca5495d5d0fa9e6eb9b9b4eeb5acdb296a59554152",
+                            "dataset_public_sha256":  "87d699fbd9be46415b2cc7f79e024b9887fb34069aa34281f459aeb7fdebf189",
+                            "transformation":  "Machine-local repository paths and email-shaped identity strings replaced; numerical measurements and verdict fields unchanged."
+                        }
+}

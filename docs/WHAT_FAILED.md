@@ -26,4 +26,8 @@ Median model error was 95.54%, with p90 and maximum near 100%. This was not a sm
 
 Held-out ordered-DAG error fell to low single digits without a global multiplier. But two independent gates remained false: production-native individual primitive bindings and representative full-93 plan replay. The experiment therefore still reports `MODEL_INVALID` rather than promoting the six capacity unlocks into a final claim.
 
+## E026: physical distribution did not become practical WAN serving
+
+The three-machine Qwen3.8-27B path executed physically, but the best exact development rate was 1.615 tok/s against an 8 tok/s gate. The sealed run fell to 0.590 tok/s, differed from the local greedy stream at token 178, and ended after 282/512 tokens on a transport reset. Native MTP reduced target traversals but failed the frozen exactness corpus. Serial response wait consumed 95–98% of the token cycle, so faster remote kernels and activation compression did not address the measured bottleneck.
+
 The repeated pattern is the point: **a mechanism is not promoted merely because it produces a favorable number.**

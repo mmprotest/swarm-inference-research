@@ -1,0 +1,292 @@
+{
+    "blocking_primitive":  "an exact, reconnectable, state-local multi-token verification protocol that removes per-token RPC round trips and survives transport reconnection",
+    "canonical_verdict":  "WAN_SWARM_NOT_VIABLE_UNDER_TESTED_CONDITIONS",
+    "experiment_id":  "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+    "gates":  {
+                  "budget":  {
+                                 "actual_usd":  0.9181950026999459,
+                                 "ceiling_usd":  38,
+                                 "pass":  true
+                             },
+                  "cached_startup":  {
+                                         "pass":  true,
+                                         "same_shard_speedup":  103.18658650185198
+                                     },
+                  "distributed_correctness":  {
+                                                  "pass":  false,
+                                                  "reason":  "sealed greedy stream first differed at token index 178"
+                                              },
+                  "exact_speculative_correctness":  {
+                                                        "pass":  false,
+                                                        "reason":  "native MTP diverged on 4 of 6 development prompts and was rejected"
+                                                    },
+                  "failure_survival":  {
+                                           "interruption_s":  9.508302600002935,
+                                           "pass":  true
+                                       },
+                  "genuine_wan":  {
+                                      "machines":  3,
+                                      "max_measured_application_rtt_ms":  355.11890000088897,
+                                      "pass":  true
+                                  },
+                  "interactive_decode":  {
+                                             "best_attempted_inexact_mtp_tok_s":  1.7323997235068367,
+                                             "best_exact_tok_s":  1.6150520769635919,
+                                             "best_measured_tok_s":  1.7323997235068367,
+                                             "pass":  false,
+                                             "required_tok_s":  8.0,
+                                             "sealed_partial_tok_s":  0.5903353469265896
+                                         },
+                  "ordinary_baseline_improvement":  {
+                                                        "development_pass":  true,
+                                                        "sealed_pass":  false
+                                                    },
+                  "sealed_512_tokens":  {
+                                            "completed":  282,
+                                            "pass":  false,
+                                            "requested":  512
+                                        },
+                  "synchronization_compression":  {
+                                                      "development_best_tokens_per_traversal":  2.6666666666666665,
+                                                      "development_pass":  true,
+                                                      "sealed_pass":  false,
+                                                      "sealed_tokens_per_traversal":  1.0
+                                                  }
+              },
+    "major_results":  {
+                          "actual_vast_cost_usd":  0.9181950026999459,
+                          "best_attempted_inexact_mtp_speedup_over_ordinary":  1.7788642624999413,
+                          "best_attempted_inexact_mtp_wan_tok_s":  1.7323997235068367,
+                          "best_exact_wan_tok_s":  1.6150520769635919,
+                          "best_target_only_wan_tok_s":  1.6150520769635919,
+                          "best_tokens_per_target_traversal":  3.0476190476190474,
+                          "conservative_upper_cost_usd":  1.532201680273256,
+                          "disk_warm_same_shard_speedup":  103.18658650185198,
+                          "final_first_greedy_mismatch":  178,
+                          "local_sealed_512_tok_s":  61.77714245245901,
+                          "ordinary_wan_tok_s":  0.9738796602008265,
+                          "recovery_interruption_s":  9.508302600002935,
+                          "sealed_completed_of_requested_tokens":  [
+                                                                       282,
+                                                                       512
+                                                                   ],
+                          "sealed_partial_wan_tok_s":  0.5903353469265896,
+                          "stable_proxy_mtp_speedup":  1.2947532537937283,
+                          "target_only_speedup_over_ordinary":  1.658369245159661
+                      },
+    "next_decision":  "continue solving a specific primitive",
+    "recovery":  {
+                     "boundary_byte_equal":  2,
+                     "boundary_comparisons":  27,
+                     "control_run_id":  "wan-replica-control-003",
+                     "control_token_hash":  "cc8c89ca599f8dea96f311c0eee5590c607fbfc1e76b47a66b06af43bd7e5527",
+                     "control_tokens":  64,
+                     "duplicate_tokens":  0,
+                     "experiment_id":  "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+                     "failure_detection":  {
+                                               "command_index":  393,
+                                               "detail":  "RPC endpoint closed",
+                                               "error":  "EOFError",
+                                               "event":  "PRIMARY_FAILED_STANDBY_SELECTED",
+                                               "full_prompt_replay_tokens":  0,
+                                               "monotonic_ns":  31954086782200,
+                                               "timestamp":  "2026-09-10T12:38:26.403069+00:00"
+                                           },
+                     "failure_detection_from_initiation_s":  5.6148954999989655,
+                     "failure_detection_from_signal_complete_s":  1.8972829999984242,
+                     "failure_injection":  {
+                                               "committed_tokens_observed":  20,
+                                               "event":  "FAILURE_INJECTION_INITIATED",
+                                               "monotonic_ns":  31948471886700,
+                                               "node_id":  50478198,
+                                               "observed_command":  "/workspace/e026/source/build/bin/ggml-rpc-server -H 127.0.0.1 -p 50101 -d CUDA0 -c",
+                                               "pid":  4543,
+                                               "timestamp":  "2026-09-10T12:38:20.788782+00:00"
+                                           },
+                     "failure_signal_completed":  {
+                                                      "committed_tokens_observed":  20,
+                                                      "event":  "FAILURE_INJECTION_COMPLETED",
+                                                      "kill_command_seconds":  3.7164183000022604,
+                                                      "monotonic_ns":  31952189499200,
+                                                      "node_id":  50478198,
+                                                      "pid":  4543,
+                                                      "timestamp":  "2026-09-10T12:38:24.506259+00:00"
+                                                  },
+                     "first_token_after_detection":  {
+                                                         "arrival_s":  73.26199500000075,
+                                                         "one_based_index":  21
+                                                     },
+                     "full_prompt_replay_tokens":  0,
+                     "generated_tokens":  64,
+                     "injection_to_first_post_detection_token_s":  9.508302600002935,
+                     "last_token_before_detection":  {
+                                                         "arrival_s":  63.75369239999782,
+                                                         "one_based_index":  20
+                                                     },
+                     "lost_tokens":  0,
+                     "output_token_hash":  "cc8c89ca599f8dea96f311c0eee5590c607fbfc1e76b47a66b06af43bd7e5527",
+                     "reassignment_latency_s":  0.0,
+                     "replica_protocol_bytes_received_final":  [
+                                                                   1680776,
+                                                                   2479808
+                                                               ],
+                     "replica_protocol_bytes_sent_final":  [
+                                                               30031366,
+                                                               30914486
+                                                           ],
+                     "replication_strategy":  "synchronous warm mirror of all RPC commands, buffers, attention state, and GDN recurrent state",
+                     "run_id":  "wan-replica-kill-001",
+                     "state_restore_latency_s":  0.0,
+                     "status":  "PASS",
+                     "tail_replay_latency_s":  0.0,
+                     "timestamp":  "2026-09-10T12:41:30.884830+00:00",
+                     "token_stream_equal_control":  true,
+                     "user_visible_interruption_s":  9.508302600002935
+                 },
+    "stage_compute":  {
+                          "worker_a":  {
+                                           "max_ms":  46.485,
+                                           "mean_ms":  3.8567719298245615,
+                                           "median_ms":  3.588,
+                                           "p95_ms":  3.6018,
+                                           "samples":  285
+                                       },
+                          "worker_b":  {
+                                           "max_ms":  19.65,
+                                           "mean_ms":  7.285171929824561,
+                                           "median_ms":  7.189,
+                                           "p95_ms":  7.2618,
+                                           "samples":  285
+                                       }
+                      },
+    "startup":  {
+                    "a":  {
+                              "build_verified_timestamp":  "2026-09-10T10:02:26.299783+00:00",
+                              "create_attempt_timestamp":  "2026-09-10T09:39:23.309567+00:00",
+                              "first_successful_ssh_timestamp":  "2026-09-10T09:44:17.704920+00:00",
+                              "instance_id":  50478198,
+                              "provision_to_build_verified_s":  1382.990216,
+                              "provision_to_ssh_s":  294.395353,
+                              "provision_to_stage_launch_s":  1386.531363,
+                              "stage_launch_timestamp":  "2026-09-10T10:02:29.840930+00:00"
+                          },
+                    "b":  {
+                              "build_verified_timestamp":  "2026-09-10T10:11:19.927749+00:00",
+                              "create_attempt_timestamp":  "2026-09-10T09:39:27.410149+00:00",
+                              "first_successful_ssh_timestamp":  "2026-09-10T09:54:48.130116+00:00",
+                              "instance_id":  50478207,
+                              "provision_to_build_verified_s":  1912.5176,
+                              "provision_to_ssh_s":  920.719967,
+                              "provision_to_stage_launch_s":  1916.959862,
+                              "stage_launch_timestamp":  "2026-09-10T10:11:24.370011+00:00"
+                          },
+                    "best_disk_warm_full_server_ready_s":  63.320172300002014,
+                    "cold_shard_acquisition":  {
+                                                   "a":  {
+                                                             "elapsed_s":  36.692255361005664,
+                                                             "event":  "SHARD_READY",
+                                                             "network_bytes":  2396815360,
+                                                             "tensor_count":  52
+                                                         },
+                                                   "b":  {
+                                                             "elapsed_s":  54.98283142410219,
+                                                             "event":  "SHARD_READY",
+                                                             "network_bytes":  2123857920,
+                                                             "tensor_count":  46
+                                                         },
+                                                   "exact_cache_upgrade_a":  {
+                                                                                 "elapsed_s":  20.77295259386301,
+                                                                                 "event":  "SHARD_READY",
+                                                                                 "network_bytes":  27463808,
+                                                                                 "tensor_count":  120
+                                                                             },
+                                                   "exact_cache_upgrade_b":  {
+                                                                                 "elapsed_s":  19.75717811472714,
+                                                                                 "event":  "SHARD_READY",
+                                                                                 "network_bytes":  26735872,
+                                                                                 "tensor_count":  106
+                                                                             }
+                                               },
+                    "disk_warm_same_shard_speedup":  103.18658650185198,
+                    "full_cold_to_best_disk_warm_speedup":  30.274078423503262,
+                    "full_cold_topology_critical_node_s":  1916.959862,
+                    "gpu_warm_relay_registration_s":  5.132616,
+                    "sealed_disk_warm_full_server_ready_s":  83.8013217000007,
+                    "standby_same_shard_cold":  {
+                                                    "elapsed_s":  432.5707141440362,
+                                                    "event":  "SHARD_READY",
+                                                    "network_bytes":  2424279168,
+                                                    "tensor_count":  120
+                                                },
+                    "standby_same_shard_disk_warm_verify":  {
+                                                                "elapsed_s":  4.192121561616659,
+                                                                "event":  "SHARD_READY",
+                                                                "network_bytes":  0,
+                                                                "tensor_count":  120
+                                                            }
+                },
+    "state":  {
+                  "checkpoint_position":  8038,
+                  "checkpoint_sha256":  "b001d6dadf33618ed44ff4190d9102c17afd78e113b605da1cc89c01d09e523d",
+                  "compression_roundtrip_exact":  true,
+                  "compression_s":  15.715051900002436,
+                  "control_hash":  "618ac3dbb1c7b3e3bd370b59406c482317dae8fe22c847040b9c0777363687b7",
+                  "decompression_s":  2.594591600001877,
+                  "evidence_class":  "PHYSICAL",
+                  "experiment_id":  "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+                  "full_prompt_replay_tokens":  0,
+                  "kill_timestamp":  "2026-09-10T09:05:43.050757+00:00",
+                  "lossless_zlib_level1_bytes":  639048953,
+                  "numerical_discrepancies":  [
+
+                                              ],
+                  "prefix_generated_tokens":  64,
+                  "prompt_id":  "development-06-retrieval",
+                  "prompt_tokens":  7974,
+                  "recovered_hash":  "618ac3dbb1c7b3e3bd370b59406c482317dae8fe22c847040b9c0777363687b7",
+                  "restart_to_first_resumed_s":  8.85633240000243,
+                  "restore":  {
+                                  "op":  "restore",
+                                  "position":  8038,
+                                  "restore_s":  0.0659283,
+                                  "restored_bytes":  683866044,
+                                  "wall_s":  0.6038545
+                              },
+                  "restored_continuation_equal":  true,
+                  "resumed_tokens":  128,
+                  "save":  {
+                               "attention_state_bytes":  526971680,
+                               "flags":  0,
+                               "op":  "save",
+                               "position":  8038,
+                               "recurrent_state_with_header_bytes":  156894364,
+                               "serialization_s":  0.0632325,
+                               "state_bytes":  683866044,
+                               "wall_s":  0.5454175
+                           },
+                  "scope":  "LOCAL_SINGLE_MACHINE_PROCESS_REPLACEMENT",
+                  "status":  "PASS",
+                  "timestamp":  "2026-09-10T09:06:16.181369+00:00"
+              },
+    "synthesis_lineage":  {
+                              "canonical_dataset":  "evidence/metrics.jsonl",
+                              "reason":  "canonical run-directory IDs, consistent byte denominators with explicit scope, complete local host inventory, correct recovery timestamp semantics, and exact-vs-inexact throughput labels",
+                              "supersedes":  [
+                                                 "metrics.jsonl",
+                                                 "metrics-canonical.jsonl",
+                                                 "metrics-canonical-v2.jsonl",
+                                                 "summary.json",
+                                                 "summary-canonical.json",
+                                                 "summary-final.json",
+                                                 "final-receipt.json",
+                                                 "final-receipt-canonical.json",
+                                                 "final-receipt-canonical-v2.json"
+                                             ]
+                          },
+    "public_curation":  {
+                            "derived":  true,
+                            "source_path":  "experiment-026/summary-canonical-v3.json",
+                            "source_sha256":  "cde81c61f37aee359d64ec06ec8efab26a9857f6e3811a0fd6ac6286a9550da8",
+                            "transformation":  "Artifact path updated for the public repository; numerical measurements and verdict fields unchanged."
+                        }
+}

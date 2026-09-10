@@ -3,8 +3,15 @@
   "findings": [],
   "patterns_checked": [
     "windows_user_path",
-    "model_drive_path",
+    "local_username",
+    "email_address",
     "hf_token_shape",
-    "openai_key_shape"
-  ]
+    "openai_key_shape",
+    "github_token_shape",
+    "bearer_token_shape",
+    "private_key_block",
+    "populated_api_key"
+  ],
+  "scope": "Git-visible tracked and untracked public files; ignored .source/ retention directory excluded",
+  "files_scanned": 395
 }

@@ -1,0 +1,31 @@
+{
+  "experiment_id": "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+  "artifacts": [
+    {
+      "path": "final-evidence.json",
+      "sha256": "b6592728785923aa6415c3b56c3b1e84156e0b68a5e3da90c429f5259fb19aa9",
+      "status": "SUPERSEDED_NEEDS_REVISION",
+      "reason": "Detected inconsistent byte-measurement status and missing fallback bytes-per-token values in the v2 synthesis."
+    },
+    {
+      "path": "final-evidence-v2.json",
+      "sha256": "39361a301d76fd989ef2b66f7c94bb2a0a0093445c6bb9c853431d3ee20cef5f",
+      "status": "CANONICAL_READY_TO_SHARE",
+      "checks_passed": 19,
+      "checks_failed": 0
+    },
+    {
+      "path": "final-report.json",
+      "sha256": "71e3cac7399a647d036356dfa740409c9345a9b103274121b9e6b988fca87b01",
+      "status": "SUPERSEDED_VALIDATOR_RULE",
+      "reason": "The first rule treated an explanatory inline mention of INFRASTRUCTURE_INVALID as a competing primary verdict."
+    },
+    {
+      "path": "final-report-v2.json",
+      "sha256": "fdfd6562f625175a742cec5b7448d3d8f29a91947c7d5d9fadf3e26bc7e19c2d",
+      "status": "CANONICAL_READY_TO_SHARE",
+      "checks_passed": 12,
+      "checks_failed": 0
+    }
+  ]
+}

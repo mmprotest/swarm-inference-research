@@ -1,0 +1,10 @@
+{
+  "cache": "standby",
+  "command": "nohup python3 -u /workspace/e026/acquire-shard.py /workspace/e026/standby-a-cache-verify-002-manifest.json /workspace/e026/cache-standby/rpc > /workspace/e026/standby-a-cache-verify-002.jsonl 2>&1 < /dev/null & echo $!",
+  "manifest": "artifacts\\experiment-026\\acquisition\\remote-stage-a-all-002.json",
+  "node": 50478207,
+  "pid": 4932,
+  "run_id": "standby-a-cache-verify-002",
+  "shard": "a",
+  "timestamp": "2026-09-10T12:06:55.417096+00:00"
+}

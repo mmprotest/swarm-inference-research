@@ -1,0 +1,80 @@
+{
+  "experiment_id": "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+  "reporting_job": {
+    "question": "Did E026 prove practical WAN swarm inference for Qwen3.8-27B Q4_K_M?",
+    "decision": "whether to begin volunteer-runtime engineering or continue one blocking primitive",
+    "audience": "technical",
+    "scope": "local RTX 5090 plus two Vast nodes on genuine WAN links",
+    "measurement_window_utc": "2026-09-10",
+    "comparison_baseline": "ordinary single-token autoregressive WAN pipeline",
+    "success_criteria_source": "artifacts/experiment-026/seal/configuration.json",
+    "delivery_surface": "Markdown explicitly required by the user",
+    "delivery_artifact": "docs/experiments/EXPERIMENT_026_REPORT.md"
+  },
+  "technical_structure_mapping": {
+    "title": "document title",
+    "technical_summary": "sections 1-2",
+    "key_findings_with_evidence": "sections 4-12",
+    "scope_data_and_metric_definitions": "sections 2-4",
+    "methodology_and_experimental_design": "sections 3-10",
+    "limitations_uncertainty_and_robustness": "sections 10 and 13",
+    "recommended_next_step": "section 14",
+    "further_questions": "merged into section 14 as the single blocking primitive because the user required one decisive recommendation rather than a generic future-work list"
+  },
+  "visualization_decision": {
+    "chart_omitted": true,
+    "reason": "The decisive evidence is a sparse set of categorical ablations with different validity scopes. Exact tables preserve units, run length, correctness status, and non-comparability better than a chart.",
+    "tables": [
+      "topology and stage ownership",
+      "performance ablations",
+      "bottleneck decomposition",
+      "cold-start conditions"
+    ]
+  },
+  "canonical_sources": [
+    {
+      "path": "artifacts/experiment-026/metrics-canonical-v3.jsonl",
+      "role": "normalized run-level measurements",
+      "sha256": "f00b54562c10674114ec70ca5495d5d0fa9e6eb9b9b4eeb5acdb296a59554152"
+    },
+    {
+      "path": "artifacts/experiment-026/summary-canonical-v3.json",
+      "role": "gate results and derived summary",
+      "sha256": "cde81c61f37aee359d64ec06ec8efab26a9857f6e3811a0fd6ac6286a9550da8"
+    },
+    {
+      "path": "artifacts/experiment-026/final-receipt-canonical-v3.json",
+      "role": "compact proof receipt",
+      "sha256": "1fa2da74b5d83df8a7ec7c00aff78f0a333f516b7c76020d65016ed686e7533b"
+    },
+    {
+      "path": "artifacts/experiment-026/validation/final-evidence-v2.json",
+      "role": "19-check evidence validation",
+      "sha256": "39361a301d76fd989ef2b66f7c94bb2a0a0093445c6bb9c853431d3ee20cef5f"
+    },
+    {
+      "path": "artifacts/experiment-026/seal/configuration.json",
+      "role": "pre-final frozen configuration and gates"
+    },
+    {
+      "path": "artifacts/experiment-026/recovery/wan-replica-kill-001.json",
+      "role": "controlled failure and recovery receipt"
+    },
+    {
+      "path": "artifacts/experiment-026/remote-collected-final-002/receipt.json",
+      "role": "31-file remote evidence integrity receipt"
+    },
+    {
+      "path": "artifacts/experiment-026/cost/final-provider-snapshot.json",
+      "role": "final credit and teardown verification"
+    }
+  ],
+  "required_caveats": [
+    "The sealed WAN run ended at 282 of 512 tokens and failed strict greedy identity.",
+    "Most WAN development ablations contain one physical prompt/run and are not population estimates.",
+    "Protocol bytes exclude TCP/IP and SSH framing.",
+    "Response-wait sums can overlap and are diagnostic rather than an exact additive decomposition.",
+    "No standalone checkpoint file was physically transferred over WAN because the retained recovery path used continuous warm mirroring.",
+    "The local host CPU/RAM inventory was captured post-run on the unchanged coordinator."
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": "experiment-026-public-curation-v1",
+  "experiment_id": "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+  "source_bundle": {
+    "path_as_supplied": "experiment-026/",
+    "file_count": 831,
+    "size_bytes": 63571597,
+    "member_index": "provenance/experiment-026-source-files.csv",
+    "member_index_sha256": "7f2b8ce5ebad401e74822e93f36fced2dbf1e94dcf7ce3384ddd4bba0173cfc8"
+  },
+  "curation": {
+    "selected_evidence_files_before_this_manifest": 60,
+    "selected_evidence_bytes_before_this_manifest": 13743371,
+    "complete_final_remote_collection_retained": true,
+    "remote_collection_files": 31,
+    "omitted_classes": [
+      "superseded synthesis revisions",
+      "repeated development-run payloads already normalized into the canonical metrics dataset",
+      "duplicate service and routing traces",
+      "temporary diagnostics and binary tensor snapshots"
+    ]
+  },
+  "sanitization": {
+    "transformations": [
+      "replace the absolute machine-local repository path with <local-repo>",
+      "replace email-shaped identity strings with <redacted-email>",
+      "rewrite public dataset paths in the derived summary and receipt"
+    ],
+    "numerical_measurements_changed": false,
+    "verdict_changed": false
+  },
+  "canonical_artifacts": [
+    {
+      "role": "technical report",
+      "source_path": "../swarm-inference-lab/docs/experiments/EXPERIMENT_026_REPORT.md",
+      "source_bytes": 20835,
+      "source_sha256": "9f279aa698663b6c173dba17658fa07c5a1f19333d0985d805193835c8eea207",
+      "public_path": "experiments/026/REPORT.md",
+      "public_bytes": 20723,
+      "public_sha256": "a7d6d093e87266391dab73270af673f02d7bda57fc92652ec8e26f96971c74f3",
+      "transformation": "machine-local path substitution only"
+    },
+    {
+      "role": "canonical metrics dataset",
+      "source_path": "experiment-026/metrics-canonical-v3.jsonl",
+      "source_bytes": 668679,
+      "source_sha256": "f00b54562c10674114ec70ca5495d5d0fa9e6eb9b9b4eeb5acdb296a59554152",
+      "public_path": "experiments/026/evidence/metrics.jsonl",
+      "public_bytes": 646478,
+      "public_sha256": "87d699fbd9be46415b2cc7f79e024b9887fb34069aa34281f459aeb7fdebf189",
+      "rows": 71,
+      "transformation": "machine-local path and email-shaped identity substitution only"
+    },
+    {
+      "role": "canonical gate and result summary",
+      "source_path": "experiment-026/summary-canonical-v3.json",
+      "source_bytes": 10070,
+      "source_sha256": "cde81c61f37aee359d64ec06ec8efab26a9857f6e3811a0fd6ac6286a9550da8",
+      "public_path": "experiments/026/evidence/summary.json",
+      "public_bytes": 19918,
+      "public_sha256": "5f36ac31f1211931b68cc2778f8d29b08b9b7b2ab98dd4e4a86ad32920455cfa",
+      "transformation": "public dataset path and curation metadata added; numerical fields unchanged"
+    },
+    {
+      "role": "canonical compact proof receipt",
+      "source_path": "experiment-026/final-receipt-canonical-v3.json",
+      "source_bytes": 17223,
+      "source_sha256": "1fa2da74b5d83df8a7ec7c00aff78f0a333f516b7c76020d65016ed686e7533b",
+      "public_path": "experiments/026/evidence/final-receipt.json",
+      "public_bytes": 42574,
+      "public_sha256": "ba3a28933e7b86af8f6f22bf0378ca3ed24fc72df3c9f37d4c333171751a6d73",
+      "transformation": "sanitized paths, public dataset hash binding, and curation metadata added; numerical fields unchanged"
+    },
+    {
+      "role": "source evidence validation",
+      "source_path": "experiment-026/validation/final-evidence-v2.json",
+      "source_bytes": 7249,
+      "source_sha256": "39361a301d76fd989ef2b66f7c94bb2a0a0093445c6bb9c853431d3ee20cef5f",
+      "public_path": "experiments/026/evidence/validation/final-evidence.source.json",
+      "public_bytes": 7249,
+      "public_sha256": "39361a301d76fd989ef2b66f7c94bb2a0a0093445c6bb9c853431d3ee20cef5f",
+      "transformation": "none; validation describes the immutable source artifacts"
+    },
+    {
+      "role": "final remote evidence collection receipt",
+      "source_path": "experiment-026/remote-collected-final-002/receipt.json",
+      "source_bytes": 11871,
+      "source_sha256": "3de85d5807a0ee18e93e350db8e64a4064509bba3603f0f4f0b1973df9e05fd6",
+      "public_path": "experiments/026/evidence/remote-collected-final-002/receipt.json",
+      "public_bytes": 11871,
+      "public_sha256": "3de85d5807a0ee18e93e350db8e64a4064509bba3603f0f4f0b1973df9e05fd6",
+      "transformation": "none"
+    }
+  ]
+}

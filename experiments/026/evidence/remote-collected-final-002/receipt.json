@@ -1,0 +1,285 @@
+{
+  "files": [
+    {
+      "elapsed_s": 6.400589199998649,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\bootstrap.log",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/bootstrap.log",
+      "role": "a",
+      "sha256": "164a8596d0a783eba7c6a83711c0140a1b1d08191c6264c7c3bcd8b8a78959ee",
+      "size_bytes": 2850
+    },
+    {
+      "elapsed_s": 6.17178050000075,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\configure.log",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/configure.log",
+      "role": "a",
+      "sha256": "865bf3f03e6ed3b899fd17b07b8c30ae32531a47a7b23286b9d07af4ae2b79b0",
+      "size_bytes": 2545
+    },
+    {
+      "elapsed_s": 6.603231500004767,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\compile.log",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/compile.log",
+      "role": "a",
+      "sha256": "5d6af2ca624b50a5e03ee18d1830b49d3179d992a9c13c178547c1c4cd853b64",
+      "size_bytes": 18695
+    },
+    {
+      "elapsed_s": 6.655613499999163,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\shard-a-cold-001.jsonl",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/shard-a-cold-001.jsonl",
+      "role": "a",
+      "sha256": "e5e15cca13438244bea2c90ea06e6c05ac523f47c65c2cbf4f0c980df7c86b23",
+      "size_bytes": 14152
+    },
+    {
+      "elapsed_s": 6.343473799999629,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\shard-a-all-upgrade-002.jsonl",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/shard-a-all-upgrade-002.jsonl",
+      "role": "a",
+      "sha256": "97501e08323b8043e49a40198cacc5d886d4c86f5635224516b5aca1533b0286",
+      "size_bytes": 22893
+    },
+    {
+      "elapsed_s": 6.526524299995799,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-services-001-stage.log",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-services-001-stage.log",
+      "role": "a",
+      "sha256": "de3e45f020e73e95d638577fe54b180c55cf6fc60d6ca7e488afd8c611bb3e43",
+      "size_bytes": 58555
+    },
+    {
+      "elapsed_s": 10.318004599997948,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-services-001-gpu.csv",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-services-001-gpu.csv",
+      "role": "a",
+      "sha256": "aed3920013224e34c7d6e9cf18b451087fc031a9e9bc0935901aef4f1501e531",
+      "size_bytes": 4997942
+    },
+    {
+      "elapsed_s": 6.814146400000027,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-stage-a-restart-after-kill-001.log",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-stage-a-restart-after-kill-001.log",
+      "role": "a",
+      "sha256": "146ba9a77bcefd301c2254fe236128cadd335c925b19802f3e4117949139a5ed",
+      "size_bytes": 24878
+    },
+    {
+      "elapsed_s": 7.578054700003122,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-router-services-001-routing.jsonl",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-router-services-001-routing.jsonl",
+      "role": "a",
+      "sha256": "b5ea00d96e5cf072e98c53b598c8995c69e715602fbf60e78465f5656a21e6f7",
+      "size_bytes": 235226
+    },
+    {
+      "elapsed_s": 7.312121099996148,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-router-services-002-routing.jsonl",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-router-services-002-routing.jsonl",
+      "role": "a",
+      "sha256": "90afa4eb70cf0a468e56d6434d350722df4ff03fa1262a404af120c742a6173c",
+      "size_bytes": 140102
+    },
+    {
+      "elapsed_s": 8.61634629999753,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-router-services-003-routing.jsonl",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-router-services-003-routing.jsonl",
+      "role": "a",
+      "sha256": "1ca581477ca1638dc7c48d48d9ab977fa21aab6f22795944518159909f3239fb",
+      "size_bytes": 786090
+    },
+    {
+      "elapsed_s": 7.706918399999267,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-router-services-004-routing.jsonl",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-router-services-004-routing.jsonl",
+      "role": "a",
+      "sha256": "bd990159a1bd04de9c7b1c2146bfde2126d4436c739d99f1ed1b40b861071550",
+      "size_bytes": 481952
+    },
+    {
+      "elapsed_s": 7.754890399999567,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-router-services-005-routing.jsonl",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-router-services-005-routing.jsonl",
+      "role": "a",
+      "sha256": "24436f6b81256efbade494f162b88c95dc03406ce48d80f701767bec874b0b3b",
+      "size_bytes": 169865
+    },
+    {
+      "elapsed_s": 7.238607600003888,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-router-services-006-routing.jsonl",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-router-services-006-routing.jsonl",
+      "role": "a",
+      "sha256": "cbdaec7c3b75085fb80b1ca785cd4c7e92603da16016f40ba4b26259d6810535",
+      "size_bytes": 156766
+    },
+    {
+      "elapsed_s": 8.717791600000055,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-router-services-final-001-routing.jsonl",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-router-services-final-001-routing.jsonl",
+      "role": "a",
+      "sha256": "4810e103e754fc1f5a3b4e57a7da02584818c7d0d5827962e859b51085bdf265",
+      "size_bytes": 889696
+    },
+    {
+      "elapsed_s": 6.2009812999967835,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-router-services-001-peer-tunnel.log",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-router-services-001-peer-tunnel.log",
+      "role": "a",
+      "sha256": "26f20b6aa99fe338b3e4970ea180c15a17d50430bfcb4be52ea26e611d8fa103",
+      "size_bytes": 164
+    },
+    {
+      "elapsed_s": 6.244728900004702,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-router-services-002-peer-tunnel.log",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-router-services-002-peer-tunnel.log",
+      "role": "a",
+      "sha256": "659a23970c535d389aeddf1024cb496d63c18f016e82effa74f87300fb7abb52",
+      "size_bytes": 160
+    },
+    {
+      "elapsed_s": 6.410308699996676,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-router-services-003-peer-tunnel.log",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-router-services-003-peer-tunnel.log",
+      "role": "a",
+      "sha256": "fb76dfcffc179533c87bc6449d7e885e0b556fb8ee47e5918316c74e2761029d",
+      "size_bytes": 168
+    },
+    {
+      "elapsed_s": 6.397317599999951,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-router-services-004-peer-tunnel.log",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-router-services-004-peer-tunnel.log",
+      "role": "a",
+      "sha256": "b480c7ebd32cfb6a73350317b4232710dbcd5ea463b2b573cf3e92e8df56cca0",
+      "size_bytes": 117
+    },
+    {
+      "elapsed_s": 6.032881899998756,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-router-services-005-peer-tunnel.log",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-router-services-005-peer-tunnel.log",
+      "role": "a",
+      "sha256": "b480c7ebd32cfb6a73350317b4232710dbcd5ea463b2b573cf3e92e8df56cca0",
+      "size_bytes": 117
+    },
+    {
+      "elapsed_s": 6.39419889999408,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-router-services-006-peer-tunnel.log",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-router-services-006-peer-tunnel.log",
+      "role": "a",
+      "sha256": "b480c7ebd32cfb6a73350317b4232710dbcd5ea463b2b573cf3e92e8df56cca0",
+      "size_bytes": 117
+    },
+    {
+      "elapsed_s": 6.199207500001648,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\a\\wan-router-services-final-001-peer-tunnel.log",
+      "node_id": 50478198,
+      "remote": "/workspace/e026/wan-router-services-final-001-peer-tunnel.log",
+      "role": "a",
+      "sha256": "fb76dfcffc179533c87bc6449d7e885e0b556fb8ee47e5918316c74e2761029d",
+      "size_bytes": 168
+    },
+    {
+      "elapsed_s": 7.223497399994812,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\b\\bootstrap.log",
+      "node_id": 50478207,
+      "remote": "/workspace/e026/bootstrap.log",
+      "role": "b",
+      "sha256": "c808bf18970fec5aca7f427b88eb739201b450d95a4ac41b648ade43055103bf",
+      "size_bytes": 2850
+    },
+    {
+      "elapsed_s": 7.515353900002083,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\b\\compile.log",
+      "node_id": 50478207,
+      "remote": "/workspace/e026/compile.log",
+      "role": "b",
+      "sha256": "a179f86298258666d6ac3ec22326ea693efb8b4a742cebca40dca58d83452793",
+      "size_bytes": 22784
+    },
+    {
+      "elapsed_s": 7.183723399997689,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\b\\shard-b-cold-001.jsonl",
+      "node_id": 50478207,
+      "remote": "/workspace/e026/shard-b-cold-001.jsonl",
+      "role": "b",
+      "sha256": "874eed9ffd410cbfeec3a6c2bfedcbf7a78efb270f73b11848f0bfd16d5889bd",
+      "size_bytes": 12568
+    },
+    {
+      "elapsed_s": 7.454896199997165,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\b\\shard-b-all-upgrade-002.jsonl",
+      "node_id": 50478207,
+      "remote": "/workspace/e026/shard-b-all-upgrade-002.jsonl",
+      "role": "b",
+      "sha256": "95543feb898351c66a8d5653152bc8c5dbbc086ef41789581b7b685664ac578b",
+      "size_bytes": 20317
+    },
+    {
+      "elapsed_s": 7.332923499998287,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\b\\standby-a-cache-001.jsonl",
+      "node_id": 50478207,
+      "remote": "/workspace/e026/standby-a-cache-001.jsonl",
+      "role": "b",
+      "sha256": "d0ed6246edfe5f09c6623e8390d49d2a2cb555937fba879ef9d60ba5ca12de7e",
+      "size_bytes": 32610
+    },
+    {
+      "elapsed_s": 7.057952600000135,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\b\\standby-a-cache-verify-002.jsonl",
+      "node_id": 50478207,
+      "remote": "/workspace/e026/standby-a-cache-verify-002.jsonl",
+      "role": "b",
+      "sha256": "d5f94c4453b4d5460236937e4164ae3cb5fa2cd4cf6364f8cbaee6ce9333b446",
+      "size_bytes": 10677
+    },
+    {
+      "elapsed_s": 7.992288699999335,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\b\\wan-services-001-stage.log",
+      "node_id": 50478207,
+      "remote": "/workspace/e026/wan-services-001-stage.log",
+      "role": "b",
+      "sha256": "670ea01726367d66058ec40ee6da4d41084113835bb8fe7392b0e8b6d19a4335",
+      "size_bytes": 86177
+    },
+    {
+      "elapsed_s": 7.10582599999907,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\b\\wan-services-001-standby.log",
+      "node_id": 50478207,
+      "remote": "/workspace/e026/wan-services-001-standby.log",
+      "role": "b",
+      "sha256": "22d0d17ca6aff8b197f94c4f3f6c65859e3017ef8a9dea81194ea48f4e64ad92",
+      "size_bytes": 13683
+    },
+    {
+      "elapsed_s": 10.243766500003403,
+      "local": "artifacts\\experiment-026\\remote-collected-final-002\\b\\wan-services-001-gpu.csv",
+      "node_id": 50478207,
+      "remote": "/workspace/e026/wan-services-001-gpu.csv",
+      "role": "b",
+      "sha256": "c3fcc40b2f24a043fc725ff053a4c3fb2072aff38fd39d2632c657618e272aaa",
+      "size_bytes": 4765408
+    }
+  ],
+  "timestamp": "2026-09-10T13:19:23.419171+00:00",
+  "total_bytes": 12970292
+}

@@ -19,7 +19,12 @@ This file is the shortest path for a skeptical reviewer. Every public claim is c
 | C022-2 | In 27 frozen inventories, diagnostic adaptive placement unlocked 6 inventories that whole-layer placement could not place. | **Diagnostic until remaining gates pass** | E022 `analysis/capacity-unlocks.csv`, truth table |
 | C022-3 | Adaptive sub-layer placement improved throughput when whole-layer placement was feasible. | **No, diagnostic result was 0% uplift** | E022 `analysis/throughput-uplift.csv` |
 | C022-4 | E022 proves sub-layer planner value. | **Not proved** | Native-primitives and representative-full-93 gates failed; final verdict `MODEL_INVALID` |
+| C026-1 | Qwen3.8-27B Q4_K_M physically executed as contiguous stages across one local and two rented heterogeneous GPUs on measured WAN links. | **Admissible physical result on the tested topology** | `experiments/026/evidence/final-receipt.json`, canonical metrics, network receipts |
+| C026-2 | The best exact WAN development run reached 1.6151 committed tok/s; the sealed run reached 0.5903 tok/s before failing correctness and completion gates. | **Admissible negative physical result** | E026 summary, receipt, and report |
+| C026-3 | Exact disk-warm verification of the same shard was 103.1866x faster than fully uncached acquisition. | **Admissible scoped cache result** | E026 summary and acquisition receipts |
+| C026-4 | A controlled production-stage process kill recovered in 9.5083 s with an exact 64-token control match and no prompt replay, loss, or duplication. | **Admissible controlled recovery result** | `experiments/026/evidence/recovery/wan-replica-kill-001.json` |
+| C026-5 | E026 proves practical or generally viable WAN swarm inference. | **No** | Sealed correctness, 512-token completion, 8 tok/s throughput, and transport-reliability gates failed; the verdict is topology-scoped |
 
 ## Rule for public use
 
-If a claim's evidence class says **model**, say model. If a network is shaped, say shaped. If a gate failed, do not promote the diagnostic value into a result. If the experiment was single-device sequential correctness, do not describe it as a distributed physical run.
+If a claim's evidence class says **model**, say model. If a network is shaped, say shaped. If a gate failed, do not promote the diagnostic value into a result. If the experiment was single-device sequential correctness, do not describe it as a distributed physical run. Physical distribution alone is not practical serving when the declared throughput, correctness, completion, or reliability gates fail.

@@ -1,0 +1,68 @@
+{
+  "boundary_byte_equal": 2,
+  "boundary_comparisons": 27,
+  "control_run_id": "wan-replica-control-003",
+  "control_token_hash": "cc8c89ca599f8dea96f311c0eee5590c607fbfc1e76b47a66b06af43bd7e5527",
+  "control_tokens": 64,
+  "duplicate_tokens": 0,
+  "experiment_id": "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+  "failure_detection": {
+    "command_index": 393,
+    "detail": "RPC endpoint closed",
+    "error": "EOFError",
+    "event": "PRIMARY_FAILED_STANDBY_SELECTED",
+    "full_prompt_replay_tokens": 0,
+    "monotonic_ns": 31954086782200,
+    "timestamp": "2026-09-10T12:38:26.403069+00:00"
+  },
+  "failure_detection_from_initiation_s": 5.6148954999989655,
+  "failure_detection_from_signal_complete_s": 1.8972829999984242,
+  "failure_injection": {
+    "committed_tokens_observed": 20,
+    "event": "FAILURE_INJECTION_INITIATED",
+    "monotonic_ns": 31948471886700,
+    "node_id": 50478198,
+    "observed_command": "/workspace/e026/source/build/bin/ggml-rpc-server -H 127.0.0.1 -p 50101 -d CUDA0 -c",
+    "pid": 4543,
+    "timestamp": "2026-09-10T12:38:20.788782+00:00"
+  },
+  "failure_signal_completed": {
+    "committed_tokens_observed": 20,
+    "event": "FAILURE_INJECTION_COMPLETED",
+    "kill_command_seconds": 3.7164183000022604,
+    "monotonic_ns": 31952189499200,
+    "node_id": 50478198,
+    "pid": 4543,
+    "timestamp": "2026-09-10T12:38:24.506259+00:00"
+  },
+  "first_token_after_detection": {
+    "arrival_s": 73.26199500000075,
+    "one_based_index": 21
+  },
+  "full_prompt_replay_tokens": 0,
+  "generated_tokens": 64,
+  "injection_to_first_post_detection_token_s": 9.508302600002935,
+  "last_token_before_detection": {
+    "arrival_s": 63.75369239999782,
+    "one_based_index": 20
+  },
+  "lost_tokens": 0,
+  "output_token_hash": "cc8c89ca599f8dea96f311c0eee5590c607fbfc1e76b47a66b06af43bd7e5527",
+  "reassignment_latency_s": 0.0,
+  "replica_protocol_bytes_received_final": [
+    1680776,
+    2479808
+  ],
+  "replica_protocol_bytes_sent_final": [
+    30031366,
+    30914486
+  ],
+  "replication_strategy": "synchronous warm mirror of all RPC commands, buffers, attention state, and GDN recurrent state",
+  "run_id": "wan-replica-kill-001",
+  "state_restore_latency_s": 0.0,
+  "status": "PASS",
+  "tail_replay_latency_s": 0.0,
+  "timestamp": "2026-09-10T12:41:30.884830+00:00",
+  "token_stream_equal_control": true,
+  "user_visible_interruption_s": 9.508302600002935
+}

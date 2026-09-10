@@ -1,0 +1,12 @@
+{
+  "evidence_class": "PHYSICAL",
+  "experiment_id": "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+  "scope": "POST_RUN_INVENTORY_OF_UNCHANGED_LOCAL_COORDINATOR",
+  "timestamp_utc": "2026-09-10T14:25:39.6645186Z",
+  "cpu": "Intel(R) Core(TM) Ultra 7 265K",
+  "cpu_cores": 20,
+  "cpu_logical_processors": 20,
+  "ram_bytes": 102496780288,
+  "ram_mib": 97749,
+  "source": "Windows CIM Win32_Processor and Win32_ComputerSystem"
+}

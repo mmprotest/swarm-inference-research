@@ -9,5 +9,17 @@
     "size_bytes": 3966274,
     "sha256": "e8350dc98e9572a1ea7a50fc865601721d452a77ede9548dfa78a8c9eb39d153"
   },
-  "note": "Hashes refer to the user-provided source archives used to build this public evidence package."
+  "experiment_026_directory": {
+    "name": "experiment-026",
+    "file_count": 831,
+    "size_bytes": 63571597,
+    "member_index": "experiment-026-source-files.csv",
+    "member_index_sha256": "7f2b8ce5ebad401e74822e93f36fced2dbf1e94dcf7ce3384ddd4bba0173cfc8"
+  },
+  "experiment_026_report": {
+    "name": "EXPERIMENT_026_REPORT.md",
+    "size_bytes": 20835,
+    "sha256": "9f279aa698663b6c173dba17658fa07c5a1f19333d0985d805193835c8eea207"
+  },
+  "note": "Hashes refer to the user-provided source archives and Experiment 026 source artifacts used to build this public evidence package."
 }

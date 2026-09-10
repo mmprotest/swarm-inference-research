@@ -1,0 +1,93 @@
+{
+  "experiment_id": "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+  "canonical_verdict": "WAN_SWARM_NOT_VIABLE_UNDER_TESTED_CONDITIONS",
+  "sealed_at": "2026-09-10T15:14:22.9289902Z",
+  "repository_commit": "d4b4cabd67bb3ef65ce8f2fe997099cb3487822b",
+  "dirty_tree_state": "DIRTY",
+  "artifacts": [
+    {
+      "path": "docs/experiments/EXPERIMENT_026_REPORT.md",
+      "role": "canonical Markdown report",
+      "sha256": "9f279aa698663b6c173dba17658fa07c5a1f19333d0985d805193835c8eea207"
+    },
+    {
+      "path": "artifacts/experiment-026/metrics-canonical-v3.jsonl",
+      "role": "canonical machine-readable metrics dataset",
+      "sha256": "f00b54562c10674114ec70ca5495d5d0fa9e6eb9b9b4eeb5acdb296a59554152",
+      "rows": 71
+    },
+    {
+      "path": "artifacts/experiment-026/summary-canonical-v3.json",
+      "role": "canonical gate and result summary",
+      "sha256": "cde81c61f37aee359d64ec06ec8efab26a9857f6e3811a0fd6ac6286a9550da8"
+    },
+    {
+      "path": "artifacts/experiment-026/final-receipt-canonical-v3.json",
+      "role": "canonical compact proof receipt",
+      "sha256": "1fa2da74b5d83df8a7ec7c00aff78f0a333f516b7c76020d65016ed686e7533b"
+    },
+    {
+      "path": "artifacts/experiment-026/validation/final-evidence-v2.json",
+      "role": "canonical evidence validation",
+      "sha256": "39361a301d76fd989ef2b66f7c94bb2a0a0093445c6bb9c853431d3ee20cef5f",
+      "checks_passed": 19,
+      "checks_failed": 0
+    },
+    {
+      "path": "artifacts/experiment-026/validation/final-report-v2.json",
+      "role": "canonical rendered-Markdown report validation",
+      "sha256": "fdfd6562f625175a742cec5b7448d3d8f29a91947c7d5d9fadf3e26bc7e19c2d",
+      "checks_passed": 12,
+      "checks_failed": 0
+    },
+    {
+      "path": "artifacts/experiment-026/validation/model-hashes-final.json",
+      "role": "final whole-file target and MTP SHA256 verification",
+      "sha256": "0385e23bf1a5f27711349c9924789a03f15b9622351a59c275821e6a3eef1230"
+    },
+    {
+      "path": "artifacts/experiment-026/report-source-notes.json",
+      "role": "report structure, source inventory, and caveats",
+      "sha256": "34df77b2a3ad52cbe6fd91d2cc7a1d211c0e2b00524b21e0a4cd17043e0cbfdb"
+    },
+    {
+      "path": "artifacts/experiment-026/synthesis-lineage.json",
+      "role": "retained synthesis revision lineage",
+      "sha256": "75d5d642d4b97232f21c13864e42b3288e6324ec1ae213a24b55e4581de2fb8d"
+    },
+    {
+      "path": "artifacts/experiment-026/validation/lineage.json",
+      "role": "retained validation revision lineage",
+      "sha256": "d3d16a499e6fbbab84f980354ca1edaddbdfc24f19da452e6d264952f31ae1f8"
+    },
+    {
+      "path": "artifacts/experiment-026/remote-collected-final-002/receipt.json",
+      "role": "remote evidence collection receipt",
+      "sha256": "3de85d5807a0ee18e93e350db8e64a4064509bba3603f0f4f0b1973df9e05fd6",
+      "files": 31,
+      "bytes": 12970292
+    },
+    {
+      "path": "artifacts/experiment-026/seal/configuration.json",
+      "role": "pre-final frozen configuration",
+      "sha256": "c965c8b83f2c7d69de46abb28dbd3eabbb9b2f54af05f8391cb7a3758c286c9c"
+    },
+    {
+      "path": "artifacts/experiment-026/cost/final-provider-snapshot.json",
+      "role": "final spend and resource-absence snapshot",
+      "sha256": "cdc5dd1219fa94b2fac958956e897e1f68cf77bda1f7d68b34a1bacaf5818113"
+    },
+    {
+      "path": "artifacts/experiment-026/cost/post-report-provider-snapshot.json",
+      "role": "post-report live resource-absence confirmation",
+      "sha256": "efd337729b974f05daae35dcce26ef15616ead46fb7b0e6fb7929883ded72165"
+    }
+  ],
+  "budget": {
+    "hard_ceiling_usd": 38.0,
+    "actual_account_credit_delta_usd": 0.9181950026999459,
+    "conservative_upper_usd": 1.532201680273256,
+    "all_e026_instances_absent": true
+  },
+  "validation_status": "READY_TO_SHARE"
+}

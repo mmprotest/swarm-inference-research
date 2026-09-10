@@ -1,0 +1,41 @@
+{
+  "checkpoint_position": 8038,
+  "checkpoint_sha256": "b001d6dadf33618ed44ff4190d9102c17afd78e113b605da1cc89c01d09e523d",
+  "compression_roundtrip_exact": true,
+  "compression_s": 15.715051900002436,
+  "control_hash": "618ac3dbb1c7b3e3bd370b59406c482317dae8fe22c847040b9c0777363687b7",
+  "decompression_s": 2.594591600001877,
+  "evidence_class": "PHYSICAL",
+  "experiment_id": "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+  "full_prompt_replay_tokens": 0,
+  "kill_timestamp": "2026-09-10T09:05:43.050757+00:00",
+  "lossless_zlib_level1_bytes": 639048953,
+  "numerical_discrepancies": [],
+  "prefix_generated_tokens": 64,
+  "prompt_id": "development-06-retrieval",
+  "prompt_tokens": 7974,
+  "recovered_hash": "618ac3dbb1c7b3e3bd370b59406c482317dae8fe22c847040b9c0777363687b7",
+  "restart_to_first_resumed_s": 8.85633240000243,
+  "restore": {
+    "op": "restore",
+    "position": 8038,
+    "restore_s": 0.0659283,
+    "restored_bytes": 683866044,
+    "wall_s": 0.6038545
+  },
+  "restored_continuation_equal": true,
+  "resumed_tokens": 128,
+  "save": {
+    "attention_state_bytes": 526971680,
+    "flags": 0,
+    "op": "save",
+    "position": 8038,
+    "recurrent_state_with_header_bytes": 156894364,
+    "serialization_s": 0.0632325,
+    "state_bytes": 683866044,
+    "wall_s": 0.5454175
+  },
+  "scope": "LOCAL_SINGLE_MACHINE_PROCESS_REPLACEMENT",
+  "status": "PASS",
+  "timestamp": "2026-09-10T09:06:16.181369+00:00"
+}

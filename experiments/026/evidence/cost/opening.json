@@ -1,0 +1,18 @@
+{
+  "budget": {
+    "api_key_persisted": false,
+    "balance_usd": 0.0,
+    "conservative_available_usd": 45.80512448978996,
+    "credit_usd": 45.80512448978996,
+    "identity_fields_persisted": false
+  },
+  "created_instance_ids": [],
+  "currency": "USD",
+  "estimated_e026_spend_usd": 0.0,
+  "experiment_id": "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+  "hard_ceiling_usd": 38.0,
+  "instances": [],
+  "reserve_usd": 7.0,
+  "status": "NO_RENTALS",
+  "timestamp": "2026-09-10T08:50:26.975060+00:00"
+}

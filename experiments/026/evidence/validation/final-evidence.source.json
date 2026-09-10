@@ -1,0 +1,223 @@
+{
+  "as_of": "2026-09-10T13:34:17.257475+00:00",
+  "blocking_issues": [],
+  "check_summary": {
+    "failed": 0,
+    "passed": 19,
+    "total": 19
+  },
+  "checks": [
+    {
+      "details": {
+        "canonical_rows": 71,
+        "derived_failure_rows": 1,
+        "source_metric_files": 70
+      },
+      "name": "row_count_and_source_coverage",
+      "pass": true
+    },
+    {
+      "details": {
+        "duplicate_keys": [],
+        "grain": "one row per run_id and prompt_id"
+      },
+      "name": "composite_grain_unique",
+      "pass": true
+    },
+    {
+      "details": {
+        "missing": []
+      },
+      "name": "required_schema_complete",
+      "pass": true
+    },
+    {
+      "details": {
+        "malformed_legacy_ids_exposed_not_used": 44,
+        "path_mapping_errors": []
+      },
+      "name": "canonical_run_id_lineage",
+      "pass": true
+    },
+    {
+      "details": {
+        "allowed_class": "PHYSICAL",
+        "rows": 71
+      },
+      "name": "identity_and_evidence_class",
+      "pass": true
+    },
+    {
+      "details": {
+        "invalid": []
+      },
+      "name": "core_numeric_domains",
+      "pass": true
+    },
+    {
+      "details": {
+        "pre_counter_local_mtp_rows": 12,
+        "unexplained_byte_nulls": [],
+        "unexplained_traversal_nulls": []
+      },
+      "name": "nulls_are_explicit",
+      "pass": true
+    },
+    {
+      "details": {
+        "errors": [],
+        "wan_rows": 11
+      },
+      "name": "wan_topology_and_traversal_coverage",
+      "pass": true
+    },
+    {
+      "details": {
+        "bytes": 12970292,
+        "errors": [],
+        "files": 31
+      },
+      "name": "remote_collection_integrity",
+      "pass": true
+    },
+    {
+      "details": {
+        "canonical_files": [
+          "final-receipt-canonical-v3.json",
+          "metrics-canonical-v3.jsonl",
+          "summary-canonical-v3.json"
+        ],
+        "hash_errors": []
+      },
+      "name": "canonical_synthesis_hashes",
+      "pass": true
+    },
+    {
+      "details": {
+        "path": "artifacts\\experiment-026\\metrics-canonical-v3.jsonl",
+        "rows": 71,
+        "sha256": "f00b54562c10674114ec70ca5495d5d0fa9e6eb9b9b4eeb5acdb296a59554152"
+      },
+      "name": "receipt_dataset_binding",
+      "pass": true
+    },
+    {
+      "details": {
+        "receipt": "WAN_SWARM_NOT_VIABLE_UNDER_TESTED_CONDITIONS",
+        "summary": "WAN_SWARM_NOT_VIABLE_UNDER_TESTED_CONDITIONS"
+      },
+      "name": "verdict_consistency",
+      "pass": true
+    },
+    {
+      "details": {
+        "best_attempted_inexact_mtp_tok_s": 1.7323997235068367,
+        "best_exact_tok_s": 1.6150520769635919,
+        "ordinary_tok_s": 0.9738796602008265
+      },
+      "name": "throughput_recomputations",
+      "pass": true
+    },
+    {
+      "details": {
+        "same_shard_speedup": 103.18658650185198,
+        "scope_warning": "full cold provisioning/build and disk-warm server load are not like-for-like phases"
+      },
+      "name": "startup_recomputations",
+      "pass": true
+    },
+    {
+      "details": {
+        "attention_state_bytes": 526971680,
+        "flags": 0,
+        "op": "save",
+        "position": 8038,
+        "recurrent_state_with_header_bytes": 156894364,
+        "serialization_s": 0.0632325,
+        "state_bytes": 683866044,
+        "wall_s": 0.5454175
+      },
+      "name": "hybrid_state_accounting",
+      "pass": true
+    },
+    {
+      "details": {
+        "bytes_per_committed_token_including_startup_all_wan_links": 310089.13475177303,
+        "coordinator_wan_protocol_bytes": 71732270,
+        "generated_tokens": 282,
+        "median_steady_all_wan_links_bytes_per_token": 90192.0,
+        "peer_wan_protocol_bytes": 15712866,
+        "total_wan_protocol_bytes": 87445136
+      },
+      "name": "final_byte_recomputations",
+      "pass": true
+    },
+    {
+      "details": {
+        "actual_delta_usd": 0.9181950026999459,
+        "all_e026_instances_absent": true,
+        "ceiling_usd": 38,
+        "final_credit_usd": 44.886929487090015,
+        "opening_credit_usd": 45.80512448978996
+      },
+      "name": "cost_recomputation_and_teardown",
+      "pass": true
+    },
+    {
+      "details": {
+        "duplicates": 0,
+        "first_resumed_token_timestamp": "2026-09-10T12:38:30.297085+00:00",
+        "full_prompt_replay_tokens": 0,
+        "interruption_s": 9.508302600002935,
+        "lost": 0
+      },
+      "name": "failure_recovery",
+      "pass": true
+    },
+    {
+      "details": {
+        "mtp_k3_failed_prompts": 4,
+        "mtp_k3_prompts": 6,
+        "sealed_completed_tokens": 282,
+        "sealed_first_mismatch_zero_based": 178,
+        "sealed_requested_tokens": 512
+      },
+      "name": "correctness_claims",
+      "pass": true
+    }
+  ],
+  "documented_limitations": [
+    "Twelve early local MTP rows predate the draft-verification counter; the null is explicit and does not affect WAN traversal claims.",
+    "Per-run stage timing and GPU-utilization coverage is partial; the sealed final run has aligned worker timing and utilization evidence.",
+    "WAN development configurations have one measured prompt each; the result establishes observed behavior on this topology, not a population estimate.",
+    "The sealed WAN request is a valid partial physical failure at 282 of 512 tokens, not a completed 512-token demonstration.",
+    "Protocol byte counts exclude TCP/IP and SSH framing.",
+    "The local coordinator CPU/RAM inventory was captured after the run on the unchanged host and is labeled accordingly."
+  ],
+  "experiment_id": "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+  "intended_grain": "one PHYSICAL measurement row per run_id and prompt_id, plus one derived row for the valid sealed transport failure",
+  "overall_assessment": "READY_TO_SHARE",
+  "question": "Is the canonical E026 evidence accurate and complete enough to support the final architectural decision?",
+  "recommended_automated_tests": [
+    "derive canonical run_id from the immutable directory and assert source-recorded run_id agreement",
+    "assert unique (run_id, prompt_id) grain and required top-level schema fields",
+    "bind every final receipt to the canonical dataset SHA256",
+    "distinguish exact from rejected/inexact performance in gate summaries"
+  ],
+  "source_inventory": {
+    "dataset": "artifacts\\experiment-026\\metrics-canonical-v3.jsonl",
+    "dataset_sha256": "f00b54562c10674114ec70ca5495d5d0fa9e6eb9b9b4eeb5acdb296a59554152",
+    "raw_metric_files": 70,
+    "receipt": "artifacts\\experiment-026\\final-receipt-canonical-v3.json",
+    "receipt_sha256": "1fa2da74b5d83df8a7ec7c00aff78f0a333f516b7c76020d65016ed686e7533b",
+    "remote_collection_files": 31,
+    "summary": "artifacts\\experiment-026\\summary-canonical-v3.json",
+    "summary_sha256": "cde81c61f37aee359d64ec06ec8efab26a9857f6e3811a0fd6ac6286a9550da8"
+  },
+  "timestamp": "2026-09-10T14:48:13.988483+00:00",
+  "timezone_policy": "source timestamps retain ISO-8601 offsets; cross-source calculations normalize to UTC",
+  "visualization_decision": {
+    "chart_omitted": true,
+    "reason": "The decisive evidence is a sparse set of categorical ablations with exact audit values; a table preserves units, validity status, and non-comparable scopes better than a trend chart."
+  }
+}

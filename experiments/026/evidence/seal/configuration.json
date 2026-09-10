@@ -1,0 +1,103 @@
+{
+  "configuration_sha256": "cdc4ddbfb54c0e7dd07e21b0c51a5abae352a5e5bf5f0edb9020b9b733047b7c",
+  "decisions": {
+    "final_transport": "managed proxy selected over faster direct peer because direct SSH expired mid-run",
+    "lossy_activation_compression": "not tested: 20,480-byte decode boundary is latency-dominated",
+    "native_mtp": "rejected: corpus exactness failure and <=1.295x stable-route speedup"
+  },
+  "dirty_tree": " M .gitignore\n M third_party/colibri\n?? artifacts/acceptance-native-final/\n?? artifacts/acceptance-rc11-final/\n?? artifacts/acceptance-rc2-final/\n?? artifacts/acceptance-rc3-final/\n?? artifacts/acceptance-rc4-final/\n?? artifacts/acceptance-rc5-final/\n?? artifacts/acceptance-rc6-final/\n?? artifacts/acceptance-rc7-final/\n?? artifacts/acceptance-rc8-final/\n?? artifacts/acceptance/\n?? artifacts/actions-python-versions-manifest.json\n?? artifacts/benchmarks/\n?? artifacts/ci-rc3/\n?? artifacts/ci-rc4/\n?? artifacts/experiment-014/\n?? artifacts/experiment-015-deployment-h014-037-backup/\n?? artifacts/experiment-015-deployment-h014-038-pre-network-backup/\n?? artifacts/experiment-015-deployment-h014-038al-staging/\n?? artifacts/experiment-015-deployment/\n?? artifacts/experiment-015/\n?? artifacts/experiment-016/\n?? artifacts/experiment-017/\n?? artifacts/experiment-018/\n?? artifacts/experiment-019/\n?? artifacts/experiment-020/\n?? artifacts/experiment-021/\n?? artifacts/experiment-022/\n?? artifacts/experiment-023/\n?? artifacts/experiment-024/\n?? artifacts/experiment-026/\n?? artifacts/installer-clean-local.json\n?? artifacts/installer-clean-post-record-fix.json\n?? artifacts/installer-clean-tagged-final.json\n?? artifacts/installer-python-final.xml\n?? artifacts/installer-rollback-logs/\n?? artifacts/installer-smoke-windows-x86_64-cpu.json\n?? artifacts/installer-uninstall-local.json\n?? artifacts/installer-upgrade-local.json\n?? artifacts/integration-failure-final.xml\n?? artifacts/major-model-acceptance/\n?? artifacts/p0_baseline/installer-rollback-logs/\n?? artifacts/p0_baseline/runtime-profiles/\n?? artifacts/pre-physical-acceptance/\n?? artifacts/rc-acceptance-unit-fix.xml\n?? artifacts/rc-corrections-baseline-local-temp.xml\n?? artifacts/rc-corrections-baseline.xml\n?? artifacts/rc-integration-final-1.xml\n?? artifacts/rc-integration-py312-final.xml\n?? artifacts/rc-integration-py312-release-final.xml\n?? artifacts/rc-integration-py312.xml\n?? artifacts/rc-integration-py313-release-final.xml\n?? artifacts/rc-integration-py313.xml\n?? artifacts/rc-integration-release-final.xml\n?? artifacts/rc-integration-uv-final-2.xml\n?? artifacts/rc-integration-uv-final.xml\n?? artifacts/rc-product-process-zero-skip.xml\n?? artifacts/rc-unit-final-1.xml\n?? artifacts/rc-unit-pass-1.xml\n?? artifacts/rc-unit-py312-release-final.xml\n?? artifacts/rc-unit-py312.xml\n?? artifacts/rc-unit-py313-release-final.xml\n?? artifacts/rc-unit-py313.xml\n?? artifacts/rc-unit-release-final.xml\n?? artifacts/rc-unit-uv-final.xml\n?? artifacts/rc-wheel-integration-focused.xml\n?? artifacts/release-identity-final.json\n?? artifacts/release-identity-precommit.json\n?? artifacts/release-identity-rc2.json\n?? artifacts/release-identity-rc3.json\n?? artifacts/release-job-92589678077.log\n?? artifacts/runs/experiment-011-20260804T051700Z.zip.sha256.json\n?? artifacts/runs/experiment-011-bundle-smoke-20260804.zip.sha256.json\n?? artifacts/runs/experiment-011-cleanup-smoke-console.txt\n?? artifacts/runs/experiment-025-20260819T013016Z/\n?? artifacts/unit-final.xml\n?? artifacts/wheel-install-windows-x86_64-cpu.json\n?? artifacts/wheel-isolation-native-final.json\n?? artifacts/wheel-isolation-rc2.json\n?? artifacts/windows-clean-final-commit-rc4.json\n?? artifacts/windows-clean-final-tagged-rc2.json\n?? artifacts/windows-clean-probe-rc10.json\n?? artifacts/windows-clean-probe-rc11.json\n?? artifacts/windows-clean-probe-rc9.json\n?? artifacts/windows-clean-rc2.json\n?? artifacts/windows-clean-retained-rc11.json\n?? artifacts/windows-uninstall-probe-rc11.json\n?? artifacts/windows-uninstall-probe-rc9.json\n?? artifacts/windows-uninstall-rc2.json\n?? artifacts/windows-upgrade-probe-rc11.json\n?? artifacts/windows-upgrade-probe-rc9.json\n?? artifacts/windows-upgrade-rc2.json\n?? docs/experiments/EXPERIMENT_026_PLAN.md\n?? native/experiment_026/\n?? scripts/experiment_026_acquire_shard.py\n?? scripts/experiment_026_build.cmd\n?? scripts/experiment_026_build_cache.cmd\n?? scripts/experiment_026_build_probe.cmd\n?? scripts/experiment_026_finish_remote_build.sh\n?? scripts/experiment_026_network_peer.py\n?? scripts/experiment_026_network_stdio.py\n?? scripts/experiment_026_remote_bootstrap.sh\n?? src/swarm_inference/experiments/experiment_026/\n?? tests/experiments/\n",
+  "experiment_id": "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+  "final": {
+    "deployment_id": "wan-router-services-final-001",
+    "generated_tokens": 512,
+    "n_probs": 10,
+    "prompt_content_sha256": "a4da4d0ef291a10007d773711cc6d10822687d57755db71055b332671a7d4ed4",
+    "prompt_id": "sealed-01-factual"
+  },
+  "frozen_gates": {
+    "baseline_speedup": 1.5,
+    "disk_warm_speedup": 3,
+    "interactive_decode_tok_s": 8,
+    "physical_machines_min": 3,
+    "preferred_application_rtt_ms": 80,
+    "recovery_interruption_s": 20,
+    "tokens_per_traversal": 2.5,
+    "vast_spend_usd": 38
+  },
+  "inference": {
+    "activation_compression": "off",
+    "batch": 512,
+    "context": 12288,
+    "contiguous_stages": true,
+    "ctx_checkpoints": 0,
+    "flash_attention": "on",
+    "ordered_async_cross_worker_copy": true,
+    "peer_transport": "Vast managed SSH proxy",
+    "pipelined_cache_validation": true,
+    "required_exact_cas": true,
+    "sampling": "greedy",
+    "seed": 260026,
+    "speculation": "none",
+    "split_mode": "layer",
+    "stage_order": [
+      "Japan RTX 3080 Ti",
+      "South Korea RTX 3060",
+      "local RTX 5090"
+    ],
+    "tensor_split": [
+      1,
+      1,
+      6
+    ],
+    "ubatch": 512
+  },
+  "llama_commit": "f1b6fbf35cfa010b0a8d6301fdfccbb7f41bd903",
+  "model": {
+    "file": "Qwen3.8-27B-Q4_K_M.gguf",
+    "quantization": "Q4_K_M",
+    "revision": "0669b98607d47046c7c2b3f801011d54a08cfccf",
+    "sha256": "31629f53165ab6a7dad8c9847dcfd1fdf55829dac1e6e748f4a68581b0033d34",
+    "source": "https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF"
+  },
+  "orchestration_sha256": {
+    "__init__.py": "19276512b48bf3ed409736a7780f0022bbb3521befb6b7a5ae4f826f53fb50a6",
+    "acquire_remote.py": "2dd93599bdc25e3cf4ce6255389b9354e86dc586e3e1d5b5b8a26be0869338c4",
+    "analyze_recovery.py": "035d411ef4be33286ceb377880788bf39fe48d8d1af3aa3abfcbf7f15a3037b2",
+    "analyze_runs.py": "fe6d05cb2f2c182541b0271a70ab9e5d980e8d846c303b51120bd03c5927d53f",
+    "batch_numerics.py": "8953e51e46bf988a24c2625ddffb48563a2c1ab77095994f1d76423516f2249b",
+    "benchmark.py": "896e24ffe36c6903c8edcbb23d15668106ea201880d6943a4f7a0f5a5a4d21b5",
+    "corpus.py": "016b81d472b6249bf24361767323d3588ec7a748a0e7d84c97fe3154935519ea",
+    "deploy_replica.py": "a9f371928b430301815c53ee2a70a958e9dc430ac390d14a83519998b0ca5023",
+    "deploy_router.py": "a6163c7b68f32d68b17492c9c0569c6e0fee1a8778dc64b02d11b3bc5c317148",
+    "download.py": "643c7b6a220eefb8ac708a1da33ed7dcf5160f498e3fe28ed9c74be84df464f7",
+    "io.py": "45c365c2e34491b13fffea15fa6caac5f20834a32c317793159bde29ebf91d93",
+    "local_routed.py": "4ab988dc5833b956f5e0b1df3f3f99472d00c75bc8a1651d21ecd19e00d1bfea",
+    "local_rpc.py": "538b2e786f044f998a86e4aed79ec41fc56d06aa5b9dd2089afcba8dddedf088",
+    "network.py": "563144f61f88b9ad482431a3c5b6e7bb97e26202fd6fb2c6488cb7854b212853",
+    "peer_setup.py": "e1dcc404715860290dd4cca98089c3d628c4f71e9ee5fe546d95f1ddbea638b0",
+    "preflight.py": "91541af7a065616c93bbe76cc13a6f1fa81794fd7c9ed9c20c6762481e6dbcf7",
+    "prepare_local_cas.py": "b61f3cd38043e4f5ae2a4c2c545b58cd4b38843f9bd267a0951685f431600d01",
+    "prepare_remote.py": "658f4385fb3bc5fe8edc7517946b7bc7a3db021b296ec385704d7277d6668daf",
+    "refresh_tunnels.py": "34a6d95aa269122a4d05f2a543aaa983f631cc1496d7850c55a6a4e6ef398b9d",
+    "remote.py": "a3fcac2813926730a178c6edc20c7831cbb39837189d6058a008880a3cd938a9",
+    "remote_services.py": "551aa4a3f04467fff94fbbd8a19702db1d9c0fb438ee7d5fa5f6d490fc4f9c81",
+    "restart_stage.py": "d504dae323073e74098ab6e50b6d5426fdb17cf60ca5e5e958b8edf6de905dbd",
+    "rpc_frontend.py": "444b90d28e3edb0488954f52ecec7a72269f851a045d6bd07e3fa120a03961ff",
+    "rpc_replica.py": "7ac5557047b3d1bebe1cb3265b310203a182100255f0b8b73d3a0732fbebafce",
+    "rpc_router.py": "5b71eface408b61d636ad2017b1110467b81f8195c9df6d7bed694996522c4f8",
+    "seal.py": "09f190c83df758d56c8967e34c68cefa9fb83eb1a48d933962589e16c9279bef",
+    "shard_manifest.py": "470f994a5382865774caa567f6955246b9d9325f14bb181e8f23e4436b3b0b9c",
+    "snapshot_control.py": "1d562b5f86b94f4a7432a80971e3b48a83ae046f96d883cf77404e45c17f3bf0",
+    "state_check.py": "2d521bafc44d5ad13c5de104bfa18d83c392709ab58209892b14419e52bbb278",
+    "stop_router.py": "9d79582309a5a5ec28d8d147fb920851ddc825eaf9f90d9a0fe8877cdc46e054",
+    "vast.py": "4beca38fa82dc87505633fde1f52bb5214d59e96ceb1c8a9bdcebfe7a6b5f49c"
+  },
+  "recovery": {
+    "checkpoint_replay_tokens": 0,
+    "development_receipt": "recovery/wan-replica-kill-001.json",
+    "policy": "synchronous warm mirror of all RPC state including attention and GDN recurrent buffers"
+  },
+  "repository_commit": "d4b4cabd67bb3ef65ce8f2fe997099cb3487822b",
+  "status": "SEALED_BEFORE_FINAL_PROMPT_EXECUTION",
+  "timestamp": "2026-09-10T12:47:51.883771+00:00"
+}

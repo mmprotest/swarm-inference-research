@@ -6,3 +6,4 @@ experiment,verdict,admissible_tok_s_per_user,diagnostic_tok_s_per_user,model_err
 020,NOT_READY,,15.310918200580241,4.471594411566712,96,16.978617458604276,,pre-spend readiness / predicted only,Deployment rehearsal correctly refused GPU spend because production and projection gates were still open.
 021,MODEL_INVALID,,,95.5390936021116,376,4.494645617902279,,ordered physical replay invalidated scheduler model,Ordered replay exposed a 95.54% median timing-model error.
 022,MODEL_INVALID,,,2.713617684164345,,,6,physically grounded model + controlled heterogeneity + shaped network,Timing model repaired to 2.71% median error; planner value claim remains invalid pending native and representative gates.
+026,WAN_SWARM_NOT_VIABLE_UNDER_TESTED_CONDITIONS,1.6150520769635919,1.7323997235068367,,3,,,physical heterogeneous three-machine swarm on measured WAN,Physical distribution and controlled recovery worked; sealed throughput correctness completion and transport gates failed.

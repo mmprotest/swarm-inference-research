@@ -1,0 +1,15 @@
+{
+  "acquisition_method": "RESUMABLE_HTTP_RANGES",
+  "expected_sha256": "cbf60a0c48b431bb61f1d49b8948dc88ac29c398d6dbdbbb2e6e89ef77eacc9a",
+  "experiment_id": "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+  "filename": "mtp-Qwen3.8-27B-Q8_0.gguf",
+  "model_source": "https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF",
+  "path": "<local-repo>\\.runtime\\experiment-026\\models\\mtp-Qwen3.8-27B-Q8_0.gguf",
+  "resumed_prefix_bytes": 0,
+  "revision": "0669b98607d47046c7c2b3f801011d54a08cfccf",
+  "seconds_this_invocation": 323.9840000000004,
+  "sha256": "cbf60a0c48b431bb61f1d49b8948dc88ac29c398d6dbdbbb2e6e89ef77eacc9a",
+  "size_bytes": 3164006688,
+  "status": "PASS",
+  "timestamp": "2026-09-10T09:03:15.561343+00:00"
+}

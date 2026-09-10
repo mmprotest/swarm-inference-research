@@ -1,0 +1,71 @@
+{
+  "experiment_id": "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+  "policy": "All synthesis attempts are retained; only the v3 artifacts are canonical.",
+  "artifacts": [
+    {
+      "path": "metrics.jsonl",
+      "sha256": "129a0760d813bd41262a284c10bc9d14f9a30e8719137f9cf95ee88981b7d12b",
+      "status": "INVALID",
+      "reason": "Trusted malformed legacy source run_id fields; see metrics.invalid.json."
+    },
+    {
+      "path": "metrics-canonical.jsonl",
+      "sha256": "1d459c5be1c9b34eb66597400f5fc6d75ca199c3410b24e48d156f34b84afb0f",
+      "status": "SUPERSEDED_SCHEMA_REVISION",
+      "reason": "Canonical run IDs were repaired, but the final row lacked the normalized bytes_per_committed_token field and the local CPU/RAM inventory was incomplete."
+    },
+    {
+      "path": "summary.json",
+      "sha256": "ffa746a9e8441ad1d1b62165ff7ec7b3c0e76f63f70ce74058f4e4bf5b3ebbd6",
+      "status": "SUPERSEDED_SCHEMA_REVISION"
+    },
+    {
+      "path": "final-receipt.json",
+      "sha256": "250278504dc1785b5647de84ba3ff7cf5a30bdef34407707928fd82e5a19f49d",
+      "status": "SUPERSEDED_SCHEMA_REVISION"
+    },
+    {
+      "path": "metrics-canonical-v2.jsonl",
+      "sha256": "ffa4bfb0c090750ff2c577818c79aa53205f83429a31100325d197e372088f1a",
+      "status": "SUPERSEDED_SCHEMA_REVISION",
+      "reason": "Speculative WAN rows lacked a fallback bytes-per-token value and local rows had an incorrect byte-measurement status."
+    },
+    {
+      "path": "summary-canonical.json",
+      "sha256": "26f612ad9e0d3fa4a92e4504294c37e53af6debd5f6444d7ac7d92b6de848dc2",
+      "status": "SUPERSEDED_SEMANTIC_REVISION",
+      "reason": "The exact and inexact best WAN rates needed explicit labels."
+    },
+    {
+      "path": "final-receipt-canonical.json",
+      "sha256": "646079379738a27a7fcee763d869c677ee87a571a090bbc2950094e1e795c276",
+      "status": "SUPERSEDED_SEMANTIC_REVISION",
+      "reason": "The recovery timestamp referred to receipt generation rather than first resumed token."
+    },
+    {
+      "path": "summary-final.json",
+      "sha256": "32bfdeea7286043f0cff86ae50a6b29222f94ea36756d1721634c8c555322673",
+      "status": "SUPERSEDED_SCHEMA_REVISION"
+    },
+    {
+      "path": "final-receipt-canonical-v2.json",
+      "sha256": "c15e6d3a87ffc378f9aa32839be405c506995acbd8e9e2cb3342a688d5850393",
+      "status": "SUPERSEDED_SCHEMA_REVISION"
+    },
+    {
+      "path": "metrics-canonical-v3.jsonl",
+      "sha256": "f00b54562c10674114ec70ca5495d5d0fa9e6eb9b9b4eeb5acdb296a59554152",
+      "status": "CANONICAL"
+    },
+    {
+      "path": "summary-canonical-v3.json",
+      "sha256": "cde81c61f37aee359d64ec06ec8efab26a9857f6e3811a0fd6ac6286a9550da8",
+      "status": "CANONICAL"
+    },
+    {
+      "path": "final-receipt-canonical-v3.json",
+      "sha256": "1fa2da74b5d83df8a7ec7c00aff78f0a333f516b7c76020d65016ed686e7533b",
+      "status": "CANONICAL"
+    }
+  ]
+}

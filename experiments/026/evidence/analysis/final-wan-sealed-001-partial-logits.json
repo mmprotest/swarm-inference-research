@@ -1,0 +1,122 @@
+{
+  "classification": "VALID_SEALED_RUN_FAILURE_TRANSPORT_RESET",
+  "compared_tokens": 282,
+  "completed_tokens": 282,
+  "control": "final-local-sealed-control-001",
+  "failure": {
+    "message": "[WinError 10054] An existing connection was forcibly closed by the remote host",
+    "timestamp": "2026-09-10T13:00:51.467098+00:00",
+    "type": "ConnectionResetError"
+  },
+  "first_mismatch": 178,
+  "identical_history_logits": {
+    "first_mismatch_detail": {
+      "local_selected": {
+        "id": 15734,
+        "logprob": -0.7642916440963745,
+        "token": " passes"
+      },
+      "local_top1_margin_logprob": 0.03976249694824219,
+      "local_top2": [
+        {
+          "bytes": [
+            32,
+            112,
+            97,
+            115,
+            115,
+            101,
+            115
+          ],
+          "id": 15734,
+          "logprob": -0.7642916440963745,
+          "token": " passes"
+        },
+        {
+          "bytes": [
+            32,
+            101,
+            110,
+            116,
+            101,
+            114,
+            115
+          ],
+          "id": 27891,
+          "logprob": -0.8040541410446167,
+          "token": " enters"
+        }
+      ],
+      "wan_selected": {
+        "id": 27891,
+        "logprob": -0.7793287038803101,
+        "token": " enters"
+      },
+      "wan_top1_margin_logprob": 0.016004621982574463,
+      "wan_top2": [
+        {
+          "bytes": [
+            32,
+            101,
+            110,
+            116,
+            101,
+            114,
+            115
+          ],
+          "id": 27891,
+          "logprob": -0.7793287038803101,
+          "token": " enters"
+        },
+        {
+          "bytes": [
+            32,
+            112,
+            97,
+            115,
+            115,
+            101,
+            115
+          ],
+          "id": 15734,
+          "logprob": -0.7953333258628845,
+          "token": " passes"
+        }
+      ],
+      "zero_based_token_index": 178
+    },
+    "identical_history_positions": 179,
+    "max_common_top10_logprob_abs_delta": 0.28500795364379883,
+    "mean_common_top10_logprob_abs_delta": 0.04499236183755603,
+    "mean_top10_jaccard": 0.9746063991874049,
+    "scope": "Only positions whose input history is identical, including the first differing decision",
+    "top1_agreement": 0.994413407821229
+  },
+  "last_token_arrival_s": 499.0607589999963,
+  "median_tpot_s": 1.565250300001935,
+  "p95_tpot_s": 2.1130656999957864,
+  "partial_decode_tok_s": 0.5903353469265896,
+  "partial_output_token_hash": "55329b735084bb6e7b20196d9f2a17df2e6000a456af86216833fd5681c76f50",
+  "prefix_equal": false,
+  "prompt_id": "sealed-01-factual",
+  "run_id": "final-wan-sealed-001",
+  "sealed_request_tokens": 512,
+  "terminal_event_observed": false,
+  "trace": {
+    "byte_definition": "RPC protocol bytes, excluding TCP/IP/TLS/SSH framing",
+    "median_single_token_cycle_ms": null,
+    "median_single_token_received_bytes": null,
+    "median_single_token_sent_bytes": null,
+    "rpc_request_counts_including_startup": {},
+    "steady_single_token_intervals": [],
+    "target_api_calls": 0,
+    "target_tokens_per_api_call": [],
+    "timing_definition": "Client process monotonic clock; wait sums are not a critical-path decomposition",
+    "total_received_protocol_bytes": 0,
+    "total_sent_protocol_bytes": 0,
+    "trace_events": 0
+  },
+  "ttft_s": 23.060123999999632,
+  "tunnel_log": "Welcome to vast.ai. If authentication fails, try again after a few seconds, and double check your ssh key.\nHave fun!\nConnection to ssh5.vast.ai closed by remote host.\n",
+  "tunnel_log_sha256": "fb76dfcffc179533c87bc6449d7e885e0b556fb8ee47e5918316c74e2761029d"
+}

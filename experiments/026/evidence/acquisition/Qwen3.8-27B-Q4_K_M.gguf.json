@@ -1,0 +1,14 @@
+{
+  "download_seconds": 339.0620000000017,
+  "expected_sha256": "31629f53165ab6a7dad8c9847dcfd1fdf55829dac1e6e748f4a68581b0033d34",
+  "experiment_id": "E026_Q27_WAN_SWARM_INTEGRATED_PROOF",
+  "filename": "Qwen3.8-27B-Q4_K_M.gguf",
+  "hash_seconds": 8.5779999999977,
+  "model_source": "https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF",
+  "path": "<local-repo>\\.runtime\\experiment-026\\models\\Qwen3.8-27B-Q4_K_M.gguf",
+  "revision": "0669b98607d47046c7c2b3f801011d54a08cfccf",
+  "sha256": "31629f53165ab6a7dad8c9847dcfd1fdf55829dac1e6e748f4a68581b0033d34",
+  "size_bytes": 18973870432,
+  "status": "PASS",
+  "timestamp": "2026-09-10T08:56:34.365169+00:00"
+}

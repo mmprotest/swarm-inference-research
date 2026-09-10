@@ -27,4 +27,7 @@ x=load(21); assert x['outcome']=='MODEL_INVALID'; close(x['model_validation']['m
 # E022
 x=load(22); assert x['verdict']=='MODEL_INVALID'; assert x['statistics']['capacity_unlocks']==6
 r=json.loads((ROOT/'experiments'/'022'/'evidence'/'run-result.json').read_text()); close(r['model_validation']['ordered_validation']['median_percent'],2.713617684164345); assert r['model_validation']['normalization_applied'] is False
+# E026
+x=load(26); assert x['canonical_verdict']=='WAN_SWARM_NOT_VIABLE_UNDER_TESTED_CONDITIONS'; close(x['major_results']['best_exact_wan_tok_s'],1.6150520769635919); close(x['major_results']['sealed_partial_wan_tok_s'],0.5903353469265896); close(x['major_results']['disk_warm_same_shard_speedup'],103.18658650185198); close(x['major_results']['recovery_interruption_s'],9.508302600002935); assert x['major_results']['sealed_completed_of_requested_tokens']==[282,512]
+r=json.loads((ROOT/'experiments'/'026'/'evidence'/'final-receipt.json').read_text()); assert r['dataset']['rows']==71; assert r['gates']['interactive_decode']['pass'] is False; assert r['gates']['distributed_correctness']['pass'] is False; assert r['gates']['sealed_512_tokens']['pass'] is False
 print('PASS: all public headline metrics match the curated experiment evidence.')
